@@ -1,0 +1,63 @@
+architecture_best_practices:
+  - best_practice: Use Auto Scaling Groups
+    description: Implement Auto Scaling Groups to ensure that your application can handle varying loads by automatically adjusting the number of instances in use.
+    severity: High
+  - best_practice: Implement Multi-AZ Deployments
+    description: Deploy your instances across multiple Availability Zones to enhance fault tolerance and ensure high availability.
+    severity: Critical
+  - best_practice: Use Elastic Load Balancing
+    description: Utilize Elastic Load Balancing to distribute incoming application traffic across multiple targets, ensuring no single instance is overwhelmed.
+    severity: High
+  - best_practice: Optimize Instance Types
+    description: Select the appropriate instance types based on your workload requirements to ensure cost-efficiency and optimal performance.
+    severity: Medium
+  - best_practice: Implement Infrastructure as Code (IaC)
+    description: Use tools like AWS CloudFormation or Terraform to manage your infrastructure as code, enabling version control and repeatability.
+    severity: High
+  - best_practice: Use Amazon RDS for Managed Databases
+    description: Opt for Amazon RDS to manage your relational databases, benefiting from automated backups, patching, and scaling.
+    severity: Medium
+  - best_practice: Enable Monitoring and Logging
+    description: Implement AWS CloudWatch and CloudTrail to monitor your resources and log changes, ensuring you have visibility into your environment.
+    severity: High
+  - best_practice: Implement Caching
+    description: Use caching mechanisms like Amazon ElastiCache to reduce latency and improve application performance.
+    severity: Medium
+  - best_practice: Use VPC for Network Isolation
+    description: Deploy your resources within a Virtual Private Cloud (VPC) to isolate them from other networks and enhance security.
+    severity: Critical
+  - best_practice: Implement Backup and Recovery Plans
+    description: Ensure you have robust backup and recovery plans in place using AWS Backup or custom scripts to prevent data loss.
+    severity: Critical
+
+security_best_practices:
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require MFA for all IAM users to add an extra layer of security to your AWS accounts.
+    severity: Critical
+  - best_practice: Use IAM Roles and Policies
+    description: Assign permissions using IAM roles and policies instead of sharing access keys to follow the principle of least privilege.
+    severity: High
+  - best_practice: Encrypt Data at Rest and in Transit
+    description: Use AWS Key Management Service (KMS) to encrypt sensitive data both at rest and in transit to protect it from unauthorized access.
+    severity: Critical
+  - best_practice: Regularly Rotate Security Credentials
+    description: Rotate IAM access keys, passwords, and other security credentials regularly to minimize the risk of compromised credentials.
+    severity: High
+  - best_practice: Enable AWS Config
+    description: Use AWS Config to continuously monitor and record your AWS resource configurations, ensuring compliance with best practices.
+    severity: Medium
+  - best_practice: Implement Security Groups and Network ACLs
+    description: Use Security Groups and Network ACLs to control inbound and outbound traffic to your instances, ensuring only authorized traffic is allowed.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and vulnerability assessments to identify and mitigate potential security risks.
+    severity: High
+  - best_practice: Use AWS Shield and WAF
+    description: Implement AWS Shield and Web Application Firewall (WAF) to protect your applications from DDoS attacks and other web exploits.
+    severity: High
+  - best_practice: Enable GuardDuty
+    description: Activate Amazon GuardDuty to continuously monitor your AWS accounts for malicious activity and unauthorized behavior.
+    severity: Medium
+  - best_practice: Implement Least Privilege Principle
+    description: Ensure that IAM users and roles have the minimum permissions necessary to perform their tasks, reducing the risk of accidental or malicious actions.
+    severity: Critical

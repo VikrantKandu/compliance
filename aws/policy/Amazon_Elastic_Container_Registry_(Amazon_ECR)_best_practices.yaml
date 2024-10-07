@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use Regional Replication for High Availability
+  description: Enable cross-region replication to ensure that your container images
+    are available in multiple regions, reducing the risk of downtime.
+  severity: High
+- best_practice: Implement Lifecycle Policies
+  description: Use lifecycle policies to automatically delete old or unused images,
+    helping to manage storage costs and maintain a clean repository.
+  severity: Medium
+- best_practice: Optimize Image Size
+  description: Keep your container images as small as possible to reduce the time
+    and resources needed for image pulls and deployments.
+  severity: Medium
+- best_practice: Use Tags for Versioning
+  description: Implement a tagging strategy to manage different versions of your container
+    images, making it easier to roll back to previous versions if needed.
+  severity: Medium
+- best_practice: Integrate with CI/CD Pipelines
+  description: Integrate Amazon ECR with your Continuous Integration and Continuous
+    Deployment (CI/CD) pipelines to automate the build, test, and deployment processes.
+  severity: High
+- best_practice: Monitor and Log ECR Usage
+  description: Use Amazon CloudWatch and AWS CloudTrail to monitor and log activities
+    in Amazon ECR, ensuring you have visibility into repository usage and access patterns.
+  severity: Medium
+- best_practice: Use Multi-Account Strategy
+  description: Use a multi-account strategy to isolate different environments (e.g.,
+    development, staging, production) for better resource management and security.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Ensure that your container images are encrypted at rest using AWS Key
+    Management Service (KMS) to protect sensitive data.
+  severity: Critical
+- best_practice: Use IAM Policies for Access Control
+  description: Implement fine-grained IAM policies to control who can access and perform
+    actions on your Amazon ECR repositories.
+  severity: Critical
+- best_practice: Enable Image Scanning
+  description: Enable image scanning to automatically check for vulnerabilities in
+    your container images, helping to identify and remediate security issues.
+  severity: High
+- best_practice: Implement Least Privilege Principle
+  description: Grant the minimum permissions necessary for users and services to interact
+    with Amazon ECR, reducing the risk of unauthorized access.
+  severity: Critical
+- best_practice: Use Private Repositories
+  description: Store your container images in private repositories to restrict access
+    and prevent unauthorized downloads.
+  severity: High
+- best_practice: Rotate Credentials Regularly
+  description: Regularly rotate access keys and other credentials used to authenticate
+    to Amazon ECR to minimize the risk of credential compromise.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for users accessing Amazon ECR to add an additional layer
+    of security.
+  severity: High
+- best_practice: Regularly Audit and Review Access Logs
+  description: Periodically audit and review access logs to detect any unusual or
+    unauthorized activities in your Amazon ECR repositories.
+  severity: High

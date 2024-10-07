@@ -1,0 +1,25 @@
+- rule:
+    ID: AWS-EC2-001
+    Title: Enable Detailed Monitoring for EC2 Instances
+    Profile Applicability: Level 1, Level 2
+    Description: Ensure that detailed monitoring is enabled for all EC2 instances
+      to provide more granular metrics. Detailed monitoring provides data in 1-minute
+      periods, allowing for more precise tracking of instance performance and health.
+    Rationale: Enabling detailed monitoring allows for better visibility into the
+      performance of EC2 instances, facilitating quicker response to issues and more
+      informed decision-making. Without detailed monitoring, data is only available
+      in 5-minute intervals, which may delay detection of performance issues.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select Instances from the left-hand menu.
+    - For each instance, check if Detailed Monitoring is enabled under the Monitoring
+      tab.
+    Default Value: By default, detailed monitoring is not enabled for EC2 instances.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select the instance for which you want to enable detailed monitoring.
+    - Click on the Actions button, then select Monitor and troubleshoot, and choose
+      Enable detailed monitoring.
+    - Confirm the changes to start collecting detailed metrics.

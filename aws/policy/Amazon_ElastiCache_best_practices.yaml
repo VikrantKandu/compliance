@@ -1,0 +1,51 @@
+architecture_best_practices:
+  - best_practice: Use Multi-AZ Deployments
+    description: Deploy Amazon ElastiCache clusters across multiple availability zones to ensure high availability and fault tolerance.
+    severity: Critical
+  - best_practice: Enable Automatic Failover
+    description: Configure automatic failover to ensure that a standby node takes over in case the primary node fails, minimizing downtime.
+    severity: High
+  - best_practice: Scale Out with Read Replicas
+    description: Use read replicas to distribute read traffic and improve performance, especially for read-heavy workloads.
+    severity: High
+  - best_practice: Regularly Backup Data
+    description: Schedule regular backups of your ElastiCache data to prevent data loss in case of failures or corruption.
+    severity: Critical
+  - best_practice: Optimize Node Size and Type
+    description: Select the appropriate node size and type based on your workload requirements to optimize cost and performance.
+    severity: Medium
+  - best_practice: Monitor and Set Alarms
+    description: Use Amazon CloudWatch to monitor ElastiCache metrics and set alarms for key performance indicators to detect issues early.
+    severity: High
+  - best_practice: Use Cluster Mode for Redis
+    description: Enable cluster mode for Redis to partition data across multiple nodes, allowing for horizontal scaling.
+    severity: Medium
+  - best_practice: Implement Data Sharding
+    description: Use sharding to distribute data across multiple nodes, improving performance and scalability.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Use VPC for Network Isolation
+    description: Deploy ElastiCache clusters within a Virtual Private Cloud (VPC) to isolate your cache from the public internet and enhance security.
+    severity: Critical
+  - best_practice: Enable Encryption in Transit
+    description: Enable encryption in transit to protect data as it moves between clients and ElastiCache nodes.
+    severity: High
+  - best_practice: Enable Encryption at Rest
+    description: Enable encryption at rest to protect data stored in ElastiCache from unauthorized access.
+    severity: High
+  - best_practice: Use IAM Policies for Access Control
+    description: Implement AWS Identity and Access Management (IAM) policies to control who can access and manage your ElastiCache resources.
+    severity: Critical
+  - best_practice: Regularly Rotate Access Keys
+    description: Regularly rotate access keys and credentials to minimize the risk of unauthorized access due to compromised keys.
+    severity: High
+  - best_practice: Enable Security Groups
+    description: Use security groups to control inbound and outbound traffic to your ElastiCache clusters, ensuring only authorized traffic is allowed.
+    severity: High
+  - best_practice: Implement Least Privilege Principle
+    description: Grant the minimum permissions necessary for users and applications to interact with ElastiCache, reducing the risk of accidental or malicious actions.
+    severity: High
+  - best_practice: Regularly Audit and Review Access Logs
+    description: Regularly audit and review access logs to detect and respond to unauthorized access attempts or suspicious activities.
+    severity: Medium

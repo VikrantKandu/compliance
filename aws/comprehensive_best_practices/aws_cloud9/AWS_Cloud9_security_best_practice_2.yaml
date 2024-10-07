@@ -1,0 +1,18 @@
+- rule:
+  - ID: AWS-EC2-001
+  - Title: Ensure EC2 Instances Do Not Have Public IPs
+  - Profile Applicability: Level 1
+  - Description: This check ensures that EC2 instances are not assigned public IP
+      addresses. Public IPs can expose instances to the internet, increasing the risk
+      of unauthorized access.
+  - Rationale: Assigning public IPs to EC2 instances can expose them to potential
+      security threats, such as unauthorized access or attacks. Keeping instances
+      private reduces the attack surface.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 Dashboard.
+      3. Select 'Instances' from the left-hand menu. 4. Check the 'Public IPv4' column
+      for each instance. Ensure that no instances have a public IP assigned.
+  - Default Value: By default, EC2 instances launched in a default VPC are assigned
+      a public IP.
+  - Remediation: 1. For existing instances with public IPs, modify the instance settings
+      to remove the public IP. 2. For new instances, ensure that 'Auto-assign Public
+      IP' is set to 'Disable' during the launch process.

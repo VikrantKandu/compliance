@@ -1,0 +1,42 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Cluster Size
+  description: Ensure the DAX cluster size is appropriate for your workload to avoid
+    under-provisioning or over-provisioning, which can affect performance and cost.
+  severity: High
+- best_practice: Enable Multi-AZ Clusters
+  description: Use Multi-AZ clusters for high availability and fault tolerance to
+    ensure your application can withstand failures in a single Availability Zone.
+  severity: Critical
+- best_practice: Monitor Cluster Metrics
+  description: Regularly monitor DAX cluster metrics such as CPU utilization, memory
+    usage, and request latency to identify and address performance bottlenecks.
+  severity: High
+- best_practice: Use Node Types Based on Workload
+  description: Select node types that match your workload requirements to ensure optimal
+    performance and cost-efficiency.
+  severity: Medium
+- best_practice: Optimize Item Size
+  description: Keep item sizes small to improve performance and reduce latency, as
+    larger items can lead to higher read and write times.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Enable encryption at rest to protect sensitive data stored in DAX from
+    unauthorized access.
+  severity: Critical
+- best_practice: Use IAM Policies for Access Control
+  description: Implement fine-grained IAM policies to control access to DAX clusters,
+    ensuring that only authorized users and applications can interact with the service.
+  severity: High
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to securely connect to DAX clusters without exposing
+    them to the public internet, reducing the risk of unauthorized access.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and access keys to minimize the risk
+    of compromised credentials being used maliciously.
+  severity: Medium
+- best_practice: Implement Network Segmentation
+  description: Use network segmentation to isolate DAX clusters from other parts of
+    your network, limiting the potential attack surface.
+  severity: Medium

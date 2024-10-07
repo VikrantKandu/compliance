@@ -1,0 +1,65 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Distribute resources across multiple Availability Zones to ensure high
+    availability and fault tolerance.
+  severity: Critical
+- best_practice: Implement Health Checks
+  description: Configure health checks to monitor the health of your endpoints and
+    automatically route traffic to healthy instances.
+  severity: High
+- best_practice: Use Weighted Routing for Load Balancing
+  description: Distribute traffic across multiple resources by assigning weights,
+    enabling efficient load balancing.
+  severity: Medium
+- best_practice: Enable DNS Failover
+  description: Configure DNS failover to automatically route traffic to a backup site
+    in case the primary site becomes unavailable.
+  severity: High
+- best_practice: Utilize Latency-Based Routing
+  description: Route traffic to the AWS region that provides the lowest latency for
+    your users, improving performance.
+  severity: Medium
+- best_practice: Leverage Geolocation Routing
+  description: Direct users to endpoints based on their geographic location to comply with local regulations and improve user experience.
+  severity: Medium
+- best_practice: Implement Simple Routing for Single Resources
+  description: Use simple routing when you have a single resource that handles all
+    traffic, ensuring straightforward DNS management.
+  severity: Low
+- best_practice: Use Traffic Flow for Complex Routing Policies
+  description: Utilize Route 53 Traffic Flow to create complex routing policies using
+    a visual editor, simplifying management of complex configurations.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable DNSSEC
+  description: Enable Domain Name System Security Extensions (DNSSEC) to protect against
+    DNS spoofing and ensure the integrity of DNS responses.
+  severity: Critical
+- best_practice: Restrict Access to Route 53 Resources
+  description: Use IAM policies to restrict access to Route 53 resources to only those
+    users and roles that need it, minimizing the risk of unauthorized changes.
+  severity: High
+- best_practice: Enable Logging
+  description: Enable logging for Route 53 to monitor and audit DNS queries, helping
+    detect and investigate security incidents.
+  severity: High
+- best_practice: Use MFA for Route 53 Management
+  description: Require multi-factor authentication (MFA) for users managing Route
+    53 to add an extra layer of security.
+  severity: High
+- best_practice: Regularly Review and Update Policies
+  description: Regularly review and update IAM policies and security configurations
+    to ensure they meet current security standards and requirements.
+  severity: Medium
+- best_practice: Monitor for Unusual Activity
+  description: Set up monitoring and alerts for unusual activity in Route 53 to quickly
+    detect and respond to potential security threats.
+  severity: High
+- best_practice: Use Private Hosted Zones for Internal DNS
+  description: Use private hosted zones for internal DNS resolution within your VPCs
+    to prevent exposure of internal DNS records to the public internet.
+  severity: Medium
+- best_practice: Implement Least Privilege Principle
+  description: Grant the minimum necessary permissions to users and applications managing
+    Route 53 to reduce the risk of accidental or malicious changes.
+  severity: High

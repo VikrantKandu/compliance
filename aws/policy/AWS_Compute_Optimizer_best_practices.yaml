@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Right-Sizing Instances
+  description: Regularly review and adjust the size of your EC2 instances to match
+    the workload requirements, ensuring optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Utilize Auto Scaling
+  description: Implement Auto Scaling to automatically adjust the number of EC2 instances
+    based on demand, ensuring availability and cost-efficiency.
+  severity: High
+- best_practice: Leverage Spot Instances
+  description: Use Spot Instances for non-critical workloads to reduce costs, while
+    ensuring that critical workloads are run on On-Demand or Reserved Instances.
+  severity: Medium
+- best_practice: Implement Elastic Load Balancing
+  description: Use Elastic Load Balancing to distribute incoming traffic across multiple
+    instances, improving fault tolerance and availability.
+  severity: High
+- best_practice: Use Reserved Instances for Steady-State Workloads
+  description: Purchase Reserved Instances for predictable, steady-state workloads
+    to achieve significant cost savings compared to On-Demand pricing.
+  severity: Medium
+- best_practice: Monitor and Analyze Performance Metrics
+  description: Regularly monitor and analyze performance metrics using CloudWatch
+    to identify and address performance bottlenecks.
+  severity: High
+- best_practice: Optimize Storage Solutions
+  description: Choose the appropriate storage solutions (EBS, S3, etc.) based on performance
+    and cost requirements, and regularly review storage usage.
+  severity: Medium
+- best_practice: Implement Backup and Recovery Plans
+  description: Develop and implement comprehensive backup and recovery plans to ensure
+    data integrity and availability in case of failures.
+  severity: Critical
+security_best_practices:
+- best_practice: Implement IAM Best Practices
+  description: Follow IAM best practices, such as using the principle of least privilege,
+    enabling MFA, and regularly rotating credentials.
+  severity: Critical
+- best_practice: Enable VPC Flow Logs
+  description: Enable VPC Flow Logs to capture information about the IP traffic going
+    to and from network interfaces in your VPC, aiding in security analysis and troubleshooting.
+  severity: High
+- best_practice: Use Security Groups and Network ACLs
+  description: Configure security groups and network ACLs to control inbound and outbound
+    traffic to your EC2 instances, ensuring only authorized access.
+  severity: High
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Ensure that all sensitive data is encrypted both at rest and in transit
+    to protect against unauthorized access and data breaches.
+  severity: Critical
+- best_practice: Regularly Update and Patch Instances
+  description: Keep your EC2 instances updated with the latest security patches and
+    updates to protect against vulnerabilities and exploits.
+  severity: High
+- best_practice: Implement Logging and Monitoring
+  description: Enable logging and monitoring using CloudTrail and CloudWatch to track
+    and analyze activity within your AWS environment for security and compliance purposes.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and remediate
+    vulnerabilities and ensure compliance with security policies.
+  severity: High
+- best_practice: Use AWS Config to Monitor Compliance
+  description: Use AWS Config to continuously monitor and assess the compliance of
+    your AWS resources with your security and governance policies.
+  severity: Medium

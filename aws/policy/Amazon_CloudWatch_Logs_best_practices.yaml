@@ -1,0 +1,55 @@
+architecture_best_practices:
+- best_practice: Efficient Log Group Organization
+  description: Organize log groups logically based on application, environment, or
+    function to facilitate easier management and retrieval.
+  severity: Medium
+- best_practice: Use of Log Streams
+  description: Utilize log streams within log groups to separate logs from different
+    sources or instances, improving clarity and manageability.
+  severity: Medium
+- best_practice: Set Retention Policies
+  description: Define log retention policies to automatically delete old logs that
+    are no longer needed, optimizing storage costs and compliance.
+  severity: High
+- best_practice: Enable Log Data Compression
+  description: Compress log data to reduce storage costs and improve data transfer
+    efficiency.
+  severity: Medium
+- best_practice: Implement Cross-Account Log Aggregation
+  description: Aggregate logs from multiple AWS accounts into a centralized account
+    for unified monitoring and analysis.
+  severity: High
+- best_practice: Use Tags for Log Groups
+  description: Apply tags to log groups to facilitate resource management, cost allocation,
+    and access control.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS CloudTrail Integration
+  description: Integrate CloudWatch Logs with AWS CloudTrail to monitor and log API
+    activity for auditing and compliance purposes.
+  severity: Critical
+- best_practice: Implement IAM Policies for Access Control
+  description: Use IAM policies to restrict access to CloudWatch Logs based on the
+    principle of least privilege, ensuring only authorized users can view or modify
+    logs.
+  severity: Critical
+- best_practice: Encrypt Log Data
+  description: Enable encryption for log data at rest using AWS KMS to protect sensitive
+    information.
+  severity: High
+- best_practice: Monitor and Alert on Log Activity
+  description: Set up alarms and notifications for specific log events or patterns
+    to quickly identify and respond to security incidents.
+  severity: High
+- best_practice: Regularly Review and Rotate Access Keys
+  description: Periodically review and rotate access keys used for accessing CloudWatch
+    Logs to minimize the risk of compromised credentials.
+  severity: High
+- best_practice: Implement VPC Flow Logs
+  description: Use VPC Flow Logs to capture information about IP traffic going to
+    and from network interfaces in your VPC, aiding in network security monitoring.
+  severity: Medium
+- best_practice: Enable Log Integrity Validation
+  description: Use log integrity validation mechanisms to ensure that log data has
+    not been tampered with, maintaining the integrity of your logs.
+  severity: High

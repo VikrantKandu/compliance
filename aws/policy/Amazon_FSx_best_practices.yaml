@@ -1,0 +1,45 @@
+architecture_best_practices:
+  - best_practice: Use Multi-AZ Deployments
+    description: Multi-AZ deployments provide high availability and failover support for critical workloads by automatically replicating data across multiple Availability Zones.
+    severity: Critical
+  - best_practice: Optimize Storage Configuration
+    description: Choose the appropriate storage type (SSD or HDD) based on workload requirements to ensure optimal performance and cost-efficiency.
+    severity: High
+  - best_practice: Implement Backup and Restore Strategies
+    description: Regularly back up your Amazon FSx data and test restore procedures to ensure data can be recovered in case of failure.
+    severity: Critical
+  - best_practice: Monitor Performance Metrics
+    description: Continuously monitor performance metrics and set up alarms to detect and address performance issues proactively.
+    severity: High
+  - best_practice: Use Data Compression
+    description: Enable data compression to reduce storage costs and improve performance, especially for large datasets.
+    severity: Medium
+  - best_practice: Scale Storage and Throughput as Needed
+    description: Dynamically adjust storage capacity and throughput to match workload demands, ensuring cost-efficiency and performance.
+    severity: Medium
+  - best_practice: Leverage AWS CloudFormation for Deployment
+    description: Use AWS CloudFormation templates to automate the deployment and management of Amazon FSx resources, ensuring consistency and repeatability.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Encryption at Rest
+    description: Ensure that all data stored in Amazon FSx is encrypted at rest using AWS Key Management Service (KMS) to protect sensitive information.
+    severity: Critical
+  - best_practice: Use VPC Endpoints
+    description: Use VPC endpoints to securely connect to Amazon FSx without exposing traffic to the public internet, reducing the risk of data interception.
+    severity: High
+  - best_practice: Implement IAM Policies
+    description: Define and enforce granular IAM policies to control access to Amazon FSx resources, ensuring that only authorized users and applications can access data.
+    severity: Critical
+  - best_practice: Enable Logging and Monitoring
+    description: Enable AWS CloudTrail and Amazon CloudWatch Logs to monitor access and usage of Amazon FSx, helping to detect and respond to security incidents.
+    severity: High
+  - best_practice: Regularly Rotate Access Keys
+    description: Regularly rotate access keys and credentials to minimize the risk of unauthorized access due to compromised credentials.
+    severity: High
+  - best_practice: Implement Network Segmentation
+    description: Use security groups and network ACLs to segment and isolate Amazon FSx resources within your VPC, reducing the attack surface.
+    severity: Medium
+  - best_practice: Conduct Regular Security Audits
+    description: Regularly audit your Amazon FSx configurations and access controls to ensure compliance with security best practices and regulatory requirements.
+    severity: Medium

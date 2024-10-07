@@ -1,0 +1,60 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Performance Mode
+  description: Select the performance mode (General Purpose or Max I/O) that best
+    matches your workload requirements to ensure optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Implement Lifecycle Management
+  description: Use EFS Lifecycle Management to automatically move infrequently accessed
+    files to the EFS Infrequent Access storage class, reducing storage costs.
+  severity: Medium
+- best_practice: Choose the Right Throughput Mode
+  description: "Select between Bursting Throughput and Provisioned Throughput based\
+    \ on your application\u2019s throughput requirements to avoid performance bottlenecks."
+  severity: High
+- best_practice: Use Mount Targets in Each Availability Zone
+  description: Ensure that you create mount targets in each Availability Zone in the
+    region where your file system is used to provide high availability and fault tolerance.
+  severity: Critical
+- best_practice: Monitor and Optimize File System Usage
+  description: Regularly monitor your EFS file system using AWS CloudWatch and other
+    monitoring tools to ensure efficient usage and to identify any potential issues
+    early.
+  severity: Medium
+- best_practice: Use EFS with AWS Backup
+  description: Integrate EFS with AWS Backup to automate backup processes and ensure
+    that your data is regularly backed up and easily recoverable.
+  severity: High
+security_best_practices:
+- best_practice: Implement VPC Security
+  description: Use VPC security groups and network ACLs to control inbound and outbound
+    traffic to your EFS file systems, ensuring that only authorized network traffic
+    is allowed.
+  severity: Critical
+- best_practice: Use IAM Policies for Access Control
+  description: Define and enforce fine-grained access control policies using AWS IAM
+    to ensure that only authorized users and roles can access your EFS file systems.
+  severity: Critical
+- best_practice: Enable Encryption at Rest
+  description: Enable encryption at rest for your EFS file systems to protect your
+    data from unauthorized access and ensure compliance with data protection regulations.
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Use encryption in transit to protect data as it travels between your
+    EFS file system and clients, ensuring data integrity and confidentiality.
+  severity: High
+- best_practice: Regularly Rotate IAM Credentials
+  description: Regularly rotate IAM credentials and access keys to minimize the risk
+    of unauthorized access due to compromised credentials.
+  severity: High
+- best_practice: Implement Logging and Monitoring
+  description: Enable logging and monitoring for your EFS file systems using AWS CloudTrail
+    and AWS CloudWatch to detect and respond to security incidents promptly.
+  severity: High
+- best_practice: Use Security Best Practices for NFS Clients
+  description: Ensure that NFS clients mounting the EFS file system are configured
+    securely, including using secure NFS options and keeping client systems updated.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments of your
+    EFS file systems to identify and remediate any security weaknesses.
+  severity: High

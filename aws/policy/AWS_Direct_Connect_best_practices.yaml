@@ -1,0 +1,62 @@
+architecture_best_practices:
+  - best_practice: Use Redundant Connections
+    description: Establish multiple AWS Direct Connect connections to ensure high availability
+      and fault tolerance.
+    severity: Critical
+  - best_practice: Implement BGP for Routing
+    description: Use Border Gateway Protocol (BGP) for dynamic routing to manage failover
+      and load balancing effectively.
+    severity: High
+  - best_practice: Utilize AWS Direct Connect Gateway
+    description: Use AWS Direct Connect Gateway to connect to multiple VPCs across different
+      regions.
+    severity: High
+  - best_practice: Monitor Connection Health
+    description: Continuously monitor the health and performance of your Direct Connect
+      connections using CloudWatch.
+    severity: Medium
+  - best_practice: Plan for Capacity
+    description: Assess and plan for your bandwidth requirements to avoid performance
+      bottlenecks.
+    severity: Medium
+  - best_practice: Use Appropriate Direct Connect Locations
+    description: Choose Direct Connect locations that are geographically close to your
+      data centers to minimize latency.
+    severity: Low
+
+security_best_practices:
+  - best_practice: Encrypt Data in Transit
+    description: Use AWS Direct Connect with VPN to encrypt data in transit, ensuring
+      data security.
+    severity: Critical
+  - best_practice: Implement Network Segmentation
+    description: Use VLANs to segment your network traffic and isolate sensitive data.
+    severity: High
+  - best_practice: Enable Access Logging
+    description: Enable logging to track access and changes to your Direct Connect connections
+      for auditing purposes.
+    severity: High
+  - best_practice: Use IAM Policies for Access Control
+    description: Implement strict IAM policies to control who can create, modify, and
+      delete Direct Connect resources.
+    severity: High
+  - best_practice: Regularly Rotate Credentials
+    description: Regularly rotate API keys, passwords, and other credentials used for
+      Direct Connect.
+    severity: Medium
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and vulnerability assessments on your
+      Direct Connect setup.
+    severity: Medium
+  - best_practice: Implement DDoS Protection
+    description: Use AWS Shield and AWS WAF to protect against Distributed Denial of
+      Service (DDoS) attacks.
+    severity: Medium
+  - best_practice: Use Multi-Factor Authentication (MFA)
+    description: Enable MFA for all accounts that manage Direct Connect resources to
+      add an extra layer of security.
+    severity: Medium
+  - best_practice: Review and Update Security Groups
+    description: Regularly review and update security groups to ensure only necessary
+      traffic is allowed.
+    severity: Low

@@ -1,0 +1,71 @@
+architecture_best_practices:
+- best_practice: Use AWS Lambda for Stateless Processing
+  description: Ensure that your Lambda functions are stateless to allow for better
+    scalability and easier management. Store state information in services like DynamoDB
+    or S3.
+  severity: High
+- best_practice: Optimize Lambda Function Memory and Timeout
+  description: Allocate appropriate memory and timeout settings for Lambda functions
+    to balance performance and cost. Over-provisioning can lead to unnecessary costs,
+    while under-provisioning can cause timeouts.
+  severity: Medium
+- best_practice: Use API Gateway for HTTP Endpoints
+  description: Utilize API Gateway to manage and secure HTTP endpoints for your serverless
+    applications. API Gateway provides features like rate limiting, caching, and authorization.
+  severity: High
+- best_practice: Implement Asynchronous Processing with SQS and SNS
+  description: Use Amazon SQS and SNS for decoupling and asynchronous processing to
+    enhance the reliability and scalability of your serverless applications.
+  severity: Medium
+- best_practice: Employ AWS Step Functions for Complex Workflows
+  description: Use AWS Step Functions to coordinate and manage complex workflows and
+    state machines, ensuring better error handling and retry mechanisms.
+  severity: Medium
+- best_practice: Leverage AWS CloudFormation for Infrastructure as Code
+  description: Use CloudFormation to define and manage your serverless application
+    infrastructure as code, enabling version control and easier replication of environments.
+  severity: High
+- best_practice: Monitor and Log with CloudWatch
+  description: Implement CloudWatch for monitoring and logging to gain insights into
+    the performance and health of your serverless applications. Set up alarms for
+    critical metrics.
+  severity: High
+- best_practice: Use Environment Variables for Configuration
+  description: Store configuration settings in environment variables to separate code from configuration, making it easier to manage and secure sensitive information.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Ensure that IAM roles and policies grant the minimum permissions required
+    for Lambda functions and other services to operate, reducing the risk of unauthorized
+    access.
+  severity: Critical
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS KMS to encrypt sensitive data stored in services like S3, DynamoDB,
+    and RDS. Enable HTTPS to encrypt data in transit.
+  severity: Critical
+- best_practice: Enable VPC for Lambda Functions
+  description: Place Lambda functions inside a VPC to control access to resources
+    and enhance security by leveraging security groups and network ACLs.
+  severity: High
+- best_practice: Use API Gateway Authorizers
+  description: Implement API Gateway authorizers (Cognito or Lambda authorizers) to
+    authenticate and authorize API requests, ensuring only legitimate traffic reaches
+    your backend.
+  severity: High
+- best_practice: Rotate Secrets Regularly
+  description: Use AWS Secrets Manager to store and rotate secrets like database credentials
+    and API keys, reducing the risk of compromised credentials.
+  severity: High
+- best_practice: Enable CloudTrail for Auditing
+  description: Enable AWS CloudTrail to log all API calls and changes to your AWS
+    environment, providing a comprehensive audit trail for security and compliance
+    purposes.
+  severity: High
+- best_practice: Implement WAF for API Gateway
+  description: Use AWS WAF to protect your API Gateway endpoints from common web exploits
+    and attacks, such as SQL injection and cross-site scripting.
+  severity: High
+- best_practice: Regularly Review and Update Dependencies
+  description: Regularly review and update third-party libraries and dependencies
+    to patch known vulnerabilities and maintain the security of your serverless applications.
+  severity: Medium

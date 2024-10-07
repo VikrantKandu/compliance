@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Instance Types
+  description: Select the appropriate instance types for your Amazon Fraud Detector
+    workload to ensure optimal performance and cost-efficiency.
+  severity: Medium
+- best_practice: Implement Auto Scaling
+  description: Use Auto Scaling to automatically adjust the capacity of your Amazon
+    Fraud Detector resources based on demand to maintain performance and reduce costs.
+  severity: High
+- best_practice: Enable Multi-AZ Deployments
+  description: Deploy Amazon Fraud Detector across multiple Availability Zones to
+    ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Utilize Managed Services
+  description: Leverage AWS managed services where possible to reduce operational
+    overhead and increase reliability.
+  severity: Medium
+- best_practice: Monitor and Optimize Resource Utilization
+  description: Continuously monitor resource utilization and optimize configurations
+    to avoid over-provisioning or under-provisioning.
+  severity: High
+- best_practice: Implement CI/CD Pipelines
+  description: Use Continuous Integration and Continuous Deployment (CI/CD) pipelines
+    for automated testing and deployment to ensure consistent and reliable updates.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Ensure that all data in transit and at rest is encrypted using AWS
+    Key Management Service (KMS) to protect sensitive information.
+  severity: Critical
+- best_practice: Implement IAM Best Practices
+  description: Follow AWS Identity and Access Management (IAM) best practices, such
+    as least privilege access, to secure access to Amazon Fraud Detector.
+  severity: Critical
+- best_practice: Enable Logging and Monitoring
+  description: Use AWS CloudTrail and Amazon CloudWatch to log and monitor all activities
+    within Amazon Fraud Detector for security and compliance purposes.
+  severity: High
+- best_practice: Regularly Update and Patch
+  description: Keep Amazon Fraud Detector and associated resources updated with the
+    latest patches to protect against vulnerabilities.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    potential security risks.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require Multi-Factor Authentication (MFA) for all users accessing Amazon
+    Fraud Detector to add an extra layer of security.
+  severity: Critical
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon Fraud Detector without
+    exposing traffic to the public internet.
+  severity: Medium
+- best_practice: Implement Network Security Controls
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to Amazon Fraud Detector resources.
+  severity: High

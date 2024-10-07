@@ -1,0 +1,59 @@
+architecture_best_practices:
+  - best_practice: Use Elastic Load Balancing (ELB) with Auto Scaling
+    description: Integrate ELB with Auto Scaling to distribute incoming traffic across
+      multiple instances, ensuring high availability and fault tolerance.
+    severity: Critical
+  - best_practice: Define Scaling Policies Based on Metrics
+    description: Use CloudWatch metrics to define scaling policies that automatically
+      adjust the number of instances based on demand, optimizing performance and cost.
+    severity: High
+  - best_practice: Implement Health Checks
+    description: Configure health checks to automatically replace unhealthy instances,
+      maintaining the overall health of the application.
+    severity: High
+  - best_practice: Use Multiple Availability Zones
+    description: Distribute instances across multiple Availability Zones to enhance
+      fault tolerance and minimize the impact of zone-specific failures.
+    severity: Critical
+  - best_practice: Optimize Instance Types and Sizes
+    description: Select appropriate instance types and sizes based on workload requirements
+      to ensure cost-effectiveness and performance efficiency.
+    severity: Medium
+  - best_practice: Use Lifecycle Hooks
+    description: Implement lifecycle hooks to perform custom actions during instance
+      launch and termination, enabling better control over the scaling process.
+    severity: Medium
+  - best_practice: Regularly Review and Update Scaling Policies
+    description: Periodically review and update scaling policies to adapt to changing
+      application demands and optimize resource utilization.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Instance Termination Protection
+    description: Enable termination protection for instances to prevent accidental termination
+      and ensure the stability of critical applications.
+    severity: High
+  - best_practice: Use IAM Roles for EC2 Instances
+    description: Assign IAM roles to EC2 instances to securely manage access to AWS
+      services and resources without using hard-coded credentials.
+    severity: Critical
+  - best_practice: Implement Security Groups and Network ACLs
+    description: Use security groups and network ACLs to control inbound and outbound
+      traffic to instances, enhancing network security.
+    severity: High
+  - best_practice: Encrypt Data at Rest and in Transit
+    description: Ensure that data stored on instances and transmitted between instances
+      is encrypted to protect sensitive information.
+    severity: Critical
+  - best_practice: Regularly Patch and Update Instances
+    description: Regularly apply security patches and updates to instances to protect
+      against vulnerabilities and exploits.
+    severity: High
+  - best_practice: Monitor and Log Activity
+    description: Enable CloudWatch and CloudTrail to monitor and log instance activity,
+      providing visibility into actions and aiding in security audits.
+    severity: High
+  - best_practice: Implement Least Privilege Access
+    description: Follow the principle of least privilege by granting minimal necessary
+      permissions to users and services, reducing the risk of unauthorized access.
+    severity: Critical

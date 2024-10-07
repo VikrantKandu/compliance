@@ -1,0 +1,64 @@
+architecture_best_practices:
+  - best_practice: Use Blue/Green Deployments
+    description: Implement Blue/Green deployments to minimize downtime and reduce the
+      risk of deployment failures by shifting traffic between two identical environments.
+    severity: High
+  - best_practice: Leverage Auto Scaling
+    description: Integrate AWS CodeDeploy with Auto Scaling to automatically adjust
+      the number of instances in response to traffic, ensuring high availability and
+      performance.
+    severity: Medium
+  - best_practice: Use Deployment Groups
+    description: Organize instances into deployment groups to manage deployments more
+      effectively and target specific environments or subsets of instances.
+    severity: Medium
+  - best_practice: Monitor Deployments with CloudWatch
+    description: Use Amazon CloudWatch to monitor deployment metrics and set up alarms
+      to detect and respond to issues promptly.
+    severity: High
+  - best_practice: Automate Rollbacks
+    description: Configure automatic rollbacks to revert to the last known good state
+      if a deployment fails, minimizing downtime and service disruption.
+    severity: High
+  - best_practice: Use Tags for Resource Management
+    description: Tag resources to organize and manage deployments, enabling easier tracking
+      and cost management.
+    severity: Low
+  - best_practice: Implement Canary Deployments
+    description: Gradually roll out changes to a small subset of users before a full-scale
+      deployment to catch issues early.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Use IAM Roles and Policies
+    description: Define and assign IAM roles and policies to control access to AWS CodeDeploy,
+      ensuring that only authorized users can perform deployment actions.
+    severity: Critical
+  - best_practice: Enable Encryption
+    description: Use encryption for data in transit and at rest to protect sensitive
+      information during the deployment process.
+    severity: High
+  - best_practice: Implement Multi-Factor Authentication (MFA)
+    description: Require MFA for accessing AWS CodeDeploy to add an extra layer of security
+      beyond just usernames and passwords.
+    severity: High
+  - best_practice: Regularly Rotate Access Keys
+    description: Rotate AWS access keys periodically to reduce the risk of keys being
+      compromised.
+    severity: Medium
+  - best_practice: Use VPC Endpoints
+    description: Use VPC endpoints to securely connect to AWS CodeDeploy without exposing
+      traffic to the public internet.
+    severity: Medium
+  - best_practice: Enable Logging and Auditing
+    description: Enable AWS CloudTrail and other logging services to audit and monitor
+      deployment activities, helping detect and respond to suspicious actions.
+    severity: High
+  - best_practice: Apply Least Privilege Principle
+    description: Grant the minimum level of access necessary for users and services
+      to perform their tasks, reducing the risk of unauthorized actions.
+    severity: Critical
+  - best_practice: Regular Security Assessments
+    description: Conduct regular security assessments and vulnerability scans to identify
+      and mitigate potential security risks.
+    severity: Medium

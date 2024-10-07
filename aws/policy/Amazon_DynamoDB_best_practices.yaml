@@ -1,0 +1,57 @@
+architecture_best_practices:
+- best_practice: Use Partition Keys Effectively
+  description: Design your table with partition keys that distribute data evenly across
+    partitions to avoid hot partitions and ensure consistent performance.
+  severity: High
+- best_practice: Optimize Read and Write Capacity
+  description: Properly estimate and configure read and write capacity units to avoid
+    throttling and ensure cost efficiency.
+  severity: High
+- best_practice: Leverage Global Secondary Indexes (GSIs)
+  description: Use GSIs to support queries on non-primary key attributes, improving
+    query flexibility and performance.
+  severity: Medium
+- best_practice: Use On-Demand Capacity Mode for Variable Workloads
+  description: For applications with unpredictable traffic, use on-demand capacity
+    mode to automatically scale capacity up or down.
+  severity: Medium
+- best_practice: Implement Time-to-Live (TTL) for Data Expiration
+  description: Use TTL to automatically delete expired items, helping to manage data
+    lifecycle and reduce storage costs.
+  severity: Low
+- best_practice: Optimize Data Access Patterns
+  description: Analyze and optimize data access patterns to ensure efficient query
+    performance and resource utilization.
+  severity: High
+- best_practice: Use DynamoDB Streams for Change Data Capture
+  description: Enable DynamoDB Streams to capture table activity and integrate with
+    other AWS services for data processing and analytics.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Use AWS KMS to encrypt data at rest, ensuring data protection and compliance
+    with security standards.
+  severity: Critical
+- best_practice: Implement IAM Policies for Fine-Grained Access Control
+  description: Use IAM policies to restrict access to DynamoDB tables and operations
+    based on the principle of least privilege.
+  severity: Critical
+- best_practice: Enable Point-in-Time Recovery (PITR)
+  description: Enable PITR to protect against accidental data loss by allowing you
+    to restore tables to any point within the last 35 days.
+  severity: High
+- best_practice: Use VPC Endpoints for Private Access
+  description: Use VPC endpoints to securely connect to DynamoDB without exposing
+    traffic to the public internet.
+  severity: High
+- best_practice: Monitor and Audit with CloudTrail and CloudWatch
+  description: Enable CloudTrail and CloudWatch to monitor and audit DynamoDB activity
+    for security and compliance purposes.
+  severity: Medium
+- best_practice: Regularly Rotate AWS Access Keys
+  description: Regularly rotate access keys to minimize the risk of compromised credentials.
+  severity: Medium
+- best_practice: Implement Data Backup and Restore Strategies
+  description: Regularly back up your DynamoDB tables and test restore procedures
+    to ensure data availability and integrity.
+  severity: High

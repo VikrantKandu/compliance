@@ -1,0 +1,28 @@
+- rule:
+    ID: AWS-EC2-001
+    Title: Ensure EC2 Instances Are Using EBS Volumes with Encryption Enabled
+    Profile Applicability: Level 1
+    Description: This check ensures that all Elastic Block Store (EBS) volumes attached
+      to EC2 instances are encrypted to protect sensitive data at rest. Encryption
+      helps protect data confidentiality and integrity by preventing unauthorized
+      access to the data on the volume.
+    Rationale: Encrypting EBS volumes is crucial for protecting sensitive data from
+      unauthorized access, especially in the event of a security breach. Unencrypted
+      volumes could lead to data leakage and compromise sensitive information if accessed
+      by malicious actors.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select Instances from the left-hand menu.
+    - For each instance, check the attached EBS volumes.
+    - Verify that the Encryption field for each volume is set to 'Enabled'.
+    Default Value: By default, EBS volumes are not encrypted unless specified during
+      creation.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select Instances from the left-hand menu.
+    - For each instance with unencrypted volumes, create a snapshot of the volume.
+    - Copy the snapshot with the encryption option enabled.
+    - Create a new EBS volume from the encrypted snapshot.
+    - Detach the unencrypted volume and attach the new encrypted volume to the instance.

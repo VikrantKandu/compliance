@@ -1,0 +1,82 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy Amazon RDS instances across multiple Availability Zones to ensure
+    high availability and automatic failover in case of an outage.
+  severity: Critical
+- best_practice: Optimize Database Connections
+  description: Use connection pooling and optimize the number of database connections
+    to ensure efficient use of resources and avoid performance bottlenecks.
+  severity: High
+- best_practice: Implement Read Replicas
+  description: Use read replicas to offload read traffic from the primary database,
+    improving performance and scalability.
+  severity: High
+- best_practice: Use Automated Backups
+  description: Enable automated backups to ensure data recovery in case of accidental
+    deletion or corruption.
+  severity: Critical
+- best_practice: Monitor Performance Metrics
+  description: Continuously monitor performance metrics like CPU utilization, memory
+    usage, and I/O operations to identify and address performance issues proactively.
+  severity: Medium
+- best_practice: Use Appropriate Instance Types
+  description: Select instance types that match your workload requirements to ensure
+    optimal performance and cost-efficiency.
+  severity: Medium
+- best_practice: Implement Database Indexing
+  description: Use indexing to speed up query performance and reduce the load on the
+    database.
+  severity: High
+- best_practice: Enable Multi-AZ for Read Replicas
+  description: Deploy read replicas in multiple Availability Zones to enhance read
+    availability and fault tolerance.
+  severity: Medium
+- best_practice: Use Parameter Groups
+  description: Use parameter groups to manage and apply configuration settings consistently
+    across your RDS instances.
+  severity: Low
+- best_practice: Regularly Update Database Engine
+  description: Keep your database engine up to date with the latest patches and updates
+    to ensure security and performance improvements.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Use AWS KMS to enable encryption at rest for your RDS instances to
+    protect sensitive data.
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Use SSL/TLS to encrypt data in transit between your application and
+    RDS instances to prevent data interception.
+  severity: High
+- best_practice: Implement IAM Roles
+  description: Use IAM roles to manage permissions and access to your RDS instances,
+    following the principle of least privilege.
+  severity: Critical
+- best_practice: Enable Enhanced Monitoring
+  description: Use enhanced monitoring to gain deeper insights into the operating
+    system metrics and performance of your RDS instances.
+  severity: Medium
+- best_practice: Use Security Groups
+  description: Configure security groups to control inbound and outbound traffic to
+    your RDS instances, restricting access to only necessary IP addresses and ports.
+  severity: High
+- best_practice: Enable Database Auditing
+  description: Use database auditing to track and log database activities, helping
+    to detect and respond to suspicious activities.
+  severity: Medium
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate database credentials and IAM access keys to reduce
+    the risk of compromised credentials.
+  severity: High
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for IAM users and roles that have access to RDS instances
+    to add an extra layer of security.
+  severity: High
+- best_practice: Conduct Regular Security Assessments
+  description: Perform regular security assessments and vulnerability scans to identify
+    and mitigate potential security risks.
+  severity: Medium
+- best_practice: Implement Network Isolation
+  description: Use VPCs, subnets, and network ACLs to isolate your RDS instances from
+    other parts of your network, reducing the attack surface.
+  severity: High

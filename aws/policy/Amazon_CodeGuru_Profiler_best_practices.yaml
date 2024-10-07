@@ -1,0 +1,42 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Profiling Groups
+  description: Create and use profiling groups to logically separate different applications
+    or environments for better organization and management.
+  severity: Medium
+- best_practice: Optimize Sampling Rate
+  description: Configure the sampling rate to balance between performance overhead
+    and profiling detail. A high sampling rate can impact application performance.
+  severity: High
+- best_practice: Integrate with CI/CD Pipeline
+  description: Integrate Amazon CodeGuru Profiler with your CI/CD pipeline to automatically
+    profile applications during development and deployment stages.
+  severity: Medium
+- best_practice: Regularly Review Profiling Data
+  description: Regularly review the profiling data to identify performance bottlenecks
+    and optimize application performance.
+  severity: Medium
+- best_practice: Use Tags for Resource Management
+  description: Apply tags to your profiling groups and related resources for better
+    resource management and cost allocation.
+  severity: Low
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Ensure that IAM roles and policies grant the minimum necessary permissions
+    to users and services interacting with Amazon CodeGuru Profiler.
+  severity: Critical
+- best_practice: Enable Encryption
+  description: Enable encryption for data in transit and at rest to protect sensitive
+    profiling data from unauthorized access.
+  severity: High
+- best_practice: Regularly Rotate IAM Credentials
+  description: Regularly rotate IAM credentials used by Amazon CodeGuru Profiler to
+    minimize the risk of credential compromise.
+  severity: High
+- best_practice: Monitor and Audit Access Logs
+  description: Enable CloudTrail logging to monitor and audit access to Amazon CodeGuru
+    Profiler, ensuring that any unauthorized access attempts are detected.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon CodeGuru Profiler without
+    traversing the public internet, reducing exposure to potential threats.
+  severity: Medium

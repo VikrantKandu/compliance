@@ -1,0 +1,23 @@
+- rule:
+  - ID: AWS-CF-001
+  - Title: Ensure CloudFront Distributions Have Logging Enabled
+  - Profile Applicability: Level 1
+  - Description: This check ensures that AWS CloudFront distributions have logging
+      enabled to capture access logs for monitoring and auditing purposes. Enabling
+      logging allows you to track requests made to your distribution, which is crucial
+      for security analysis and performance monitoring.
+  - Rationale: Enabling logging on CloudFront distributions helps in identifying potential
+      security threats and understanding user behavior. Without logging, it becomes
+      difficult to perform forensic investigations and compliance audits. Not having
+      access logs can lead to a lack of visibility into distribution usage and potential
+      unauthorized access.
+  - Audit: Use the AWS Management Console or AWS CLI to verify if logging is enabled
+      for each CloudFront distribution. In the console, navigate to the CloudFront
+      distributions, select a distribution, and check the settings for logging. Alternatively,
+      use the AWS CLI command aws cloudfront get-distribution-config and check the
+      Logging configuration.
+  - Default Value: By default, AWS CloudFront distributions do not have logging enabled.
+  - Remediation: To enable logging, go to the AWS Management Console, select the CloudFront
+      distribution, and edit the distribution settings to enable logging. Specify
+      an S3 bucket to store the logs and configure permissions accordingly. Alternatively,
+      use the AWS CLI to update the distribution configuration and enable logging.

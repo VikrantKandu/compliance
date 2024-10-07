@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Auto Scaling for EC2 Instances
+  description: Implement Auto Scaling to automatically adjust the number of EC2 instances
+    based on demand, ensuring high availability and cost-efficiency.
+  severity: High
+- best_practice: Implement Multi-AZ Deployments
+  description: Deploy applications across multiple Availability Zones (AZs) to enhance
+    fault tolerance and ensure high availability.
+  severity: Critical
+- best_practice: Utilize Elastic Load Balancing
+  description: Use Elastic Load Balancing to distribute incoming traffic across multiple
+    EC2 instances, improving fault tolerance and availability.
+  severity: High
+- best_practice: Optimize Instance Types
+  description: Select the appropriate EC2 instance types based on workload requirements
+    to achieve cost-efficiency and performance optimization.
+  severity: Medium
+- best_practice: Use VPC for Network Isolation
+  description: Deploy EC2 instances within a Virtual Private Cloud (VPC) to isolate
+    them from other networks and enhance security.
+  severity: Critical
+- best_practice: Implement CloudWatch Monitoring
+  description: Use Amazon CloudWatch to monitor the performance and health of EC2
+    instances, enabling proactive management and troubleshooting.
+  severity: High
+- best_practice: Use EBS-Optimized Instances
+  description: Utilize EBS-optimized instances to achieve dedicated throughput between
+    EC2 instances and EBS volumes, improving performance.
+  severity: Medium
+- best_practice: Implement Elastic IP Addresses
+  description: Use Elastic IP addresses to maintain a static IP address for EC2 instances,
+    ensuring consistent access and reducing downtime.
+  severity: Low
+security_best_practices:
+- best_practice: Enable IAM Role-Based Access
+  description: Use IAM roles to grant permissions to EC2 instances, ensuring least
+    privilege access and enhancing security.
+  severity: Critical
+- best_practice: Implement Security Groups
+  description: Use Security Groups to control inbound and outbound traffic to EC2
+    instances, enhancing network security.
+  severity: High
+- best_practice: Enable VPC Flow Logs
+  description: Use VPC Flow Logs to capture information about IP traffic going to
+    and from network interfaces, aiding in security analysis and troubleshooting.
+  severity: Medium
+- best_practice: Use Encrypted EBS Volumes
+  description: Encrypt EBS volumes to protect data at rest, ensuring data confidentiality
+    and compliance with security standards.
+  severity: Critical
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate IAM access keys to reduce the risk of compromised
+    credentials and enhance security.
+  severity: High
+- best_practice: Implement Instance Metadata Service Version 2 (IMDSv2)
+  description: Use IMDSv2 to mitigate the risk of SSRF attacks by requiring session-based
+    tokens for instance metadata access.
+  severity: High
+- best_practice: Enable Detailed Monitoring
+  description: Enable detailed monitoring for EC2 instances to gather more granular
+    performance data, aiding in security and performance analysis.
+  severity: Medium
+- best_practice: Use AWS Systems Manager for Patch Management
+  description: Utilize AWS Systems Manager to automate patch management for EC2 instances,
+    ensuring they are up-to-date with security patches.
+  severity: High

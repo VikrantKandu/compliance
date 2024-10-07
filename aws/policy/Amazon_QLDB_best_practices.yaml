@@ -1,0 +1,67 @@
+architecture_best_practices:
+- best_practice: Use Managed Ledger for High Availability
+  description: Utilize Amazon QLDB's managed ledger to ensure high availability and
+    durability of your data, leveraging its built-in replication and fault-tolerance
+    features.
+  severity: Critical
+- best_practice: Optimize Query Performance
+  description: Design your data model and queries to take advantage of QLDB's indexing
+    and efficient query execution plans to ensure optimal performance.
+  severity: High
+- best_practice: Use PartiQL for Flexibility
+  description: Employ PartiQL, QLDB's SQL-compatible query language, to provide flexibility
+    in querying and manipulating data, making it easier to integrate with other systems.
+  severity: Medium
+- best_practice: Implement Efficient Data Partitioning
+  description: Plan and implement efficient data partitioning strategies to manage
+    large datasets and improve query performance.
+  severity: Medium
+- best_practice: Regularly Monitor and Scale Resources
+  description: Continuously monitor resource usage and scale your QLDB resources accordingly
+    to handle varying workloads and maintain performance.
+  severity: High
+- best_practice: Use Appropriate Data Types
+  description: Select the most suitable data types for your attributes to optimize
+    storage and query performance.
+  severity: Medium
+- best_practice: Leverage QLDB Streams for Data Integration
+  description: Utilize QLDB Streams to integrate with other AWS services and external
+    systems for real-time data processing and analytics.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Ensure that data stored in Amazon QLDB is encrypted at rest using AWS
+    Key Management Service (KMS) to protect sensitive information.
+  severity: Critical
+- best_practice: Use IAM Policies for Access Control
+  description: Implement fine-grained IAM policies to control access to QLDB resources,
+    ensuring that only authorized users and applications can perform specific actions.
+  severity: Critical
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to securely connect to QLDB from within your VPC,
+    reducing exposure to the public internet.
+  severity: High
+- best_practice: Regularly Rotate Encryption Keys
+  description: Regularly rotate your encryption keys to enhance security and comply
+    with best practices for key management.
+  severity: High
+- best_practice: Enable CloudTrail Logging
+  description: Enable AWS CloudTrail logging to capture all API calls made to QLDB,
+    providing an audit trail for security and compliance purposes.
+  severity: High
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing QLDB management functions to add an extra
+    layer of security against unauthorized access.
+  severity: High
+- best_practice: Regularly Review and Audit Access Logs
+  description: Regularly review and audit access logs to detect any unauthorized access
+    or suspicious activity.
+  severity: High
+- best_practice: Use Secure Network Configurations
+  description: Configure security groups and network ACLs to restrict access to QLDB
+    to only trusted IP addresses and networks.
+  severity: High
+- best_practice: Apply Principle of Least Privilege
+  description: Grant the minimum necessary permissions to users and applications to
+    reduce the risk of accidental or malicious actions.
+  severity: Critical

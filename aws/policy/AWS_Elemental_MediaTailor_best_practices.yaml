@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use Auto Scaling for EC2 Instances
+  description: Implement Auto Scaling to automatically adjust the number of EC2 instances
+    in response to traffic patterns, ensuring optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Leverage Elastic Load Balancing
+  description: Utilize Elastic Load Balancing to distribute incoming application traffic
+    across multiple targets, improving fault tolerance and availability.
+  severity: High
+- best_practice: Implement Multi-AZ Deployments
+  description: Deploy resources across multiple Availability Zones (AZs) to enhance
+    fault tolerance and minimize downtime.
+  severity: Critical
+- best_practice: Optimize Instance Types
+  description: Choose appropriate EC2 instance types based on workload requirements
+    to optimize performance and cost.
+  severity: Medium
+- best_practice: Use Amazon CloudFront for Content Delivery
+  description: Integrate Amazon CloudFront to deliver content with low latency and
+    high transfer speeds, improving user experience.
+  severity: Medium
+- best_practice: Enable VPC Flow Logs
+  description: Activate VPC Flow Logs to capture detailed information about the IP
+    traffic going to and from network interfaces in your VPC.
+  severity: Medium
+- best_practice: Implement Infrastructure as Code (IaC)
+  description: Use tools like AWS CloudFormation or Terraform to manage infrastructure
+    through code, ensuring consistency and scalability.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS Identity and Access Management (IAM) Policies
+  description: Use IAM policies to control access to AWS resources, ensuring that
+    users have the minimum permissions necessary.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all IAM users to add an extra layer of security to
+    your AWS account.
+  severity: Critical
+- best_practice: Use AWS Key Management Service (KMS) for Encryption
+  description: Encrypt sensitive data at rest and in transit using AWS KMS to protect
+    against unauthorized access.
+  severity: High
+- best_practice: Regularly Rotate IAM Credentials
+  description: Rotate IAM credentials periodically to reduce the risk of compromised
+    credentials being used maliciously.
+  severity: High
+- best_practice: Monitor and Audit AWS Resources
+  description: Use AWS CloudTrail and Amazon CloudWatch to monitor and log activity
+    in your AWS account, ensuring compliance and identifying potential security issues.
+  severity: High
+- best_practice: Implement Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your AWS resources, enhancing network security.
+  severity: Medium
+- best_practice: Enable GuardDuty for Threat Detection
+  description: Activate AWS GuardDuty to continuously monitor for malicious activity
+    and unauthorized behavior in your AWS environment.
+  severity: Medium
+- best_practice: Apply Patches and Updates Regularly
+  description: Ensure that all software and systems are up-to-date with the latest
+    patches and updates to protect against vulnerabilities.
+  severity: Medium

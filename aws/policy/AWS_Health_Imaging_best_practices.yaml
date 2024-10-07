@@ -1,0 +1,51 @@
+architecture_best_practices:
+  - best_practice: Use Multi-AZ Deployments
+    description: Ensure that AWS Health Imaging is deployed across multiple availability zones to enhance fault tolerance and availability.
+    severity: Critical
+  - best_practice: Implement Auto Scaling
+    description: Utilize auto-scaling groups to automatically adjust the number of instances based on demand, ensuring optimal performance and cost-efficiency.
+    severity: High
+  - best_practice: Optimize Storage Solutions
+    description: Use appropriate AWS storage services like S3 and EFS for storing imaging data to ensure scalability and durability.
+    severity: High
+  - best_practice: Leverage AWS Managed Services
+    description: Utilize AWS managed services such as RDS and DynamoDB to reduce operational overhead and increase reliability.
+    severity: Medium
+  - best_practice: Enable CloudWatch Monitoring
+    description: Set up CloudWatch monitoring to track performance metrics and set alarms for unusual activity or performance degradation.
+    severity: Medium
+  - best_practice: Use AWS Lambda for Event-Driven Processing
+    description: Implement AWS Lambda to handle event-driven processing tasks, reducing the need for constantly running instances.
+    severity: Medium
+  - best_practice: Implement Caching Solutions
+    description: Use caching solutions like Amazon ElastiCache to reduce latency and improve the performance of frequently accessed data.
+    severity: Medium
+  - best_practice: Regularly Update and Patch Systems
+    description: Ensure that all systems and services are regularly updated and patched to avoid vulnerabilities and improve performance.
+    severity: High
+
+security_best_practices:
+  - best_practice: Enable Encryption at Rest and in Transit
+    description: Use AWS KMS to encrypt data at rest and TLS/SSL to encrypt data in transit to protect sensitive imaging data.
+    severity: Critical
+  - best_practice: Implement IAM Best Practices
+    description: Use IAM roles and policies to enforce the principle of least privilege, ensuring that users and services have only the permissions they need.
+    severity: Critical
+  - best_practice: Enable VPC Security Features
+    description: Use VPC security features such as security groups, NACLs, and private subnets to control network access to AWS Health Imaging.
+    severity: High
+  - best_practice: Use AWS Config and AWS CloudTrail
+    description: Enable AWS Config to monitor configuration changes and AWS CloudTrail to log all API calls for auditing and compliance.
+    severity: High
+  - best_practice: Implement Multi-Factor Authentication (MFA)
+    description: Require MFA for all IAM users to add an extra layer of security to the authentication process.
+    severity: High
+  - best_practice: Regularly Rotate Credentials
+    description: Rotate IAM access keys and other credentials regularly to reduce the risk of compromised credentials.
+    severity: Medium
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and vulnerability assessments to identify and mitigate potential security risks.
+    severity: Medium
+  - best_practice: Enable GuardDuty for Threat Detection
+    description: Use AWS GuardDuty to continuously monitor for malicious activity and unauthorized behavior.
+    severity: High

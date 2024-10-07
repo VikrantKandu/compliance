@@ -1,0 +1,30 @@
+- rule:
+    ID: AWS-EC2-001
+    Title: Ensure EC2 instances have a security group assigned
+    Profile Applicability: Level 1
+    Description: This check verifies that all EC2 instances have at least one security
+      group assigned. Security groups act as a virtual firewall for your instance
+      to control inbound and outbound traffic.
+    Rationale: Assigning security groups to EC2 instances is crucial for defining
+      access controls and ensuring only authorized traffic can reach your instances.
+      Without a security group, instances are vulnerable to unauthorized access and
+      potential security breaches.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select 'Instances' from the left-hand menu.
+    - For each instance, check the 'Security Groups' column to verify that at least
+      one security group is associated.
+    - Alternatively, use the AWS CLI command aws ec2 describe-instances and check
+      the output for the 'SecurityGroups' attribute for each instance.
+    Default Value: By default, EC2 instances may not have a security group explicitly
+      assigned.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select 'Instances' from the left-hand menu.
+    - For any instance without a security group, click 'Actions', then 'Networking',
+      and 'Change Security Groups'.
+    - Assign an appropriate security group to the instance.
+    - Ensure the security group has the necessary rules to allow required traffic
+      while restricting unauthorized access.

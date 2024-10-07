@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-1-EC2-Encryption
+    Title: Ensure EC2 Volumes are Encrypted
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that all Amazon EC2 volumes are encrypted to protect
+      sensitive data at rest. Encryption helps safeguard your data by using secure
+      protocols to prevent unauthorized access.
+    Rationale: Encrypting EC2 volumes is crucial for protecting sensitive data from
+      unauthorized access and potential breaches. Unencrypted volumes may expose sensitive
+      information if accessed by malicious actors.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the EC2 dashboard.
+    - Select "Volumes" from the left-hand menu.
+    - Check the "Encryption" column to verify that all volumes are encrypted.
+    Default Value: By default, EC2 volumes are not encrypted.
+    Remediation:
+    - Identify unencrypted volumes in the EC2 dashboard.
+    - Create a snapshot of the unencrypted volume.
+    - Create a new encrypted volume from the snapshot.
+    - Detach the unencrypted volume and attach the new encrypted volume to the instance.

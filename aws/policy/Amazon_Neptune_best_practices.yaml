@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy Amazon Neptune instances across multiple Availability Zones
+    to ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Optimize Instance Types
+  description: Select appropriate instance types based on workload requirements to
+    ensure optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Implement Read Replicas
+  description: Use read replicas to offload read traffic from the primary instance,
+    enhancing performance and scalability.
+  severity: High
+- best_practice: Enable Auto Scaling
+  description: Configure auto-scaling policies to automatically adjust the number
+    of instances based on demand, ensuring consistent performance.
+  severity: Medium
+- best_practice: Use Appropriate Storage Options
+  description: Choose the right storage options (e.g., SSD) based on performance and
+    cost considerations.
+  severity: Medium
+- best_practice: Regularly Monitor and Tune Performance
+  description: Continuously monitor performance metrics and adjust configurations
+    to maintain optimal performance.
+  severity: Medium
+- best_practice: Implement Backup and Restore Procedures
+  description: Regularly back up your Neptune databases and test restore procedures
+    to prevent data loss.
+  severity: Critical
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon Neptune without traversing
+    the public internet.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Use AWS KMS to encrypt data stored in Amazon Neptune to protect sensitive
+    information.
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Ensure that all data transmitted to and from Amazon Neptune is encrypted
+    using TLS.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use AWS IAM policies to control access to Amazon Neptune resources,
+    ensuring that only authorized users can access the database.
+  severity: High
+- best_practice: Enable CloudTrail Logging
+  description: Enable AWS CloudTrail to log all API calls made to Amazon Neptune,
+    providing an audit trail for security and compliance purposes.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate database credentials and IAM access keys to minimize
+    the risk of compromised credentials.
+  severity: High
+- best_practice: Use Security Groups
+  description: Configure security groups to control inbound and outbound traffic to
+    Amazon Neptune instances, restricting access to trusted IP addresses and ports.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: Medium
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Use MFA for IAM users and roles that have access to Amazon Neptune
+    to add an extra layer of security.
+  severity: High

@@ -1,0 +1,20 @@
+- rule:
+  - ID: AWS-EC2-001
+  - Title: Ensure EC2 instances are not using default security groups
+  - Profile Applicability: Level 1, Level 2
+  - Description: EC2 instances should not be associated with the default security
+      group. The default security group allows all inbound and outbound traffic, which
+      can lead to security vulnerabilities if not properly managed.
+  - Rationale: Using the default security group can expose your instances to unintended
+      network access. It is recommended to create custom security groups with specific
+      inbound and outbound rules tailored to the application's needs to enhance security.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 dashboard.
+      3. Select 'Instances' from the left-hand menu. 4. For each instance, check the
+      associated security group. 5. Verify that none of the instances are using the
+      default security group.
+  - Default Value: By default, EC2 instances may be associated with the default security
+      group if no other group is specified.
+  - Remediation: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 dashboard.
+      3. Select 'Security Groups' from the left-hand menu. 4. Create a new security
+      group with specific inbound and outbound rules. 5. Associate the new security
+      group with the EC2 instances currently using the default security group.

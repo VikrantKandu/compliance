@@ -1,0 +1,81 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployment
+  description: Deploy Amazon RDS instances across multiple Availability Zones to ensure
+    high availability and fault tolerance.
+  severity: Critical
+- best_practice: Enable Automated Backups
+  description: Configure automated backups to ensure that data can be restored in
+    case of accidental deletion or corruption.
+  severity: High
+- best_practice: Optimize Instance Types
+  description: Choose the appropriate instance type based on workload requirements
+    to ensure optimal performance and cost-efficiency.
+  severity: Medium
+- best_practice: Implement Read Replicas
+  description: Use read replicas to offload read traffic from the primary instance,
+    improving performance and scalability.
+  severity: High
+- best_practice: Use Parameter Groups
+  description: Customize database parameters using parameter groups to optimize database
+    performance and behavior.
+  severity: Medium
+- best_practice: Monitor Performance Metrics
+  description: Regularly monitor performance metrics using Amazon CloudWatch to identify
+    and address potential issues proactively.
+  severity: High
+- best_practice: Enable Multi-Region Replication
+  description: Set up cross-region replication to ensure data availability and durability
+    in case of a regional failure.
+  severity: Critical
+- best_practice: Use Reserved Instances
+  description: Purchase reserved instances to save costs for long-term, steady-state
+    workloads.
+  severity: Low
+- best_practice: Implement Database Sharding
+  description: Use sharding techniques to distribute data across multiple databases,
+    improving performance and scalability.
+  severity: Medium
+- best_practice: Perform Regular Maintenance
+  description: Schedule regular maintenance windows to apply updates and patches,
+    ensuring the database remains secure and performant.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Use AWS Key Management Service (KMS) to encrypt data at rest, ensuring
+    data is protected even if storage media is compromised.
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Use SSL/TLS to encrypt data in transit, protecting data from interception
+    during transmission.
+  severity: Critical
+- best_practice: Implement IAM Roles
+  description: Use IAM roles to manage permissions and access controls, ensuring that
+    only authorized entities can access the database.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for administrative access to add an extra layer of security.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate database credentials and access keys to minimize the
+    risk of compromise.
+  severity: High
+- best_practice: Use Security Groups
+  description: Configure security groups to control inbound and outbound traffic to
+    the database, ensuring only authorized traffic is allowed.
+  severity: High
+- best_practice: Enable Database Auditing
+  description: Enable auditing to track and log database activities, helping to detect
+    and respond to suspicious activities.
+  severity: Medium
+- best_practice: Apply Least Privilege Principle
+  description: Grant the minimum necessary permissions to users and applications,
+    reducing the risk of unauthorized access.
+  severity: High
+- best_practice: Regularly Update and Patch
+  description: Keep the database and underlying infrastructure up to date with the
+    latest security patches and updates.
+  severity: Critical
+- best_practice: Conduct Regular Security Assessments
+  description: Perform regular security assessments and vulnerability scans to identify
+    and mitigate potential security risks.
+  severity: High

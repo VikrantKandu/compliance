@@ -1,0 +1,59 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Instance Types
+  description: Select the appropriate EC2 instance types for your Amazon Comprehend
+    Medical workloads to ensure optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Use Auto Scaling to automatically adjust the number of instances based
+    on demand, ensuring high availability and cost efficiency.
+  severity: Medium
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy your applications across multiple Availability Zones to enhance
+    fault tolerance and availability.
+  severity: Critical
+- best_practice: Optimize Data Storage
+  description: Use Amazon S3 for storing large datasets and ensure data is partitioned
+    and indexed for efficient access.
+  severity: High
+- best_practice: Monitor and Log Performance
+  description: Implement monitoring and logging using Amazon CloudWatch to track performance
+    metrics and troubleshoot issues.
+  severity: Medium
+- best_practice: Use VPC for Network Isolation
+  description: Deploy your Amazon Comprehend Medical resources within a Virtual Private
+    Cloud (VPC) for enhanced network isolation and security.
+  severity: High
+- best_practice: Implement Caching Strategies
+  description: Use caching mechanisms like Amazon ElastiCache to reduce latency and
+    improve application performance.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Ensure that all data in transit and at rest is encrypted using AWS
+    Key Management Service (KMS) to protect sensitive information.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to enforce the
+    principle of least privilege, granting users and services only the permissions
+    they need.
+  severity: High
+- best_practice: Enable Logging and Auditing
+  description: Use AWS CloudTrail and AWS Config to log and audit all actions and
+    changes within your Amazon Comprehend Medical environment.
+  severity: High
+- best_practice: Regularly Update and Patch
+  description: Ensure that all underlying infrastructure and dependencies are regularly
+    updated and patched to mitigate security vulnerabilities.
+  severity: High
+- best_practice: Use Security Groups and NACLs
+  description: Configure Security Groups and Network Access Control Lists (NACLs)
+    to control inbound and outbound traffic to your resources.
+  severity: Medium
+- best_practice: Implement DDoS Protection
+  description: Use AWS Shield and AWS WAF to protect your applications from Distributed
+    Denial of Service (DDoS) attacks.
+  severity: Medium
+- best_practice: Conduct Regular Security Assessments
+  description: Perform regular security assessments and penetration testing to identify
+    and mitigate potential vulnerabilities.
+  severity: Medium

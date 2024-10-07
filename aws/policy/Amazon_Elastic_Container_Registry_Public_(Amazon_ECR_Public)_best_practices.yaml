@@ -1,0 +1,39 @@
+architecture_best_practices:
+  - best_practice: Use Multi-Region Replication
+    description: Implement multi-region replication to ensure container images are available in multiple geographic locations, enhancing availability and reducing latency for global users.
+    severity: High
+  - best_practice: Optimize Image Storage
+    description: Regularly clean up unused images and tags to optimize storage costs and improve repository performance.
+    severity: Medium
+  - best_practice: Leverage ECR Lifecycle Policies
+    description: Use lifecycle policies to automatically manage the lifecycle of images in your repositories, ensuring outdated or unused images are removed.
+    severity: Medium
+  - best_practice: Use Tags for Organization
+    description: Apply tags to repositories and images to improve organization and manageability, making it easier to identify and manage resources.
+    severity: Low
+  - best_practice: Implement CI/CD Integration
+    description: Integrate Amazon ECR Public with your CI/CD pipeline to automate the build, test, and deployment process, ensuring consistency and reducing manual errors.
+    severity: High
+
+security_best_practices:
+  - best_practice: Enable Image Scanning
+    description: Enable image scanning to automatically detect vulnerabilities in container images, helping identify and mitigate security risks.
+    severity: Critical
+  - best_practice: Use IAM Policies for Access Control
+    description: Implement fine-grained IAM policies to control access to repositories, ensuring only authorized users and services can push or pull images.
+    severity: Critical
+  - best_practice: Enforce Encryption in Transit
+    description: Ensure that all data transferred to and from Amazon ECR Public is encrypted using TLS to protect against data interception and tampering.
+    severity: High
+  - best_practice: Enable Logging and Monitoring
+    description: Enable logging and monitoring to track access and actions on repositories, helping detect and respond to suspicious activities.
+    severity: High
+  - best_practice: Regularly Rotate Credentials
+    description: Regularly rotate access keys and credentials used for accessing Amazon ECR Public to minimize the risk of credential compromise.
+    severity: Medium
+  - best_practice: Implement Least Privilege Principle
+    description: Grant the minimum necessary permissions to users and services accessing Amazon ECR Public to reduce the attack surface.
+    severity: Critical
+  - best_practice: Use Multi-Factor Authentication (MFA)
+    description: Require MFA for users accessing Amazon ECR Public to add an extra layer of security and prevent unauthorized access.
+    severity: High

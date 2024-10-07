@@ -1,0 +1,42 @@
+architecture_best_practices:
+  - best_practice: Use AWS Organizations for Centralized Management
+    description: Leverage AWS Organizations to centrally manage and govern multiple AWS accounts, ensuring consistent policies and streamlined operations.
+    severity: High
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require MFA for all administrative access to enhance security and reduce the risk of unauthorized access.
+    severity: Critical
+  - best_practice: Implement Least Privilege Access
+    description: Grant users the minimum level of access necessary to perform their job functions, reducing the risk of accidental or malicious actions.
+    severity: High
+  - best_practice: Use Managed Policies
+    description: Utilize AWS managed policies to simplify permissions management and ensure up-to-date security practices.
+    severity: Medium
+  - best_practice: Regularly Review and Audit Permissions
+    description: Conduct periodic reviews and audits of user permissions to ensure they are still appropriate and align with current roles and responsibilities.
+    severity: Medium
+  - best_practice: Automate Provisioning and De-provisioning
+    description: Use automation tools to manage user provisioning and de-provisioning, ensuring timely updates to access rights and reducing manual errors.
+    severity: High
+
+security_best_practices:
+  - best_practice: Enable Logging and Monitoring
+    description: Activate AWS CloudTrail and Amazon CloudWatch to log and monitor all IAM Identity Center activities for auditing and incident response.
+    severity: Critical
+  - best_practice: Enforce Strong Password Policies
+    description: Implement strong password policies to ensure that user passwords meet complexity requirements and are changed regularly.
+    severity: High
+  - best_practice: Use Conditional Access Policies
+    description: Apply conditional access policies to restrict access based on specific conditions, such as IP address or device compliance.
+    severity: High
+  - best_practice: Regularly Rotate Access Keys
+    description: Ensure that access keys are rotated regularly to minimize the risk of compromised credentials.
+    severity: Medium
+  - best_practice: Implement Role-Based Access Control (RBAC)
+    description: Use RBAC to assign permissions based on roles rather than individual users, simplifying management and enhancing security.
+    severity: Medium
+  - best_practice: Educate Users on Security Best Practices
+    description: Provide regular training and updates to users on security best practices to ensure they are aware of potential threats and how to mitigate them.
+    severity: Medium
+  - best_practice: Use AWS Config to Track Configuration Changes
+    description: Enable AWS Config to continuously monitor and record configuration changes to IAM Identity Center resources, ensuring compliance with policies.
+    severity: High

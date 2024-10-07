@@ -1,0 +1,74 @@
+architecture_best_practices:
+- best_practice: Design for Scalability
+  description: Ensure your AWS IoT Things Graph workflows are designed to handle varying
+    loads by leveraging AWS services that automatically scale based on demand.
+  severity: High
+- best_practice: Modular Workflow Design
+  description: Create modular workflows that can be reused and maintained independently,
+    which simplifies updates and troubleshooting.
+  severity: Medium
+- best_practice: Use Managed Services
+  description: Utilize AWS managed services wherever possible to reduce operational
+    overhead and increase reliability.
+  severity: High
+- best_practice: Optimize Data Flow
+  description: Design data flows to minimize latency and maximize throughput, ensuring
+    efficient data processing and communication between IoT devices.
+  severity: Medium
+- best_practice: Implement Fault Tolerance
+  description: Design your architecture to handle failures gracefully by using redundant
+    components and failover mechanisms.
+  severity: Critical
+- best_practice: Leverage AWS IoT Core
+  description: Use AWS IoT Core for secure device connectivity and management, ensuring
+    seamless integration with AWS IoT Things Graph.
+  severity: High
+- best_practice: Monitor and Log Workflows
+  description: Implement comprehensive monitoring and logging to track the performance
+    and health of your workflows, facilitating proactive issue resolution.
+  severity: Medium
+- best_practice: Optimize Resource Usage
+  description: Regularly review and optimize the resource usage of your workflows
+    to ensure cost-efficiency and prevent resource exhaustion.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement IAM Best Practices
+  description: Use AWS Identity and Access Management (IAM) to enforce the principle
+    of least privilege, ensuring that entities only have the permissions they need.
+  severity: Critical
+- best_practice: Encrypt Data in Transit and at Rest
+  description: Use encryption to protect data both in transit and at rest, ensuring
+    that sensitive information is secure from unauthorized access.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users accessing the AWS Management Console to add
+    an extra layer of security.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Implement a policy to regularly rotate credentials, including API keys
+    and passwords, to reduce the risk of compromised credentials.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect your VPC to AWS IoT Things Graph
+    without using the public internet.
+  severity: Medium
+- best_practice: Enable AWS CloudTrail
+  description: Enable AWS CloudTrail to log all API calls, providing a comprehensive
+    audit trail for security analysis and compliance.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and remediate potential security issues.
+  severity: High
+- best_practice: Implement Network Segmentation
+  description: Use network segmentation to isolate different components of your IoT
+    architecture, reducing the attack surface.
+  severity: Medium
+- best_practice: Use Secure Device Authentication
+  description: Ensure that all IoT devices are authenticated using secure methods
+    before they can interact with your workflows.
+  severity: Critical
+- best_practice: Regularly Update and Patch Devices
+  description: Keep all IoT devices and associated software up to date with the latest
+    security patches to mitigate vulnerabilities.
+  severity: High

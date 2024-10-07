@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 Security Groups Do Not Allow Unrestricted Inbound Access
+    Profile Applicability: Level 1
+    Description: Security Groups act as a virtual firewall for your EC2 instances
+      to control inbound and outbound traffic. It is crucial to ensure that Security
+      Groups do not allow unrestricted inbound access, particularly to sensitive ports
+      like SSH (22) and RDP (3389).
+    Rationale: Allowing unrestricted inbound access poses a significant security risk
+      as it can expose your instances to potential attacks from any IP address. Restricting
+      access to specific IP addresses reduces the attack surface and enhances security.
+    Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 dashboard.
+      3. In the left navigation pane, click on 'Security Groups'. 4. Review each Security
+      Group's inbound rules. 5. Ensure that there are no rules allowing traffic from
+      0.0.0.0/0 unless absolutely necessary and justified.
+    Default Value: By default, Security Groups may allow unrestricted access if not
+      configured properly during creation.
+    Remediation: 1. Identify the Security Group with unrestricted inbound access.
+      2. Edit the inbound rules of the Security Group. 3. Remove or modify rules that
+      allow traffic from 0.0.0.0/0. 4. Add rules to allow traffic only from specific
+      IP addresses or CIDR blocks that require access.

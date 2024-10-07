@@ -1,0 +1,50 @@
+architecture_best_practices:
+- best_practice: Use AWS Systems Manager Parameter Store for Configuration Management
+  description: Utilize the Parameter Store to manage your configuration data securely
+    and efficiently, reducing the risk of hardcoding sensitive information.
+  severity: High
+- best_practice: Leverage Automation Documents
+  description: Use Automation Documents to automate common tasks and workflows, ensuring
+    consistency and reducing the potential for human error.
+  severity: Medium
+- best_practice: Implement State Manager for Configuration Compliance
+  description: Use State Manager to ensure that your instances are always in a desired
+    state, reducing configuration drift and maintaining compliance.
+  severity: Medium
+- best_practice: Use Maintenance Windows for Scheduled Tasks
+  description: Schedule regular maintenance tasks using Maintenance Windows to minimize
+    disruption and ensure tasks are performed during low-traffic periods.
+  severity: Low
+- best_practice: Integrate with AWS CloudFormation
+  description: Use AWS CloudFormation to provision and manage Systems Manager resources
+    as code, ensuring consistency and repeatability.
+  severity: Medium
+- best_practice: Monitor with AWS CloudWatch
+  description: Integrate Systems Manager with CloudWatch to monitor the health and
+    performance of your managed instances and automation executions.
+  severity: High
+security_best_practices:
+- best_practice: Use IAM Roles and Policies
+  description: Assign least-privilege IAM roles and policies to Systems Manager to
+    restrict access to only what is necessary, reducing the attack surface.
+  severity: Critical
+- best_practice: Enable AWS Systems Manager Logging
+  description: Enable logging for Systems Manager activities to maintain an audit
+    trail and detect any unauthorized access or changes.
+  severity: High
+- best_practice: Encrypt Data in Transit and at Rest
+  description: Ensure that all data managed by Systems Manager is encrypted both in
+    transit and at rest to protect against data breaches.
+  severity: Critical
+- best_practice: Regularly Update SSM Agent
+  description: Keep the Systems Manager Agent up to date on all managed instances
+    to benefit from the latest security patches and features.
+  severity: High
+- best_practice: Use Secure Parameters in Parameter Store
+  description: Store sensitive data such as passwords and API keys in secure parameters,
+    ensuring they are encrypted and access-controlled.
+  severity: Critical
+- best_practice: Implement Session Manager for Secure Access
+  description: Use Session Manager to securely access and manage your instances without
+    needing to open inbound ports or manage SSH keys.
+  severity: High

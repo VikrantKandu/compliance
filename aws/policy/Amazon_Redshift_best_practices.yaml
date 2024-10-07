@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Distribution and Sort Keys Appropriately
+  description: Proper use of distribution and sort keys can significantly improve
+    query performance by optimizing data distribution and query execution.
+  severity: High
+- best_practice: Optimize Table Design
+  description: Design tables with appropriate data types and column encodings to enhance
+    storage efficiency and query performance.
+  severity: High
+- best_practice: Monitor Cluster Performance
+  description: Regularly monitor cluster performance using AWS CloudWatch and other
+    monitoring tools to identify and address performance bottlenecks.
+  severity: Medium
+- best_practice: Use Workload Management (WLM)
+  description: Configure WLM to manage query queues and concurrency, ensuring that
+    critical queries get the necessary resources.
+  severity: High
+- best_practice: Scale Appropriately
+  description: Scale your Redshift cluster based on workload requirements to ensure
+    optimal performance and cost-efficiency.
+  severity: Medium
+- best_practice: Use Columnar Storage
+  description: Leverage Redshift's columnar storage format to reduce I/O and improve
+    query performance.
+  severity: High
+- best_practice: Regularly Vacuum and Analyze Tables
+  description: Perform vacuum and analyze operations to reclaim storage space and
+    update statistics for query optimization.
+  severity: Medium
+- best_practice: Use Data Compression
+  description: Apply appropriate compression techniques to reduce storage costs and
+    improve query performance.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Use AWS Key Management Service (KMS) to encrypt data at rest and SSL/TLS
+    to encrypt data in transit.
+  severity: Critical
+- best_practice: Implement Fine-Grained Access Control
+  description: Use AWS Identity and Access Management (IAM) policies and Redshift's
+    role-based access control to restrict access to sensitive data.
+  severity: Critical
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate database credentials and IAM keys to minimize the
+    risk of unauthorized access.
+  severity: High
+- best_practice: Enable Audit Logging
+  description: Enable audit logging to track and monitor database activities for security
+    and compliance purposes.
+  severity: High
+- best_practice: Use Network Isolation
+  description: Deploy Redshift clusters in a Virtual Private Cloud (VPC) and use security
+    groups and network ACLs to control inbound and outbound traffic.
+  severity: High
+- best_practice: Apply Security Patches
+  description: Regularly apply security patches and updates to your Redshift cluster
+    to protect against known vulnerabilities.
+  severity: High
+- best_practice: Monitor for Security Threats
+  description: Use AWS CloudTrail and GuardDuty to monitor and detect potential security
+    threats and anomalies.
+  severity: High
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing the Redshift management console and other
+    critical resources to enhance security.
+  severity: Medium

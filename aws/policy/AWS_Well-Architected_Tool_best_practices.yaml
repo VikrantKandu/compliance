@@ -1,0 +1,82 @@
+architecture_best_practices:
+- best_practice: Use Elastic Load Balancing
+  description: Distribute incoming application traffic across multiple targets, such
+    as Amazon EC2 instances, to ensure high availability and fault tolerance.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Automatically adjust the number of Amazon EC2 instances in response
+    to demand to maintain performance and optimize costs.
+  severity: High
+- best_practice: Utilize Amazon RDS for Databases
+  description: Use Amazon Relational Database Service (RDS) to set up, operate, and
+    scale a relational database in the cloud, ensuring high availability and security.
+  severity: High
+- best_practice: Use Amazon S3 for Storage
+  description: Store and retrieve any amount of data at any time using Amazon S3,
+    which offers high durability, availability, and scalability.
+  severity: Medium
+- best_practice: Implement Caching with Amazon CloudFront
+  description: Use Amazon CloudFront to deliver content with low latency and high
+    transfer speeds by caching content at edge locations.
+  severity: Medium
+- best_practice: Use Amazon VPC for Network Isolation
+  description: Create a logically isolated network in the AWS Cloud using Amazon Virtual
+    Private Cloud (VPC) to enhance security and control.
+  severity: High
+- best_practice: Leverage AWS Lambda for Serverless Architectures
+  description: Run code without provisioning or managing servers using AWS Lambda,
+    which automatically scales applications in response to demand.
+  severity: Medium
+- best_practice: Implement Infrastructure as Code with AWS CloudFormation
+  description: Use AWS CloudFormation to model and set up AWS resources so that you
+    can spend less time managing those resources and more time focusing on your applications.
+  severity: Medium
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy applications across multiple Availability Zones to ensure high
+    availability and fault tolerance.
+  severity: Critical
+- best_practice: Monitor and Log with Amazon CloudWatch
+  description: Use Amazon CloudWatch to monitor AWS resources and applications, collect
+    and track metrics, and set alarms.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS Identity and Access Management (IAM)
+  description: Use IAM to control access to AWS services and resources securely, ensuring
+    only authorized users and applications have the necessary permissions.
+  severity: Critical
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for all IAM users to add an extra layer of security to your
+    AWS environments.
+  severity: Critical
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data at rest
+    and ensure data in transit is encrypted using SSL/TLS.
+  severity: Critical
+- best_practice: Regularly Rotate Security Credentials
+  description: Rotate IAM access keys, passwords, and other security credentials regularly
+    to reduce the risk of unauthorized access.
+  severity: High
+- best_practice: Implement Security Groups and Network ACLs
+  description: Use Security Groups and Network ACLs to control inbound and outbound
+    traffic to AWS resources, ensuring only necessary traffic is allowed.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Use AWS CloudTrail to log and monitor account activity related to actions
+    across your AWS infrastructure, providing a history of AWS API calls.
+  severity: High
+- best_practice: Perform Regular Security Audits
+  description: Conduct regular security audits and assessments to identify and mitigate
+    potential vulnerabilities in your AWS environment.
+  severity: High
+- best_practice: Use Amazon GuardDuty for Threat Detection
+  description: Enable Amazon GuardDuty to continuously monitor for malicious activity
+    and unauthorized behavior to protect your AWS accounts and workloads.
+  severity: High
+- best_practice: Implement Least Privilege Access
+  description: Grant users and applications the minimum permissions necessary to perform
+    their tasks to reduce the risk of unauthorized access.
+  severity: Critical
+- best_practice: Use AWS Shield for DDoS Protection
+  description: Enable AWS Shield to protect applications against Distributed Denial
+    of Service (DDoS) attacks, ensuring availability and performance.
+  severity: High

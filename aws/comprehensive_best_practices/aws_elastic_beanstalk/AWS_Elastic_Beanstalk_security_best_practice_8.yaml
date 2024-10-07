@@ -1,0 +1,22 @@
+- rule:
+  - ID: AWS-RDS-001
+  - Title: Enable RDS Encryption
+  - Profile Applicability: Level 1
+  - Description: Ensure that Amazon RDS instances have encryption at rest enabled
+      to protect sensitive data.
+  - Rationale: Encrypting RDS instances helps protect data at rest, meeting compliance
+      requirements and safeguarding against unauthorized access. Without encryption,
+      sensitive data may be exposed if the underlying storage is compromised.
+  - Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the Amazon RDS dashboard.
+    - Select the RDS instance to review.
+    - Check the 'Storage' section to verify if 'Encryption' is set to 'Enabled'.
+  - Default Value: By default, RDS instances are not encrypted.
+  - Remediation:
+    - Log into the AWS Management Console.
+    - Navigate to the Amazon RDS dashboard.
+    - Create a snapshot of the existing unencrypted RDS instance.
+    - Copy the snapshot and enable encryption during the copy process.
+    - Restore the encrypted snapshot to a new RDS instance.
+    - Update applications to use the new encrypted RDS instance.

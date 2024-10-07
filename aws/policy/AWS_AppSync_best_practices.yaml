@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use Managed Data Sources
+  description: Leverage AWS-managed data sources like DynamoDB, RDS, and Lambda to
+    ensure scalability, reliability, and reduced operational overhead.
+  severity: High
+- best_practice: Optimize Resolver Performance
+  description: Design resolvers to minimize latency and optimize performance by using
+    efficient data fetching strategies and caching mechanisms.
+  severity: High
+- best_practice: Implement Schema Stitching
+  description: Use schema stitching to modularize your GraphQL schema, enabling better
+    maintainability and scalability.
+  severity: Medium
+- best_practice: Use AWS CloudFormation for Infrastructure as Code
+  description: Automate the deployment and management of AWS AppSync resources using
+    AWS CloudFormation to ensure consistency and repeatability.
+  severity: Medium
+- best_practice: Enable Logging and Monitoring
+  description: Utilize AWS CloudWatch for logging and monitoring to gain insights
+    into the performance and health of your AppSync API.
+  severity: Medium
+- best_practice: Design for High Availability
+  description: Architect your AppSync API to be highly available by distributing resources
+    across multiple Availability Zones.
+  severity: Critical
+- best_practice: Use Pagination for Large Data Sets
+  description: Implement pagination in your GraphQL queries to handle large data sets
+    efficiently and avoid performance bottlenecks.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS WAF
+  description: Use AWS Web Application Firewall (WAF) to protect your AppSync API
+    from common web exploits and attacks.
+  severity: High
+- best_practice: Implement Fine-Grained Access Control
+  description: Use AWS IAM and AppSync API keys to enforce fine-grained access control
+    to your API, ensuring that only authorized users have access.
+  severity: Critical
+- best_practice: Encrypt Data in Transit and at Rest
+  description: Ensure that all data transmitted to and from your AppSync API is encrypted
+    using HTTPS, and use AWS KMS to encrypt data at rest.
+  severity: Critical
+- best_practice: Regularly Rotate API Keys and Credentials
+  description: Implement a policy to regularly rotate AppSync API keys and other credentials
+    to minimize the risk of unauthorized access.
+  severity: High
+- best_practice: Use AWS CloudTrail for Auditing
+  description: Enable AWS CloudTrail to track and log all API calls to your AppSync
+    API for auditing and compliance purposes.
+  severity: High
+- best_practice: Implement Input Validation
+  description: Validate all inputs to your AppSync API to prevent injection attacks
+    and ensure data integrity.
+  severity: High
+- best_practice: Restrict API Access by IP Address
+  description: Use IP whitelisting to restrict access to your AppSync API from known
+    and trusted IP addresses only.
+  severity: Medium
+- best_practice: Monitor for Unusual Activity
+  description: Set up alerts and monitoring to detect and respond to unusual activity
+    or potential security incidents.
+  severity: Medium

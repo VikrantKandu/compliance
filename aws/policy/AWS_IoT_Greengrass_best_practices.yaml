@@ -1,0 +1,67 @@
+architecture_best_practices:
+- best_practice: Use Proper Resource Sizing
+  description: Ensure that the AWS IoT Greengrass Core is deployed on hardware that
+    meets the recommended specifications for your workload to avoid performance bottlenecks.
+  severity: High
+- best_practice: Implement Edge Processing
+  description: Utilize AWS IoT Greengrass's edge processing capabilities to reduce
+    latency and bandwidth usage by processing data locally before sending it to the
+    cloud.
+  severity: Medium
+- best_practice: Modular Component Design
+  description: Design your Greengrass components to be modular and reusable to simplify
+    updates and maintenance.
+  severity: Medium
+- best_practice: Use AWS CloudFormation for Deployment
+  description: Automate the deployment of your AWS IoT Greengrass infrastructure using
+    AWS CloudFormation to ensure consistency and repeatability.
+  severity: High
+- best_practice: Optimize Network Configuration
+  description: Configure your network settings to minimize latency and ensure reliable
+    connectivity between Greengrass Core devices and the AWS Cloud.
+  severity: High
+- best_practice: Regularly Update Greengrass Core Software
+  description: Keep the Greengrass Core software up-to-date with the latest patches
+    and features to ensure optimal performance and security.
+  severity: Medium
+- best_practice: Use Local Resource Access Policies
+  description: Define and enforce policies for accessing local resources such as files,
+    devices, and volumes to ensure proper resource management.
+  severity: Medium
+- best_practice: Monitor and Log Performance Metrics
+  description: Continuously monitor and log performance metrics to identify and address
+    any potential issues proactively.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement Least Privilege Principle
+  description: Ensure that Greengrass Core and its components have the minimum permissions
+    necessary to perform their functions to reduce the attack surface.
+  severity: Critical
+- best_practice: Use Secure Communication Channels
+  description: Encrypt all communications between Greengrass Core devices and the
+    AWS Cloud using TLS to protect data in transit.
+  severity: Critical
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate credentials, such as AWS access keys and certificates,
+    used by Greengrass Core devices to minimize the risk of credential compromise.
+  severity: High
+- best_practice: Enable Logging and Auditing
+  description: Enable detailed logging and auditing for all Greengrass Core activities
+    to detect and respond to security incidents promptly.
+  severity: High
+- best_practice: Apply Security Patches Promptly
+  description: Apply security patches to the Greengrass Core software and underlying
+    operating system as soon as they are available to mitigate vulnerabilities.
+  severity: Critical
+- best_practice: Use IAM Roles for Greengrass Components
+  description: Assign specific IAM roles to Greengrass components to control their
+    access to AWS resources securely.
+  severity: High
+- best_practice: Implement Device Authentication
+  description: Use X.509 certificates for authenticating Greengrass Core devices to
+    ensure that only authorized devices can connect to your Greengrass group.
+  severity: Critical
+- best_practice: Conduct Regular Security Assessments
+  description: Perform regular security assessments, including penetration testing
+    and vulnerability scanning, to identify and address potential security weaknesses.
+  severity: High

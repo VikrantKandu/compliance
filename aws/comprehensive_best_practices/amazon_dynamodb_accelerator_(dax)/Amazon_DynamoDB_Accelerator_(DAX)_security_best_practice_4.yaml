@@ -1,0 +1,24 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 instances are not publicly accessible
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that Amazon EC2 instances do not have public IP
+      addresses unless necessary. Publicly accessible instances can be exposed to
+      the internet, increasing the risk of unauthorized access.
+    Rationale: Publicly accessible EC2 instances can lead to potential security breaches
+      and unauthorized access. Limiting public access reduces the attack surface and
+      helps protect sensitive data and resources.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 dashboard.
+    - Select 'Instances' from the left navigation pane.
+    - Check the 'Public IPv4 address' column for each instance.
+    - Verify that instances without a specific need for public access do not have
+      a public IP address.
+    Default Value: By default, EC2 instances can be launched with or without a public
+      IP address based on the subnet settings.
+    Remediation:
+    - Identify instances that are publicly accessible without a valid reason.
+    - Modify the instance settings to remove the public IP address.
+    - Consider using a bastion host or VPN for secure access to instances that require
+      external connectivity.

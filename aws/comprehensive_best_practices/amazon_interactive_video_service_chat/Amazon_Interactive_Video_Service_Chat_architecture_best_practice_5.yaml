@@ -1,0 +1,26 @@
+- rule:
+  - ID: AWS-BP-001
+    Title: Ensure S3 Buckets are Private and Encrypted
+    Profile Applicability: Level 1
+    Description: This check ensures that all Amazon S3 buckets are configured to be
+      private and encrypted. This is crucial for protecting sensitive data stored
+      in S3 from unauthorized access and ensuring data integrity.
+    Rationale: S3 buckets that are publicly accessible or unencrypted pose significant
+      security risks, including data breaches and unauthorized data access. Ensuring
+      buckets are private and encrypted mitigates these risks and complies with security
+      best practices.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the S3 service.
+    - For each bucket, check the "Permissions" tab to ensure that public access is
+      blocked.
+    - Verify that the "Default encryption" is enabled under the "Properties" tab.
+    - Alternatively, use the AWS CLI command aws s3api get-bucket-acl to check the
+      ACL settings and aws s3api get-bucket-encryption to verify encryption settings.
+    Default Value: By default, S3 buckets are private but not encrypted.
+    Remediation:
+    - To make a bucket private, configure the bucket policy and ACLs to block public
+      access.
+    - Enable default encryption by navigating to the bucket's "Properties" tab and
+      selecting "Default encryption." Choose the appropriate encryption method (e.g.,
+      AES-256 or AWS-KMS).

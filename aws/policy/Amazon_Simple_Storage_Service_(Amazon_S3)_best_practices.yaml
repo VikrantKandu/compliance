@@ -1,0 +1,55 @@
+architecture_best_practices:
+- best_practice: Use Versioning
+  description: Enable versioning on your Amazon S3 buckets to keep multiple versions
+    of an object, which helps in recovering from unintended overwrites and deletions.
+  severity: High
+- best_practice: Optimize Storage Class Usage
+  description: Choose the appropriate storage class for your data based on access
+    patterns to optimize costs and performance.
+  severity: Medium
+- best_practice: Implement Lifecycle Policies
+  description: Use lifecycle policies to automatically transition objects to different
+    storage classes or delete them after a specified period, optimizing storage costs.
+  severity: Medium
+- best_practice: Use Multipart Upload for Large Files
+  description: For large files, use multipart upload to improve upload reliability
+    and performance.
+  severity: Medium
+- best_practice: Enable Transfer Acceleration
+  description: "Use Amazon S3 Transfer Acceleration to speed up content delivery by\
+    \ utilizing Amazon CloudFront\u2019s globally distributed edge locations."
+  severity: Low
+- best_practice: Monitor with Amazon CloudWatch
+  description: Use Amazon CloudWatch to monitor Amazon S3 metrics and set up alarms
+    for unusual activity or performance issues.
+  severity: High
+security_best_practices:
+- best_practice: Enable Server-Side Encryption
+  description: Use server-side encryption to protect data at rest in Amazon S3, ensuring
+    that your data is encrypted using AWS-managed keys or customer-provided keys.
+  severity: Critical
+- best_practice: Use IAM Policies for Access Control
+  description: Define and enforce fine-grained permissions using AWS Identity and
+    Access Management (IAM) policies to control access to your Amazon S3 buckets and
+    objects.
+  severity: Critical
+- best_practice: Enable S3 Bucket Policies
+  description: Use S3 bucket policies to manage access permissions at the bucket level,
+    providing an additional layer of security.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable Amazon S3 server access logging and AWS CloudTrail to track
+    access requests and monitor activity on your S3 buckets.
+  severity: High
+- best_practice: Use VPC Endpoints for S3
+  description: Use VPC endpoints to securely connect your VPC to Amazon S3 without
+    using public IPs, enhancing security.
+  severity: High
+- best_practice: Enable MFA Delete
+  description: Enable Multi-Factor Authentication (MFA) Delete to add an extra layer
+    of security when deleting objects or changing the versioning state of your bucket.
+  severity: Critical
+- best_practice: Regularly Audit Permissions
+  description: Regularly audit and review permissions to ensure that only authorized
+    users have access to your Amazon S3 resources.
+  severity: High

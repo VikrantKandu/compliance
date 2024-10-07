@@ -1,0 +1,21 @@
+- rule:
+    ID: AWS-EC2-001
+    Title: Ensure EC2 instances are using EBS-optimized instances
+    Profile Applicability: Level 1
+    Description: EC2 instances should be configured to use EBS-optimized instances
+      to ensure that they provide dedicated throughput between Amazon EC2 and Amazon
+      EBS. This configuration helps to achieve the best performance for EBS volumes
+      attached to EC2 instances.
+    Rationale: Using EBS-optimized instances ensures that EC2 instances have dedicated
+      bandwidth for EBS I/O operations, which reduces latency and improves the performance
+      of attached EBS volumes. Not using EBS-optimized instances can lead to performance
+      bottlenecks, particularly for applications with high I/O requirements.
+    Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 dashboard.
+      3. Select Instances from the left-hand menu. 4. For each running instance, check
+      the instance type to see if it supports EBS optimization. 5. Verify that EBS
+      optimization is enabled for each instance.
+    Default Value: Not all instance types are EBS-optimized by default. It depends
+      on the instance type and configuration.
+    Remediation: 1. Identify EC2 instances that are not EBS-optimized. 2. Stop the
+      instance if necessary. 3. Modify the instance to enable EBS optimization. 4.
+      Start the instance again to apply changes.

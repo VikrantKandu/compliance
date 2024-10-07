@@ -1,0 +1,45 @@
+architecture_best_practices:
+  - best_practice: Use Multiple Availability Zones
+    description: Distribute your Elastic Load Balancer across multiple Availability Zones to ensure high availability and fault tolerance.
+    severity: Critical
+  - best_practice: Enable Connection Draining
+    description: Enable connection draining to ensure that in-flight requests are completed before deregistering instances or performing maintenance.
+    severity: High
+  - best_practice: Implement Auto Scaling
+    description: Use Auto Scaling groups with your ELB to automatically adjust the number of instances based on demand, ensuring optimal performance and cost-efficiency.
+    severity: High
+  - best_practice: Configure Health Checks
+    description: Set up health checks to monitor the health of registered targets and ensure traffic is only routed to healthy instances.
+    severity: High
+  - best_practice: Use Appropriate Load Balancer Type
+    description: Choose the right type of ELB (Application Load Balancer, Network Load Balancer, or Classic Load Balancer) based on your application needs.
+    severity: Medium
+  - best_practice: Optimize Idle Timeout Settings
+    description: Adjust the idle timeout settings to match your application requirements and reduce unnecessary resource consumption.
+    severity: Medium
+  - best_practice: Enable Cross-Zone Load Balancing
+    description: Enable cross-zone load balancing to evenly distribute traffic across all registered instances in all enabled Availability Zones.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Use HTTPS/SSL
+    description: Terminate HTTPS/SSL at the load balancer to encrypt data in transit and ensure secure communication between clients and the load balancer.
+    severity: Critical
+  - best_practice: Implement Security Groups
+    description: Use security groups to control inbound and outbound traffic to your load balancer, limiting access to only necessary IP ranges and ports.
+    severity: High
+  - best_practice: Enable Access Logs
+    description: Enable access logging to capture detailed information about requests sent to your load balancer, useful for auditing and troubleshooting.
+    severity: High
+  - best_practice: Use AWS WAF
+    description: Integrate AWS Web Application Firewall (WAF) with your ELB to protect your applications from common web exploits and attacks.
+    severity: High
+  - best_practice: Restrict Administrative Access
+    description: Limit administrative access to the ELB configuration to only authorized personnel using IAM roles and policies.
+    severity: High
+  - best_practice: Regularly Rotate SSL/TLS Certificates
+    description: Regularly rotate SSL/TLS certificates to maintain security and compliance, and avoid certificate expiration issues.
+    severity: Medium
+  - best_practice: Monitor with CloudWatch
+    description: Use Amazon CloudWatch to monitor your ELB metrics and set up alarms for unusual activity, ensuring timely detection and response to issues.
+    severity: Medium

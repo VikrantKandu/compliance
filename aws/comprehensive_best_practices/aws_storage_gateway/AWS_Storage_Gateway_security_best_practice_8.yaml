@@ -1,0 +1,22 @@
+- rule:
+  - ID: AWS-IAM-1
+    Title: Ensure IAM Password Policy Requires At Least One Uppercase Letter
+    Profile Applicability: Level 1
+    Description: Ensure that your IAM password policy requires at least one uppercase
+      letter to enhance password complexity and security.
+    Rationale: Requiring an uppercase letter in passwords increases their complexity,
+      reducing the risk of unauthorized access due to weak passwords. Without this
+      requirement, passwords may be more susceptible to brute force attacks.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - In the left navigation pane, click on "Account Settings."
+    - Check the "Password policy" section to verify that "Require at least one uppercase
+      letter" is enabled.
+    Default Value: By default, IAM password policies do not require an uppercase letter.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - In the left navigation pane, click on "Account Settings."
+    - In the "Password policy" section, select "Require at least one uppercase letter."
+    - Click "Save Changes" to enforce the policy.

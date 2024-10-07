@@ -1,0 +1,59 @@
+architecture_best_practices:
+- best_practice: Use Managed Policies for Permissions
+  description: Utilize AWS managed policies to ensure that permissions are consistently
+    applied and updated with the latest best practices.
+  severity: Medium
+- best_practice: Implement Multi-Region Deployment
+  description: Deploy AWS IoT Core Device Advisor across multiple regions to ensure
+    high availability and disaster recovery.
+  severity: High
+- best_practice: Use AWS CloudFormation for Infrastructure as Code
+  description: Define and manage your AWS IoT Core Device Advisor infrastructure using
+    AWS CloudFormation to ensure consistency and repeatability.
+  severity: Medium
+- best_practice: Optimize Resource Allocation
+  description: Regularly review and optimize the allocation of resources to avoid
+    over-provisioning and under-utilization, which can lead to increased costs and
+    reduced performance.
+  severity: Medium
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudWatch and AWS IoT Core logs to monitor device communications
+    and service performance, ensuring timely detection and resolution of issues.
+  severity: High
+- best_practice: Use AWS IoT Device SDKs
+  description: Utilize AWS IoT Device SDKs for your devices to ensure compatibility
+    and leverage built-in best practices.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement Device Authentication
+  description: Use X.509 certificates or Amazon Cognito for authenticating devices
+    to ensure secure communication between devices and AWS IoT Core Device Advisor.
+  severity: Critical
+- best_practice: Enforce Least Privilege
+  description: Follow the principle of least privilege by granting only the necessary
+    permissions to users, devices, and applications.
+  severity: High
+- best_practice: Enable Data Encryption
+  description: Ensure that data is encrypted both in transit and at rest using AWS
+    IoT Core's built-in encryption features to protect sensitive information.
+  severity: Critical
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate device and user credentials to minimize the risk of
+    compromised credentials being used for unauthorized access.
+  severity: High
+- best_practice: Implement Network Isolation
+  description: Use AWS IoT Core's Virtual Private Cloud (VPC) integration to isolate
+    your IoT devices and services from other parts of your network.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    potential vulnerabilities in your AWS IoT Core Device Advisor setup.
+  severity: High
+- best_practice: Use AWS IoT Device Defender
+  description: Utilize AWS IoT Device Defender to continuously monitor and audit the
+    security configurations of your devices and detect anomalies.
+  severity: High
+- best_practice: Implement Role-Based Access Control (RBAC)
+  description: Use AWS Identity and Access Management (IAM) to implement RBAC, ensuring
+    that users and devices have appropriate access levels.
+  severity: High

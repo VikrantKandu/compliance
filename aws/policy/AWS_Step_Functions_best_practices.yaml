@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use State Machine Versioning
+  description: Implement versioning for your state machines to ensure you can roll
+    back to previous versions if issues arise.
+  severity: High
+- best_practice: Optimize State Machine Execution
+  description: Design your state machines to minimize execution time and resource
+    usage by using parallel states and reducing the number of transitions.
+  severity: Medium
+- best_practice: Modular State Machine Design
+  description: Break down complex workflows into smaller, reusable state machines
+    to improve maintainability and scalability.
+  severity: Medium
+- best_practice: Use Error Handling and Retries
+  description: Implement robust error handling and retry mechanisms to ensure your
+    workflows can recover from transient failures.
+  severity: High
+- best_practice: Monitor and Log State Machine Executions
+  description: Enable detailed logging and monitoring to track the performance and
+    health of your state machines.
+  severity: Medium
+- best_practice: Optimize State Machine Costs
+  description: Design your state machines to minimize costs by using fewer states
+    and optimizing the execution duration.
+  severity: Medium
+- best_practice: Use Appropriate State Types
+  description: Select the most suitable state types (e.g., Task, Choice, Parallel)
+    for your workflow to ensure efficiency and clarity.
+  severity: Medium
+- best_practice: Implement Idempotency
+  description: Ensure that your state machine executions are idempotent to avoid duplicate
+    processing and potential data inconsistencies.
+  severity: High
+security_best_practices:
+- best_practice: Use IAM Roles for State Machine Permissions
+  description: Assign the least privilege IAM roles to your state machines to limit
+    access to only the necessary resources.
+  severity: Critical
+- best_practice: Encrypt Sensitive Data
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data passing
+    through your state machines.
+  severity: Critical
+- best_practice: Enable Logging and Auditing
+  description: Enable AWS CloudTrail and CloudWatch Logs to audit and monitor state
+    machine executions for security and compliance purposes.
+  severity: High
+- best_practice: Secure State Machine Endpoints
+  description: Use VPC endpoints to secure communication between your state machines
+    and other AWS services.
+  severity: High
+- best_practice: Validate Input Data
+  description: Implement input validation to ensure that only expected and safe data
+    is processed by your state machines.
+  severity: High
+- best_practice: Use Resource Policies
+  description: Apply resource policies to restrict access to your state machines and
+    prevent unauthorized actions.
+  severity: High
+- best_practice: Regularly Review and Rotate Secrets
+  description: Regularly review and rotate any secrets or credentials used by your
+    state machines to minimize the risk of compromise.
+  severity: High
+- best_practice: Implement Network Security Controls
+  description: Use security groups and network ACLs to control traffic to and from
+    your state machines.
+  severity: Medium

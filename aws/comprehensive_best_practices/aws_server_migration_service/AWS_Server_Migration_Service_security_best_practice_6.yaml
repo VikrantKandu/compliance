@@ -1,0 +1,25 @@
+- rule:
+  - ID: AWS-CF-001
+    Title: Ensure AWS CloudFront distributions are using secure protocols
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that AWS CloudFront distributions are configured
+      to use secure protocols like HTTPS to encrypt data in transit. Using secure
+      protocols helps protect sensitive data from interception and tampering.
+    Rationale: Using insecure protocols can expose data to interception and man-in-the-middle
+      attacks. Ensuring secure protocols are in place helps maintain data integrity
+      and confidentiality.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the CloudFront service.
+    - Select each distribution and check the "Origin Protocol Policy" and "Viewer
+      Protocol Policy" settings.
+    - Ensure that these settings are configured to use HTTPS.
+    Default Value: By default, CloudFront allows both HTTP and HTTPS, but it's recommended
+      to enforce HTTPS only.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the CloudFront service.
+    - Select the distribution to be modified.
+    - Change the "Origin Protocol Policy" and "Viewer Protocol Policy" to enforce
+      HTTPS only.
+    - Save the changes and confirm the distribution update.

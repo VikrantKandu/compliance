@@ -1,0 +1,57 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Deploy AWS Network Firewall across multiple Availability Zones to ensure
+    high availability and fault tolerance.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Configure auto-scaling policies to automatically adjust the number
+    of firewall endpoints based on traffic load.
+  severity: High
+- best_practice: Optimize Rule Order
+  description: Organize firewall rules to minimize latency by placing the most frequently
+    matched rules at the top.
+  severity: Medium
+- best_practice: Use VPC Flow Logs
+  description: Enable VPC Flow Logs to monitor and troubleshoot network traffic through
+    the firewall.
+  severity: Medium
+- best_practice: Integrate with AWS Transit Gateway
+  description: Use AWS Transit Gateway to simplify network management and improve
+    scalability when connecting multiple VPCs.
+  severity: High
+- best_practice: Regularly Review and Update Rules
+  description: Periodically review and update firewall rules to ensure they meet current
+    security requirements and network configurations.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Stateful Inspection
+  description: Use stateful inspection to track the state of network connections and
+    ensure only legitimate traffic is allowed.
+  severity: Critical
+- best_practice: Implement Deep Packet Inspection
+  description: Enable deep packet inspection to analyze packet payloads and detect
+    malicious activities.
+  severity: High
+- best_practice: Use Managed Threat Intelligence Feeds
+  description: Subscribe to managed threat intelligence feeds to automatically update
+    firewall rules with the latest threat information.
+  severity: High
+- best_practice: Enforce Least Privilege
+  description: Configure firewall rules to allow only the minimum necessary traffic,
+    reducing the attack surface.
+  severity: Critical
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging and monitoring to detect and respond to suspicious activities in real-time.
+  severity: High
+- best_practice: Regularly Audit Firewall Configurations
+  description: Conduct regular audits of firewall configurations to ensure compliance
+    with security policies and standards.
+  severity: Medium
+- best_practice: Use Encryption for Sensitive Data
+  description: Ensure that all sensitive data passing through the firewall is encrypted
+    to protect it from interception.
+  severity: Critical
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing firewall management interfaces to enhance
+    security.
+  severity: High

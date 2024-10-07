@@ -1,0 +1,18 @@
+- rule:
+    ID: AWS-EC2-001
+    Title: Ensure EC2 instances are launched with IAM roles
+    Profile Applicability: Level 1
+    Description: EC2 instances should be launched with IAM roles to ensure secure
+      access to AWS services and resources without embedding credentials in applications.
+    Rationale: Using IAM roles for EC2 instances reduces the risk of credential exposure
+      and simplifies the management of permissions. Without IAM roles, credentials
+      might be hardcoded in applications, leading to potential security vulnerabilities.
+    Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 Dashboard.
+      3. Select Instances from the left-hand menu. 4. Review each instance to check
+      if an IAM role is associated. 5. Use the AWS CLI command aws ec2 describe-instances
+      and check the IamInstanceProfile field for each instance.
+    Default Value: By default, EC2 instances may be launched without an IAM role unless
+      specified during instance creation.
+    Remediation: 1. Identify EC2 instances without IAM roles. 2. Create an IAM role
+      with the necessary permissions. 3. Associate the IAM role with the EC2 instance
+      by stopping the instance, attaching the role, and then restarting the instance.

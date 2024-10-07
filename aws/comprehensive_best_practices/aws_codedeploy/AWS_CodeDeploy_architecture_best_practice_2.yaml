@@ -1,0 +1,19 @@
+- rule:
+  - ID: AWS-EC2-001
+  - Title: Ensure EC2 instances are not publicly accessible
+  - Profile Applicability: Level 1
+  - Description: This check ensures that EC2 instances are not publicly accessible
+      over the internet. Publicly accessible instances can be a security risk as they
+      are exposed to potential attacks from unauthorized users.
+  - Rationale: Limiting access to EC2 instances reduces the attack surface of your
+      infrastructure. Publicly accessible instances are vulnerable to various attacks,
+      including brute force and exploitation of unpatched vulnerabilities.
+  - Audit: 1. Log into the AWS Management Console. 2. Navigate to the EC2 dashboard.
+      3. Check the security groups associated with each EC2 instance. 4. Verify that
+      the inbound rules do not allow unrestricted access (0.0.0.0/0) on any port.
+  - Default Value: By default, EC2 instances may be launched with security groups
+      that allow public access.
+  - Remediation: 1. Identify EC2 instances with security groups allowing public access.
+      2. Modify the security groups to restrict access by specifying allowed IP addresses
+      or using a VPN. 3. Consider using AWS Systems Manager Session Manager for secure,
+      private access to instances.

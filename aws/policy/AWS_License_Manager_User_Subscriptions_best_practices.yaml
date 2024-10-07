@@ -1,0 +1,50 @@
+architecture_best_practices:
+- best_practice: Use Managed Services
+  description: Leverage AWS managed services to reduce operational overhead and ensure
+    high availability and scalability.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Configure auto scaling to handle varying loads and ensure that the
+    service remains responsive under different conditions.
+  severity: Medium
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy services across multiple Availability Zones to enhance fault
+    tolerance and availability.
+  severity: Critical
+- best_practice: Optimize Cost Management
+  description: Regularly review and optimize resource usage to manage costs effectively.
+  severity: Medium
+- best_practice: Use Infrastructure as Code (IaC)
+  description: Employ IaC tools like AWS CloudFormation or Terraform to automate infrastructure
+    deployment and management.
+  severity: High
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Ensure that users and services have the minimum permissions necessary
+    to perform their tasks.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all user accounts to add an extra layer of security.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Rotate access keys periodically to reduce the risk of compromised credentials.
+  severity: High
+- best_practice: Monitor and Log Activities
+  description: Enable logging and monitoring to track activities and detect suspicious
+    behavior.
+  severity: Medium
+- best_practice: Use Encryption for Data at Rest and in Transit
+  description: Ensure that all sensitive data is encrypted both at rest and in transit
+    to protect against unauthorized access.
+  severity: Critical
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential risks.
+  severity: High
+- best_practice: Apply Security Patches Promptly
+  description: Regularly update and patch systems to protect against known vulnerabilities.
+  severity: High
+- best_practice: Implement Network Segmentation
+  description: Use VPCs and subnets to segment your network and limit the blast radius
+    of potential security incidents.
+  severity: Medium

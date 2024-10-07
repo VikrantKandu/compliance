@@ -1,0 +1,73 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Deploy applications across multiple Availability Zones to ensure high
+    availability and fault tolerance.
+  severity: Critical
+- best_practice: Enable Auto Scaling
+  description: Configure auto-scaling to automatically adjust the number of instances
+    based on demand to maintain performance and cost-efficiency.
+  severity: High
+- best_practice: Use Elastic Load Balancing
+  description: Implement Elastic Load Balancing to distribute incoming traffic across
+    multiple instances, ensuring no single instance is overwhelmed.
+  severity: High
+- best_practice: Optimize Instance Types
+  description: "Select appropriate instance types based on the application\u2019s\
+    \ workload to optimize performance and cost."
+  severity: Medium
+- best_practice: Monitor and Log Application Performance
+  description: Utilize AWS CloudWatch and other monitoring tools to keep track of
+    application performance and health.
+  severity: Medium
+- best_practice: Use Managed Database Services
+  description: Leverage managed database services like Amazon RDS to offload database
+    management tasks and ensure scalability and reliability.
+  severity: Medium
+- best_practice: Implement Blue/Green Deployments
+  description: Use blue/green deployment strategies to minimize downtime and reduce
+    risk during application updates.
+  severity: Medium
+- best_practice: Use Environment Configuration Files
+  description: Manage environment settings and configurations using configuration
+    files to ensure consistency and ease of management.
+  severity: Low
+- best_practice: Regularly Update Platform Versions
+  description: Keep the Elastic Beanstalk platform versions up-to-date to benefit
+    from the latest features, performance improvements, and security patches.
+  severity: Low
+security_best_practices:
+- best_practice: Enable HTTPS
+  description: Use HTTPS to encrypt data in transit and protect sensitive information
+    from being intercepted.
+  severity: Critical
+- best_practice: Implement IAM Roles and Policies
+  description: Use IAM roles and policies to control access to AWS resources, ensuring
+    the principle of least privilege is followed.
+  severity: Critical
+- best_practice: Regularly Rotate IAM Credentials
+  description: Regularly rotate IAM credentials to reduce the risk of compromised
+    credentials being used maliciously.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging and monitoring to detect and respond to security incidents
+    promptly.
+  severity: High
+- best_practice: Use Security Groups and Network ACLs
+  description: Configure security groups and network ACLs to control inbound and outbound
+    traffic to your instances.
+  severity: High
+- best_practice: Encrypt Data at Rest
+  description: Use AWS KMS to encrypt data at rest to protect sensitive information
+    from unauthorized access.
+  severity: High
+- best_practice: Regularly Patch and Update Instances
+  description: Regularly apply patches and updates to instances to protect against
+    known vulnerabilities.
+  severity: Medium
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for AWS accounts to add an extra layer of security.
+  severity: Medium
+- best_practice: Review and Audit Permissions Regularly
+  description: Regularly review and audit permissions to ensure they are appropriate
+    and follow the principle of least privilege.
+  severity: Medium

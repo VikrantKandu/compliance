@@ -1,0 +1,60 @@
+architecture_best_practices:
+- best_practice: Proper Sizing of EC2 Instances
+  description: Ensure that the EC2 instances are appropriately sized for the workload
+    to optimize performance and cost.
+  severity: High
+- best_practice: Use of Auto Scaling
+  description: Implement Auto Scaling to handle varying loads efficiently and maintain
+    application availability.
+  severity: High
+- best_practice: Multi-AZ Deployment
+  description: Deploy EC2 instances across multiple Availability Zones to enhance
+    fault tolerance and availability.
+  severity: Critical
+- best_practice: Use of Elastic Load Balancing
+  description: Distribute incoming traffic across multiple EC2 instances to ensure
+    high availability and fault tolerance.
+  severity: High
+- best_practice: Regular Backups
+  description: Schedule regular backups of EC2 instances to safeguard against data
+    loss.
+  severity: Critical
+- best_practice: Monitoring and Logging
+  description: Implement monitoring and logging to track performance and detect issues
+    early.
+  severity: High
+- best_practice: Use of Reserved Instances
+  description: Utilize Reserved Instances for predictable workloads to reduce costs.
+  severity: Medium
+- best_practice: Tagging Resources
+  description: Use tags to organize and manage EC2 instances effectively.
+  severity: Low
+security_best_practices:
+- best_practice: Use of IAM Roles
+  description: Assign IAM roles to EC2 instances to manage permissions securely.
+  severity: Critical
+- best_practice: Enable VPC Flow Logs
+  description: Enable VPC Flow Logs to capture information about the IP traffic going
+    to and from network interfaces.
+  severity: High
+- best_practice: Security Groups and NACLs
+  description: Configure Security Groups and Network ACLs to control inbound and outbound
+    traffic to EC2 instances.
+  severity: Critical
+- best_practice: Regular Patch Management
+  description: Regularly update and patch EC2 instances to protect against vulnerabilities.
+  severity: High
+- best_practice: Data Encryption
+  description: Encrypt data at rest and in transit to protect sensitive information.
+  severity: Critical
+- best_practice: Multi-Factor Authentication (MFA)
+  description: Enable MFA for AWS accounts to add an extra layer of security.
+  severity: High
+- best_practice: Least Privilege Principle
+  description: Follow the principle of least privilege by granting only the necessary
+    permissions to users and roles.
+  severity: Critical
+- best_practice: Regular Security Audits
+  description: Conduct regular security audits to identify and mitigate potential
+    security risks.
+  severity: High

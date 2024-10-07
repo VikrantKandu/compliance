@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-S3-001
+    Title: Enable Versioning on S3 Buckets
+    Profile Applicability: Level 1
+    Description: Ensure that versioning is enabled on all S3 buckets to protect against
+      accidental deletion or overwriting of objects.
+    Rationale: Enabling versioning on S3 buckets helps to preserve, retrieve, and
+      restore every version of every object stored in your buckets, providing a safeguard
+      against accidental deletions and overwrites.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the S3 service.
+    - Select each bucket and check the properties.
+    - Verify that the 'Versioning' status is set to 'Enabled'.
+    Default Value: By default, versioning is not enabled on S3 buckets.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Go to the S3 service and select the bucket.
+    - Choose the 'Properties' tab.
+    - Under 'Versioning', click 'Edit' and select 'Enable versioning'.
+    - Save changes to activate versioning on the bucket.

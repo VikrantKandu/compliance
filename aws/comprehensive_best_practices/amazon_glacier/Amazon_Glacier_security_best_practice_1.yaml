@@ -1,0 +1,26 @@
+- rule:
+  - ID: AWS-CW-001
+    Title: Ensure CloudWatch Logs are Encrypted at Rest
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that Amazon CloudWatch Logs are encrypted at rest
+      using AWS Key Management Service (KMS). Encrypting log data at rest protects
+      sensitive information and meets compliance requirements for data protection.
+    Rationale: Encrypting CloudWatch Logs at rest ensures that sensitive data is protected
+      from unauthorized access. Failure to encrypt logs can lead to data breaches
+      and non-compliance with regulatory standards.
+    Audit:
+    - Step 1: Sign in to the AWS Management Console.
+    - Step 2: Navigate to the CloudWatch service.
+    - Step 3: Select Logs from the navigation pane.
+    - Step 4: For each log group, check if a KMS key is associated with the log group
+        for encryption.
+    - Step 5: Verify that the KMS key used is active and properly managed.
+    Default Value: By default, CloudWatch Logs are not encrypted at rest.
+    Remediation:
+    - Step 1: Sign in to the AWS Management Console.
+    - Step 2: Navigate to the CloudWatch service.
+    - Step 3: Select Logs from the navigation pane.
+    - Step 4: Choose the log group that needs encryption.
+    - Step 5: Edit the log group settings to associate it with a KMS key for encryption.
+    - Step 6: Ensure the KMS key is active and has the necessary permissions for CloudWatch
+        Logs.

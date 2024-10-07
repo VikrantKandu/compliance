@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Multiple Repositories
+  description: Segregate different types of artifacts into multiple repositories to
+    better manage access and lifecycle policies.
+  severity: Medium
+- best_practice: Enable Cross-Region Replication
+  description: Set up cross-region replication to ensure high availability and disaster
+    recovery for your artifacts.
+  severity: High
+- best_practice: Implement Lifecycle Policies
+  description: Use lifecycle policies to automatically remove old or unused artifacts
+    to optimize storage costs and maintain repository hygiene.
+  severity: Medium
+- best_practice: Use Appropriate Storage Classes
+  description: Choose the right storage class for your artifacts based on access frequency
+    to optimize costs.
+  severity: Low
+- best_practice: Monitor Repository Metrics
+  description: Regularly monitor repository metrics to understand usage patterns and
+    optimize performance.
+  severity: Medium
+- best_practice: Integrate with CI/CD Pipelines
+  description: Ensure seamless integration with your CI/CD pipelines to automate artifact
+    management and deployments.
+  severity: High
+- best_practice: Tagging and Resource Naming Conventions
+  description: Use consistent tagging and naming conventions for repositories to improve
+    manageability and resource tracking.
+  severity: Low
+security_best_practices:
+- best_practice: Implement IAM Policies
+  description: Use fine-grained IAM policies to control access to CodeArtifact repositories,
+    limiting permissions to the minimum necessary.
+  severity: Critical
+- best_practice: Enable Encryption at Rest
+  description: Ensure that all artifacts stored in CodeArtifact are encrypted at rest
+    using AWS-managed or customer-managed keys.
+  severity: High
+- best_practice: Enable Encryption in Transit
+  description: Use HTTPS to encrypt data in transit between clients and CodeArtifact
+    to protect against interception and tampering.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate access keys and other credentials used to access CodeArtifact
+    to reduce the risk of compromised credentials.
+  severity: High
+- best_practice: Use AWS CloudTrail for Auditing
+  description: Enable AWS CloudTrail to log all API calls made to CodeArtifact for
+    auditing and compliance purposes.
+  severity: Critical
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require MFA for all users accessing CodeArtifact to add an extra layer
+    of security.
+  severity: High
+- best_practice: Regular Security Reviews
+  description: Conduct regular security reviews and audits of your CodeArtifact setup
+    to identify and mitigate potential vulnerabilities.
+  severity: Medium

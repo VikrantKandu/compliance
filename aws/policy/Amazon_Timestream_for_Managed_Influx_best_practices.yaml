@@ -1,0 +1,65 @@
+architecture_best_practices:
+- best_practice: Data Partitioning Strategy
+  description: Implement a robust data partitioning strategy to ensure efficient data
+    retrieval and storage management in Amazon Timestream.
+  severity: High
+- best_practice: Use of Compression
+  description: Utilize data compression techniques to reduce storage costs and improve
+    query performance.
+  severity: Medium
+- best_practice: Appropriate Use of Memory Stores
+  description: Optimize the use of memory stores for frequently accessed data to enhance
+    query performance.
+  severity: High
+- best_practice: Efficient Data Ingestion
+  description: Design an efficient data ingestion pipeline to handle high-throughput
+    data without bottlenecks.
+  severity: High
+- best_practice: Schema Design
+  description: Design a well-structured schema that aligns with your query patterns
+    and data retrieval needs.
+  severity: High
+- best_practice: Monitoring and Alerts
+  description: Implement monitoring and alerting mechanisms to keep track of system
+    health and performance.
+  severity: Medium
+- best_practice: Backup and Recovery Plan
+  description: Establish a comprehensive backup and recovery plan to safeguard against
+    data loss.
+  severity: Critical
+- best_practice: Cost Management
+  description: Regularly review and optimize your usage to manage costs effectively.
+  severity: Medium
+security_best_practices:
+- best_practice: IAM Roles and Policies
+  description: Use AWS Identity and Access Management (IAM) roles and policies to
+    control access to Amazon Timestream resources.
+  severity: Critical
+- best_practice: Encryption at Rest and in Transit
+  description: Ensure that data is encrypted both at rest and in transit to protect
+    sensitive information.
+  severity: Critical
+- best_practice: VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon Timestream without
+    exposing data to the public internet.
+  severity: High
+- best_practice: Regular Security Audits
+  description: Conduct regular security audits to identify and mitigate potential
+    vulnerabilities.
+  severity: High
+- best_practice: Multi-Factor Authentication (MFA)
+  description: Enable Multi-Factor Authentication (MFA) for all IAM users to add an
+    extra layer of security.
+  severity: High
+- best_practice: Least Privilege Principle
+  description: Follow the principle of least privilege by granting only the permissions
+    necessary for users to perform their tasks.
+  severity: Critical
+- best_practice: Secure Data Ingestion
+  description: Ensure that data ingestion endpoints are secure and authenticated to
+    prevent unauthorized data entry.
+  severity: High
+- best_practice: Logging and Monitoring
+  description: Enable detailed logging and monitoring to detect and respond to security
+    incidents promptly.
+  severity: Medium

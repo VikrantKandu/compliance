@@ -1,0 +1,54 @@
+architecture_best_practices:
+  - best_practice: Use Multi-AZ Deployment
+    description: Deploy Amazon OpenSearch Service clusters across multiple Availability Zones to ensure high availability and fault tolerance.
+    severity: Critical
+  - best_practice: Optimize Instance Types
+    description: Select appropriate instance types based on workload requirements to optimize performance and cost.
+    severity: High
+  - best_practice: Enable Auto-Tuning
+    description: Utilize Amazon OpenSearch Service's auto-tuning capabilities to automatically adjust resources and improve cluster performance.
+    severity: Medium
+  - best_practice: Implement Data Lifecycle Policies
+    description: Use Index State Management (ISM) policies to automate index lifecycle management, reducing storage costs and improving performance.
+    severity: Medium
+  - best_practice: Monitor and Scale Dynamically
+    description: Continuously monitor cluster performance and scale resources dynamically to handle varying workloads.
+    severity: High
+  - best_practice: Use Dedicated Master Nodes
+    description: Employ dedicated master nodes to manage cluster state and improve stability.
+    severity: High
+  - best_practice: Enable Shard Allocation Awareness
+    description: Configure shard allocation awareness to ensure even distribution of shards across nodes and AZs.
+    severity: Medium
+  - best_practice: Regularly Snapshot Data
+    description: Schedule regular snapshots of your data for backup and disaster recovery purposes.
+    severity: Critical
+
+security_best_practices:
+  - best_practice: Enable VPC Access
+    description: Deploy Amazon OpenSearch Service within a VPC to restrict access to your cluster.
+    severity: Critical
+  - best_practice: Use IAM Policies
+    description: Apply fine-grained IAM policies to control access to Amazon OpenSearch Service resources.
+    severity: High
+  - best_practice: Enable Encryption at Rest
+    description: Encrypt data at rest using AWS KMS to protect sensitive information.
+    severity: Critical
+  - best_practice: Enable Node-to-Node Encryption
+    description: Ensure node-to-node encryption is enabled to secure data in transit within the cluster.
+    severity: High
+  - best_practice: Implement Fine-Grained Access Control
+    description: Use fine-grained access control to restrict access to specific data and operations within the cluster.
+    severity: High
+  - best_practice: Regularly Rotate Access Keys
+    description: Rotate access keys regularly to minimize the risk of compromised credentials.
+    severity: Medium
+  - best_practice: Monitor and Audit Access Logs
+    description: Continuously monitor and audit access logs to detect and respond to unauthorized access attempts.
+    severity: High
+  - best_practice: Enable AWS WAF
+    description: Use AWS WAF to protect your Amazon OpenSearch Service domain from common web exploits.
+    severity: Medium
+  - best_practice: Regularly Update Domain Software
+    description: Keep your Amazon OpenSearch Service domain software up to date with the latest security patches and updates.
+    severity: High

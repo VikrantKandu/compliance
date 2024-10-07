@@ -1,0 +1,64 @@
+architecture_best_practices:
+- best_practice: Optimize Query Performance
+  description: Use partitioning and bucketing to optimize query performance by reducing
+    the amount of data scanned.
+  severity: High
+- best_practice: Use Compressed Data Formats
+  description: Store data in compressed formats like Parquet or ORC to reduce storage
+    costs and improve query performance.
+  severity: Medium
+- best_practice: Enable Caching
+  description: Utilize Amazon Athena's result caching to speed up query performance
+    and reduce costs.
+  severity: Medium
+- best_practice: Monitor and Tune Queries
+  description: Regularly monitor query performance and tune SQL queries to ensure
+    efficient resource usage.
+  severity: Medium
+- best_practice: Use Proper Data Partitioning
+  description: Partition data based on query patterns to improve performance and reduce
+    costs.
+  severity: High
+- best_practice: Implement Data Lifecycle Policies
+  description: Use lifecycle policies to manage data retention and reduce storage
+    costs.
+  severity: Medium
+- best_practice: Use Workgroups
+  description: Use workgroups to separate queries and manage resources effectively.
+  severity: Medium
+- best_practice: Leverage AWS Glue Data Catalog
+  description: Use AWS Glue Data Catalog for metadata management to improve data discovery
+    and query performance.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Use AWS Key Management Service (KMS) to encrypt data stored in Amazon
+    S3 buckets.
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Use SSL/TLS to encrypt data in transit between Amazon Athena and other
+    services.
+  severity: Critical
+- best_practice: Implement Fine-Grained Access Control
+  description: Use AWS Identity and Access Management (IAM) policies to control access
+    to data and queries.
+  severity: High
+- best_practice: Enable CloudTrail Logging
+  description: Enable AWS CloudTrail to log and monitor all Athena API calls for security
+    and compliance purposes.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon Athena without traversing
+    the public internet.
+  severity: Medium
+- best_practice: Regularly Rotate IAM Credentials
+  description: Rotate IAM credentials regularly to minimize the risk of credential
+    compromise.
+  severity: High
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Use MFA for IAM users to add an extra layer of security.
+  severity: High
+- best_practice: Limit Public Access to S3 Buckets
+  description: Ensure S3 buckets used by Athena are not publicly accessible to prevent
+    unauthorized data access.
+  severity: Critical

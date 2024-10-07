@@ -1,0 +1,24 @@
+- rule:
+  - ID: AWS-CF-001
+    Title: Ensure AWS CloudFront Distributions Use HTTPS
+    Profile Applicability: Level 1
+    Description: This check ensures that AWS CloudFront distributions are configured
+      to use HTTPS for secure communication between clients and the distribution.
+    Rationale: Using HTTPS ensures that data in transit is encrypted, protecting it
+      from interception and tampering. Not using HTTPS can expose sensitive data to
+      security risks such as man-in-the-middle attacks.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the CloudFront console.
+    - Select each distribution and review the settings under the "General" tab.
+    - Ensure that the "Viewer Protocol Policy" is set to "Redirect HTTP to HTTPS"
+      or "HTTPS Only" for each distribution.
+    Default Value: By default, CloudFront distributions may allow both HTTP and HTTPS
+      traffic.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the CloudFront console.
+    - Select the distribution to be modified.
+    - Under the "General" tab, edit the "Viewer Protocol Policy" to "Redirect HTTP
+      to HTTPS" or "HTTPS Only".
+    - Save the changes to enforce HTTPS communication.

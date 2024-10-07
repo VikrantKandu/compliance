@@ -1,0 +1,51 @@
+architecture_best_practices:
+  - best_practice: Use Multiple Origin Endpoints
+    description: Distribute content across multiple origin endpoints to ensure high availability and fault tolerance.
+    severity: High
+  - best_practice: Implement CDN Integration
+    description: Integrate with a Content Delivery Network (CDN) like Amazon CloudFront to optimize content delivery and reduce latency.
+    severity: High
+  - best_practice: Enable Logging and Monitoring
+    description: Utilize AWS CloudWatch and other monitoring tools to track the performance and health of your MediaPackage channels and endpoints.
+    severity: Medium
+  - best_practice: Optimize for Scalability
+    description: Design your MediaPackage architecture to handle varying traffic loads by leveraging AWS auto-scaling features.
+    severity: High
+  - best_practice: Use Adaptive Bitrate Streaming
+    description: Implement adaptive bitrate streaming to provide the best possible viewing experience across different network conditions.
+    severity: Medium
+  - best_practice: Leverage AWS Elemental MediaTailor for Ad Insertion
+    description: Use MediaTailor for server-side ad insertion to ensure seamless ad delivery and better viewer experience.
+    severity: Medium
+  - best_practice: Implement Redundancy and Failover
+    description: Design your system with redundancy and failover mechanisms to ensure continuous service during outages.
+    severity: Critical
+  - best_practice: Use AWS CloudFormation for Infrastructure as Code
+    description: Define your MediaPackage infrastructure using AWS CloudFormation templates to ensure consistency and repeatability.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Encryption at Rest
+    description: Use AWS Key Management Service (KMS) to encrypt content stored in MediaPackage at rest.
+    severity: Critical
+  - best_practice: Enable Encryption in Transit
+    description: Use HTTPS and SSL/TLS to encrypt data in transit between clients and MediaPackage.
+    severity: Critical
+  - best_practice: Implement IAM Roles and Policies
+    description: Use AWS Identity and Access Management (IAM) roles and policies to control access to MediaPackage resources.
+    severity: High
+  - best_practice: Enable AWS CloudTrail
+    description: Enable AWS CloudTrail to log all API calls made to MediaPackage for auditing and compliance purposes.
+    severity: High
+  - best_practice: Regularly Rotate IAM Credentials
+    description: Regularly rotate IAM credentials to minimize the risk of credential compromise.
+    severity: Medium
+  - best_practice: Use Security Groups and Network ACLs
+    description: Configure security groups and network ACLs to restrict access to MediaPackage endpoints.
+    severity: High
+  - best_practice: Implement Multi-Factor Authentication (MFA)
+    description: Enable MFA for all IAM users to add an extra layer of security to your MediaPackage resources.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and vulnerability assessments to identify and mitigate potential security risks.
+    severity: Medium

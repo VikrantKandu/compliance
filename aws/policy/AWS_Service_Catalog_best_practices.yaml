@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Well-Architected Framework
+  description: Apply AWS Well-Architected Framework to ensure best practices in operational
+    excellence, security, reliability, performance efficiency, and cost optimization.
+  severity: High
+- best_practice: Implement Multi-Region Deployments
+  description: Deploy AWS Service Catalog across multiple regions to ensure high availability
+    and disaster recovery.
+  severity: Critical
+- best_practice: Use Infrastructure as Code (IaC)
+  description: Utilize AWS CloudFormation or Terraform to define and manage AWS Service
+    Catalog resources, ensuring consistency and repeatability.
+  severity: High
+- best_practice: Optimize for Cost Management
+  description: Regularly review and optimize the cost of AWS Service Catalog portfolios
+    and products to avoid unnecessary expenses.
+  severity: Medium
+- best_practice: Enable Logging and Monitoring
+  description: Use AWS CloudWatch and AWS CloudTrail to monitor and log the activities
+    within AWS Service Catalog for better visibility and troubleshooting.
+  severity: High
+- best_practice: Automate Resource Provisioning
+  description: Automate the provisioning of resources through AWS Service Catalog
+    to reduce manual errors and improve efficiency.
+  severity: Medium
+- best_practice: Implement Tagging Strategy
+  description: Use a consistent tagging strategy to organize and manage AWS Service
+    Catalog resources effectively.
+  severity: Medium
+security_best_practices:
+- best_practice: Use IAM Roles and Policies
+  description: Implement least privilege access by using IAM roles and policies to
+    control access to AWS Service Catalog resources.
+  severity: Critical
+- best_practice: Enable Encryption
+  description: Ensure that all data stored and transmitted by AWS Service Catalog
+    is encrypted using AWS Key Management Service (KMS).
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and API keys used in AWS Service Catalog
+    to reduce the risk of compromised credentials.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments of AWS Service Catalog
+    configurations and usage to identify and mitigate potential vulnerabilities.
+  severity: High
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require MFA for all users accessing AWS Service Catalog to add an extra
+    layer of security.
+  severity: Critical
+- best_practice: Use AWS Config Rules
+  description: Use AWS Config rules to continuously monitor and enforce compliance
+    with security policies and best practices in AWS Service Catalog.
+  severity: High
+- best_practice: Secure API Endpoints
+  description: Ensure that all API endpoints used by AWS Service Catalog are secured
+    using SSL/TLS to protect data in transit.
+  severity: High

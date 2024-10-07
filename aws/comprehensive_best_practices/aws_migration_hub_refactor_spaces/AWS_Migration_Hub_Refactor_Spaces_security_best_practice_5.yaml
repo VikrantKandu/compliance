@@ -1,0 +1,27 @@
+- rule:
+    ID: AWS-001
+    Title: Ensure IAM Users Have No Console Password
+    Profile Applicability: Level 1
+    Description: It is a best practice to ensure that IAM users do not have a console
+      password unless absolutely necessary. This reduces the risk of unauthorized
+      access through the AWS Management Console.
+    Rationale: By not assigning console passwords to IAM users, you minimize the attack
+      surface for unauthorized access attempts. This is especially important for users
+      who only need programmatic access through API keys, as it helps enforce the
+      principle of least privilege.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the IAM service.
+    - Select Users from the navigation pane.
+    - For each user, check the Console Access column to verify if a console password
+      is set.
+    - Ensure users do not have a console password unless absolutely necessary.
+    Default Value: By default, IAM users can be created without console passwords.
+    Remediation:
+    - Log into the AWS Management Console.
+    - Navigate to the IAM service.
+    - Select Users from the navigation pane.
+    - Select the user with a console password that should be removed.
+    - Click on the Security Credentials tab.
+    - Under Console Access, click Manage to remove the console password.
+    - Ensure the user has appropriate programmatic access if needed.

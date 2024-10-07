@@ -1,0 +1,26 @@
+- rule:
+  - ID: AWS-S3-Encryption-01
+    Title: Ensure S3 Buckets are Encrypted
+    Profile Applicability: Level 1
+    Description: This check ensures that all Amazon S3 buckets have default encryption
+      enabled. Enabling encryption at rest for S3 buckets ensures that data is protected
+      from unauthorized access and data breaches.
+    Rationale: Enabling encryption for S3 buckets helps protect sensitive data and
+      meet compliance requirements. Without encryption, data stored in S3 is vulnerable
+      to unauthorized access and exposure, especially in the event of a security breach.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the S3 service.
+    - Select a bucket and go to its properties.
+    - Check if 'Default encryption' is enabled under the 'Server-side encryption'
+      section.
+    - Repeat for all S3 buckets.
+    Default Value: S3 buckets are not encrypted by default.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the S3 service.
+    - Select the bucket that needs encryption.
+    - Go to the 'Properties' tab.
+    - Under 'Server-side encryption', select 'Edit'.
+    - Choose the desired encryption method (e.g., AES-256 or AWS-KMS).
+    - Save changes to enable default encryption for the bucket.

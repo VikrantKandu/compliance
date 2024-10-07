@@ -1,0 +1,52 @@
+architecture_best_practices:
+- best_practice: Use IAM Roles for Access Management
+  description: Ensure that IAM roles are used to manage access to AWS Systems Manager
+    Incident Manager Contacts instead of using long-term access keys. This simplifies
+    access management and enhances security.
+  severity: High
+- best_practice: Enable Multi-Region Deployment
+  description: Deploy Incident Manager Contacts across multiple AWS regions to ensure
+    high availability and fault tolerance. This helps in maintaining service continuity
+    during regional outages.
+  severity: Critical
+- best_practice: Automate Incident Response
+  description: Use AWS Systems Manager Automation documents to automate common incident
+    response procedures. This reduces manual intervention and speeds up incident resolution.
+  severity: Medium
+- best_practice: Integrate with AWS CloudWatch
+  description: Integrate Incident Manager Contacts with AWS CloudWatch for real-time
+    monitoring and alerting. This helps in timely detection and response to incidents.
+  severity: High
+- best_practice: Regularly Update Contact Information
+  description: Ensure that the contact information for all stakeholders is regularly
+    updated to avoid delays in incident response.
+  severity: Medium
+- best_practice: Use Tags for Resource Management
+  description: Tag your Incident Manager Contacts resources for better organization,
+    cost tracking, and access management.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Encryption for Data at Rest
+  description: Ensure that all data related to Incident Manager Contacts is encrypted
+    at rest using AWS KMS to protect sensitive information.
+  severity: Critical
+- best_practice: Implement Least Privilege Access
+  description: Follow the principle of least privilege by granting only the necessary
+    permissions to users and roles interacting with Incident Manager Contacts.
+  severity: High
+- best_practice: Enable AWS CloudTrail Logging
+  description: Enable AWS CloudTrail logging for Incident Manager Contacts to track
+    all API calls and detect any unauthorized access or changes.
+  severity: High
+- best_practice: Regularly Rotate IAM Credentials
+  description: Regularly rotate IAM credentials used by Incident Manager Contacts
+    to minimize the risk of credential compromise.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments of your Incident Manager
+    Contacts setup to identify and mitigate potential vulnerabilities.
+  severity: Medium
+- best_practice: Use AWS Config to Monitor Compliance
+  description: Use AWS Config rules to continuously monitor the compliance of your
+    Incident Manager Contacts resources with your security policies.
+  severity: High

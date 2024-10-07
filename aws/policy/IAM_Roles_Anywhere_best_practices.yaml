@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Least Privilege Principle
+  description: Ensure that IAM roles are granted only the permissions necessary to
+    perform their intended functions. This minimizes the risk of excessive permissions
+    being exploited.
+  severity: Critical
+- best_practice: Implement Role Segmentation
+  description: Create distinct IAM roles for different applications or services to
+    ensure that each role has a clear and specific purpose. This reduces the risk
+    of privilege escalation.
+  severity: High
+- best_practice: Use Managed Policies
+  description: Utilize AWS-managed policies for common use cases to reduce the complexity
+    of custom policy management and ensure up-to-date best practices.
+  severity: Medium
+- best_practice: Enable Role Chaining with Caution
+  description: While role chaining can be useful, it should be implemented carefully
+    to avoid creating overly complex permission structures that are difficult to manage
+    and audit.
+  severity: Medium
+- best_practice: Regularly Review and Rotate Roles
+  description: Periodically review IAM roles and rotate them to ensure they remain
+    aligned with current security policies and organizational needs.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for IAM roles to add an additional layer of security, making
+    it more difficult for unauthorized users to gain access.
+  severity: Critical
+- best_practice: Monitor and Log Role Activity
+  description: Enable logging and monitoring for IAM roles to track their usage and
+    detect any suspicious activities. Use AWS CloudTrail and AWS Config for comprehensive
+    logging.
+  severity: High
+- best_practice: Use IAM Access Analyzer
+  description: Utilize IAM Access Analyzer to identify any IAM roles that have overly
+    permissive access and to ensure compliance with security policies.
+  severity: High
+- best_practice: Apply Resource-Based Policies
+  description: Use resource-based policies to control access to specific AWS resources,
+    providing an additional layer of security beyond role-based access.
+  severity: Medium
+- best_practice: Encrypt Sensitive Data
+  description: Ensure that any sensitive data accessed or managed by IAM roles is
+    encrypted both in transit and at rest to protect against data breaches.
+  severity: High
+- best_practice: Implement Automated Role Expiry
+  description: Configure roles to automatically expire after a certain period to reduce
+    the risk of stale roles being exploited.
+  severity: Medium
+- best_practice: Restrict Role Assumption
+  description: Limit which users or services can assume IAM roles by using conditions
+    in the role trust policy. This reduces the risk of unauthorized role assumption.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits of IAM roles to ensure compliance with
+    security policies and to identify any potential vulnerabilities.
+  severity: Medium

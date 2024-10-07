@@ -1,0 +1,65 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy Amazon Connect across multiple Availability Zones to ensure
+    high availability and fault tolerance.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Configure auto scaling to handle varying loads and ensure optimal performance
+    during peak times.
+  severity: High
+- best_practice: Optimize Call Routing
+  description: Use intelligent call routing to distribute calls efficiently and reduce
+    wait times for customers.
+  severity: Medium
+- best_practice: Leverage AWS Lambda for Custom Integrations
+  description: Use AWS Lambda functions to integrate Amazon Connect with other AWS
+    services and third-party applications.
+  severity: Medium
+- best_practice: Monitor and Log Performance Metrics
+  description: Implement CloudWatch to monitor performance metrics and set up alarms
+    for unusual activity.
+  severity: High
+- best_practice: Use Amazon S3 for Call Recordings
+  description: Store call recordings in Amazon S3 for reliable and scalable storage.
+  severity: Medium
+- best_practice: Implement Disaster Recovery Plan
+  description: Develop and regularly update a disaster recovery plan to minimize downtime
+    and data loss.
+  severity: Critical
+- best_practice: Regularly Review and Update IAM Policies
+  description: Ensure IAM policies are regularly reviewed and updated to follow the
+    principle of least privilege.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption for Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data both
+    at rest and in transit.
+  severity: Critical
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require MFA for all users accessing the Amazon Connect console to enhance
+    security.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Rotate access keys periodically to minimize the risk of compromised
+    credentials.
+  severity: High
+- best_practice: Use VPC Endpoints for Private Connectivity
+  description: Utilize VPC endpoints to ensure secure and private connectivity to
+    Amazon Connect.
+  severity: Medium
+- best_practice: Enable AWS CloudTrail
+  description: Use AWS CloudTrail to log and monitor all API calls made to Amazon
+    Connect for auditing purposes.
+  severity: High
+- best_practice: Implement Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to Amazon Connect.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential risks.
+  severity: High
+- best_practice: Use AWS Config for Compliance Monitoring
+  description: Use AWS Config to continuously monitor and record AWS resource configurations
+    for compliance.
+  severity: Medium

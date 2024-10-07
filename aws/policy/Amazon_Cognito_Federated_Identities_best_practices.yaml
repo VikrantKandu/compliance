@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use Separate Identity Pools for Different Applications
+  description: Create separate identity pools for different applications to ensure
+    that the security and access policies are appropriately isolated and managed.
+  severity: Medium
+- best_practice: Enable Multi-Region Deployment
+  description: Deploy Amazon Cognito Federated Identities across multiple AWS regions
+    to ensure high availability and disaster recovery.
+  severity: High
+- best_practice: Use AWS CloudFormation for Infrastructure as Code
+  description: Use AWS CloudFormation to define and manage your Amazon Cognito resources
+    as code, ensuring consistent and repeatable deployments.
+  severity: Medium
+- best_practice: Integrate with AWS CloudWatch
+  description: Enable logging and monitoring through AWS CloudWatch to track the performance
+    and health of your Amazon Cognito Federated Identities.
+  severity: Medium
+- best_practice: Optimize Identity Pool Configuration
+  description: Configure identity pools to optimize for performance and cost, such
+    as limiting the number of unauthenticated identities.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require multi-factor authentication for all users to add an additional
+    layer of security.
+  severity: Critical
+- best_practice: Use Secure Token Service (STS) with Least Privilege
+  description: Ensure that the temporary credentials issued by STS follow the principle
+    of least privilege, granting only the permissions necessary for the task.
+  severity: High
+- best_practice: Regularly Rotate AWS Access Keys
+  description: Regularly rotate AWS access keys used by Amazon Cognito to minimize
+    the risk of compromised credentials.
+  severity: High
+- best_practice: Implement Fine-Grained Access Control
+  description: Use IAM policies to implement fine-grained access control for different
+    user roles and groups.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging for all authentication and authorization events and
+    monitor them for suspicious activities.
+  severity: Critical
+- best_practice: Use HTTPS for All Communications
+  description: Ensure that all communications with Amazon Cognito Federated Identities
+    are encrypted using HTTPS to protect data in transit.
+  severity: Critical
+- best_practice: Regular Security Audits
+  description: Conduct regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: Medium
+- best_practice: Enforce Strong Password Policies
+  description: Implement and enforce strong password policies to ensure that user
+    passwords meet complexity and length requirements.
+  severity: High
+- best_practice: Implement Account Lockout Mechanisms
+  description: Implement account lockout mechanisms to protect against brute force
+    attacks.
+  severity: Medium
+- best_practice: Use AWS Key Management Service (KMS) for Encryption
+  description: Use AWS KMS to manage encryption keys for securing sensitive data handled
+    by Amazon Cognito.
+  severity: High

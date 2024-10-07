@@ -1,0 +1,67 @@
+architecture_best_practices:
+  - best_practice: Use Multi-AZ Deployment
+    description: Deploy AWS Directory Service in multiple Availability Zones to ensure
+      high availability and fault tolerance.
+    severity: Critical
+  - best_practice: Leverage AWS Managed AD
+    description: Use AWS Managed Microsoft AD for seamless integration with existing
+      on-premises AD and AWS services.
+    severity: High
+  - best_practice: Monitor Directory Health
+    description: Regularly monitor the health of your directories using AWS CloudWatch
+      and set up alarms for critical metrics.
+    severity: High
+  - best_practice: Optimize Directory Size
+    description: Choose the appropriate directory size based on the number of users
+      and applications to optimize performance and cost.
+    severity: Medium
+  - best_practice: Use VPC Endpoints
+    description: Utilize VPC endpoints to securely connect to AWS Directory Service
+      without traversing the public internet.
+    severity: Medium
+  - best_practice: Implement Automated Backups
+    description: Set up automated backups to ensure that directory data can be restored
+      in case of failure or data corruption.
+    severity: High
+  - best_practice: Regularly Review Directory Configuration
+    description: Periodically review and update directory configurations to align with
+      changing business needs and compliance requirements.
+    severity: Medium
+  - best_practice: Integrate with AWS IAM
+    description: Integrate AWS Directory Service with AWS IAM for centralized identity
+      and access management.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require MFA for administrative access to enhance security and reduce
+      the risk of unauthorized access.
+    severity: Critical
+  - best_practice: Use Secure Password Policies
+    description: Enforce strong password policies to ensure that user passwords meet
+      security standards and reduce the risk of compromise.
+    severity: High
+  - best_practice: Restrict Administrative Access
+    description: Limit administrative access to the directory service to only those
+      users who absolutely need it.
+    severity: High
+  - best_practice: Enable Logging and Auditing
+    description: Enable AWS CloudTrail and AWS CloudWatch Logs to capture and review
+      directory service activities for security and compliance.
+    severity: High
+  - best_practice: Implement Network Security Controls
+    description: Use security groups and network ACLs to control inbound and outbound
+      traffic to your directory service.
+    severity: Medium
+  - best_practice: Regularly Rotate Credentials
+    description: Regularly rotate administrative credentials to minimize the risk of
+      credential compromise.
+    severity: Medium
+  - best_practice: Apply Least Privilege Principle
+    description: Assign the minimum necessary permissions to users and roles to limit
+      the potential impact of compromised credentials.
+    severity: High
+  - best_practice: Conduct Regular Security Assessments
+    description: Periodically perform security assessments and vulnerability scans to
+      identify and mitigate potential security risks.
+    severity: Medium

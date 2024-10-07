@@ -1,0 +1,24 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 instances are not publicly accessible
+    Profile Applicability: Level 1
+    Description: This check ensures that Amazon EC2 instances are not publicly accessible
+      to prevent unauthorized access. Public accessibility can expose instances to
+      potential threats and vulnerabilities.
+    Rationale: Preventing public access to EC2 instances reduces the risk of unauthorized
+      access and potential data breaches. Publicly accessible instances can be targeted
+      by attackers, leading to data loss or service disruption.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the EC2 dashboard.
+    - Check the security groups associated with each instance.
+    - Verify that no security group allows inbound traffic from 0.0.0.0/0 on any port
+      that should not be publicly accessible.
+    Default Value: By default, EC2 security groups do not allow inbound traffic from
+      the internet.
+    Remediation:
+    - Identify the security group associated with the publicly accessible EC2 instance.
+    - Edit the inbound rules to restrict access by removing any rules allowing traffic
+      from 0.0.0.0/0.
+    - Implement more restrictive rules that only allow access from trusted IP addresses
+      or networks.

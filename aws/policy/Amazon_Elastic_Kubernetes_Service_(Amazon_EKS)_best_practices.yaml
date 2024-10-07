@@ -1,0 +1,82 @@
+architecture_best_practices:
+- best_practice: Use Managed Node Groups
+  description: Leverage Amazon EKS managed node groups to simplify node management
+    and ensure nodes are automatically updated and patched.
+  severity: Medium
+- best_practice: Implement Auto Scaling
+  description: Configure Cluster Autoscaler and Horizontal Pod Autoscaler to ensure
+    the cluster can automatically scale based on workload demands.
+  severity: High
+- best_practice: Utilize Multi-AZ Deployments
+  description: Distribute EKS nodes across multiple Availability Zones to enhance
+    fault tolerance and availability.
+  severity: Critical
+- best_practice: Optimize Resource Requests and Limits
+  description: Set appropriate resource requests and limits for your pods to ensure
+    efficient resource utilization and prevent resource contention.
+  severity: High
+- best_practice: Employ Infrastructure as Code (IaC)
+  description: Use tools like AWS CloudFormation or Terraform to define and manage
+    your EKS infrastructure as code for consistency and repeatability.
+  severity: Medium
+- best_practice: Monitor and Log Cluster Activity
+  description: Implement monitoring and logging solutions such as Amazon CloudWatch
+    and AWS CloudTrail to track and analyze cluster performance and activity.
+  severity: High
+- best_practice: Use Amazon EFS for Persistent Storage
+  description: Use Amazon Elastic File System (EFS) for persistent storage needs to
+    ensure high availability and scalability of storage resources.
+  severity: Medium
+- best_practice: Implement Network Policies
+  description: Use Kubernetes Network Policies to control the communication between
+    pods and enhance network security.
+  severity: High
+- best_practice: Regularly Update Kubernetes Version
+  description: Keep your EKS clusters updated with the latest Kubernetes version to
+    benefit from new features, performance improvements, and security patches.
+  severity: High
+- best_practice: Use Fargate for Serverless Deployments
+  description: Utilize AWS Fargate for running EKS pods without managing the underlying
+    infrastructure, simplifying operations and scaling.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable IAM Roles for Service Accounts (IRSA)
+  description: Use IAM roles for service accounts to grant fine-grained permissions
+    to pods, reducing the risk of over-privileged permissions.
+  severity: Critical
+- best_practice: Implement Pod Security Policies
+  description: Define and enforce pod security policies to control the security context
+    of pods and mitigate security risks.
+  severity: High
+- best_practice: Use Secrets Management
+  description: Store and manage sensitive information using AWS Secrets Manager or
+    Kubernetes secrets, ensuring they are encrypted and access-controlled.
+  severity: Critical
+- best_practice: Enable Encryption for Data at Rest
+  description: Use AWS Key Management Service (KMS) to encrypt EKS data at rest, including
+    etcd and EBS volumes, to protect sensitive information.
+  severity: High
+- best_practice: Restrict API Server Access
+  description: Limit access to the Kubernetes API server using network policies, security
+    groups, and IAM policies to reduce the attack surface.
+  severity: Critical
+- best_practice: Regularly Rotate IAM Credentials
+  description: Implement regular rotation of IAM credentials, including access keys
+    and tokens, to minimize the risk of credential compromise.
+  severity: High
+- best_practice: Use Read-Only Root Filesystem
+  description: Configure pods to use a read-only root filesystem to prevent unauthorized
+    changes to the filesystem and enhance security.
+  severity: Medium
+- best_practice: Enable Audit Logging
+  description: Enable Kubernetes audit logging to capture detailed records of API
+    requests and responses, aiding in security monitoring and incident response.
+  severity: High
+- best_practice: Implement Network Segmentation
+  description: Use VPC, subnets, and security groups to segment the network and isolate
+    different components of the EKS cluster, enhancing security.
+  severity: High
+- best_practice: Conduct Regular Security Assessments
+  description: Perform regular security assessments, including vulnerability scanning
+    and penetration testing, to identify and mitigate potential security risks.
+  severity: High

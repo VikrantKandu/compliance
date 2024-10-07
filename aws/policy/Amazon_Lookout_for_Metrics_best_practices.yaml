@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Instance Types
+  description: Ensure that the instance types used for Amazon Lookout for Metrics
+    are appropriate for the workload to avoid performance bottlenecks and ensure cost
+    efficiency.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Utilize auto-scaling to automatically adjust capacity to maintain steady,
+    predictable performance at the lowest possible cost.
+  severity: Medium
+- best_practice: Leverage Multi-AZ Deployments
+  description: Deploy Amazon Lookout for Metrics across multiple Availability Zones
+    to enhance fault tolerance and high availability.
+  severity: Critical
+- best_practice: Optimize Data Storage
+  description: Use efficient data storage solutions such as Amazon S3 for storing
+    large datasets to reduce costs and improve accessibility.
+  severity: Medium
+- best_practice: Monitor and Optimize Performance
+  description: Continuously monitor the performance of Amazon Lookout for Metrics
+    and optimize configurations based on usage patterns and performance data.
+  severity: High
+- best_practice: Use AWS CloudFormation for Infrastructure as Code
+  description: Implement AWS CloudFormation to manage and provision your Amazon Lookout
+    for Metrics infrastructure as code, ensuring consistency and repeatability.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement IAM Best Practices
+  description: Use AWS Identity and Access Management (IAM) to enforce the principle
+    of least privilege, ensuring that users and applications have only the permissions
+    they need.
+  severity: Critical
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch to log and monitor all
+    activities and access to Amazon Lookout for Metrics for auditing and compliance
+    purposes.
+  severity: High
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt data at rest and ensure
+    that data in transit is encrypted using SSL/TLS.
+  severity: Critical
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and access keys to minimize the risk
+    of compromised credentials.
+  severity: High
+- best_practice: Implement Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your Amazon Lookout for Metrics instances, ensuring only authorized
+    access.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: Medium

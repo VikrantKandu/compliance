@@ -1,0 +1,86 @@
+architecture_best_practices:
+- best_practice: Use Auto Scaling
+  description: Implement Auto Scaling to automatically adjust the number of EC2 instances
+    in response to changing demand, ensuring optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Enable Multi-AZ for RDS
+  description: Configure Multi-AZ deployments for Amazon RDS to enhance database availability
+    and durability by automatically replicating data to a standby instance in a different
+    Availability Zone.
+  severity: Critical
+- best_practice: Implement Elastic Load Balancing
+  description: Use Elastic Load Balancing to distribute incoming application traffic
+    across multiple targets, improving fault tolerance and availability.
+  severity: High
+- best_practice: Utilize Amazon S3 for Static Content
+  description: Store and serve static content such as images, videos, and HTML files
+    using Amazon S3 for scalability, durability, and cost-effectiveness.
+  severity: Medium
+- best_practice: Optimize EC2 Instance Types
+  description: Select the appropriate EC2 instance types based on workload requirements
+    to ensure cost-efficiency and optimal performance.
+  severity: Medium
+- best_practice: Use Amazon CloudFront for Content Delivery
+  description: Leverage Amazon CloudFront to deliver content with low latency and
+    high transfer speeds by caching content at edge locations.
+  severity: Medium
+- best_practice: Implement Infrastructure as Code (IaC)
+  description: Use IaC tools such as AWS CloudFormation or Terraform to automate the
+    provisioning and management of cloud resources, ensuring consistency and reducing
+    manual errors.
+  severity: Medium
+- best_practice: Enable Amazon RDS Backups
+  description: Configure automated backups for Amazon RDS to ensure data recovery
+    in case of accidental deletion or corruption.
+  severity: High
+- best_practice: Use Reserved Instances for Predictable Workloads
+  description: Purchase Reserved Instances for predictable workloads to achieve significant
+    cost savings compared to On-Demand pricing.
+  severity: Medium
+- best_practice: Implement VPC Peering
+  description: Use VPC Peering to enable secure and efficient communication between
+    VPCs without the need for an internet gateway, VPN, or separate hardware.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all AWS account users to add an extra layer of security
+    to the authentication process.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Implement IAM roles and policies to grant permissions based on the
+    principle of least privilege, ensuring users and services have only the necessary
+    access.
+  severity: Critical
+- best_practice: Enable AWS CloudTrail
+  description: Enable AWS CloudTrail to log and monitor all API activity within your
+    AWS account, providing visibility and auditing capabilities.
+  severity: High
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data at rest
+    and enable SSL/TLS to encrypt data in transit, protecting data from unauthorized
+    access.
+  severity: Critical
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate IAM access keys to reduce the risk of compromised
+    credentials and ensure security best practices.
+  severity: High
+- best_practice: Enable GuardDuty
+  description: Enable Amazon GuardDuty to continuously monitor and analyze account
+    activity for potential threats and unauthorized behavior.
+  severity: High
+- best_practice: Implement Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your AWS resources, enhancing network security.
+  severity: High
+- best_practice: Enable AWS Config
+  description: Enable AWS Config to track and manage the configuration of your AWS
+    resources, ensuring compliance with organizational policies.
+  severity: Medium
+- best_practice: Use VPC Flow Logs
+  description: Enable VPC Flow Logs to capture information about the IP traffic going
+    to and from network interfaces in your VPC, aiding in security analysis and troubleshooting.
+  severity: Medium
+- best_practice: Regularly Patch and Update Systems
+  description: Regularly apply patches and updates to your operating systems, applications,
+    and AWS services to protect against vulnerabilities and security threats.
+  severity: High

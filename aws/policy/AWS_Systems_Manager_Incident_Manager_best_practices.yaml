@@ -1,0 +1,39 @@
+architecture_best_practices:
+  - best_practice: Use Multi-Region Deployment
+    description: Deploy AWS Systems Manager Incident Manager across multiple regions to ensure high availability and disaster recovery.
+    severity: Critical
+  - best_practice: Implement Auto Scaling
+    description: Use Auto Scaling to automatically adjust capacity to maintain steady, predictable performance at the lowest possible cost.
+    severity: High
+  - best_practice: Leverage AWS CloudFormation
+    description: Use AWS CloudFormation to automate the deployment and management of AWS Systems Manager Incident Manager resources.
+    severity: Medium
+  - best_practice: Monitor with Amazon CloudWatch
+    description: Integrate with Amazon CloudWatch for real-time monitoring and alerting to ensure the health and performance of the system.
+    severity: High
+  - best_practice: Utilize AWS Backup
+    description: Regularly back up your AWS Systems Manager Incident Manager configurations and data using AWS Backup to prevent data loss.
+    severity: Medium
+  - best_practice: Optimize Cost with AWS Cost Explorer
+    description: Use AWS Cost Explorer to monitor and manage costs associated with AWS Systems Manager Incident Manager.
+    severity: Low
+
+security_best_practices:
+  - best_practice: Implement IAM Policies and Roles
+    description: Use AWS Identity and Access Management (IAM) to define and enforce fine-grained access controls for AWS Systems Manager Incident Manager.
+    severity: Critical
+  - best_practice: Enable AWS CloudTrail
+    description: Enable AWS CloudTrail to log and monitor all API calls made to AWS Systems Manager Incident Manager for auditing and compliance.
+    severity: High
+  - best_practice: Use Encryption for Data at Rest and in Transit
+    description: Ensure that all data stored and transmitted by AWS Systems Manager Incident Manager is encrypted using AWS Key Management Service (KMS).
+    severity: Critical
+  - best_practice: Regularly Rotate Access Keys
+    description: Regularly rotate IAM access keys to minimize the risk of key compromise.
+    severity: High
+  - best_practice: Implement Multi-Factor Authentication (MFA)
+    description: Require Multi-Factor Authentication (MFA) for all users accessing AWS Systems Manager Incident Manager to add an extra layer of security.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and vulnerability assessments to identify and mitigate potential security risks.
+    severity: Medium

@@ -1,0 +1,22 @@
+- rule:
+  - ID: AWS-CFN-001
+    Title: Ensure AWS CloudFormation Stacks are Encrypted
+    Profile Applicability: Level 1, Level 2
+    Description: Ensure that all AWS CloudFormation stacks are configured to use encryption
+      for sensitive data. This involves using encryption features provided by AWS
+      services used within the stack, such as S3 bucket encryption, RDS encryption,
+      etc.
+    Rationale: Encryption protects sensitive data from unauthorized access and ensures
+      data integrity. Without encryption, data could be intercepted or accessed by
+      unauthorized users, leading to data breaches and compliance violations.
+    Audit: 1. Log into the AWS Management Console. 2. Navigate to the CloudFormation
+      service. 3. Review each stack's resources for encryption settings. 4. Check
+      S3 buckets for default encryption settings. 5. Verify RDS instances have encryption
+      enabled. 6. Ensure any other AWS services used in the stack that support encryption
+      have it enabled.
+    Default Value: CloudFormation stacks do not enforce encryption by default and
+      require explicit configuration.
+    Remediation: 1. Identify resources within CloudFormation stacks that support encryption.
+      2. Modify the CloudFormation template to include encryption settings for these
+      resources. 3. Redeploy the stack with the updated template to apply encryption
+      settings. 4. Verify that encryption is now enabled for all applicable resources.

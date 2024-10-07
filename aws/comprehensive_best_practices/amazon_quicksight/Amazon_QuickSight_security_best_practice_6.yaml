@@ -1,0 +1,22 @@
+- rule:
+  - ID: AWS-BP-001
+    Title: Enable Multi-Factor Authentication (MFA) for AWS Management Console
+    Profile Applicability: Level 1
+    Description: Ensure that all users accessing the AWS Management Console are required
+      to use Multi-Factor Authentication (MFA) to enhance security.
+    Rationale: Enabling MFA provides an additional layer of security by requiring
+      users to provide not only a password but also a second factor, such as a code
+      from an MFA device. This helps protect against compromised credentials.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - Select Users from the navigation pane.
+    - For each user, check the Security credentials tab to verify if MFA is enabled.
+    Default Value: By default, MFA is not enabled for users in the AWS Management
+      Console.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - Select Users from the navigation pane.
+    - For each user, choose the Security credentials tab.
+    - Click on Manage MFA and follow the prompts to enable MFA for the user.

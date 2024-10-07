@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use Dedicated IP Addresses
+  description: Allocate dedicated IP addresses to ensure better deliverability and
+    reputation management for your emails.
+  severity: Medium
+- best_practice: Implement Email Sending Limits
+  description: Set sending limits to avoid sudden spikes in email volume, which can
+    affect deliverability and reputation.
+  severity: High
+- best_practice: Utilize Multiple AWS Regions
+  description: Distribute email sending across multiple AWS regions to ensure high
+    availability and fault tolerance.
+  severity: High
+- best_practice: Monitor Sending Metrics
+  description: Regularly monitor email sending metrics such as bounce rates, complaint
+    rates, and delivery rates to maintain a healthy sending reputation.
+  severity: Medium
+- best_practice: Use Configuration Sets
+  description: Use configuration sets to manage and monitor your email sending, including
+    tracking email events and applying rules.
+  severity: Medium
+- best_practice: Implement DKIM and SPF
+  description: Configure DomainKeys Identified Mail (DKIM) and Sender Policy Framework
+    (SPF) to improve email deliverability and reduce the risk of spoofing.
+  severity: High
+security_best_practices:
+- best_practice: Enable AWS Identity and Access Management (IAM) Policies
+  description: Use IAM policies to restrict access to Amazon SES resources, ensuring
+    that only authorized users can send emails or modify configurations.
+  severity: Critical
+- best_practice: Use VPC Endpoints
+  description: Use Virtual Private Cloud (VPC) endpoints to securely connect to Amazon
+    SES without traversing the public internet.
+  severity: High
+- best_practice: Encrypt Emails in Transit
+  description: Use Transport Layer Security (TLS) to encrypt emails in transit, ensuring
+    that data is protected from interception.
+  severity: High
+- best_practice: Implement AWS CloudTrail Logging
+  description: Enable AWS CloudTrail to log all API calls made to Amazon SES, providing
+    an audit trail for security and compliance purposes.
+  severity: High
+- best_practice: Regularly Rotate IAM Credentials
+  description: Regularly rotate IAM credentials to minimize the risk of compromised
+    access keys.
+  severity: Medium
+- best_practice: Use AWS Key Management Service (KMS)
+  description: Use AWS KMS to manage encryption keys for sensitive email data, ensuring
+    that data is securely encrypted at rest.
+  severity: High
+- best_practice: Monitor SES Usage with Amazon CloudWatch
+  description: Use Amazon CloudWatch to monitor SES usage and set up alarms for unusual
+    activity, helping to detect and respond to potential security incidents.
+  severity: Medium

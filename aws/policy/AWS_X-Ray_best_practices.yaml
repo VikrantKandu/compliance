@@ -1,0 +1,56 @@
+architecture_best_practices:
+- best_practice: Use Distributed Tracing
+  description: Implement distributed tracing to monitor and troubleshoot microservices
+    applications, ensuring end-to-end visibility across your system.
+  severity: High
+- best_practice: Integrate with CloudWatch
+  description: Integrate AWS X-Ray with Amazon CloudWatch to centralize monitoring
+    and alerting, enabling proactive issue resolution.
+  severity: Medium
+- best_practice: Leverage Sampling Rules
+  description: Use sampling rules to control the amount of data recorded and sent
+    to AWS X-Ray, optimizing performance and cost.
+  severity: Medium
+- best_practice: Use Resource Naming Conventions
+  description: Apply consistent naming conventions for resources to simplify management and improve traceability.
+  severity: Low
+- best_practice: Enable X-Ray in All Environments
+  description: Ensure AWS X-Ray is enabled in development, staging, and production environments to maintain consistent monitoring and debugging capabilities.
+  severity: High
+- best_practice: Optimize Segment Naming
+  description: Use meaningful names for segments and subsegments to make traces more
+    understandable and easier to analyze.
+  severity: Medium
+- best_practice: Monitor Trace Data Retention
+  description: Regularly review and adjust trace data retention settings to balance
+    between historical data availability and storage costs.
+  severity: Low
+security_best_practices:
+- best_practice: Encrypt Trace Data
+  description: Ensure that all trace data is encrypted in transit and at rest to protect
+    sensitive information.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to restrict access
+    to AWS X-Ray data and configuration settings.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging and monitoring for AWS X-Ray to detect and respond to
+    unauthorized access or anomalies.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect to AWS X-Ray without traversing
+    the public internet, reducing exposure to potential threats.
+  severity: Medium
+- best_practice: Regularly Review Access Logs
+  description: Regularly review access logs to identify and investigate suspicious
+    activities related to AWS X-Ray.
+  severity: Medium
+- best_practice: Apply Least Privilege Principle
+  description: Grant the minimum necessary permissions to users and services interacting
+    with AWS X-Ray to reduce the risk of unauthorized access.
+  severity: High
+- best_practice: Regularly Update and Patch
+  description: Ensure that all systems and libraries interacting with AWS X-Ray are
+    regularly updated and patched to mitigate known vulnerabilities.
+  severity: Medium

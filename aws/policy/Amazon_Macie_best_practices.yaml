@@ -1,0 +1,50 @@
+architecture_best_practices:
+- best_practice: Enable Multi-Region Configuration
+  description: Configure Amazon Macie to operate across multiple AWS regions to ensure
+    data protection and compliance in all regions where your data resides.
+  severity: High
+- best_practice: Integrate with AWS Organizations
+  description: Use AWS Organizations to centrally manage and configure Amazon Macie
+    across multiple AWS accounts, ensuring consistent data protection policies.
+  severity: Medium
+- best_practice: Use Resource Tagging
+  description: Implement resource tagging to organize and manage your Macie resources
+    effectively, aiding in cost allocation and resource tracking.
+  severity: Low
+- best_practice: Automate Findings with AWS Lambda
+  description: Set up AWS Lambda functions to automatically respond to Amazon Macie
+    findings, enabling real-time mitigation of data security risks.
+  severity: Medium
+- best_practice: Regularly Review and Update Policies
+  description: Periodically review and update your Amazon Macie policies to adapt
+    to changing data protection needs and compliance requirements.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Macie for All Sensitive Data Stores
+  description: Ensure Amazon Macie is enabled for all S3 buckets and other data stores
+    that contain sensitive information to detect and protect against data leaks.
+  severity: Critical
+- best_practice: Use IAM Roles for Access Control
+  description: Implement IAM roles to manage access to Amazon Macie, ensuring that
+    only authorized users and services can interact with Macie resources.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch logging to monitor Amazon
+    Macie activities and detect any unauthorized access or anomalies.
+  severity: High
+- best_practice: Encrypt Sensitive Data
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data both
+    at rest and in transit, adding an extra layer of security.
+  severity: Critical
+- best_practice: Regularly Rotate IAM Credentials
+  description: Regularly rotate IAM credentials and access keys used for Amazon Macie
+    to minimize the risk of credential compromise.
+  severity: High
+- best_practice: Implement Least Privilege Access
+  description: Apply the principle of least privilege to Amazon Macie, granting users
+    and services only the permissions they need to perform their tasks.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments of your Amazon Macie
+    configuration to identify and remediate potential vulnerabilities.
+  severity: Medium

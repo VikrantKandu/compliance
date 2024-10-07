@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use Multi-Account Strategy
+  description: Implement a multi-account strategy to isolate workloads and manage
+    billing more effectively. This helps in better cost allocation and security isolation.
+  severity: High
+- best_practice: Enable Cost Allocation Tags
+  description: Use cost allocation tags to categorize and track AWS costs. This helps
+    in detailed cost management and reporting.
+  severity: Medium
+- best_practice: Implement Cost and Usage Reports
+  description: Set up detailed cost and usage reports to monitor and analyze your
+    AWS spending patterns. This aids in identifying cost-saving opportunities.
+  severity: Medium
+- best_practice: Use Reserved Instances and Savings Plans
+  description: Leverage Reserved Instances and Savings Plans to reduce costs for predictable
+    workloads. This can lead to significant cost savings.
+  severity: Medium
+- best_practice: Regularly Review and Optimize Resources
+  description: Regularly review your AWS resources and optimize them to ensure you
+    are not over-provisioning and incurring unnecessary costs.
+  severity: Medium
+- best_practice: Implement Budget Alerts
+  description: Set up budget alerts to notify you when your spending approaches or
+    exceeds your budget. This helps in proactive cost management.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable IAM Role and Policy Management
+  description: Implement strict IAM roles and policies to control access to AWS Billing
+    Conductor. This ensures that only authorized personnel can make changes.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users accessing AWS Billing Conductor to add an
+    extra layer of security.
+  severity: High
+- best_practice: Use AWS CloudTrail for Auditing
+  description: Enable AWS CloudTrail to log all API calls and changes to AWS Billing
+    Conductor. This helps in auditing and tracking changes.
+  severity: High
+- best_practice: Implement Least Privilege Access
+  description: Ensure that users are granted the minimum level of access necessary
+    to perform their job functions. This reduces the risk of unauthorized access.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate access keys and credentials to minimize the risk of
+    compromised keys being used maliciously.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    potential vulnerabilities in AWS Billing Conductor.
+  severity: Medium
+- best_practice: Enable Encryption for Sensitive Data
+  description: Ensure that all sensitive data managed by AWS Billing Conductor is
+    encrypted both in transit and at rest to protect it from unauthorized access.
+  severity: High

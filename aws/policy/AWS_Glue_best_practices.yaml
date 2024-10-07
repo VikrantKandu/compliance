@@ -1,0 +1,51 @@
+architecture_best_practices:
+  - best_practice: Use Managed Scaling
+    description: Utilize Amazon EMR managed scaling to automatically adjust the number of instances in your cluster for optimal performance and cost-efficiency.
+    severity: Medium
+  - best_practice: Optimize Instance Types
+    description: Select appropriate instance types based on workload requirements to balance cost and performance.
+    severity: High
+  - best_practice: Enable Auto Termination
+    description: Configure clusters to automatically terminate after job completion to avoid unnecessary costs.
+    severity: Medium
+  - best_practice: Use Spot Instances
+    description: Leverage Spot Instances for cost savings, but ensure that your workloads can handle interruptions.
+    severity: Medium
+  - best_practice: Data Locality
+    description: Ensure that data is stored in the same region as your Amazon EMR cluster to minimize latency and data transfer costs.
+    severity: High
+  - best_practice: Monitor and Tune Performance
+    description: Regularly monitor cluster performance and adjust configurations to optimize resource utilization and job performance.
+    severity: Medium
+  - best_practice: Use Amazon S3 for Storage
+    description: Store input and output data in Amazon S3 for scalability and durability.
+    severity: Medium
+  - best_practice: Leverage EMRFS Consistency View
+    description: Use EMRFS Consistency View to ensure data consistency between Amazon S3 and Amazon EMR.
+    severity: Low
+
+security_best_practices:
+  - best_practice: Enable Encryption
+    description: Use encryption at rest and in transit to protect sensitive data.
+    severity: Critical
+  - best_practice: Use IAM Roles
+    description: Assign least-privilege IAM roles to your Amazon EMR clusters to control access to AWS resources.
+    severity: High
+  - best_practice: Enable Logging
+    description: Enable logging for Amazon EMR to capture detailed information about cluster activity and job execution.
+    severity: Medium
+  - best_practice: Configure Security Groups
+    description: Use security groups to control inbound and outbound traffic to your Amazon EMR clusters.
+    severity: High
+  - best_practice: Regularly Rotate Credentials
+    description: Regularly rotate IAM credentials and access keys to minimize the risk of unauthorized access.
+    severity: High
+  - best_practice: Use VPC Endpoints
+    description: Use VPC endpoints to securely connect your Amazon EMR clusters to other AWS services without traversing the public internet.
+    severity: Medium
+  - best_practice: Enable Kerberos Authentication
+    description: Use Kerberos authentication for enhanced security in multi-tenant environments.
+    severity: Medium
+  - best_practice: Implement Network Isolation
+    description: Use private subnets and network ACLs to isolate your Amazon EMR clusters from other network traffic.
+    severity: High

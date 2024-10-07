@@ -1,0 +1,32 @@
+- rule:
+    ID: AWS-IAM-001
+    Title: Ensure IAM Password Policy is Enabled
+    Profile Applicability: Level 1
+    Description: This check ensures that the IAM password policy is enabled and configured
+      to enforce strong password requirements. This includes settings such as minimum
+      password length, requiring numbers, symbols, and uppercase letters.
+    Rationale: Enforcing a strong password policy is crucial to prevent unauthorized
+      access to AWS resources. Weak passwords can be easily compromised, leading to
+      potential security breaches and data loss.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM dashboard.
+    - In the left pane, click on 'Account settings'.
+    - Verify that the password policy is enabled and configured with the following settings:
+      - Minimum password length of at least 8 characters.
+      - Require at least one uppercase letter.
+      - Require at least one lowercase letter.
+      - Require at least one number.
+      - Require at least one non-alphanumeric character.
+    Default Value: By default, IAM does not enforce any password policy.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM dashboard.
+    - In the left pane, click on 'Account settings'.
+    - Enable the password policy and configure it with the recommended settings:
+      - Set a minimum password length of at least 8 characters.
+      - Require at least one uppercase letter.
+      - Require at least one lowercase letter.
+      - Require at least one number.
+      - Require at least one non-alphanumeric character.
+    - Save the changes.

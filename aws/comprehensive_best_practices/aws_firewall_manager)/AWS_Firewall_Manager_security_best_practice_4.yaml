@@ -1,0 +1,25 @@
+- rule:
+  - ID: AWS-001
+    Title: Enable AWS CloudTrail in all regions
+    Profile Applicability: Level 1, Level 2
+    Description: AWS CloudTrail should be enabled in all regions to ensure that all
+      account activity is logged. CloudTrail provides a record of actions taken by
+      a user, role, or an AWS service in your account, allowing for operational and
+      risk auditing, as well as governance and compliance monitoring.
+    Rationale: Enabling CloudTrail in all regions ensures comprehensive logging of
+      all activities, which is crucial for security audits, detecting unauthorized
+      access, and maintaining compliance with industry regulations. Without CloudTrail,
+      it is challenging to track changes and access patterns, increasing the risk
+      of undetected malicious activities.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the CloudTrail service.
+    - Verify that a trail is created and enabled in all regions.
+    - Confirm that the trail is configured to log both management and data events.
+    Default Value: CloudTrail is not enabled by default in all regions.
+    Remediation:
+    - Log into the AWS Management Console.
+    - Navigate to the CloudTrail service.
+    - Create a new trail or modify an existing one to enable logging in all regions.
+    - Ensure that both management and data events are selected for logging.
+    - Save the changes to apply the trail settings across all regions.

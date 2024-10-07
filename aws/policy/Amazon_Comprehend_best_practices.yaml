@@ -1,0 +1,51 @@
+architecture_best_practices:
+  - best_practice: Use Appropriate Instance Types
+    description: Select the right instance types based on the workload requirements
+      to ensure optimal performance and cost-efficiency.
+    severity: High
+  - best_practice: Implement Auto Scaling
+    description: Configure auto scaling to handle varying loads and ensure high availability
+      and performance.
+    severity: Medium
+  - best_practice: Utilize Multi-AZ Deployments
+    description: Deploy resources across multiple Availability Zones to enhance fault
+      tolerance and availability.
+    severity: Critical
+  - best_practice: Optimize Data Storage
+    description: Use appropriate storage solutions like Amazon S3 for data storage to
+      ensure scalability and cost-effectiveness.
+    severity: Medium
+  - best_practice: Enable Logging and Monitoring
+    description: Implement logging and monitoring using AWS CloudWatch to keep track
+      of system performance and troubleshoot issues.
+    severity: High
+
+security_best_practices:
+  - best_practice: Implement IAM Policies
+    description: Use AWS Identity and Access Management (IAM) policies to control access
+      to Amazon Comprehend resources.
+    severity: Critical
+  - best_practice: Enable Encryption
+    description: Ensure data at rest and in transit is encrypted using AWS Key Management
+      Service (KMS).
+    severity: High
+  - best_practice: Use VPC Endpoints
+    description: Configure VPC endpoints to securely connect to Amazon Comprehend without
+      traversing the internet.
+    severity: High
+  - best_practice: Regularly Rotate Access Keys
+    description: Rotate IAM access keys regularly to minimize the risk of compromised
+      credentials.
+    severity: Medium
+  - best_practice: Enable AWS CloudTrail
+    description: Use AWS CloudTrail to log and monitor API calls for Amazon Comprehend,
+      providing an audit trail for security analysis.
+    severity: High
+  - best_practice: Implement Least Privilege Principle
+    description: Ensure users and applications have only the permissions necessary to
+      perform their tasks to reduce the attack surface.
+    severity: Critical
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and assessments to identify and mitigate
+      potential vulnerabilities.
+    severity: Medium

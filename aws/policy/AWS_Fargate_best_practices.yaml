@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy your AWS Fargate services across multiple Availability Zones
+    to ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Optimize Task Definitions
+  description: Define resource requirements and limits in your task definitions to
+    optimize cost and performance.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Use AWS Fargate's auto-scaling capabilities to automatically adjust
+    the number of running tasks based on demand.
+  severity: High
+- best_practice: Use Load Balancers
+  description: Integrate AWS Fargate with Elastic Load Balancing to distribute incoming
+    traffic across multiple tasks.
+  severity: Medium
+- best_practice: Adopt Infrastructure as Code (IaC)
+  description: Use tools like AWS CloudFormation or Terraform to manage and deploy
+    your AWS Fargate infrastructure as code.
+  severity: Medium
+- best_practice: Monitor and Log with CloudWatch
+  description: Utilize Amazon CloudWatch for monitoring and logging to gain insights
+    into the performance and health of your applications.
+  severity: Medium
+- best_practice: Use Service Discovery
+  description: Implement AWS Cloud Map or ECS Service Discovery to enable your services
+    to discover each other dynamically.
+  severity: Low
+- best_practice: Optimize Network Configuration
+  description: Configure VPC, subnets, and security groups to optimize network performance
+    and security.
+  severity: Medium
+security_best_practices:
+- best_practice: Use IAM Roles for Task Execution
+  description: Assign IAM roles to your AWS Fargate tasks to grant them the necessary
+    permissions to interact with other AWS services securely.
+  severity: Critical
+- best_practice: Enable Encryption
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data at rest
+    and in transit.
+  severity: High
+- best_practice: Implement Least Privilege Principle
+  description: Ensure that IAM roles and policies follow the principle of least privilege,
+    granting only the permissions necessary for tasks to function.
+  severity: High
+- best_practice: Regularly Rotate Secrets
+  description: Use AWS Secrets Manager to manage and rotate secrets such as database
+    credentials and API keys.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging and monitoring for your AWS Fargate tasks using Amazon
+    CloudWatch Logs and AWS CloudTrail to detect and respond to security incidents.
+  severity: Medium
+- best_practice: Use Network Isolation
+  description: Use VPCs, subnets, and security groups to isolate your AWS Fargate
+    tasks and limit their network exposure.
+  severity: Medium
+- best_practice: Apply Security Patches
+  description: Regularly update and patch your container images to protect against
+    known vulnerabilities.
+  severity: Medium
+- best_practice: Conduct Security Audits
+  description: Regularly perform security audits and vulnerability assessments on
+    your AWS Fargate environment.
+  severity: Low

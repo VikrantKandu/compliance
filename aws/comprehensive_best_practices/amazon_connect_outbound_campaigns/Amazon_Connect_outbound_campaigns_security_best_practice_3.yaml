@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-CLOUDTRAIL-01
+  - Title: Ensure CloudTrail is enabled in all regions
+  - Profile Applicability: Level 1
+  - Description: Ensure AWS CloudTrail is enabled in all regions to record all AWS
+      API calls. This provides a history of AWS API calls for your account, including
+      API calls made via the AWS Management Console, AWS SDKs, command line tools,
+      and other AWS services.
+  - Rationale: Enabling CloudTrail in all regions is crucial for security and compliance
+      as it allows for the monitoring and recording of account activity across AWS
+      infrastructure. This helps in detecting unauthorized access and provides a comprehensive
+      audit trail for incident response and compliance purposes.
+  - Audit: 1. Sign in to the AWS Management Console. 2. Open the CloudTrail console.
+      3. Ensure that there is at least one trail configured for all regions. 4. Verify
+      that the trail is logging to an S3 bucket and has log file validation enabled.
+  - Default Value: CloudTrail is not enabled by default in all regions.
+  - Remediation: 1. Sign in to the AWS Management Console. 2. Open the CloudTrail
+      console. 3. Choose 'Create trail' or select an existing trail. 4. Ensure that
+      the trail is configured to apply to all regions. 5. Enable log file validation
+      and specify an S3 bucket to store logs. 6. Save the changes to apply the trail
+      configuration to all regions.

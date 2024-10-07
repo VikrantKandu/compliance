@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-CF-001
+  - Title: Ensure AWS CloudFormation Stacks Are Monitored
+  - Profile Applicability: Level 1
+  - Description: It is essential to monitor AWS CloudFormation stacks to ensure that
+      changes and updates are tracked and that the infrastructure remains compliant
+      with organizational policies.
+  - Rationale: Monitoring CloudFormation stacks helps detect unauthorized changes,
+      maintain compliance, and ensure that infrastructure is deployed as intended.
+      If not monitored, there is a risk of undetected changes leading to security
+      vulnerabilities and non-compliance with regulations.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the CloudFormation
+      service. 3. Check for the presence of stack events and any integrations with
+      AWS CloudTrail or AWS Config. 4. Verify that notifications are set up for stack
+      changes using SNS topics or other alerting mechanisms.
+  - Default Value: By default, CloudFormation does not automatically enable monitoring
+      or notifications for stack changes.
+  - Remediation: 1. Enable AWS CloudTrail to log CloudFormation API calls. 2. Set
+      up AWS Config to monitor CloudFormation stack resources. 3. Configure SNS notifications
+      for stack updates and changes. 4. Regularly review stack events and logs to
+      ensure compliance with organizational policies.

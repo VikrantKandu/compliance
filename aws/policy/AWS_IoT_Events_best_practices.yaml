@@ -1,0 +1,67 @@
+architecture_best_practices:
+- best_practice: Use of Serverless Architectures
+  description: Leverage AWS Lambda and other serverless services to handle event processing,
+    which can scale automatically and reduce operational overhead.
+  severity: High
+- best_practice: Event Source Mapping
+  description: Ensure proper mapping of event sources to AWS IoT Events detectors
+    to streamline event processing and avoid misconfigurations.
+  severity: Medium
+- best_practice: Modular Design
+  description: Design your IoT event processing system in a modular fashion to allow
+    for easier updates and maintenance.
+  severity: Medium
+- best_practice: Use of Managed Services
+  description: Prefer AWS managed services for databases, messaging, and other components
+    to reduce the complexity of managing infrastructure.
+  severity: High
+- best_practice: Data Flow Optimization
+  description: Optimize the data flow between IoT devices and AWS IoT Events to minimize
+    latency and ensure timely event processing.
+  severity: High
+- best_practice: Redundancy and Failover
+  description: Implement redundancy and failover mechanisms to ensure high availability
+    and reliability of the IoT event processing system.
+  severity: Critical
+- best_practice: Monitoring and Logging
+  description: Set up comprehensive monitoring and logging to track the performance
+    and health of the IoT event processing system.
+  severity: High
+- best_practice: Cost Management
+  description: Regularly review and optimize the cost of running your IoT event processing
+    system by leveraging AWS cost management tools.
+  severity: Medium
+security_best_practices:
+- best_practice: Least Privilege Principle
+  description: Apply the principle of least privilege to IAM roles and policies, ensuring
+    that components only have the permissions they need.
+  severity: Critical
+- best_practice: Encryption of Data in Transit and at Rest
+  description: Ensure that all data transmitted between devices and AWS IoT Events
+    is encrypted, as well as data stored in AWS services.
+  severity: Critical
+- best_practice: Regular Security Audits
+  description: Conduct regular security audits to identify and mitigate potential
+    vulnerabilities in the IoT event processing system.
+  severity: High
+- best_practice: Use of AWS IoT Device Defender
+  description: Utilize AWS IoT Device Defender to continuously monitor and audit the
+    security posture of your IoT devices.
+  severity: High
+- best_practice: Secure Device Authentication
+  description: Implement strong authentication mechanisms for IoT devices to prevent
+    unauthorized access.
+  severity: Critical
+- best_practice: Network Isolation
+  description: Use VPCs, subnets, and security groups to isolate different components
+    of the IoT event processing system and limit the blast radius of potential security
+    incidents.
+  severity: High
+- best_practice: Secure API Endpoints
+  description: Ensure that API endpoints exposed by your IoT event processing system
+    are secured using authentication and authorization mechanisms.
+  severity: High
+- best_practice: Regular Software Updates
+  description: Keep all software components, including IoT devices and AWS services,
+    updated with the latest security patches.
+  severity: Medium

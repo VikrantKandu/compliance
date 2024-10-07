@@ -1,0 +1,63 @@
+architecture_best_practices:
+  - best_practice: Use Multiple Availability Zones
+    description: Deploy Amazon RDS instances across multiple Availability Zones to ensure high availability and fault tolerance.
+    severity: Critical
+  - best_practice: Enable Automated Backups
+    description: Configure automated backups for your Amazon RDS instances to facilitate point-in-time recovery and data protection.
+    severity: High
+  - best_practice: Optimize Instance Types
+    description: Select the appropriate instance types based on your workload requirements to ensure optimal performance and cost-efficiency.
+    severity: Medium
+  - best_practice: Use Read Replicas
+    description: Implement read replicas to offload read traffic from the primary instance and enhance read scalability.
+    severity: Medium
+  - best_practice: Monitor Performance Metrics
+    description: Continuously monitor performance metrics such as CPU utilization, memory usage, and I/O operations to proactively address potential issues.
+    severity: High
+  - best_practice: Implement Database Caching
+    description: Utilize caching mechanisms like Amazon ElastiCache to reduce database load and improve application performance.
+    severity: Medium
+  - best_practice: Use Parameter Groups
+    description: Configure parameter groups to fine-tune database settings and optimize performance based on specific workload requirements.
+    severity: Medium
+  - best_practice: Enable Multi-AZ for Disaster Recovery
+    description: Enable Multi-AZ deployments to ensure automatic failover and minimize downtime in case of a disaster.
+    severity: Critical
+  - best_practice: Regularly Update Database Engine
+    description: Keep the database engine up to date with the latest patches and versions to benefit from performance improvements and security fixes.
+    severity: High
+  - best_practice: Implement Data Encryption
+    description: Encrypt data at rest and in transit to protect sensitive information and comply with regulatory requirements.
+    severity: High
+
+security_best_practices:
+  - best_practice: Use IAM Roles for Access Control
+    description: Assign IAM roles to control access to Amazon RDS instances, ensuring that only authorized users and applications can interact with the database.
+    severity: Critical
+  - best_practice: Enable Database Auditing
+    description: Enable auditing to track database activities and identify potential security incidents or unauthorized access attempts.
+    severity: High
+  - best_practice: Restrict Public Accessibility
+    description: Configure Amazon RDS instances to be accessible only within a VPC and restrict public access to minimize exposure to external threats.
+    severity: Critical
+  - best_practice: Implement Network Security Groups
+    description: Use security groups to control inbound and outbound traffic to Amazon RDS instances, allowing only trusted IP addresses and ports.
+    severity: High
+  - best_practice: Regularly Rotate Database Credentials
+    description: Regularly update and rotate database credentials to reduce the risk of unauthorized access due to compromised credentials.
+    severity: High
+  - best_practice: Use SSL/TLS for Data Encryption
+    description: Enable SSL/TLS to encrypt data in transit between the database and clients, ensuring data integrity and confidentiality.
+    severity: High
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require MFA for accessing the AWS Management Console and sensitive operations to add an extra layer of security.
+    severity: High
+  - best_practice: Implement VPC Peering for Secure Connectivity
+    description: Use VPC peering to securely connect Amazon RDS instances with other AWS services and resources within the same VPC.
+    severity: Medium
+  - best_practice: Regularly Review Security Policies
+    description: Periodically review and update security policies to ensure they align with the latest security best practices and compliance requirements.
+    severity: Medium
+  - best_practice: Enable Enhanced Monitoring
+    description: Use enhanced monitoring to gain deeper insights into database performance and detect potential security issues.
+    severity: Medium

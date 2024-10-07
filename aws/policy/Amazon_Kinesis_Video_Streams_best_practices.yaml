@@ -1,0 +1,42 @@
+architecture_best_practices:
+  - best_practice: Use Appropriate Data Retention Periods
+    description: Set appropriate data retention periods to balance cost and data availability. Retaining data longer than necessary can increase costs and complicate data management.
+    severity: Medium
+  - best_practice: Optimize Stream Shard Count
+    description: Configure the right number of shards to handle the expected data throughput. Under-provisioning can lead to throttling, while over-provisioning can increase costs unnecessarily.
+    severity: High
+  - best_practice: Implement Data Compression
+    description: Use data compression techniques to reduce the amount of data stored and transmitted, which can improve performance and reduce costs.
+    severity: Medium
+  - best_practice: Leverage Multi-Region Architecture
+    description: Deploy Kinesis Video Streams across multiple AWS regions to ensure high availability and disaster recovery.
+    severity: Critical
+  - best_practice: Monitor and Scale Dynamically
+    description: Implement monitoring and auto-scaling to adjust resources based on traffic patterns and avoid performance bottlenecks.
+    severity: High
+  - best_practice: Use Efficient Data Formats
+    description: Choose efficient data formats like H.264 for video streams to optimize storage and transmission efficiency.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Encryption at Rest
+    description: Ensure that all data stored in Kinesis Video Streams is encrypted at rest to protect sensitive information from unauthorized access.
+    severity: Critical
+  - best_practice: Use Secure Access Controls
+    description: Implement fine-grained IAM policies to control access to Kinesis Video Streams, ensuring only authorized users and applications can interact with the streams.
+    severity: High
+  - best_practice: Enable Encryption in Transit
+    description: Use SSL/TLS to encrypt data in transit between producers, consumers, and Kinesis Video Streams to protect data from interception.
+    severity: Critical
+  - best_practice: Regularly Rotate Credentials
+    description: Regularly rotate AWS credentials and access keys used to interact with Kinesis Video Streams to minimize the risk of compromised credentials.
+    severity: High
+  - best_practice: Implement Logging and Monitoring
+    description: Enable logging and monitoring to track access and usage patterns, helping to detect and respond to potential security incidents.
+    severity: High
+  - best_practice: Use VPC Endpoints
+    description: Use VPC endpoints to securely connect to Kinesis Video Streams without exposing data to the public internet, reducing the attack surface.
+    severity: Medium
+  - best_practice: Regular Security Audits
+    description: Conduct regular security audits and assessments to identify and mitigate potential vulnerabilities in your Kinesis Video Streams setup.
+    severity: High

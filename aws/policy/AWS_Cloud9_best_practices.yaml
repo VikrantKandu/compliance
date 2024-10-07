@@ -1,0 +1,83 @@
+architecture_best_practices:
+  - best_practice: Use Elastic Load Balancing (ELB)
+    description: Distribute incoming application traffic across multiple targets, such
+      as EC2 instances, to ensure high availability and fault tolerance.
+    severity: High
+  - best_practice: Implement Auto Scaling
+    description: Automatically adjust the number of EC2 instances in response to demand,
+      ensuring optimal performance and cost-efficiency.
+    severity: High
+  - best_practice: Use Amazon RDS for Databases
+    description: Utilize Amazon RDS to manage relational databases, ensuring automated
+      backups, software patching, and scaling.
+    severity: Medium
+  - best_practice: Enable Multi-AZ Deployment
+    description: Deploy resources across multiple Availability Zones to enhance fault
+      tolerance and minimize downtime.
+    severity: Critical
+  - best_practice: Use Amazon S3 for Static Content
+    description: Store and serve static content such as images, videos, and documents
+      using Amazon S3 for scalability and durability.
+    severity: Medium
+  - best_practice: Implement Amazon CloudFront
+    description: Use CloudFront to deliver content with low latency and high transfer
+      speeds by caching content at edge locations.
+    severity: Medium
+  - best_practice: Use AWS Lambda for Serverless Architecture
+    description: Implement AWS Lambda functions to run code without provisioning or
+      managing servers, reducing operational overhead.
+    severity: Medium
+  - best_practice: Utilize Infrastructure as Code (IaC)
+    description: Use AWS CloudFormation or Terraform to manage infrastructure through
+      code, ensuring consistency and reproducibility.
+    severity: High
+  - best_practice: Monitor and Optimize Costs
+    description: Use AWS Cost Explorer and Trusted Advisor to monitor and optimize AWS
+      costs, ensuring efficient resource utilization.
+    severity: Medium
+  - best_practice: Implement CI/CD Pipelines
+    description: Use AWS CodePipeline and CodeBuild to automate the build, test, and
+      deployment processes, ensuring rapid and reliable software delivery.
+    severity: High
+
+security_best_practices:
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require MFA for all IAM users to add an extra layer of security to
+      the AWS environment.
+    severity: Critical
+  - best_practice: Use IAM Roles Instead of Root Account
+    description: Avoid using the root account for daily tasks and create IAM roles with
+      the least privilege necessary.
+    severity: Critical
+  - best_practice: Implement VPC Security Groups
+    description: Use security groups to control inbound and outbound traffic to your
+      EC2 instances, ensuring only necessary traffic is allowed.
+    severity: High
+  - best_practice: Enable AWS CloudTrail
+    description: Enable CloudTrail to log and monitor all API calls made within the
+      AWS environment for auditing and compliance purposes.
+    severity: High
+  - best_practice: Encrypt Data at Rest and in Transit
+    description: Use AWS KMS to encrypt sensitive data stored in S3, RDS, and other
+      services, and enable SSL/TLS for data in transit.
+    severity: Critical
+  - best_practice: Regularly Rotate Access Keys
+    description: Regularly rotate IAM access keys to minimize the risk of unauthorized
+      access due to compromised credentials.
+    severity: High
+  - best_practice: Implement AWS WAF and Shield
+    description: Use AWS WAF to protect web applications from common exploits and AWS
+      Shield for DDoS protection.
+    severity: High
+  - best_practice: Enable GuardDuty
+    description: Use Amazon GuardDuty to continuously monitor for malicious or unauthorized
+      behavior in your AWS environment.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and vulnerability assessments to identify
+      and remediate potential security risks.
+    severity: Medium
+  - best_practice: Use AWS Config for Compliance
+    description: Use AWS Config to assess, audit, and evaluate the configurations of
+      your AWS resources, ensuring compliance with internal policies.
+    severity: Medium

@@ -1,0 +1,22 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 instances are not publicly accessible
+    Profile Applicability: Level 1
+    Description: This check ensures that Amazon EC2 instances are not publicly accessible.
+      Instances should not have a public IP address unless necessary, and security
+      groups should restrict access to trusted IPs.
+    Rationale: Publicly accessible EC2 instances can be vulnerable to unauthorized
+      access and potential attacks. Limiting access reduces the risk of exposure to
+      threats.
+    Audit:
+    - Step 1: Log in to the AWS Management Console.
+    - Step 2: Navigate to the EC2 dashboard.
+    - Step 3: Check each EC2 instance for public IP addresses.
+    - Step 4: Review the security group settings to ensure only trusted IPs are allowed.
+    Default Value: EC2 instances may have public IP addresses and open security group
+      settings by default.
+    Remediation:
+    - Action 1: Remove public IP addresses from EC2 instances that do not require
+        them.
+    - Action 2: Update security group rules to restrict access to known and trusted
+        IP addresses only.

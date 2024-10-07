@@ -1,0 +1,51 @@
+architecture_best_practices:
+  - best_practice: Use Appropriate Instance Types
+    description: Select the appropriate EC2 instance types based on the workload requirements to ensure optimal performance and cost-efficiency.
+    severity: Medium
+  - best_practice: Implement Auto Scaling
+    description: Configure Auto Scaling groups to automatically adjust the number of EC2 instances in response to demand, ensuring high availability and cost management.
+    severity: High
+  - best_practice: Use Elastic Load Balancing
+    description: Distribute incoming application traffic across multiple EC2 instances to ensure high availability and reliability.
+    severity: High
+  - best_practice: Utilize Amazon CloudWatch for Monitoring
+    description: Set up Amazon CloudWatch to monitor EC2 instances and receive alerts for any performance issues or anomalies.
+    severity: Medium
+  - best_practice: Implement Backup and Recovery
+    description: Regularly back up EC2 instances and store snapshots in different regions to ensure data recovery in case of failure.
+    severity: Critical
+  - best_practice: Optimize Storage with EBS
+    description: Use Elastic Block Store (EBS) volumes optimized for the specific workload to enhance performance and cost-efficiency.
+    severity: Medium
+  - best_practice: Leverage AWS Auto Recovery
+    description: Enable AWS Auto Recovery to automatically recover EC2 instances from hardware failures.
+    severity: High
+  - best_practice: Use Placement Groups
+    description: Use placement groups to control the placement of EC2 instances for low-latency or high-throughput workloads.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable VPC Security Groups
+    description: Use VPC security groups to control inbound and outbound traffic to your EC2 instances, ensuring only legitimate traffic is allowed.
+    severity: Critical
+  - best_practice: Implement IAM Roles
+    description: Use IAM roles to manage permissions and access to your EC2 instances, following the principle of least privilege.
+    severity: Critical
+  - best_practice: Enable Encryption for Data at Rest
+    description: Encrypt data stored on EBS volumes and S3 buckets to protect sensitive information from unauthorized access.
+    severity: High
+  - best_practice: Use Multi-Factor Authentication (MFA)
+    description: Enable MFA for accessing EC2 instances to add an extra layer of security.
+    severity: High
+  - best_practice: Regularly Patch and Update Instances
+    description: Keep EC2 instances updated with the latest security patches to protect against vulnerabilities.
+    severity: High
+  - best_practice: Implement Network ACLs
+    description: Use network access control lists (ACLs) to provide an additional layer of security at the subnet level.
+    severity: Medium
+  - best_practice: Monitor with AWS CloudTrail
+    description: Enable AWS CloudTrail to log and monitor all API activity on your EC2 instances for security auditing and compliance.
+    severity: High
+  - best_practice: Use Bastion Hosts for SSH/RDP Access
+    description: Implement bastion hosts to securely manage SSH/RDP access to EC2 instances, reducing the attack surface.
+    severity: Medium

@@ -1,0 +1,48 @@
+architecture_best_practices:
+  - best_practice: Use AWS IoT SiteWise Edge for Local Data Processing
+    description: Utilize AWS IoT SiteWise Edge to process data locally on your devices to reduce latency and bandwidth usage.
+    severity: High
+  - best_practice: Implement a Scalable Data Ingestion Pipeline
+    description: Design a scalable data ingestion pipeline to handle varying data loads efficiently, ensuring consistent performance.
+    severity: High
+  - best_practice: Optimize Data Storage
+    description: Use appropriate data storage solutions like Amazon S3 or Amazon Timestream for long-term storage and quick retrieval of historical data.
+    severity: Medium
+  - best_practice: Use AWS IoT SiteWise Monitor for Visualization
+    description: Leverage AWS IoT SiteWise Monitor to create dashboards for real-time visualization and monitoring of your industrial data.
+    severity: Medium
+  - best_practice: Implement Data Compression
+    description: Use data compression techniques to reduce storage costs and improve data transfer efficiency.
+    severity: Low
+  - best_practice: Ensure High Availability and Disaster Recovery
+    description: Design your architecture to include high availability and disaster recovery mechanisms to minimize downtime and data loss.
+    severity: Critical
+
+security_best_practices:
+  - best_practice: Use IAM Roles and Policies
+    description: Implement AWS Identity and Access Management (IAM) roles and policies to control access to AWS IoT SiteWise resources.
+    severity: Critical
+  - best_practice: Enable Data Encryption
+    description: Ensure that all data at rest and in transit is encrypted using AWS Key Management Service (KMS) or other encryption mechanisms.
+    severity: Critical
+  - best_practice: Regularly Rotate Credentials
+    description: Regularly rotate IAM credentials and keys to minimize the risk of unauthorized access.
+    severity: High
+  - best_practice: Monitor and Audit AWS IoT SiteWise Activities
+    description: Use AWS CloudTrail and Amazon CloudWatch to monitor and audit activities within AWS IoT SiteWise for suspicious behavior.
+    severity: High
+  - best_practice: Implement Network Security Measures
+    description: Use VPC, security groups, and network ACLs to restrict network access to AWS IoT SiteWise resources.
+    severity: High
+  - best_practice: Apply Principle of Least Privilege
+    description: Grant the minimum level of access required for users and applications to perform their functions.
+    severity: Medium
+  - best_practice: Regular Security Assessments
+    description: Conduct regular security assessments and vulnerability scans to identify and mitigate potential security risks.
+    severity: Medium
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require multi-factor authentication for all user accounts to add an extra layer of security.
+    severity: Critical
+  - best_practice: Keep Software and Dependencies Updated
+    description: Regularly update all software and dependencies to the latest versions to protect against known vulnerabilities.
+    severity: Medium

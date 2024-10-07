@@ -1,0 +1,51 @@
+architecture_best_practices:
+  - best_practice: Use Auto Scaling
+    description: Implement Auto Scaling to automatically adjust capacity to maintain steady, predictable performance at the lowest possible cost.
+    severity: High
+  - best_practice: Enable Multi-AZ Deployments
+    description: Ensure that your RDS instances are deployed across multiple Availability Zones to enhance fault tolerance and availability.
+    severity: Critical
+  - best_practice: Optimize Instance Types
+    description: Choose the appropriate instance types and sizes based on your workload requirements to ensure optimal performance and cost-efficiency.
+    severity: Medium
+  - best_practice: Use Read Replicas
+    description: Utilize read replicas to offload read traffic from the primary database, thereby improving read performance and availability.
+    severity: High
+  - best_practice: Implement Caching
+    description: Use caching mechanisms like Amazon ElastiCache to reduce database load and improve application performance.
+    severity: Medium
+  - best_practice: Regularly Backup Data
+    description: Schedule regular backups of your RDS databases to ensure data durability and enable point-in-time recovery.
+    severity: Critical
+  - best_practice: Monitor Performance Metrics
+    description: Continuously monitor performance metrics using CloudWatch to detect and address performance bottlenecks proactively.
+    severity: High
+  - best_practice: Use Database Parameter Groups
+    description: Configure database parameter groups to fine-tune database settings for optimal performance and stability.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Encryption
+    description: Use encryption for data at rest and in transit to protect sensitive information from unauthorized access.
+    severity: Critical
+  - best_practice: Implement IAM Policies
+    description: Use IAM policies to enforce the principle of least privilege, ensuring users and applications have only the permissions they need.
+    severity: Critical
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require MFA for accessing AWS Management Console and sensitive operations to add an extra layer of security.
+    severity: High
+  - best_practice: Use Security Groups and Network ACLs
+    description: Configure security groups and network ACLs to control inbound and outbound traffic to your RDS instances.
+    severity: High
+  - best_practice: Regularly Rotate Credentials
+    description: Regularly rotate database credentials and AWS access keys to minimize the risk of credential compromise.
+    severity: High
+  - best_practice: Enable Logging and Auditing
+    description: Enable logging and auditing features like AWS CloudTrail to monitor and record all API calls and changes to your RDS instances.
+    severity: High
+  - best_practice: Apply Security Patches
+    description: Regularly apply security patches and updates to your RDS instances to protect against known vulnerabilities.
+    severity: Critical
+  - best_practice: Use VPC Endpoints
+    description: Use VPC endpoints to securely connect your VPC to RDS without exposing traffic to the public internet.
+    severity: Medium

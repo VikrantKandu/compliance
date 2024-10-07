@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Distribute DNS records across multiple Availability Zones to ensure
+    high availability and fault tolerance.
+  severity: High
+- best_practice: Implement Latency-Based Routing
+  description: Use latency-based routing to direct traffic to the AWS region that
+    provides the lowest latency for the end user.
+  severity: Medium
+- best_practice: Utilize Health Checks
+  description: Configure health checks to monitor the health of your endpoints and
+    route traffic away from unhealthy endpoints.
+  severity: High
+- best_practice: Leverage Traffic Flow Policies
+  description: Use Route 53 traffic flow policies to manage complex routing configurations
+    and optimize traffic management.
+  severity: Medium
+- best_practice: Use Alias Records for AWS Resources
+  description: Use alias records for AWS resources to avoid additional DNS query charges
+    and simplify DNS management.
+  severity: Low
+- best_practice: Enable DNSSEC
+  description: Enable DNS Security Extensions (DNSSEC) to protect against DNS spoofing
+    and ensure data integrity.
+  severity: Medium
+- best_practice: Implement Weighted Routing
+  description: Use weighted routing to distribute traffic across multiple resources
+    based on specified weights.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Route 53 Logging
+  description: Enable logging for Route 53 to monitor and audit DNS queries and changes
+    for security and compliance purposes.
+  severity: High
+- best_practice: Use IAM Policies for Access Control
+  description: Implement fine-grained IAM policies to control access to Route 53 resources
+    and prevent unauthorized changes.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for IAM users with access to Route 53 to enhance security
+    and prevent unauthorized access.
+  severity: High
+- best_practice: Regularly Review and Rotate Access Keys
+  description: Regularly review and rotate access keys for IAM users to minimize the
+    risk of compromised credentials.
+  severity: High
+- best_practice: Implement Least Privilege Principle
+  description: Grant the minimum necessary permissions to users and roles to reduce
+    the risk of accidental or malicious actions.
+  severity: Critical
+- best_practice: Monitor and Alert on Configuration Changes
+  description: Set up monitoring and alerting for changes to Route 53 configurations
+    to detect and respond to unauthorized modifications.
+  severity: High
+- best_practice: Secure Communication with HTTPS
+  description: Ensure all communication with Route 53 APIs is conducted over HTTPS
+    to protect data in transit.
+  severity: Medium

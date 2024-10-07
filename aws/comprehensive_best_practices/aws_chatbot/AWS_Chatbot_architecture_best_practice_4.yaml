@@ -1,0 +1,24 @@
+- rule:
+  - ID: AWS-IAM-001
+    Title: Ensure IAM Password Policy is Enabled
+    Profile Applicability: Level 1
+    Description: This check ensures that a strong password policy is enabled for AWS
+      IAM users. A strong password policy helps protect against unauthorized access
+      by enforcing complexity requirements and expiration periods.
+    Rationale: Without a strong password policy, user accounts may be vulnerable to
+      brute force attacks or unauthorized access, leading to potential data breaches
+      and security incidents.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - In the navigation pane, choose 'Account settings'.
+    - Verify that the password policy is enabled and meets the organization's requirements
+      for complexity, length, and expiration.
+    Default Value: By default, IAM does not enforce a password policy.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - In the navigation pane, choose 'Account settings'.
+    - Enable the password policy and configure it to meet the required complexity,
+      length, and expiration settings.
+    - Save the changes to enforce the new password policy.

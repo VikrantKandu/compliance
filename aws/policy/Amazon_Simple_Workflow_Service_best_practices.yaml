@@ -1,0 +1,63 @@
+architecture_best_practices:
+  - best_practice: Use Decoupled Architecture
+    description: Design your workflows to be decoupled from other services to ensure scalability and fault tolerance.
+    severity: High
+  - best_practice: Optimize Task Scheduling
+    description: Efficiently schedule tasks to minimize latency and ensure timely execution.
+    severity: Medium
+  - best_practice: Implement Retry Logic
+    description: Incorporate retry mechanisms for tasks to handle transient failures and ensure reliability.
+    severity: High
+  - best_practice: Utilize Workflow Versioning
+    description: Use versioning to manage changes in workflows without affecting ongoing executions.
+    severity: Medium
+  - best_practice: Monitor Workflow Execution
+    description: Continuously monitor workflow executions to detect and resolve issues promptly.
+    severity: High
+  - best_practice: Use Appropriate Task Types
+    description: Choose the correct task types (activity tasks, decision tasks) based on the workflow requirements.
+    severity: Medium
+  - best_practice: Implement Graceful Shutdown
+    description: Ensure workflows can be gracefully shut down to avoid data loss and ensure consistency.
+    severity: High
+  - best_practice: Leverage CloudWatch for Monitoring
+    description: Use Amazon CloudWatch to monitor and log workflow activities for better visibility and troubleshooting.
+    severity: Medium
+  - best_practice: Design for Idempotency
+    description: Ensure that tasks are idempotent to handle retries without causing inconsistencies.
+    severity: High
+  - best_practice: Optimize Workflow Execution Time
+    description: Design workflows to minimize execution time and resource usage.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Implement IAM Policies
+    description: Use AWS Identity and Access Management (IAM) policies to control access to Amazon SWF resources.
+    severity: Critical
+  - best_practice: Enable Encryption
+    description: Use AWS Key Management Service (KMS) to encrypt data at rest and in transit.
+    severity: Critical
+  - best_practice: Use VPC Endpoints
+    description: Utilize VPC endpoints to securely access Amazon SWF without exposing traffic to the public internet.
+    severity: High
+  - best_practice: Enable CloudTrail Logging
+    description: Use AWS CloudTrail to log and monitor API calls to Amazon SWF for auditing and compliance.
+    severity: High
+  - best_practice: Regularly Rotate Access Keys
+    description: Rotate IAM access keys regularly to reduce the risk of compromised credentials.
+    severity: High
+  - best_practice: Implement Least Privilege Principle
+    description: Grant the minimum permissions necessary for users and services to perform their tasks.
+    severity: Critical
+  - best_practice: Use Multi-Factor Authentication (MFA)
+    description: Enable MFA for IAM users to add an extra layer of security to your AWS account.
+    severity: High
+  - best_practice: Monitor for Unusual Activity
+    description: Continuously monitor for unusual or unauthorized activity in your Amazon SWF workflows.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits to identify and remediate vulnerabilities in your workflows.
+    severity: High
+  - best_practice: Secure API Endpoints
+    description: Ensure that API endpoints are secured using SSL/TLS to protect data in transit.
+    severity: Critical

@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use Multi-Region Deployment
+  description: Deploy AWS IoT Wireless resources across multiple regions to ensure
+    high availability and disaster recovery.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Use auto-scaling groups to adjust the number of instances based on
+    demand, ensuring optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Use AWS IoT Core Integration
+  description: Integrate AWS IoT Wireless with AWS IoT Core for seamless device management
+    and data processing.
+  severity: Medium
+- best_practice: Leverage AWS CloudFormation
+  description: Use AWS CloudFormation templates to automate the deployment and management
+    of AWS IoT Wireless resources.
+  severity: Medium
+- best_practice: Optimize Data Storage
+  description: Use appropriate data storage solutions like Amazon S3 or DynamoDB for
+    storing IoT data, ensuring cost-efficiency and scalability.
+  severity: Medium
+- best_practice: Implement Edge Processing
+  description: Use AWS IoT Greengrass to process data at the edge, reducing latency
+    and bandwidth usage.
+  severity: Medium
+- best_practice: Use AWS Lambda for Event-Driven Architecture
+  description: Utilize AWS Lambda to handle IoT events, enabling a serverless and
+    scalable architecture.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Device Authentication
+  description: Ensure all IoT devices authenticate using X.509 certificates or AWS
+    IoT credentials.
+  severity: Critical
+- best_practice: Implement Data Encryption
+  description: Encrypt data in transit and at rest using AWS Key Management Service
+    (KMS) to protect sensitive information.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Define and enforce least privilege access using IAM roles and policies
+    for AWS IoT Wireless resources.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Use AWS CloudWatch and AWS IoT Analytics to monitor and log IoT device
+    activity for security and performance insights.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate AWS IoT credentials and certificates to minimize the
+    risk of compromised credentials.
+  severity: High
+- best_practice: Implement Network Security
+  description: Use VPCs, security groups, and network ACLs to control and secure network
+    access to AWS IoT Wireless resources.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: Medium
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for all user accounts accessing AWS IoT Wireless resources
+    to add an extra layer of security.
+  severity: Medium

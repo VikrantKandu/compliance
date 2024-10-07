@@ -1,0 +1,23 @@
+- rule:
+  - ID: AWS-CFG-001
+  - Title: Ensure AWS Config is enabled in all regions
+  - Profile Applicability: Level 1, Level 2
+  - Description: AWS Config should be enabled in all AWS regions to track configuration
+      changes and ensure compliance with security policies. AWS Config provides a
+      detailed view of the configuration of AWS resources in an account, allowing
+      for auditing and security analysis.
+  - Rationale: Enabling AWS Config in all regions helps in maintaining a comprehensive
+      view of resource configuration changes across the entire AWS account. This is
+      crucial for detecting unauthorized changes, ensuring compliance with organizational
+      policies, and aiding in incident response. Not enabling AWS Config can lead
+      to undetected security misconfigurations and non-compliance with regulatory
+      standards.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the AWS Config
+      service. 3. Verify that AWS Config is enabled in all regions by checking the
+      configuration settings. 4. Ensure that all necessary resources are being tracked
+      and that appropriate rules are in place.
+  - Default Value: AWS Config is not enabled by default in all regions.
+  - Remediation: 1. Go to the AWS Management Console. 2. Select the AWS Config service.
+      3. Enable AWS Config in each region where it is not currently enabled. 4. Set
+      up configuration recording for all required resources. 5. Implement necessary
+      AWS Config rules to monitor compliance with security policies.

@@ -1,0 +1,59 @@
+architecture_best_practices:
+- best_practice: Optimize Data Transfer
+  description: Ensure efficient data transfer by compressing data and using optimal
+    transfer protocols to minimize the time and cost associated with data migration.
+  severity: Medium
+- best_practice: Plan for Capacity
+  description: Accurately estimate the data volume to ensure the appropriate Snow
+    Family device is selected, avoiding over or under-provisioning.
+  severity: High
+- best_practice: Use Parallel Processing
+  description: Leverage parallel processing capabilities to speed up data ingestion
+    and processing tasks, maximizing the performance of Snow Family devices.
+  severity: Medium
+- best_practice: Test Data Migration
+  description: Conduct thorough testing of the data migration process to identify
+    and resolve any potential issues before executing the full-scale migration.
+  severity: High
+- best_practice: Automate Workflows
+  description: Use automation tools and scripts to manage and monitor data transfer
+    processes, reducing the risk of human error and improving efficiency.
+  severity: Medium
+- best_practice: Plan for Edge Computing
+  description: Design your architecture to take advantage of Snow Family's edge computing
+    capabilities, processing data locally to reduce latency and bandwidth usage.
+  severity: Medium
+security_best_practices:
+- best_practice: Encrypt Data at Rest
+  description: Ensure all data stored on Snow Family devices is encrypted using strong
+    encryption methods to protect against unauthorized access.
+  severity: Critical
+- best_practice: Encrypt Data in Transit
+  description: Use secure protocols such as TLS to encrypt data during transfer to
+    and from Snow Family devices, safeguarding it from interception.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Implement AWS Identity and Access Management (IAM) roles and policies
+    to control access to Snow Family resources, ensuring only authorized users can
+    perform actions.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging and monitoring features to track access and activities
+    on Snow Family devices, helping to detect and respond to suspicious behavior.
+  severity: High
+- best_practice: Perform Regular Audits
+  description: Conduct regular security audits and assessments to ensure compliance
+    with security policies and identify potential vulnerabilities.
+  severity: High
+- best_practice: Secure Physical Access
+  description: Implement physical security measures to protect Snow Family devices
+    from theft or tampering during transit and storage.
+  severity: Critical
+- best_practice: Update Firmware and Software
+  description: Regularly update the firmware and software on Snow Family devices to
+    patch vulnerabilities and improve security features.
+  severity: Medium
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for accessing Snow Family management interfaces to add an
+    extra layer of security against unauthorized access.
+  severity: High

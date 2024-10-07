@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Proper Data Modeling
+  description: Design your tables and queries to match your access patterns. This
+    ensures efficient data retrieval and storage, minimizing latency and cost.
+  severity: High
+- best_practice: Use Partition Keys Effectively
+  description: Choose partition keys that evenly distribute data across partitions
+    to avoid hotspots and ensure consistent performance.
+  severity: High
+- best_practice: Optimize Read and Write Consistency Levels
+  description: Configure consistency levels based on your application's requirements
+    to balance between performance and data accuracy.
+  severity: Medium
+- best_practice: Monitor and Scale Appropriately
+  description: Regularly monitor your Amazon Keyspaces usage and performance metrics,
+    and scale your resources to meet demand.
+  severity: Medium
+- best_practice: Implement Caching Strategies
+  description: Use caching mechanisms like Amazon ElastiCache to reduce the load on
+    Amazon Keyspaces and improve read performance.
+  severity: Medium
+- best_practice: Use Time-to-Live (TTL) for Data Expiry
+  description: Set TTL for data that has a limited lifespan to automatically delete
+    it, saving storage costs and keeping your dataset manageable.
+  severity: Low
+- best_practice: Leverage AWS Global Accelerator
+  description: Use AWS Global Accelerator to improve the availability and performance
+    of your applications with Amazon Keyspaces.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Use AWS KMS to encrypt data stored in Amazon Keyspaces to protect it
+    from unauthorized access.
+  severity: Critical
+- best_practice: Use IAM Policies for Access Control
+  description: Define fine-grained IAM policies to restrict access to Amazon Keyspaces
+    resources based on the principle of least privilege.
+  severity: Critical
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon Keyspaces without exposing
+    your traffic to the public internet.
+  severity: High
+- best_practice: Enable Encryption in Transit
+  description: Use TLS to encrypt data in transit between your application and Amazon
+    Keyspaces to prevent eavesdropping and man-in-the-middle attacks.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Rotate IAM credentials and database access keys regularly to minimize
+    the risk of compromised access.
+  severity: High
+- best_practice: Monitor and Audit Access
+  description: Use AWS CloudTrail and Amazon CloudWatch to monitor and audit access
+    to Amazon Keyspaces, ensuring compliance and detecting suspicious activities.
+  severity: Medium
+- best_practice: Implement Network Segmentation
+  description: Use security groups and network ACLs to segment your network and restrict
+    access to Amazon Keyspaces based on your security requirements.
+  severity: Medium
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for IAM users to add an extra layer of security to your
+    Amazon Keyspaces resources.
+  severity: Medium

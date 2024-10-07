@@ -1,0 +1,56 @@
+architecture_best_practices:
+- best_practice: Use EventBridge Rules for Event Filtering
+  description: Leverage EventBridge rules to filter and route events to the appropriate
+    targets, reducing unnecessary processing and improving efficiency.
+  severity: Medium
+- best_practice: Design for High Availability
+  description: Ensure that your EventBridge setup is distributed across multiple Availability
+    Zones to prevent single points of failure.
+  severity: Critical
+- best_practice: Implement Idempotency
+  description: Design your event consumers to handle duplicate events gracefully,
+    ensuring that processing the same event multiple times does not cause issues.
+  severity: High
+- best_practice: Use Dead Letter Queues (DLQs)
+  description: Configure DLQs for your EventBridge rules to capture and analyze failed
+    event deliveries, helping to identify and resolve issues.
+  severity: High
+- best_practice: Monitor EventBridge Metrics
+  description: Regularly monitor EventBridge metrics such as Invocations, FailedInvocations,
+    and Throttles to ensure the health and performance of your event-driven architecture.
+  severity: Medium
+- best_practice: Optimize Event Size
+  description: Keep event payloads small to reduce latency and cost, and to ensure
+    that events are processed quickly.
+  severity: Medium
+- best_practice: Use Event Replay for Debugging
+  description: Utilize EventBridge's event replay feature to troubleshoot and debug
+    issues by replaying events that were previously processed.
+  severity: Low
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Ensure that IAM roles and policies grant only the minimum permissions
+    necessary for EventBridge operations to reduce the risk of unauthorized access.
+  severity: Critical
+- best_practice: Enable CloudTrail Logging
+  description: Enable AWS CloudTrail to log all API calls made to EventBridge, providing
+    an audit trail for security and compliance purposes.
+  severity: High
+- best_practice: Use Encryption for Sensitive Data
+  description: Encrypt sensitive data in transit and at rest using AWS Key Management
+    Service (KMS) to protect it from unauthorized access.
+  severity: Critical
+- best_practice: Regularly Rotate IAM Credentials
+  description: Rotate IAM credentials and access keys regularly to minimize the risk
+    of compromised credentials.
+  severity: High
+- best_practice: Implement Network Security Controls
+  description: Use VPC endpoints and security groups to control network access to
+    EventBridge, ensuring that only authorized sources can send events.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and address potential vulnerabilities in your EventBridge setup.
+  severity: Medium
+- best_practice: Use AWS Config Rules
+  description: Use AWS Config rules to ensure compliance with your organization's security policies and best practices for EventBridge.
+  severity: Medium

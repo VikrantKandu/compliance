@@ -1,0 +1,24 @@
+- rule:
+  - ID: AWS-S3-01
+    Title: Ensure S3 buckets have server-side encryption enabled
+    Profile Applicability: Level 1
+    Description: This check ensures that all S3 buckets have server-side encryption
+      enabled to protect data at rest. Server-side encryption helps protect your data
+      by encrypting it before storing it and decrypting it when accessed.
+    Rationale: Enabling server-side encryption helps protect sensitive data from unauthorized
+      access and potential data breaches. Without encryption, data stored in S3 buckets
+      may be vulnerable to unauthorized access and disclosure.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the S3 service.
+    - Select each bucket and check the "Properties" tab.
+    - Verify that "Default encryption" is enabled for the bucket.
+    Default Value: By default, S3 buckets do not have server-side encryption enabled.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the S3 service.
+    - Select the bucket you want to configure.
+    - Go to the "Properties" tab.
+    - Under "Default encryption," select "Enable" and choose the desired encryption
+      method (e.g., AES-256 or AWS-KMS).
+    - Save the changes.

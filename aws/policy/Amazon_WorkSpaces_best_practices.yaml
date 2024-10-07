@@ -1,0 +1,59 @@
+architecture_best_practices:
+- best_practice: Use Amazon VPC for Network Isolation
+  description: Utilize Amazon Virtual Private Cloud (VPC) to isolate Amazon WorkSpaces
+    within your own virtual network, ensuring secure and efficient network traffic
+    management.
+  severity: Critical
+- best_practice: Implement Auto-Stop WorkSpaces
+  description: Configure Amazon WorkSpaces to automatically stop when not in use to
+    save costs and improve resource allocation.
+  severity: Medium
+- best_practice: Use Multiple Availability Zones
+  description: Deploy Amazon WorkSpaces across multiple Availability Zones to ensure
+    high availability and fault tolerance.
+  severity: High
+- best_practice: Optimize Directory Service Integration
+  description: Integrate Amazon WorkSpaces with AWS Directory Service for seamless
+    user management and authentication.
+  severity: Medium
+- best_practice: Leverage Amazon WorkSpaces Bundles
+  description: Use predefined Amazon WorkSpaces bundles to match the specific performance
+    and cost requirements of different user groups.
+  severity: Medium
+- best_practice: Monitor and Optimize Performance
+  description: Regularly monitor Amazon WorkSpaces performance and usage metrics to
+    identify and address any bottlenecks or inefficiencies.
+  severity: High
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing Amazon WorkSpaces to add an extra layer of
+    security.
+  severity: Critical
+- best_practice: Use Encrypted Volumes
+  description: Ensure that all Amazon WorkSpaces volumes are encrypted to protect
+    data at rest.
+  severity: Critical
+- best_practice: Implement Security Groups
+  description: Use AWS Security Groups to control inbound and outbound traffic to
+    Amazon WorkSpaces, ensuring only authorized access.
+  severity: High
+- best_practice: Regularly Update and Patch WorkSpaces
+  description: Keep Amazon WorkSpaces up to date with the latest security patches
+    and updates to protect against vulnerabilities.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch to log and monitor Amazon
+    WorkSpaces activities for security and compliance purposes.
+  severity: High
+- best_practice: Restrict Administrative Access
+  description: Limit administrative access to Amazon WorkSpaces to only necessary
+    personnel and use IAM roles for fine-grained control.
+  severity: Critical
+- best_practice: Use Secure Access Protocols
+  description: Ensure that all connections to Amazon WorkSpaces use secure protocols
+    such as HTTPS and SSL/TLS.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments of Amazon WorkSpaces
+    to identify and mitigate potential security risks.
+  severity: Medium

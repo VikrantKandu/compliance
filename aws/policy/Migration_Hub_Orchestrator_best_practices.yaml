@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Ensure that your AWS RDS instances are deployed across multiple availability
+    zones to enhance fault tolerance and high availability.
+  severity: Critical
+- best_practice: Enable Automated Backups
+  description: Configure automated backups for your RDS instances to ensure data recovery
+    in case of accidental deletion or corruption.
+  severity: High
+- best_practice: Optimize Instance Types
+  description: Select the appropriate instance types based on your workload requirements
+    to balance performance and cost.
+  severity: Medium
+- best_practice: Use Read Replicas
+  description: Implement read replicas to offload read traffic from the primary instance
+    and improve read scalability.
+  severity: High
+- best_practice: Implement Database Caching
+  description: Use caching mechanisms such as Amazon ElastiCache to reduce latency
+    and improve application performance.
+  severity: Medium
+- best_practice: Regularly Monitor Performance Metrics
+  description: Continuously monitor performance metrics using Amazon CloudWatch to
+    identify and address performance bottlenecks.
+  severity: Medium
+- best_practice: Use Parameter Groups
+  description: Customize database parameters using parameter groups to optimize database
+    performance and behavior.
+  severity: Low
+- best_practice: Enable Enhanced Monitoring
+  description: Enable enhanced monitoring for deeper insights into database performance
+    and resource utilization.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Ensure that your RDS instances use encryption at rest to protect sensitive
+    data from unauthorized access.
+  severity: Critical
+- best_practice: Use IAM Roles for Access Control
+  description: Implement IAM roles to manage access to your RDS instances and minimize
+    the use of hardcoded credentials.
+  severity: High
+- best_practice: Enable Encryption in Transit
+  description: Use SSL/TLS to encrypt data in transit between your application and
+    RDS instances to prevent data interception.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate database credentials to reduce the risk of unauthorized
+    access due to compromised credentials.
+  severity: High
+- best_practice: Implement Security Groups
+  description: Use security groups to control inbound and outbound traffic to your
+    RDS instances, limiting access to only trusted sources.
+  severity: Critical
+- best_practice: Enable Database Auditing
+  description: Enable database auditing to track and log database activities for compliance
+    and security monitoring.
+  severity: Medium
+- best_practice: Apply Least Privilege Principle
+  description: Grant the minimum necessary permissions to users and applications to
+    reduce the risk of unauthorized access.
+  severity: High
+- best_practice: Regularly Apply Security Patches
+  description: Keep your RDS instances up to date with the latest security patches
+    to protect against known vulnerabilities.
+  severity: High

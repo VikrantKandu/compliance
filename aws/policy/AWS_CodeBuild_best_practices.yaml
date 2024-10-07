@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use Managed Build Environments
+  description: Leverage AWS CodeBuild's managed build environments to reduce the overhead
+    of maintaining your own build infrastructure.
+  severity: Medium
+- best_practice: Optimize Build Spec Files
+  description: Ensure that your buildspec.yml files are optimized and well-structured
+    to improve build efficiency and readability.
+  severity: Medium
+- best_practice: Enable Build Caching
+  description: Use build caching to speed up build times by reusing previously built
+    artifacts and dependencies.
+  severity: High
+- best_practice: Use Environment Variables
+  description: Utilize environment variables to manage configuration settings and
+    secrets securely and efficiently.
+  severity: Medium
+- best_practice: Implement Parallel Builds
+  description: Configure parallel builds to improve the overall build time and resource
+    utilization.
+  severity: Medium
+- best_practice: Monitor Build Metrics
+  description: Regularly monitor build metrics and logs to identify and resolve issues
+    promptly.
+  severity: High
+security_best_practices:
+- best_practice: Use IAM Roles and Policies
+  description: Assign appropriate IAM roles and policies to CodeBuild projects to
+    control access and permissions securely.
+  severity: Critical
+- best_practice: Enable Encryption
+  description: Ensure that all data, including artifacts and logs, is encrypted both
+    in transit and at rest.
+  severity: Critical
+- best_practice: Implement Network Isolation
+  description: Use VPC configurations to isolate CodeBuild environments from public
+    access and restrict network traffic.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Rotate IAM credentials and other sensitive information regularly to
+    minimize the risk of unauthorized access.
+  severity: High
+- best_practice: Use Secrets Manager
+  description: Store and manage sensitive information such as API keys and passwords
+    using AWS Secrets Manager.
+  severity: High
+- best_practice: Enable Detailed Logging
+  description: Enable and review detailed logging for build processes to detect and
+    investigate security incidents.
+  severity: High
+- best_practice: Apply Principle of Least Privilege
+  description: Ensure that CodeBuild projects and associated resources have the minimum
+    permissions required to function.
+  severity: Critical

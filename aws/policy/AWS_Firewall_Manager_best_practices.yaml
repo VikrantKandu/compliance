@@ -1,0 +1,47 @@
+architecture_best_practices:
+- best_practice: Centralized Management
+  description: Use AWS Firewall Manager to centrally manage firewall rules across multiple accounts and resources within your AWS Organization.
+  severity: High
+- best_practice: Policy Hierarchy
+  description: Establish a clear hierarchy of policies to ensure that global policies are applied before regional or account-specific policies.
+  severity: Medium
+- best_practice: Resource Tagging
+  description: Use consistent tagging across resources to simplify the creation and management of Firewall Manager policies.
+  severity: Medium
+- best_practice: Automated Remediation
+  description: Implement automated remediation actions to quickly address non-compliant resources detected by AWS Firewall Manager.
+  severity: High
+- best_practice: Integration with AWS Security Hub
+  description: Integrate AWS Firewall Manager with AWS Security Hub to gain a comprehensive view of your security posture.
+  severity: Medium
+- best_practice: Policy Scope Definition
+  description: Clearly define the scope of each policy to ensure that only the intended resources are affected.
+  severity: High
+- best_practice: Regular Policy Review
+  description: Regularly review and update your Firewall Manager policies to adapt to changing security requirements and organizational changes.
+  severity: Medium
+security_best_practices:
+- best_practice: Least Privilege Principle
+  description: Apply the principle of least privilege when granting permissions to manage AWS Firewall Manager, ensuring that users have only the permissions they need.
+  severity: Critical
+- best_practice: Multi-Factor Authentication (MFA)
+  description: Require MFA for all users who have access to AWS Firewall Manager to add an extra layer of security.
+  severity: Critical
+- best_practice: Logging and Monitoring
+  description: Enable logging and monitoring for AWS Firewall Manager activities using AWS CloudTrail to track changes and detect suspicious activities.
+  severity: High
+- best_practice: Regular Security Audits
+  description: Conduct regular security audits of your AWS Firewall Manager configurations to ensure compliance with security policies and standards.
+  severity: High
+- best_practice: Encryption of Data in Transit
+  description: Ensure that all data in transit between AWS Firewall Manager and other AWS services is encrypted to prevent interception and tampering.
+  severity: High
+- best_practice: Incident Response Plan
+  description: Develop and maintain an incident response plan specifically for AWS Firewall Manager to quickly address and mitigate security incidents.
+  severity: High
+- best_practice: Access Control Policies
+  description: Implement strict access control policies to limit who can create, modify, or delete Firewall Manager policies.
+  severity: Critical
+- best_practice: Regular Updates and Patching
+  description: Regularly update and patch AWS Firewall Manager and related services to protect against known vulnerabilities.
+  severity: High

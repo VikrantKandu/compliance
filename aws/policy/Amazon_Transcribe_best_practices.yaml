@@ -1,0 +1,67 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Storage Solutions
+  description: Ensure that the storage solutions used for storing data processed by
+    Amazon Transcribe are optimized for performance and cost. Consider using Amazon
+    S3 for storing raw audio files and transcription results.
+  severity: Medium
+- best_practice: Implement Auto-Scaling
+  description: Configure auto-scaling for your AWS resources to handle variable loads
+    efficiently. This ensures that your transcription jobs can scale according to
+    demand without manual intervention.
+  severity: High
+- best_practice: Optimize Resource Allocation
+  description: Allocate appropriate resources to Amazon Transcribe tasks to avoid
+    over-provisioning or under-provisioning, which can lead to increased costs or
+    performance issues.
+  severity: Medium
+- best_practice: Use AWS Lambda for Orchestration
+  description: Utilize AWS Lambda to manage the orchestration of transcription jobs,
+    ensuring that tasks are triggered and managed efficiently without the need for
+    dedicated servers.
+  severity: Medium
+- best_practice: Leverage Amazon CloudWatch for Monitoring
+  description: Use Amazon CloudWatch to monitor the performance and health of your
+    transcription jobs, enabling proactive management and troubleshooting.
+  severity: High
+- best_practice: Employ Appropriate Data Formats
+  description: Use supported and optimized audio formats such as FLAC, MP3, MP4, or
+    WAV to ensure compatibility and efficient processing by Amazon Transcribe.
+  severity: Medium
+- best_practice: Use Batch Processing for Large Jobs
+  description: For large transcription jobs, use batch processing to manage and process
+    data in chunks, ensuring efficient resource utilization and reduced processing
+    times.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest and in Transit
+  description: Ensure that all data processed by Amazon Transcribe is encrypted both
+    at rest and in transit to protect against unauthorized access and data breaches.
+  severity: Critical
+- best_practice: Implement IAM Policies and Roles
+  description: Use AWS Identity and Access Management (IAM) policies and roles to
+    control access to Amazon Transcribe and related resources, ensuring that only
+    authorized users and services have access.
+  severity: Critical
+- best_practice: Enable Logging and Auditing
+  description: Enable logging and auditing using AWS CloudTrail and Amazon CloudWatch
+    Logs to track access and changes to transcription resources, providing an audit
+    trail for security and compliance purposes.
+  severity: High
+- best_practice: Use Private VPC Endpoints
+  description: Configure private VPC endpoints for Amazon Transcribe to ensure that
+    data does not traverse the public internet, reducing the risk of interception
+    and exposure.
+  severity: High
+- best_practice: Regularly Rotate Access Keys and Credentials
+  description: Regularly rotate access keys and credentials used for accessing Amazon
+    Transcribe to minimize the risk of compromised credentials being exploited.
+  severity: High
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require multi-factor authentication for accessing AWS Management Console
+    and API operations related to Amazon Transcribe to add an additional layer of
+    security.
+  severity: High
+- best_practice: Conduct Regular Security Reviews
+  description: Regularly review and update security configurations and policies for
+    Amazon Transcribe to ensure they remain effective and aligned with best practices.
+  severity: Medium

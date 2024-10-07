@@ -1,0 +1,82 @@
+architecture_best_practices:
+- best_practice: Use Auto Scaling
+  description: Implement Auto Scaling to automatically adjust capacity to maintain
+    steady, predictable performance at the lowest possible cost.
+  severity: High
+- best_practice: Leverage Multi-AZ Deployments
+  description: Deploy applications across multiple Availability Zones to enhance fault
+    tolerance and availability.
+  severity: Critical
+- best_practice: Optimize for Cost
+  description: Regularly review and optimize your AWS resources to ensure cost-efficiency,
+    using tools like AWS Cost Explorer and Trusted Advisor.
+  severity: Medium
+- best_practice: Implement Caching
+  description: Use caching mechanisms such as Amazon ElastiCache to reduce latency
+    and improve application performance.
+  severity: High
+- best_practice: Use Managed Services
+  description: Prefer AWS managed services like RDS, DynamoDB, and Lambda to reduce
+    operational overhead and improve reliability.
+  severity: Medium
+- best_practice: Design for Failure
+  description: Architect your applications with failure in mind, ensuring that they
+    can gracefully handle and recover from failures.
+  severity: Critical
+- best_practice: Use Infrastructure as Code (IaC)
+  description: Utilize IaC tools like AWS CloudFormation or Terraform to automate
+    and standardize infrastructure deployment.
+  severity: High
+- best_practice: Monitor and Log Everything
+  description: Implement comprehensive monitoring and logging using AWS CloudWatch
+    and AWS CloudTrail to gain insights and maintain system health.
+  severity: High
+- best_practice: Optimize Database Performance
+  description: Regularly tune and optimize your databases for performance, using tools
+    like Amazon RDS Performance Insights.
+  severity: Medium
+- best_practice: Implement Microservices Architecture
+  description: Break down monolithic applications into microservices to improve scalability,
+    maintainability, and deployment flexibility.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users, especially those with administrative privileges,
+    to enhance account security.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Implement the principle of least privilege by using IAM roles and policies
+    to control access to AWS resources.
+  severity: Critical
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data both
+    at rest and in transit to protect against unauthorized access.
+  severity: Critical
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate access keys and credentials to minimize the risk of
+    compromised keys being used for malicious activities.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Enable AWS CloudTrail to log all API calls and monitor account activity
+    for security auditing and compliance.
+  severity: High
+- best_practice: Implement Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your AWS resources, enhancing network security.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: High
+- best_practice: Use AWS Shield and WAF
+  description: Protect your applications from DDoS attacks and common web exploits
+    by using AWS Shield and AWS Web Application Firewall (WAF).
+  severity: High
+- best_practice: Enable GuardDuty
+  description: Enable Amazon GuardDuty to continuously monitor your AWS accounts and
+    workloads for malicious activity and unauthorized behavior.
+  severity: High
+- best_practice: Secure S3 Buckets
+  description: Ensure that S3 buckets are not publicly accessible unless explicitly
+    required, and use bucket policies and ACLs to control access.
+  severity: Critical

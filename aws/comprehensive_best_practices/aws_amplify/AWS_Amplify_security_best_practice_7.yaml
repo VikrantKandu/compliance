@@ -1,0 +1,27 @@
+- rule:
+  - ID: AWS-VPC-001
+    Title: Ensure VPC Flow Logs are enabled for all VPCs
+    Profile Applicability: Level 1
+    Description: VPC Flow Logs capture information about the IP traffic going to and
+      from network interfaces in a VPC. Enabling VPC Flow Logs can help with monitoring,
+      troubleshooting, and security analysis.
+    Rationale: Enabling VPC Flow Logs provides visibility into network traffic, which
+      is crucial for identifying and responding to anomalous or malicious activity.
+      Without flow logs, there is limited visibility into the network traffic, increasing
+      the risk of undetected security incidents.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the VPC dashboard.
+    - Select the VPCs from the left-hand menu.
+    - For each VPC, check if Flow Logs are enabled by reviewing the Flow Logs tab.
+    - Verify that the logs are being sent to a centralized logging solution, such
+      as CloudWatch Logs or an S3 bucket.
+    Default Value: By default, VPC Flow Logs are not enabled.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the VPC dashboard.
+    - Select the VPC where Flow Logs need to be enabled.
+    - Click on the Flow Logs tab and choose Create Flow Log.
+    - Configure the flow log settings, ensuring that the logs are sent to a secure
+      location like CloudWatch Logs or an S3 bucket.
+    - Save the changes to enable the flow logs for the selected VPC.

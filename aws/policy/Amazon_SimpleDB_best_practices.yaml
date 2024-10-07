@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Data Types
+  description: Ensure that the data types used in Amazon SimpleDB are appropriate
+    for the data being stored to optimize performance and storage efficiency.
+  severity: Medium
+- best_practice: Design for Scalability
+  description: Architect your SimpleDB usage to handle growth in data volume and request
+    rates by distributing data across multiple domains.
+  severity: High
+- best_practice: Optimize Query Performance
+  description: Design your data model and queries to minimize latency and maximize
+    throughput by using efficient indexing and avoiding complex queries.
+  severity: High
+- best_practice: Implement Data Partitioning
+  description: Partition your data across multiple SimpleDB domains to improve performance
+    and manageability.
+  severity: Medium
+- best_practice: Use Consistent Naming Conventions
+  description: Employ consistent naming conventions for domains, items, and attributes
+    to enhance readability and maintainability.
+  severity: Low
+- best_practice: Monitor and Optimize Costs
+  description: Regularly monitor your SimpleDB usage and optimize your data model
+    and queries to reduce costs.
+  severity: Medium
+- best_practice: Backup and Restore Strategy
+  description: Implement a robust backup and restore strategy to protect against data
+    loss.
+  severity: Critical
+security_best_practices:
+- best_practice: Use IAM Policies
+  description: Implement AWS Identity and Access Management (IAM) policies to control
+    access to your SimpleDB resources.
+  severity: Critical
+- best_practice: Enable Data Encryption
+  description: Use encryption to protect data at rest and in transit to safeguard
+    sensitive information.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Rotate access keys and other credentials regularly to minimize the
+    risk of unauthorized access.
+  severity: High
+- best_practice: Implement Least Privilege Principle
+  description: Grant the minimum permissions necessary for users and applications
+    to perform their tasks.
+  severity: Critical
+- best_practice: Monitor and Audit Access
+  description: Use AWS CloudTrail and other monitoring tools to log and review access
+    to SimpleDB resources.
+  severity: High
+- best_practice: Secure Network Communications
+  description: Use secure protocols such as HTTPS to encrypt data in transit between
+    clients and SimpleDB.
+  severity: High
+- best_practice: Regular Security Reviews
+  description: Conduct regular security reviews and audits to identify and address
+    potential vulnerabilities.
+  severity: Medium

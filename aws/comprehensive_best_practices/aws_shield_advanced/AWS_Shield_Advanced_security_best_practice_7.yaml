@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-1-EC2-IMDSSecure
+  - Title: Ensure EC2 Instance Metadata Service (IMDS) is configured securely
+  - Profile Applicability: Level 1
+  - Description: EC2 instances should be configured to use Instance Metadata Service
+      Version 2 (IMDSv2) to enhance security. IMDSv2 adds session-based authentication
+      to metadata requests, reducing the risk of unauthorized access.
+  - Rationale: Using IMDSv2 prevents unauthorized access to sensitive data stored
+      in the instance metadata by requiring session tokens. This mitigates the risk
+      of data exposure from misconfigured applications or SSRF vulnerabilities.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 Dashboard.
+      3. Select Instances from the left-hand menu. 4. For each instance, check the
+      Metadata options under the Actions menu. 5. Verify that "Metadata version" is
+      set to "IMDSv2 only".
+  - Default Value: By default, EC2 instances may use IMDSv1, which does not require
+      session authentication.
+  - Remediation: 1. Open the AWS Management Console and go to the EC2 Dashboard. 2.
+      Select the instance that needs remediation. 3. Choose Actions, then Instance
+      Settings, and then Modify Instance Metadata Options. 4. Set "Metadata version"
+      to "IMDSv2 only". 5. Save changes to ensure the instance requires session authentication
+      for metadata access.

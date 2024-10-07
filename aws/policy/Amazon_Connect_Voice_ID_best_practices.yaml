@@ -1,0 +1,67 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Ensure that your Amazon Connect instance is deployed across multiple
+    Availability Zones to enhance fault tolerance and availability.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Configure auto scaling to handle variable call volumes efficiently,
+    ensuring optimal performance and cost management.
+  severity: High
+- best_practice: Optimize Call Flows
+  description: Design efficient call flows to minimize latency and improve customer
+    experience by reducing unnecessary steps.
+  severity: Medium
+- best_practice: Use AWS Lambda for Custom Integrations
+  description: Leverage AWS Lambda functions to integrate with other AWS services
+    and third-party applications without managing servers.
+  severity: Medium
+- best_practice: Monitor Performance Metrics
+  description: Regularly monitor key performance metrics like call duration, wait
+    times, and system health to identify and resolve issues proactively.
+  severity: High
+- best_practice: Implement Disaster Recovery Plan
+  description: Develop and test a disaster recovery plan to ensure business continuity
+    in case of system failures or outages.
+  severity: Critical
+- best_practice: Use Amazon S3 for Call Recordings
+  description: Store call recordings in Amazon S3 for scalable, durable, and cost-effective
+    storage.
+  severity: Medium
+- best_practice: Leverage Amazon Connect APIs
+  description: Utilize Amazon Connect APIs for automation and integration with other
+    systems to enhance functionality and efficiency.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest and in Transit
+  description: Ensure that all data, including call recordings and customer information,
+    is encrypted both at rest and in transit to protect against unauthorized access.
+  severity: Critical
+- best_practice: Implement IAM Best Practices
+  description: Use AWS Identity and Access Management (IAM) to enforce the principle
+    of least privilege, ensuring users and services have only the permissions they
+    need.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users accessing the Amazon Connect management console
+    to add an extra layer of security.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Rotate IAM access keys regularly to minimize the risk of compromised
+    credentials.
+  severity: High
+- best_practice: Use AWS CloudTrail for Auditing
+  description: Enable AWS CloudTrail to log and monitor all API calls, providing a
+    comprehensive audit trail for security and compliance purposes.
+  severity: High
+- best_practice: Implement Network Security Controls
+  description: Use VPCs, security groups, and network ACLs to control and restrict
+    network traffic to and from your Amazon Connect instance.
+  severity: Medium
+- best_practice: Conduct Regular Security Assessments
+  description: Perform regular security assessments and vulnerability scans to identify
+    and remediate potential security issues.
+  severity: High
+- best_practice: Enable AWS Config Rules
+  description: Use AWS Config rules to continuously monitor and enforce compliance
+    with your security policies.
+  severity: Medium

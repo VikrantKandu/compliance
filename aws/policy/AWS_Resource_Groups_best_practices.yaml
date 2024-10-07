@@ -1,0 +1,33 @@
+architecture_best_practices:
+  - best_practice: Use Resource Group Tags Consistently
+    description: Ensure that all AWS resources are tagged consistently to facilitate easy grouping and management within AWS Resource Groups.
+    severity: Medium
+  - best_practice: Define Clear Naming Conventions
+    description: Establish and adhere to clear naming conventions for AWS Resource Groups to improve organization and ease of use.
+    severity: Medium
+  - best_practice: Leverage Automation for Group Management
+    description: Use automation tools like AWS CloudFormation or AWS Config to manage and maintain AWS Resource Groups, ensuring consistency and reducing manual errors.
+    severity: High
+  - best_practice: Regularly Review and Update Resource Groups
+    description: Periodically review and update AWS Resource Groups to ensure they align with current organizational needs and resource configurations.
+    severity: Medium
+  - best_practice: Integrate with Monitoring and Logging Services
+    description: Integrate AWS Resource Groups with monitoring and logging services like Amazon CloudWatch and AWS CloudTrail to track resource usage and performance.
+    severity: High
+
+security_best_practices:
+  - best_practice: Implement Least Privilege Access
+    description: Ensure that only authorized users have access to AWS Resource Groups, following the principle of least privilege to minimize security risks.
+    severity: Critical
+  - best_practice: Use IAM Roles and Policies
+    description: Utilize AWS Identity and Access Management (IAM) roles and policies to manage permissions for AWS Resource Groups, ensuring secure access control.
+    severity: High
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require multi-factor authentication for users accessing AWS Resource Groups to add an extra layer of security.
+    severity: Critical
+  - best_practice: Regularly Audit Resource Group Access
+    description: Conduct regular audits of who has access to AWS Resource Groups and review the permissions granted to ensure they are still necessary and appropriate.
+    severity: High
+  - best_practice: Encrypt Sensitive Data
+    description: Ensure that any sensitive data managed within AWS Resource Groups is encrypted both in transit and at rest to protect against unauthorized access.
+    severity: Critical

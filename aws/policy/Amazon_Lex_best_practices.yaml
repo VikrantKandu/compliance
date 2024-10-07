@@ -1,0 +1,81 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy your Amazon RDS instances in multiple Availability Zones to
+    ensure high availability and failover support.
+  severity: Critical
+- best_practice: Optimize Database Connections
+  description: Use connection pooling and optimize the number of database connections
+    to improve performance and reduce latency.
+  severity: High
+- best_practice: Regularly Backup Data
+  description: Schedule regular automated backups of your RDS instances to prevent
+    data loss.
+  severity: Critical
+- best_practice: Monitor Performance Metrics
+  description: Use Amazon CloudWatch to monitor key performance metrics of your RDS
+    instances and set up alarms for critical thresholds.
+  severity: High
+- best_practice: Use Read Replicas for Scalability
+  description: Implement read replicas to offload read traffic and improve read scalability.
+  severity: Medium
+- best_practice: Enable Automated Storage Scaling
+  description: Enable storage auto-scaling to automatically adjust storage capacity
+    based on usage.
+  severity: Medium
+- best_practice: Optimize Query Performance
+  description: Regularly review and optimize SQL queries and indexes to improve database
+    performance.
+  severity: High
+- best_practice: Use Appropriate Instance Types
+  description: Select the appropriate RDS instance types based on your workload requirements
+    for optimal performance and cost-efficiency.
+  severity: Medium
+- best_practice: Implement Caching Strategies
+  description: Use caching mechanisms like Amazon ElastiCache to reduce database load
+    and improve application performance.
+  severity: Medium
+- best_practice: Regularly Patch and Upgrade
+  description: Keep your RDS instances up-to-date with the latest patches and upgrades
+    to ensure security and performance.
+  severity: High
+security_best_practices:
+- best_practice: Use IAM Roles for Access
+  description: Use AWS Identity and Access Management (IAM) roles to control access
+    to your RDS instances and avoid using root credentials.
+  severity: Critical
+- best_practice: Enable Encryption at Rest
+  description: Enable encryption for your RDS instances to protect data at rest using
+    AWS Key Management Service (KMS).
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Use SSL/TLS to encrypt data in transit between your application and
+    RDS instances.
+  severity: High
+- best_practice: Implement Security Groups
+  description: Use security groups to control inbound and outbound traffic to your
+    RDS instances.
+  severity: High
+- best_practice: Enable Database Activity Streams
+  description: Enable database activity streams to monitor and log database activities
+    for auditing and compliance.
+  severity: Medium
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate database credentials and use IAM database authentication
+    for enhanced security.
+  severity: High
+- best_practice: Use VPC for Network Isolation
+  description: Deploy your RDS instances within a Virtual Private Cloud (VPC) for
+    network isolation and security.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Enable MFA for accessing the AWS Management Console and RDS instances
+    to add an extra layer of security.
+  severity: High
+- best_practice: Implement Fine-Grained Access Control
+  description: Use IAM policies to implement fine-grained access control to your RDS
+    instances and resources.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Regularly conduct security audits and vulnerability assessments to
+    identify and mitigate potential security risks.
+  severity: Medium

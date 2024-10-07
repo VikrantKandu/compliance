@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Centralized Logging
+  description: Aggregate logs from multiple sources into a single CloudWatch Logs
+    group to simplify monitoring and troubleshooting.
+  severity: Medium
+- best_practice: Implement Log Retention Policies
+  description: Define log retention policies to automatically delete old logs and
+    manage storage costs effectively.
+  severity: Medium
+- best_practice: Enable Detailed Monitoring
+  description: Use detailed monitoring for critical resources to get more granular
+    metrics and improve observability.
+  severity: High
+- best_practice: Use Resource Tagging
+  description: Tag CloudWatch resources for better organization, cost tracking, and
+    access management.
+  severity: Medium
+- best_practice: Utilize CloudWatch Alarms
+  description: Set up CloudWatch alarms to automatically notify you of critical events
+    or thresholds being breached.
+  severity: High
+- best_practice: Leverage CloudWatch Dashboards
+  description: Create CloudWatch Dashboards to visualize metrics and logs in a single
+    pane of glass for easier monitoring.
+  severity: Medium
+- best_practice: Integrate with AWS X-Ray
+  description: Use AWS X-Ray with CloudWatch to get end-to-end tracing of requests
+    and better understand application performance.
+  severity: Medium
+- best_practice: Optimize Metric Collection
+  description: Collect only necessary metrics to reduce costs and avoid unnecessary
+    data ingestion.
+  severity: Low
+security_best_practices:
+- best_practice: Enable CloudWatch Logs Encryption
+  description: Encrypt CloudWatch Logs using AWS KMS to protect sensitive data at
+    rest.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use IAM policies to control access to CloudWatch resources and ensure
+    least privilege access.
+  severity: High
+- best_practice: Enable VPC Flow Logs
+  description: Enable VPC Flow Logs to capture information about IP traffic going
+    to and from network interfaces in your VPC.
+  severity: High
+- best_practice: Monitor IAM Activity
+  description: Use CloudWatch to monitor IAM activity and detect unusual or unauthorized
+    access patterns.
+  severity: High
+- best_practice: Set Up Log Metric Filters
+  description: Create log metric filters to detect and alert on specific patterns
+    in your log data that may indicate security issues.
+  severity: High
+- best_practice: Use CloudWatch Events for Security Automation
+  description: Utilize CloudWatch Events to trigger automated security responses to
+    certain conditions or events.
+  severity: High
+- best_practice: Regularly Review and Rotate Access Keys
+  description: Regularly review and rotate access keys to minimize the risk of key
+    compromise.
+  severity: Medium
+- best_practice: Enable AWS CloudTrail Integration
+  description: Integrate CloudWatch with AWS CloudTrail to get a complete audit trail
+    of API calls and detect potential security issues.
+  severity: Critical

@@ -1,0 +1,63 @@
+architecture_best_practices:
+- best_practice: Use Auto Scaling
+  description: Configure auto-scaling to handle varying loads efficiently. This ensures
+    that the system can handle spikes in demand without manual intervention.
+  severity: High
+- best_practice: Optimize Resource Allocation
+  description: Allocate resources based on the workload requirements to avoid over-provisioning
+    or under-provisioning, ensuring cost efficiency and performance.
+  severity: Medium
+- best_practice: Use Managed Service Integrations
+  description: Leverage AWS managed services such as Amazon S3, Amazon Kinesis, and
+    Amazon DynamoDB for storage and data streaming to simplify architecture and improve
+    reliability.
+  severity: Medium
+- best_practice: Implement Fault Tolerance
+  description: Design the architecture to handle failures gracefully by using features
+    like state snapshots and checkpointing.
+  severity: Critical
+- best_practice: Monitor and Log Metrics
+  description: Use Amazon CloudWatch to monitor application metrics and set up logging
+    to track application performance and issues.
+  severity: High
+- best_practice: Optimize Data Partitioning
+  description: Properly partition data to ensure balanced load distribution and efficient
+    processing.
+  severity: Medium
+- best_practice: Use VPC for Network Isolation
+  description: Deploy your Amazon Managed Service for Apache Flink applications within
+    a VPC to isolate them from other services and enhance security.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Use encryption for data at rest and in transit to protect sensitive
+    information.
+  severity: Critical
+- best_practice: Implement IAM Roles and Policies
+  description: Use AWS Identity and Access Management (IAM) roles and policies to
+    control access to your Amazon Managed Service for Apache Flink resources.
+  severity: Critical
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and keys to minimize the risk of compromised
+    credentials.
+  severity: High
+- best_practice: Enable VPC Flow Logs
+  description: Enable VPC Flow Logs to capture information about the IP traffic going
+    to and from network interfaces in your VPC.
+  severity: Medium
+- best_practice: Use Security Groups and NACLs
+  description: Configure security groups and network ACLs to control inbound and outbound
+    traffic to your Amazon Managed Service for Apache Flink applications.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Enable AWS CloudTrail to log and monitor API calls made to your Amazon
+    Managed Service for Apache Flink resources.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: Medium
+- best_practice: Apply Patches and Updates
+  description: Regularly apply patches and updates to your Amazon Managed Service
+    for Apache Flink applications to protect against known vulnerabilities.
+  severity: High

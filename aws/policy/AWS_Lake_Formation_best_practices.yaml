@@ -1,0 +1,59 @@
+architecture_best_practices:
+- best_practice: Use Partitioned Data
+  description: Partitioning your data in Amazon S3 can significantly improve query
+    performance and reduce costs by allowing AWS Glue to scan only the relevant data.
+  severity: High
+- best_practice: Optimize Data Formats
+  description: Use optimized data formats like Apache Parquet or ORC to reduce storage
+    costs and improve query performance.
+  severity: High
+- best_practice: Implement Data Lifecycle Policies
+  description: Define and implement data lifecycle policies to manage data retention
+    and reduce storage costs over time.
+  severity: Medium
+- best_practice: Use AWS Glue Crawlers Efficiently
+  description: Schedule AWS Glue Crawlers to run at off-peak times to avoid performance
+    impacts and ensure that your data catalog is up to date.
+  severity: Medium
+- best_practice: Monitor and Tune Query Performance
+  description: Regularly monitor query performance and tune your AWS Glue jobs and
+    Amazon Athena queries to ensure optimal performance.
+  severity: Medium
+- best_practice: Enable Versioning on S3 Buckets
+  description: Enable versioning on your Amazon S3 buckets to protect against accidental
+    deletions and overwrites.
+  severity: Medium
+- best_practice: Use Resource Tags
+  description: Tag your AWS Lake Formation resources to organize and manage them more
+    effectively.
+  severity: Low
+security_best_practices:
+- best_practice: Implement Fine-Grained Access Control
+  description: Use AWS Lake Formation's fine-grained access control to restrict access
+    to specific columns and rows of data, ensuring that users only see the data they
+    are authorized to see.
+  severity: Critical
+- best_practice: Enable Encryption at Rest and in Transit
+  description: Ensure that all data stored in Amazon S3 and data in transit is encrypted
+    to protect sensitive information.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Implement IAM roles and policies to manage access to AWS Lake Formation
+    resources securely and follow the principle of least privilege.
+  severity: High
+- best_practice: Regularly Audit Access Logs
+  description: Regularly review AWS CloudTrail logs and AWS Lake Formation audit logs
+    to monitor access and detect any unauthorized activities.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users accessing AWS Lake Formation to add an extra
+    layer of security.
+  severity: High
+- best_practice: Implement Network Security Controls
+  description: Use VPC endpoints and security groups to control network access to
+    AWS Lake Formation resources.
+  severity: Medium
+- best_practice: Regularly Update and Patch Systems
+  description: Ensure that all systems and applications interacting with AWS Lake
+    Formation are regularly updated and patched to protect against vulnerabilities.
+  severity: Medium

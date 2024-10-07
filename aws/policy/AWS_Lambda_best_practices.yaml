@@ -1,0 +1,65 @@
+architecture_best_practices:
+- best_practice: Use Stateless Functions
+  description: Design Lambda functions to be stateless, ensuring that they don't rely
+    on previous invocations or shared state.
+  severity: High
+- best_practice: Optimize Function Memory and Timeout
+  description: Allocate appropriate memory and set the correct timeout values to balance
+    performance and cost.
+  severity: Medium
+- best_practice: Use Environment Variables for Configuration
+  description: Store configuration settings in environment variables to separate code
+    from configuration.
+  severity: Medium
+- best_practice: Implement Error Handling and Retries
+  description: Ensure that Lambda functions have proper error handling and retry mechanisms
+    to manage transient failures.
+  severity: High
+- best_practice: Use AWS Lambda Layers
+  description: Use Lambda layers to manage dependencies and share common code across
+    multiple functions.
+  severity: Medium
+- best_practice: Monitor and Log Lambda Functions
+  description: Implement logging and monitoring using AWS CloudWatch to track performance
+    and diagnose issues.
+  severity: High
+- best_practice: Optimize Cold Start Performance
+  description: Minimize the impact of cold starts by optimizing initialization code
+    and using provisioned concurrency if necessary.
+  severity: Medium
+- best_practice: Use VPC for Lambda Functions
+  description: Place Lambda functions inside a VPC to access resources that are not
+    publicly accessible.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Grant the minimum permissions required for Lambda functions to perform
+    their tasks.
+  severity: Critical
+- best_practice: Encrypt Environment Variables
+  description: Encrypt sensitive information stored in environment variables using
+    AWS KMS.
+  severity: High
+- best_practice: Use IAM Roles for Lambda Execution
+  description: Assign IAM roles to Lambda functions to securely manage permissions.
+  severity: Critical
+- best_practice: Enable VPC Flow Logs
+  description: Enable VPC Flow Logs to monitor and log network traffic to and from
+    Lambda functions in a VPC.
+  severity: Medium
+- best_practice: Regularly Rotate IAM Credentials
+  description: Regularly rotate IAM credentials and keys used by Lambda functions
+    to enhance security.
+  severity: High
+- best_practice: Use AWS Secrets Manager for Sensitive Data
+  description: Store and manage sensitive data such as database credentials using
+    AWS Secrets Manager.
+  severity: High
+- best_practice: Enable AWS CloudTrail for Lambda
+  description: Enable AWS CloudTrail to log all API calls made by or on behalf of
+    Lambda functions for auditing and compliance.
+  severity: High
+- best_practice: Implement Network Security Controls
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic for Lambda functions in a VPC.
+  severity: Medium

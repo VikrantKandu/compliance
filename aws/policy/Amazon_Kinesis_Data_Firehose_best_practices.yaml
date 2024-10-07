@@ -1,0 +1,56 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Buffer Sizes
+  description: Configure buffer sizes and intervals to optimize data delivery and
+    minimize latency.
+  severity: Medium
+- best_practice: Choose the Right Destination
+  description: Select the appropriate destination for your data, such as S3, Redshift,
+    or Elasticsearch, based on your use case.
+  severity: High
+- best_practice: Enable Compression
+  description: Use compression formats like GZIP or Snappy to reduce storage costs
+    and improve transfer speeds.
+  severity: Medium
+- best_practice: Monitor and Scale
+  description: Regularly monitor your Firehose delivery stream and adjust resources
+    to handle varying data loads.
+  severity: High
+- best_practice: Use Retry Logic
+  description: Implement retry logic to handle transient failures in data delivery.
+  severity: Medium
+- best_practice: Optimize Data Transformation
+  description: Use AWS Lambda for data transformation to ensure data is in the desired
+    format before delivery.
+  severity: Medium
+- best_practice: Leverage VPC Endpoints
+  description: Use VPC endpoints to securely connect to your Firehose delivery stream
+    without traversing the public internet.
+  severity: High
+security_best_practices:
+- best_practice: Enable Server-Side Encryption
+  description: Use server-side encryption to protect data at rest in your Firehose
+    delivery stream.
+  severity: Critical
+- best_practice: Use IAM Policies
+  description: Implement least privilege IAM policies to restrict access to your Firehose
+    delivery stream.
+  severity: Critical
+- best_practice: Enable CloudTrail Logging
+  description: Use AWS CloudTrail to log all API calls made to Firehose for auditing
+    and compliance purposes.
+  severity: High
+- best_practice: Use KMS for Encryption
+  description: Utilize AWS Key Management Service (KMS) for managing encryption keys.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and access keys to minimize the risk
+    of unauthorized access.
+  severity: High
+- best_practice: Implement Network Isolation
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your Firehose delivery stream.
+  severity: High
+- best_practice: Enable Data Validation
+  description: Implement data validation checks to ensure data integrity before it
+    is delivered to the destination.
+  severity: Medium

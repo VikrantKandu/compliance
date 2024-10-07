@@ -1,0 +1,57 @@
+architecture_best_practices:
+- best_practice: Use Lifecycle Policies
+  description: Implement lifecycle policies to automatically transition data to Amazon
+    S3 Glacier or delete it after a specified period. This helps in managing storage
+    costs and ensures data is archived appropriately.
+  severity: Medium
+- best_practice: Optimize Data Retrieval
+  description: Plan and optimize data retrieval strategies to minimize costs and retrieval
+    times. Use bulk retrieval for large datasets and expedited retrieval for urgent
+    access.
+  severity: High
+- best_practice: Use Multipart Upload
+  description: For large archives, use multipart upload to improve upload reliability
+    and performance. This ensures data integrity and reduces the risk of failed uploads.
+  severity: Medium
+- best_practice: Monitor Storage Usage
+  description: Regularly monitor storage usage and retrieval activities using AWS
+    CloudWatch and AWS CloudTrail. This helps in identifying unusual patterns and
+    managing costs effectively.
+  severity: Medium
+- best_practice: Plan for Data Retrieval Costs
+  description: Understand and plan for the costs associated with data retrieval from
+    Amazon S3 Glacier. This includes considering the frequency and urgency of data
+    access.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Ensure all data stored in Amazon S3 Glacier is encrypted using AWS
+    Key Management Service (KMS) or client-side encryption. This protects data at
+    rest from unauthorized access.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to control access
+    to Amazon S3 Glacier. Grant the least privilege necessary to perform required
+    tasks.
+  severity: Critical
+- best_practice: Enable MFA Delete
+  description: Enable Multi-Factor Authentication (MFA) Delete on S3 buckets to add
+    an extra layer of security for delete operations, preventing accidental or malicious
+    data deletion.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon S3 Glacier without
+    traversing the public internet, reducing exposure to potential threats.
+  severity: High
+- best_practice: Monitor and Audit Access
+  description: Use AWS CloudTrail to log and monitor all access to Amazon S3 Glacier.
+    Regularly review audit logs to detect and respond to unauthorized access attempts.
+  severity: High
+- best_practice: Implement Data Integrity Checks
+  description: Use checksums to verify data integrity during upload and retrieval
+    processes. This ensures that data has not been corrupted or tampered with.
+  severity: Medium
+- best_practice: Regularly Update IAM Roles and Policies
+  description: Regularly review and update IAM roles and policies to ensure they comply
+    with the principle of least privilege and reflect current organizational needs.
+  severity: Medium

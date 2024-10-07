@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Managed Node Groups
+  description: Utilize EKS Managed Node Groups to simplify node management, including
+    updates and scaling.
+  severity: Medium
+- best_practice: Implement Auto Scaling
+  description: Configure Cluster Autoscaler and Horizontal Pod Autoscaler to automatically
+    adjust the number of nodes and pods based on demand.
+  severity: High
+- best_practice: Use Multiple Availability Zones
+  description: Deploy your EKS cluster across multiple Availability Zones to enhance
+    fault tolerance and availability.
+  severity: Critical
+- best_practice: Optimize Resource Requests and Limits
+  description: Set appropriate resource requests and limits for your pods to ensure
+    efficient resource utilization and avoid over-provisioning or under-provisioning.
+  severity: High
+- best_practice: Use Spot Instances for Cost Efficiency
+  description: Leverage EC2 Spot Instances for non-critical workloads to reduce costs
+    while maintaining performance.
+  severity: Medium
+- best_practice: Regularly Upgrade Kubernetes Version
+  description: Keep your EKS cluster up to date with the latest Kubernetes version
+    to benefit from new features, performance improvements, and security patches.
+  severity: High
+- best_practice: Use Infrastructure as Code (IaC)
+  description: Manage your EKS cluster and associated resources using IaC tools like
+    AWS CloudFormation or Terraform for consistency and repeatability.
+  severity: Medium
+- best_practice: Implement Logging and Monitoring
+  description: Integrate logging and monitoring solutions such as AWS CloudWatch,
+    Prometheus, and Grafana to gain visibility into cluster performance and health.
+  severity: High
+security_best_practices:
+- best_practice: Enable IAM Roles for Service Accounts (IRSA)
+  description: Use IAM Roles for Service Accounts to provide fine-grained permissions
+    to your pods, enhancing security and minimizing the risk of privilege escalation.
+  severity: Critical
+- best_practice: Restrict Access with Network Policies
+  description: Implement Kubernetes Network Policies to control traffic flow between
+    pods, reducing the attack surface and preventing unauthorized access.
+  severity: High
+- best_practice: Use Secrets Management
+  description: Store sensitive information such as API keys and passwords in AWS Secrets
+    Manager or Kubernetes Secrets, and ensure they are encrypted.
+  severity: Critical
+- best_practice: Enable Audit Logging
+  description: Enable Kubernetes audit logging to track and review actions performed
+    within your EKS cluster for security and compliance purposes.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and Kubernetes Secrets to minimize
+    the risk of credential compromise.
+  severity: High
+- best_practice: Implement Pod Security Policies
+  description: Use Pod Security Policies to enforce security standards for pod creation
+    and prevent the use of privileged containers.
+  severity: High
+- best_practice: Use Private Cluster Endpoints
+  description: Configure your EKS cluster to use private endpoints for API server
+    communication, reducing exposure to the public internet.
+  severity: Critical
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments on your
+    EKS cluster and applications to identify and remediate potential risks.
+  severity: High

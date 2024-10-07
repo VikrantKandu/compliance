@@ -1,0 +1,48 @@
+architecture_best_practices:
+  - best_practice: Use Appropriate Storage Gateway Type
+    description: Choose the correct type of AWS Storage Gateway (File Gateway, Tape Gateway, or Volume Gateway) based on your specific use case to ensure optimal performance and cost-efficiency.
+    severity: High
+  - best_practice: Optimize Network Configuration
+    description: Ensure that your network configuration, including bandwidth and latency, is optimized for the type of data transfer you expect to perform with AWS Storage Gateway.
+    severity: High
+  - best_practice: Implement Data Compression
+    description: Use data compression to reduce the amount of data transferred between your on-premises environment and AWS, thereby saving on bandwidth and storage costs.
+    severity: Medium
+  - best_practice: Regularly Monitor Performance Metrics
+    description: Continuously monitor performance metrics such as throughput, latency, and error rates to identify and address any issues promptly.
+    severity: Medium
+  - best_practice: Plan for Scalability
+    description: Design your AWS Storage Gateway setup to easily scale with your growing data needs, ensuring that it can handle increased loads without performance degradation.
+    severity: Medium
+  - best_practice: Use Multiple Gateways for High Availability
+    description: Deploy multiple Storage Gateways in different locations or availability zones to ensure high availability and fault tolerance.
+    severity: Critical
+  - best_practice: Integrate with AWS Backup
+    description: Use AWS Backup to automate and manage backups of your data stored in AWS Storage Gateway, ensuring data durability and compliance.
+    severity: High
+
+security_best_practices:
+  - best_practice: Enable Encryption at Rest
+    description: Use AWS Key Management Service (KMS) to enable encryption at rest for all data stored in AWS Storage Gateway to protect sensitive information.
+    severity: Critical
+  - best_practice: Use Secure Access Controls
+    description: Implement IAM roles and policies to restrict access to AWS Storage Gateway resources, ensuring that only authorized users and applications can access your data.
+    severity: Critical
+  - best_practice: Enable Encryption in Transit
+    description: Use SSL/TLS to encrypt data in transit between your on-premises environment and AWS Storage Gateway to prevent data interception.
+    severity: Critical
+  - best_practice: Regularly Rotate Encryption Keys
+    description: Regularly rotate encryption keys used for data encryption to minimize the risk of key compromise.
+    severity: High
+  - best_practice: Enable Logging and Monitoring
+    description: Enable AWS CloudTrail and Amazon CloudWatch to log and monitor all access and activity related to AWS Storage Gateway, helping to detect and respond to security incidents.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and assessments of your AWS Storage Gateway setup to identify and mitigate potential vulnerabilities.
+    severity: High
+  - best_practice: Implement Network Segmentation
+    description: Use VPCs, subnets, and security groups to segment your network and limit access to AWS Storage Gateway, reducing the attack surface.
+    severity: Medium
+  - best_practice: Apply Patches and Updates
+    description: Regularly apply patches and updates to your AWS Storage Gateway software to protect against known vulnerabilities and exploits.
+    severity: Medium

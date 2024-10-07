@@ -1,0 +1,53 @@
+architecture_best_practices:
+- best_practice: Use Provisioned IOPS for High-Performance Applications
+  description: For applications requiring high and consistent I/O performance, use
+    EBS volumes with Provisioned IOPS to ensure stable and predictable performance.
+  severity: High
+- best_practice: Regularly Snapshot EBS Volumes
+  description: Take regular snapshots of your EBS volumes to ensure data durability
+    and facilitate data recovery in case of failure or data corruption.
+  severity: Critical
+- best_practice: Optimize Volume Type Based on Workload
+  description: Choose the appropriate EBS volume type (e.g., General Purpose SSD,
+    Provisioned IOPS SSD, Throughput Optimized HDD) based on your workload requirements
+    to balance cost and performance.
+  severity: Medium
+- best_practice: Use EBS-Optimized Instances
+  description: Use EBS-optimized instances to ensure dedicated bandwidth between your
+    EC2 instances and EBS volumes, reducing latency and improving performance.
+  severity: High
+- best_practice: Monitor EBS Performance Metrics
+  description: Use CloudWatch to monitor EBS performance metrics such as IOPS, throughput,
+    and latency to identify and address performance bottlenecks.
+  severity: Medium
+- best_practice: Implement Multi-AZ Architectures
+  description: Design your architecture to use multiple Availability Zones to improve
+    fault tolerance and availability, ensuring that your application can withstand
+    the failure of a single AZ.
+  severity: Critical
+security_best_practices:
+- best_practice: Encrypt EBS Volumes
+  description: Use AWS Key Management Service (KMS) to encrypt EBS volumes to protect
+    sensitive data at rest and ensure compliance with security standards.
+  severity: Critical
+- best_practice: Implement IAM Policies for Access Control
+  description: Use Identity and Access Management (IAM) policies to control and restrict
+    access to EBS volumes, ensuring that only authorized users and services can access
+    your data.
+  severity: High
+- best_practice: Enable EBS Volume Encryption by Default
+  description: Configure your AWS account to automatically encrypt all new EBS volumes
+    to ensure consistent security practices across your environment.
+  severity: High
+- best_practice: Regularly Rotate Encryption Keys
+  description: Regularly rotate your encryption keys to reduce the risk of key compromise
+    and ensure the ongoing security of your encrypted data.
+  severity: Medium
+- best_practice: Use CloudTrail for Auditing
+  description: Enable AWS CloudTrail to log all API calls related to EBS volumes,
+    providing an audit trail for security analysis and compliance purposes.
+  severity: High
+- best_practice: Implement Data Lifecycle Management
+  description: Use EBS Lifecycle Manager to automate the creation, retention, and
+    deletion of snapshots to ensure data is managed securely and efficiently.
+  severity: Medium

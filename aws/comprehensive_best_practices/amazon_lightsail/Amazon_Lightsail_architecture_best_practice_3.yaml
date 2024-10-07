@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-CF-001
+  - Title: Ensure AWS CloudFormation stacks are encrypted
+  - Profile Applicability: Level 1
+  - Description: This check ensures that AWS CloudFormation stacks utilize encryption
+      to protect sensitive data. Encryption helps safeguard the data within the stack
+      resources from unauthorized access and potential breaches.
+  - Rationale: Encrypting CloudFormation stacks protects sensitive information by
+      ensuring that data at rest is secured. Without encryption, sensitive data could
+      be exposed to unauthorized users, leading to data breaches and compliance violations.
+  - Audit: 1. Sign in to the AWS Management Console. 2. Navigate to the CloudFormation
+      service. 3. Select a stack and review its resources. 4. Verify that resources
+      such as S3 buckets, RDS instances, and EBS volumes associated with the stack
+      have encryption enabled. 5. Check the stack's template to ensure encryption
+      parameters are defined and used.
+  - Default Value: By default, CloudFormation stacks do not enforce encryption on
+      resources unless specified in the template.
+  - Remediation: 1. Update the CloudFormation template to include encryption parameters
+      for all applicable resources. 2. Redeploy the stack with the updated template
+      to apply encryption. 3. For existing resources, manually enable encryption where
+      applicable and ensure future resources are created with encryption by default.

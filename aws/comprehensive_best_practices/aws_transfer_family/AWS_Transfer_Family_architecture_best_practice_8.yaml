@@ -1,0 +1,23 @@
+- rule:
+    ID: AWS-EC2-001
+    Title: Ensure EC2 instances are not using default VPC
+    Profile Applicability: Level 1
+    Description: EC2 instances should not be launched in the default VPC. Using a
+      custom VPC allows for better network segmentation and access control, enhancing
+      security.
+    Rationale: Launching EC2 instances in the default VPC can lead to security risks
+      due to less restrictive network configurations. Custom VPCs provide more granular
+      control over network settings, reducing potential attack surfaces.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 dashboard.
+    - Select 'Instances' from the left-hand menu.
+    - For each instance, check the 'VPC ID' attribute.
+    - Verify that the 'VPC ID' does not match the default VPC ID for the region.
+    Default Value: By default, EC2 instances may be launched in the default VPC if
+      no custom VPC is specified.
+    Remediation:
+    - Create a new custom VPC with the desired configuration.
+    - Stop the EC2 instance running in the default VPC.
+    - Launch a new instance in the custom VPC using the same configuration and attach
+      the necessary security groups and network interfaces.

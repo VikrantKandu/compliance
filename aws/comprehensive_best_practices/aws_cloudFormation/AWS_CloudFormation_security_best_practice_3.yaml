@@ -1,0 +1,27 @@
+- rule:
+    ID: AWS-BP-001
+    Title: Ensure S3 Buckets are Configured with Bucket Policies
+    Profile Applicability: Level 1
+    Description: This check ensures that all S3 buckets have bucket policies applied
+      to manage access permissions. Bucket policies are crucial for defining who can
+      access the data and what actions they can perform, helping to secure sensitive
+      information.
+    Rationale: Without bucket policies, S3 buckets may be inadvertently exposed to
+      unauthorized access or modifications. This could lead to data breaches or data
+      loss, impacting the security and integrity of the data stored within the buckets.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the S3 service.
+    - Review the list of S3 buckets and select a bucket to inspect.
+    - Check the "Permissions" tab to verify if a bucket policy is applied.
+    - Ensure the policy grants least privilege access and does not expose the bucket
+      publicly unless necessary.
+    Default Value: By default, S3 buckets do not have bucket policies applied.
+    Remediation:
+    - Log into the AWS Management Console.
+    - Navigate to the S3 service and select the bucket requiring a policy.
+    - Go to the "Permissions" tab and click on "Bucket Policy Editor."
+    - Write and apply a bucket policy that restricts access to only authorized users
+      or roles.
+    - Test the policy to ensure it meets security requirements and does not allow
+      public access unless explicitly intended.

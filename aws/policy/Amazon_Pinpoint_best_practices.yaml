@@ -1,0 +1,51 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Ensure that Amazon Pinpoint is deployed across multiple Availability
+    Zones to enhance fault tolerance and availability.
+  severity: Critical
+- best_practice: Enable Auto Scaling
+  description: Configure Auto Scaling for Amazon Pinpoint to automatically adjust
+    capacity to maintain steady, predictable performance at the lowest possible cost.
+  severity: High
+- best_practice: Utilize Amazon CloudWatch for Monitoring
+  description: Set up Amazon CloudWatch to monitor Amazon Pinpoint metrics and set
+    alarms for critical thresholds to ensure timely response to issues.
+  severity: High
+- best_practice: Implement Event-Driven Architectures
+  description: Use AWS Lambda and Amazon SNS to process events and notifications from
+    Amazon Pinpoint, enabling scalable and decoupled architectures.
+  severity: Medium
+- best_practice: Optimize Campaign Segmentation
+  description: Use Amazon Pinpoint's segmentation features to target specific customer
+    groups, optimizing resource usage and improving campaign effectiveness.
+  severity: Medium
+- best_practice: Leverage Data Warehousing Solutions
+  description: Integrate Amazon Pinpoint with Amazon Redshift or AWS Data Lake for
+    advanced analytics and reporting.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Encryption at Rest and in Transit
+  description: Ensure that all data stored in Amazon Pinpoint is encrypted at rest
+    using AWS KMS and that data in transit is encrypted using SSL/TLS.
+  severity: Critical
+- best_practice: Implement IAM Policies and Roles
+  description: Use AWS Identity and Access Management (IAM) to create fine-grained
+    access control policies and roles for Amazon Pinpoint, limiting access to authorized
+    users only.
+  severity: Critical
+- best_practice: Enable AWS CloudTrail Logging
+  description: Activate AWS CloudTrail to log all API calls made to Amazon Pinpoint,
+    providing an audit trail for security and compliance purposes.
+  severity: High
+- best_practice: Regularly Rotate API Keys
+  description: Ensure that API keys used with Amazon Pinpoint are rotated regularly
+    to minimize the risk of unauthorized access.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Configure Amazon Pinpoint to use VPC endpoints, ensuring that data
+    does not traverse the public internet, reducing exposure to potential threats.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform periodic security audits and vulnerability assessments on Amazon
+    Pinpoint configurations to identify and mitigate potential security risks.
+  severity: Medium

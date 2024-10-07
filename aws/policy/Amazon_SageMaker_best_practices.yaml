@@ -1,0 +1,74 @@
+architecture_best_practices:
+- best_practice: Use Managed Spot Training
+  description: Utilize managed spot training to reduce costs by taking advantage of
+    unused EC2 capacity.
+  severity: Medium
+- best_practice: Enable Auto Scaling for Endpoints
+  description: Configure auto-scaling for endpoints to handle varying loads efficiently
+    and maintain performance.
+  severity: High
+- best_practice: Use Multi-Model Endpoints
+  description: Deploy multiple models on a single endpoint to optimize resource usage
+    and reduce costs.
+  severity: Medium
+- best_practice: Leverage SageMaker Pipelines
+  description: Use SageMaker Pipelines to automate and manage machine learning workflows,
+    ensuring consistency and reproducibility.
+  severity: High
+- best_practice: Optimize Data Input
+  description: Use optimized data formats like RecordIO or TFRecord for faster data
+    loading and processing.
+  severity: Medium
+- best_practice: Use Elastic Inference
+  description: Attach Elastic Inference to endpoints to reduce costs while maintaining
+    high inference performance.
+  severity: Medium
+- best_practice: Monitor and Log Metrics
+  description: Continuously monitor and log metrics to ensure the health and performance
+    of SageMaker resources.
+  severity: High
+- best_practice: Use SageMaker Experiments
+  description: Track and manage machine learning experiments to ensure reproducibility
+    and better model management.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Ensure that all data stored in SageMaker is encrypted at rest using
+    AWS Key Management Service (KMS).
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Use HTTPS endpoints and secure data channels to encrypt data in transit
+    between SageMaker components.
+  severity: Critical
+- best_practice: Implement IAM Roles and Policies
+  description: Use fine-grained IAM roles and policies to control access to SageMaker
+    resources and actions.
+  severity: Critical
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to securely connect SageMaker to other AWS services
+    without traversing the public internet.
+  severity: High
+- best_practice: Use Network Isolation
+  description: Implement network isolation for training and hosting environments to
+    prevent unauthorized access.
+  severity: High
+- best_practice: Enable CloudTrail Logging
+  description: Use AWS CloudTrail to log all API calls made to SageMaker for auditing
+    and compliance purposes.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and access keys to minimize the risk
+    of credential compromise.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    potential vulnerabilities.
+  severity: High
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for all IAM users to add an extra layer of security to account
+    access.
+  severity: High
+- best_practice: Secure Notebook Instances
+  description: Restrict access to SageMaker notebook instances and use lifecycle configurations
+    to enforce security policies.
+  severity: High

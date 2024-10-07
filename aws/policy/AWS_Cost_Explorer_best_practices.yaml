@@ -1,0 +1,51 @@
+architecture_best_practices:
+- best_practice: Use AWS Organizations for Centralized Billing
+  description: Leverage AWS Organizations to consolidate billing and manage multiple
+    AWS accounts centrally, ensuring better cost visibility and control.
+  severity: Medium
+- best_practice: Enable Cost and Usage Reports
+  description: Enable detailed Cost and Usage Reports (CUR) to get comprehensive insights
+    into your AWS spending patterns and optimize costs.
+  severity: High
+- best_practice: Tagging Resources Consistently
+  description: Implement a consistent tagging strategy across all AWS resources to
+    easily track and allocate costs to different projects or departments.
+  severity: High
+- best_practice: Use Cost Categories
+  description: Utilize Cost Categories to group and categorize your cost and usage
+    information according to your business needs.
+  severity: Medium
+- best_practice: Implement Reserved Instances and Savings Plans
+  description: Use Reserved Instances and Savings Plans to reduce costs for predictable
+    workloads by committing to a specific usage level.
+  severity: High
+- best_practice: Regularly Review and Optimize Costs
+  description: Schedule regular reviews of your AWS costs and usage to identify and
+    eliminate wasteful spending and optimize resource utilization.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS Identity and Access Management (IAM) Policies
+  description: Use IAM policies to control access to AWS Cost Explorer, ensuring that
+    only authorized users can view and manage cost data.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing AWS Cost Explorer to add an extra layer of
+    security and prevent unauthorized access.
+  severity: High
+- best_practice: Monitor Access Logs
+  description: Regularly monitor access logs to detect any unauthorized or suspicious
+    activities related to AWS Cost Explorer.
+  severity: High
+- best_practice: Implement Least Privilege Principle
+  description: Grant the minimum necessary permissions to users and roles accessing
+    AWS Cost Explorer to reduce the risk of accidental or malicious changes.
+  severity: Critical
+- best_practice: Regularly Review IAM Roles and Permissions
+  description: Periodically review IAM roles and permissions to ensure they are up-to-date
+    and aligned with current security policies and user needs.
+  severity: Medium
+- best_practice: Use AWS CloudTrail for Auditing
+  description: Enable AWS CloudTrail to log and monitor all API calls made to AWS
+    Cost Explorer, providing a comprehensive audit trail for security and compliance
+    purposes.
+  severity: High

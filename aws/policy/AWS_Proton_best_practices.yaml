@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use Infrastructure as Code (IaC)
+  description: Implement AWS Proton with Infrastructure as Code (IaC) to ensure consistent
+    and repeatable deployments. This practice helps in managing and provisioning infrastructure
+    through code rather than manual processes.
+  severity: High
+- best_practice: Modularize Templates
+  description: Create modular and reusable templates in AWS Proton to promote scalability
+    and maintainability. This allows for easier updates and management of resources.
+  severity: Medium
+- best_practice: Implement Version Control
+  description: Use version control for your AWS Proton templates to track changes
+    and enable rollbacks if necessary. This practice helps in maintaining the integrity
+    of your infrastructure.
+  severity: High
+- best_practice: Optimize Resource Allocation
+  description: Ensure that your AWS Proton templates are optimized for resource allocation
+    to avoid over-provisioning or under-provisioning, which can lead to cost inefficiencies
+    and performance issues.
+  severity: Medium
+- best_practice: Regularly Update Templates
+  description: Keep your AWS Proton templates updated with the latest best practices
+    and AWS features to ensure optimal performance and security.
+  severity: Medium
+- best_practice: Use Parameter Store for Configuration
+  description: Utilize AWS Systems Manager Parameter Store for managing configuration
+    data in AWS Proton templates. This practice helps in centralizing and securing
+    configuration data.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Ensure that IAM roles and policies used in AWS Proton follow the principle
+    of least privilege, granting only the necessary permissions required for tasks.
+  severity: Critical
+- best_practice: Enable Encryption
+  description: Use encryption for data at rest and in transit within AWS Proton to
+    protect sensitive information from unauthorized access.
+  severity: Critical
+- best_practice: Use AWS Secrets Manager
+  description: Store and manage sensitive information such as API keys and database
+    credentials in AWS Secrets Manager rather than hardcoding them in AWS Proton templates.
+  severity: High
+- best_practice: Regularly Rotate Secrets
+  description: Implement a regular rotation policy for secrets managed by AWS Secrets
+    Manager to minimize the risk of compromised credentials.
+  severity: High
+- best_practice: Monitor and Audit
+  description: Enable logging and monitoring for AWS Proton using AWS CloudTrail and
+    AWS Config to track changes and detect suspicious activities.
+  severity: High
+- best_practice: Apply Security Patches
+  description: Regularly apply security patches to the underlying infrastructure managed
+    by AWS Proton to protect against known vulnerabilities.
+  severity: High
+- best_practice: Implement Network Security Controls
+  description: Use security groups, network ACLs, and VPC configurations to control
+    network traffic and protect resources managed by AWS Proton.
+  severity: High
+- best_practice: Conduct Regular Security Reviews
+  description: Perform regular security assessments and reviews of your AWS Proton
+    configurations to ensure compliance with security best practices and standards.
+  severity: Medium

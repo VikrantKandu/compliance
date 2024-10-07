@@ -1,0 +1,57 @@
+architecture_best_practices:
+  - best_practice: Enable Auto Scaling
+    description: Configure Auto Scaling to automatically adjust the number of Amazon EC2 instances in response to changing demand, ensuring optimal performance and cost-efficiency.
+    severity: High
+  - best_practice: Use Multiple Availability Zones
+    description: Deploy your application across multiple Availability Zones to enhance fault tolerance and high availability.
+    severity: Critical
+  - best_practice: Implement Load Balancing
+    description: Utilize Elastic Load Balancing to distribute incoming application traffic across multiple targets, improving application reliability and performance.
+    severity: High
+  - best_practice: Optimize Instance Types
+    description: Select appropriate EC2 instance types based on your workload requirements to ensure cost-effectiveness and performance.
+    severity: Medium
+  - best_practice: Use Elastic IP Addresses
+    description: Assign Elastic IP addresses to ensure a static IP address for your instances, making it easier to manage and maintain.
+    severity: Low
+  - best_practice: Employ Infrastructure as Code (IaC)
+    description: Use AWS CloudFormation or Terraform to manage your infrastructure as code, ensuring consistency and repeatability.
+    severity: High
+  - best_practice: Monitor and Log Performance
+    description: Implement AWS CloudWatch for monitoring and logging to gain insights into application performance and health.
+    severity: Medium
+  - best_practice: Regularly Update AMIs
+    description: Keep your Amazon Machine Images (AMIs) up-to-date with the latest security patches and updates.
+    severity: High
+  - best_practice: Use VPC for Network Isolation
+    description: Deploy your instances within a Virtual Private Cloud (VPC) to isolate and secure your network.
+    severity: Critical
+
+security_best_practices:
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require MFA for all AWS account users to add an extra layer of security.
+    severity: Critical
+  - best_practice: Use IAM Roles and Policies
+    description: Implement IAM roles and policies to enforce the principle of least privilege, granting only the necessary permissions to users and services.
+    severity: Critical
+  - best_practice: Encrypt Data in Transit and at Rest
+    description: Use AWS Key Management Service (KMS) to encrypt sensitive data both in transit and at rest.
+    severity: Critical
+  - best_practice: Regularly Rotate Security Credentials
+    description: Rotate IAM access keys, passwords, and other security credentials regularly to minimize the risk of unauthorized access.
+    severity: High
+  - best_practice: Enable VPC Flow Logs
+    description: Use VPC Flow Logs to capture information about the IP traffic going to and from network interfaces in your VPC.
+    severity: Medium
+  - best_practice: Implement Security Groups and NACLs
+    description: Use Security Groups and Network ACLs to control inbound and outbound traffic to your instances, enhancing network security.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and vulnerability assessments to identify and mitigate potential security risks.
+    severity: High
+  - best_practice: Use AWS Shield and WAF
+    description: Implement AWS Shield and Web Application Firewall (WAF) to protect against DDoS attacks and other web exploits.
+    severity: High
+  - best_practice: Enable CloudTrail for Auditing
+    description: Use AWS CloudTrail to log and monitor API calls and account activity for auditing and compliance purposes.
+    severity: Medium

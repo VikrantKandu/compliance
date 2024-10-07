@@ -1,0 +1,72 @@
+architecture_best_practices:
+- best_practice: Use Elastic Load Balancing (ELB) for High Availability
+  description: Deploy Elastic Load Balancing to distribute incoming application traffic
+    across multiple targets, such as EC2 instances, in multiple Availability Zones
+    to ensure high availability and fault tolerance.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Configure Auto Scaling to automatically adjust the number of EC2 instances
+    in response to changing demand, ensuring optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Utilize Amazon RDS for Database Management
+  description: Use Amazon RDS to manage relational databases, providing automated
+    backups, patching, and scaling, which simplifies database management and enhances
+    reliability.
+  severity: Medium
+- best_practice: Leverage Amazon S3 for Storage
+  description: Store application data and backups in Amazon S3 to ensure durability,
+    scalability, and security of your data.
+  severity: Medium
+- best_practice: Use AWS CloudFormation for Infrastructure as Code
+  description: Define and provision your infrastructure using AWS CloudFormation templates
+    to ensure consistent and repeatable deployments.
+  severity: Medium
+- best_practice: Implement VPC for Network Isolation
+  description: Use Amazon Virtual Private Cloud (VPC) to create isolated network environments,
+    enhancing security and control over your AWS resources.
+  severity: High
+- best_practice: Enable Multi-AZ Deployments
+  description: Configure your database and critical services for Multi-AZ deployments
+    to improve fault tolerance and availability.
+  severity: High
+- best_practice: Monitor with Amazon CloudWatch
+  description: Use Amazon CloudWatch to monitor your AWS resources and applications,
+    providing real-time insights and alerting to maintain operational health.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS Identity and Access Management (IAM)
+  description: Use IAM to manage user access and permissions securely, ensuring that
+    only authorized users can access your AWS resources.
+  severity: Critical
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require MFA for all IAM users to add an extra layer of security to
+    your AWS accounts.
+  severity: Critical
+- best_practice: Use AWS Key Management Service (KMS) for Encryption
+  description: Encrypt sensitive data at rest and in transit using AWS KMS to protect
+    against unauthorized access.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Rotate IAM access keys regularly to reduce the risk of compromised
+    credentials.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Use AWS CloudTrail to log and monitor all API calls and account activity,
+    providing an audit trail for security and compliance.
+  severity: High
+- best_practice: Apply Least Privilege Principle
+  description: Grant the minimum necessary permissions to IAM users and roles to reduce
+    the risk of unauthorized access.
+  severity: Critical
+- best_practice: Use Security Groups and Network ACLs
+  description: Configure Security Groups and Network ACLs to control inbound and outbound
+    traffic to your AWS resources, enhancing network security.
+  severity: High
+- best_practice: Perform Regular Security Audits
+  description: Conduct regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: Medium
+- best_practice: Enable GuardDuty for Threat Detection
+  description: Use Amazon GuardDuty to continuously monitor for malicious activity
+    and unauthorized behavior to protect your AWS accounts and workloads.
+  severity: Medium

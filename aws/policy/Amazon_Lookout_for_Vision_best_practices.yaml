@@ -1,0 +1,51 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Ensure that Amazon Lookout for Vision is deployed across multiple availability
+    zones to enhance fault tolerance and availability.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Configure auto-scaling to handle variable workloads efficiently, ensuring
+    that the system can scale up during peak times and scale down during off-peak
+    times.
+  severity: High
+- best_practice: Optimize Data Storage
+  description: Use Amazon S3 for storing training and inference data, and ensure data
+    is stored in an optimized format to reduce storage costs and improve access speed.
+  severity: Medium
+- best_practice: Use Appropriate Instance Types
+  description: Select instance types that are optimized for machine learning workloads
+    to ensure efficient processing and cost-effectiveness.
+  severity: Medium
+- best_practice: Monitor and Log Activities
+  description: Implement comprehensive monitoring and logging using Amazon CloudWatch
+    to track performance metrics and operational health.
+  severity: High
+- best_practice: Implement Data Lifecycle Policies
+  description: Define and implement data lifecycle policies to manage data retention
+    and deletion, ensuring compliance and cost management.
+  severity: Medium
+security_best_practices:
+- best_practice: Use IAM Roles and Policies
+  description: Implement the principle of least privilege by using IAM roles and policies
+    to restrict access to Amazon Lookout for Vision resources.
+  severity: Critical
+- best_practice: Enable Encryption
+  description: Ensure data at rest and in transit is encrypted using AWS Key Management
+    Service (KMS) to protect sensitive information.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and API keys to minimize the risk
+    of unauthorized access.
+  severity: High
+- best_practice: Implement VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon Lookout for Vision
+    without exposing data to the public internet.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Enable AWS CloudTrail to log all API calls and monitor for any unauthorized
+    or suspicious activities.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    potential vulnerabilities.
+  severity: Medium

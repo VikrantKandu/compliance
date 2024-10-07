@@ -1,0 +1,68 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Deploy resources across multiple Availability Zones to ensure high
+    availability and fault tolerance.
+  severity: Critical
+- best_practice: Implement VPC Peering
+  description: Use VPC peering to enable communication between VPCs without traversing
+    the public internet, ensuring low latency and high security.
+  severity: High
+- best_practice: Utilize Elastic IP Addresses
+  description: Assign Elastic IP addresses to ensure consistent and reliable access
+    to your instances, even if the underlying instance fails.
+  severity: Medium
+- best_practice: Leverage Route Tables
+  description: Use route tables to control the flow of traffic within your VPC and
+    to external networks, ensuring proper routing and network segmentation.
+  severity: High
+- best_practice: Implement Subnet Segmentation
+  description: Divide your VPC into multiple subnets to isolate different types of
+    resources and control traffic flow.
+  severity: High
+- best_practice: Use Network Access Control Lists (NACLs)
+  description: Implement NACLs to provide an additional layer of security at the subnet
+    level, controlling inbound and outbound traffic.
+  severity: Medium
+- best_practice: Optimize IP Address Allocation
+  description: Plan and allocate IP address ranges efficiently to avoid conflicts and ensure scalability.
+  severity: Medium
+- best_practice: Enable Flow Logs
+  description: Enable VPC Flow Logs to capture information about the IP traffic going to and from network interfaces in your VPC, aiding in troubleshooting and security analysis.
+  severity: Medium
+security_best_practices:
+- best_practice: Use Security Groups
+  description: Implement security groups to control inbound and outbound traffic to
+    your instances, ensuring only authorized traffic is allowed.
+  severity: Critical
+- best_practice: Enable Encryption
+  description: Encrypt data in transit and at rest to protect sensitive information
+    from unauthorized access.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use IAM policies to enforce the principle of least privilege, ensuring
+    users and services have only the permissions they need.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate access keys, passwords, and other credentials to minimize
+    the risk of compromised credentials.
+  severity: High
+- best_practice: Monitor and Audit Activity
+  description: Use AWS CloudTrail and other monitoring tools to track and audit activity
+    within your VPC for security and compliance purposes.
+  severity: High
+- best_practice: Restrict Public Access
+  description: Minimize the exposure of your resources by restricting public access
+    and using private endpoints whenever possible.
+  severity: Critical
+- best_practice: Implement DDoS Protection
+  description: Use AWS Shield and other DDoS protection services to safeguard your
+    VPC from distributed denial-of-service attacks.
+  severity: High
+- best_practice: Use Bastion Hosts
+  description: Deploy bastion hosts to securely manage access to instances in private
+    subnets, reducing the attack surface.
+  severity: Medium
+- best_practice: Regular Security Reviews
+  description: Conduct regular security reviews and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: High

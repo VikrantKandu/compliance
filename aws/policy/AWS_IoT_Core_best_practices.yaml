@@ -1,0 +1,79 @@
+architecture_best_practices:
+- best_practice: Use Managed Services
+  description: Leverage AWS managed services like AWS IoT Core to reduce operational
+    overhead and ensure scalability.
+  severity: Medium
+- best_practice: Implement Microservices Architecture
+  description: Design your IoT solution using microservices to improve modularity,
+    scalability, and maintainability.
+  severity: High
+- best_practice: Use Serverless Architectures
+  description: Utilize AWS Lambda for serverless computing to handle IoT data processing,
+    reducing infrastructure management.
+  severity: High
+- best_practice: Enable Auto Scaling
+  description: Configure auto-scaling for your IoT infrastructure to handle variable
+    loads and ensure high availability.
+  severity: High
+- best_practice: Implement Data Partitioning
+  description: Partition your data to improve query performance and manageability.
+  severity: Medium
+- best_practice: Use AWS IoT Analytics
+  description: Utilize AWS IoT Analytics for advanced data processing and analysis
+    of IoT data.
+  severity: Medium
+- best_practice: Optimize Data Storage
+  description: Use appropriate data storage solutions like Amazon S3 or DynamoDB to
+    store IoT data efficiently.
+  severity: Medium
+- best_practice: Implement Edge Processing
+  description: Use AWS IoT Greengrass for edge processing to reduce latency and bandwidth
+    usage.
+  severity: Medium
+- best_practice: Design for Fault Tolerance
+  description: Ensure that your IoT architecture can withstand failures and continue
+    to operate.
+  severity: High
+- best_practice: Use Event-Driven Architecture
+  description: Implement event-driven architecture to handle IoT events efficiently
+    and in real-time.
+  severity: High
+security_best_practices:
+- best_practice: Use IAM Roles for Permissions
+  description: Assign least-privilege IAM roles to manage permissions for AWS IoT
+    Core resources.
+  severity: Critical
+- best_practice: Enable Device Authentication
+  description: Use X.509 certificates or AWS IoT authentication mechanisms to authenticate
+    devices.
+  severity: Critical
+- best_practice: Encrypt Data in Transit
+  description: Use TLS to encrypt data transmitted between devices and AWS IoT Core.
+  severity: Critical
+- best_practice: Encrypt Data at Rest
+  description: Use AWS KMS to encrypt data stored in AWS IoT Core and associated services.
+  severity: High
+- best_practice: Implement Fine-Grained Policies
+  description: Use AWS IoT Core policies to define fine-grained permissions for devices
+    and users.
+  severity: High
+- best_practice: Monitor and Audit IoT Activities
+  description: Use AWS CloudTrail and AWS IoT Device Defender to monitor and audit
+    IoT activities.
+  severity: High
+- best_practice: Rotate Certificates Regularly
+  description: Implement a process to rotate device certificates regularly to enhance
+    security.
+  severity: High
+- best_practice: Use Secure Boot and Firmware Updates
+  description: Ensure devices support secure boot and secure firmware updates to prevent
+    unauthorized modifications.
+  severity: High
+- best_practice: Implement Network Segmentation
+  description: Use VPCs and security groups to segment your IoT network and limit
+    access.
+  severity: Medium
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for users accessing AWS IoT Core to add an extra layer of
+    security.
+  severity: Medium

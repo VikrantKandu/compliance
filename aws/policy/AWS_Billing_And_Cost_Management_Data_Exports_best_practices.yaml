@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Enable Cost and Usage Reports (CUR)
+  description: Ensure that Cost and Usage Reports are enabled to provide detailed
+    insights into AWS usage and costs. This helps in accurate tracking and analysis.
+  severity: High
+- best_practice: Use AWS Glue for Data Transformation
+  description: Utilize AWS Glue to transform and prepare billing data for analysis.
+    This helps in organizing data efficiently for better insights.
+  severity: Medium
+- best_practice: Store Data in Amazon S3
+  description: Store billing and cost management data exports in Amazon S3 for durability
+    and scalability. S3 provides a reliable storage solution for large datasets.
+  severity: High
+- best_practice: Use Partitioned Data
+  description: Partition your billing data by date or other relevant dimensions to
+    optimize query performance and reduce costs.
+  severity: Medium
+- best_practice: Leverage Amazon Athena for Querying
+  description: Use Amazon Athena to query billing data stored in S3. Athena allows
+    for serverless querying, which can be cost-effective and scalable.
+  severity: Medium
+- best_practice: Implement Lifecycle Policies
+  description: Set up lifecycle policies in S3 to transition or expire old billing
+    data, helping to manage storage costs and maintain data relevance.
+  severity: Low
+- best_practice: Use Tags for Resource Categorization
+  description: Tag AWS resources to categorize and track costs more effectively. This
+    aids in cost allocation and management.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption for Data at Rest
+  description: Ensure that billing and cost management data stored in S3 is encrypted
+    using AWS Key Management Service (KMS) to protect sensitive information.
+  severity: Critical
+- best_practice: Use IAM Roles for Access Management
+  description: Implement IAM roles to manage access to billing data exports. This
+    ensures that only authorized users and services can access sensitive data.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and AWS Config to log and monitor access to billing
+    data. This helps in auditing and detecting unauthorized access.
+  severity: High
+- best_practice: Apply S3 Bucket Policies
+  description: Configure S3 bucket policies to restrict access to billing data exports.
+    This adds an additional layer of security to prevent unauthorized access.
+  severity: High
+- best_practice: Use VPC Endpoints for S3 Access
+  description: Use VPC endpoints to securely access S3 buckets without traversing
+    the public internet, reducing the risk of data interception.
+  severity: Medium
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate access keys for IAM users and roles that access billing
+    data to minimize the risk of compromised credentials.
+  severity: Medium
+- best_practice: Implement MFA for IAM Users
+  description: Require Multi-Factor Authentication (MFA) for IAM users accessing billing
+    data to enhance security and prevent unauthorized access.
+  severity: High

@@ -1,0 +1,25 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 instances have security groups with restricted inbound access
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that all EC2 instances have security groups configured
+      to restrict inbound traffic to only necessary ports and IP addresses. This minimizes
+      the attack surface and helps protect instances from unauthorized access.
+    Rationale: Restricting inbound access reduces the risk of unauthorized access
+      and potential exploitation of vulnerabilities. Without proper security group
+      configurations, instances may be exposed to unnecessary risks, leading to data
+      breaches or service disruptions.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the EC2 service.
+    - Select 'Instances' and review the 'Security Groups' associated with each instance.
+    - Verify that inbound rules are limited to specific IP addresses and ports necessary
+      for the application.
+    Default Value: By default, EC2 instances may have security groups with open inbound
+      access, depending on the initial configuration.
+    Remediation:
+    - Identify EC2 instances with overly permissive security groups.
+    - Modify security group rules to restrict inbound traffic to only trusted IP addresses
+      and necessary ports.
+    - Regularly review and update security group configurations to align with security
+      policies.

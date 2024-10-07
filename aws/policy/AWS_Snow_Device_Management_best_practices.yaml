@@ -1,0 +1,56 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Snow Family Device
+  description: Choose the correct AWS Snow Family device (Snowcone, Snowball Edge,
+    or Snowmobile) based on your data volume, processing needs, and environmental
+    conditions.
+  severity: High
+- best_practice: Plan for Network Connectivity
+  description: Ensure your network infrastructure can support the data transfer speeds
+    and reliability required for the Snow Family device.
+  severity: High
+- best_practice: Optimize Data Transfer
+  description: Use AWS DataSync or other optimized data transfer methods to efficiently move data to and from the Snow Family device.
+  severity: Medium
+- best_practice: Implement Redundancy
+  description: Design your architecture to include redundancy for critical data to prevent data loss during transit.
+  severity: Critical
+- best_practice: Monitor Device Health
+  description: Regularly monitor the health and status of your Snow Family device to ensure it is functioning correctly.
+  severity: Medium
+- best_practice: Plan for Physical Security
+  description: Ensure that the physical location where the Snow Family device will
+    be used or stored is secure and meets AWS guidelines.
+  severity: High
+- best_practice: Data Encryption
+  description: Use AWS-provided or customer-managed encryption keys to encrypt data
+    at rest and in transit.
+  severity: Critical
+security_best_practices:
+- best_practice: Use IAM Roles and Policies
+  description: Implement least privilege access by using IAM roles and policies to
+    control who can access and manage the Snow Family device.
+  severity: Critical
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and other logging services to monitor actions
+    taken on the Snow Family device for auditing and compliance.
+  severity: High
+- best_practice: Secure Data Erasure
+  description: Ensure data is securely erased from the Snow Family device after the
+    data transfer is complete to prevent unauthorized access.
+  severity: Critical
+- best_practice: Perform Regular Security Audits
+  description: Conduct regular security audits to ensure compliance with security
+    policies and identify potential vulnerabilities.
+  severity: High
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for all users who have access to the Snow Family device
+    to add an extra layer of security.
+  severity: High
+- best_practice: Implement Network Security Controls
+  description: Use firewalls, VPNs, and other network security controls to protect
+    data in transit to and from the Snow Family device.
+  severity: High
+- best_practice: Data Integrity Checks
+  description: Implement data integrity checks to ensure that data has not been tampered
+    with during transit.
+  severity: Medium

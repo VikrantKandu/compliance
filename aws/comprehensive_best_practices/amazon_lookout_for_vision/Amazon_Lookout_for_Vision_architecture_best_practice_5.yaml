@@ -1,0 +1,24 @@
+- rule:
+  - ID: AWS-CFN-001
+    Title: Ensure CloudFormation Stacks Have Termination Protection Enabled
+    Profile Applicability: Level 1
+    Description: This check ensures that AWS CloudFormation stacks have termination
+      protection enabled to prevent accidental deletions. Termination protection is
+      a feature that helps to safeguard critical stacks from being deleted unintentionally.
+    Rationale: Enabling termination protection on CloudFormation stacks helps prevent
+      accidental deletions, which can lead to data loss and service disruption. This
+      is especially important for stacks managing critical infrastructure or sensitive
+      data.
+    Audit: 1. Log in to the AWS Management Console. 2. Navigate to the CloudFormation
+      service. 3. Select a stack and check the stack details. 4. Verify that termination
+      protection is enabled for the stack. 5. Alternatively, use the AWS CLI command
+      aws cloudformation describe-stacks and check the EnableTerminationProtection
+      attribute for each stack.
+    Default Value: By default, termination protection is disabled for CloudFormation
+      stacks.
+    Remediation: 1. Log in to the AWS Management Console. 2. Navigate to the CloudFormation
+      service. 3. Select the stack for which you want to enable termination protection.
+      4. Click on the "Actions" dropdown and select "Enable termination protection."
+      5. Confirm the action to enable termination protection. 6. Alternatively, use
+      the AWS CLI command aws cloudformation update-termination-protection --enable-termination-protection
+      --stack-name <stack-name> to enable it programmatically.

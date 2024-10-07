@@ -1,0 +1,48 @@
+architecture_best_practices:
+- best_practice: Use Partition Keys for Efficient Data Retrieval
+  description: Utilize partition keys to organize your data in a way that allows for
+    efficient querying and retrieval, improving performance and reducing costs.
+  severity: High
+- best_practice: Implement Data Versioning
+  description: Maintain versions of your schemas to ensure backward compatibility
+    and facilitate smooth data evolution over time.
+  severity: Medium
+- best_practice: Optimize Schema Design
+  description: Design your schemas to be as efficient as possible, avoiding unnecessary
+    complexity and redundancy to enhance performance and manageability.
+  severity: Medium
+- best_practice: Monitor Schema Usage
+  description: Regularly monitor the usage of your schemas to identify any performance
+    bottlenecks or areas for optimization.
+  severity: Medium
+- best_practice: Use Tags for Resource Management
+  description: Apply tags to your schemas and related resources to improve organization,
+    management, and cost tracking within your AWS environment.
+  severity: Low
+security_best_practices:
+- best_practice: Implement Fine-Grained Access Control
+  description: Use AWS Identity and Access Management (IAM) policies to enforce fine-grained
+    access control, ensuring that only authorized users and services can access your
+    schemas.
+  severity: Critical
+- best_practice: Enable Encryption at Rest and in Transit
+  description: Ensure that your data is encrypted both at rest and in transit to protect
+    it from unauthorized access and breaches.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and access keys to minimize the risk
+    of unauthorized access due to compromised credentials.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch to log and monitor access
+    to your schemas, providing visibility into usage patterns and potential security
+    incidents.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and remediate
+    potential vulnerabilities in your schema registry setup.
+  severity: Medium
+- best_practice: Use Secure Network Configurations
+  description: Implement secure network configurations, such as VPC endpoints and
+    security groups, to control and restrict network access to your schema registry.
+  severity: Medium

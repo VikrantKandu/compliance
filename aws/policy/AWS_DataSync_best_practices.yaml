@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use VPC Endpoints
+  description: Configure VPC endpoints to ensure that AWS DataSync traffic remains
+    within the AWS network, reducing exposure to the public internet.
+  severity: High
+- best_practice: Optimize Task Scheduling
+  description: Schedule DataSync tasks during off-peak hours to minimize impact on
+    network bandwidth and ensure efficient data transfer.
+  severity: Medium
+- best_practice: Use Appropriate Storage Classes
+  description: Select the appropriate storage class for your data in Amazon S3 to
+    balance cost and performance requirements.
+  severity: Medium
+- best_practice: Monitor Task Performance
+  description: Regularly monitor DataSync task performance using CloudWatch metrics
+    to identify and address any bottlenecks or issues.
+  severity: Medium
+- best_practice: Enable Data Compression
+  description: Enable data compression to reduce the amount of data transferred over
+    the network, improving efficiency and reducing costs.
+  severity: Medium
+- best_practice: Use IAM Roles for Task Execution
+  description: Assign specific IAM roles to DataSync tasks to ensure that only the
+    necessary permissions are granted, following the principle of least privilege.
+  severity: High
+- best_practice: Implement Data Validation
+  description: Use DataSync's built-in data validation features to ensure data integrity
+    during transfer.
+  severity: High
+- best_practice: Plan for Disaster Recovery
+  description: Incorporate DataSync into your disaster recovery plan to ensure data
+    is backed up and can be restored quickly in the event of a failure.
+  severity: Critical
+security_best_practices:
+- best_practice: Encrypt Data in Transit
+  description: Use TLS to encrypt data in transit between DataSync agents and AWS
+    services to protect against eavesdropping and man-in-the-middle attacks.
+  severity: Critical
+- best_practice: Encrypt Data at Rest
+  description: Ensure that data is encrypted at rest using AWS Key Management Service
+    (KMS) to protect against unauthorized access.
+  severity: Critical
+- best_practice: Use Least Privilege Access
+  description: Follow the principle of least privilege by granting DataSync tasks
+    only the permissions they need to perform their functions.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and access keys used by DataSync to
+    minimize the risk of compromised credentials.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and CloudWatch Logs to monitor DataSync activities
+    and detect any unauthorized or suspicious actions.
+  severity: High
+- best_practice: Implement Network Security Controls
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to DataSync agents and endpoints.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Regularly audit DataSync configurations and permissions to ensure compliance
+    with security policies and best practices.
+  severity: High
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Require MFA for IAM users and roles that have access to DataSync to
+    add an extra layer of security.
+  severity: Medium

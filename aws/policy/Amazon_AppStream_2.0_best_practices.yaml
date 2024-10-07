@@ -1,0 +1,70 @@
+architecture_best_practices:
+- best_practice: Use Elastic Load Balancing (ELB)
+  description: Deploy Elastic Load Balancing to distribute incoming application traffic
+    across multiple targets, such as EC2 instances, in multiple Availability Zones.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Use Auto Scaling to automatically adjust the number of EC2 instances
+    in response to changes in demand, ensuring optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Use Amazon RDS for Databases
+  description: Utilize Amazon RDS for relational database management to simplify setup,
+    operation, and scaling of a relational database in the cloud.
+  severity: Medium
+- best_practice: Leverage Amazon S3 for Storage
+  description: Store static assets and backups in Amazon S3 to ensure durability,
+    scalability, and cost-effectiveness.
+  severity: Medium
+- best_practice: Utilize Multi-AZ Deployments
+  description: Deploy resources across multiple Availability Zones to enhance fault
+    tolerance and availability.
+  severity: Critical
+- best_practice: Enable VPC Flow Logs
+  description: Capture information about the IP traffic going to and from network
+    interfaces in your VPC to monitor and troubleshoot connectivity issues.
+  severity: Medium
+- best_practice: Use Amazon CloudFront for Content Delivery
+  description: Implement Amazon CloudFront to distribute content with low latency
+    and high transfer speeds.
+  severity: Medium
+- best_practice: Employ Infrastructure as Code (IaC)
+  description: Use AWS CloudFormation or Terraform to manage and provision your cloud
+    resources through code.
+  severity: High
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all IAM users to add an extra layer of security to
+    your AWS environment.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Define and assign IAM roles and policies to control access and permissions
+    to AWS resources.
+  severity: High
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt data stored in AWS
+    services and ensure SSL/TLS is used for data in transit.
+  severity: Critical
+- best_practice: Regularly Rotate Access Keys
+  description: Implement a policy to regularly rotate access keys for IAM users to
+    minimize the risk of compromised credentials.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Activate AWS CloudTrail to log and monitor account activity related
+    to actions across your AWS infrastructure.
+  severity: High
+- best_practice: Implement Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your EC2 instances and other resources.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: Medium
+- best_practice: Use AWS Config
+  description: Enable AWS Config to assess, audit, and evaluate the configurations
+    of your AWS resources.
+  severity: Medium
+- best_practice: Apply Least Privilege Principle
+  description: Grant users and applications the minimum permissions necessary to perform
+    their tasks.
+  severity: Critical

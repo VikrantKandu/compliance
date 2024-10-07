@@ -1,0 +1,27 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 Security Groups Are Configured Correctly
+    Profile Applicability: Level 1
+    Description: This check ensures that EC2 instances have security groups configured
+      to restrict inbound and outbound traffic to only necessary ports and IP addresses.
+      Proper configuration of security groups is crucial to protect instances from
+      unauthorized access and potential attacks.
+    Rationale: Security groups act as virtual firewalls for EC2 instances, controlling
+      the inbound and outbound traffic. Improperly configured security groups can
+      expose instances to unauthorized access, leading to potential data breaches
+      and service disruptions.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select 'Security Groups' under 'Network & Security'.
+    - Review each security group to ensure that only necessary ports and IP addresses
+      are allowed for inbound and outbound rules.
+    - Verify that no security group allows unrestricted access (e.g., 0.0.0.0/0) unless
+      explicitly required.
+    Default Value: By default, newly created security groups allow no inbound traffic
+      and allow all outbound traffic.
+    Remediation:
+    - Identify the security group with non-compliant rules.
+    - Edit the security group to remove or modify rules that allow unnecessary traffic.
+    - Apply changes and ensure that only the required ports and IP addresses are specified
+      for both inbound and outbound traffic.

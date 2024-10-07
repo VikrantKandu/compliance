@@ -1,0 +1,61 @@
+architecture_best_practices:
+- best_practice: Enable AWS Config Across All Regions
+  description: Ensure that AWS Config is enabled in all regions to provide comprehensive
+    visibility and tracking of configuration changes.
+  severity: High
+- best_practice: Use Config Aggregators
+  description: Utilize AWS Config aggregators to collect and aggregate configuration
+    data from multiple accounts and regions into a single account for centralized
+    management.
+  severity: Medium
+- best_practice: Configure Custom Rules
+  description: Implement custom AWS Config rules tailored to your specific compliance
+    and governance requirements to ensure all resources adhere to your policies.
+  severity: Medium
+- best_practice: Use AWS CloudFormation for Config Management
+  description: Deploy and manage AWS Config using AWS CloudFormation to ensure consistent
+    and repeatable configurations across environments.
+  severity: Medium
+- best_practice: Enable Configuration Recorder and Delivery Channel
+  description: Ensure that the configuration recorder and delivery channel are enabled
+    and properly configured to capture and deliver configuration changes to an S3
+    bucket.
+  severity: High
+- best_practice: Regularly Review Configuration History
+  description: Periodically review the configuration history and snapshots to understand
+    changes over time and maintain an audit trail.
+  severity: Medium
+- best_practice: Integrate with AWS Organizations
+  description: Use AWS Organizations to centrally manage and enforce AWS Config settings
+    across all accounts in your organization.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS Config Rules for Security Best Practices
+  description: Implement AWS Config rules that specifically check for compliance with
+    security best practices, such as ensuring encryption and proper IAM policies.
+  severity: Critical
+- best_practice: Use AWS Config Managed Rules
+  description: Leverage AWS Config managed rules to quickly deploy and enforce common
+    security and compliance checks without needing to write custom code.
+  severity: High
+- best_practice: Monitor for Unauthorized Changes
+  description: Set up alerts and notifications to monitor for unauthorized or unexpected
+    changes to your AWS resources, ensuring timely response to potential security
+    incidents.
+  severity: Critical
+- best_practice: Secure S3 Buckets for Config Data
+  description: Ensure that the S3 buckets used to store AWS Config data are properly
+    secured with encryption and access controls to prevent unauthorized access.
+  severity: High
+- best_practice: Implement IAM Policies with Least Privilege
+  description: Apply the principle of least privilege to IAM policies associated with
+    AWS Config, granting only the necessary permissions to perform required actions.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing AWS Config settings and data to add an additional
+    layer of security against unauthorized access.
+  severity: High
+- best_practice: Regularly Audit Config Rules
+  description: Periodically audit and review AWS Config rules to ensure they are up-to-date
+    and aligned with current security and compliance requirements.
+  severity: Medium

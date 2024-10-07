@@ -1,0 +1,73 @@
+architecture_best_practices:
+- best_practice: Use Multi-Account Strategy
+  description: Implement a multi-account strategy to isolate workloads and limit blast
+    radius in case of security incidents.
+  severity: Critical
+- best_practice: Enable AWS Control Tower
+  description: Utilize AWS Control Tower to automate the setup of a secure, multi-account AWS environment based on AWS best practices.
+  severity: High
+- best_practice: Centralize Logging
+  description: Centralize logging for all AWS accounts using AWS CloudTrail and AWS
+    Config to maintain a comprehensive audit trail.
+  severity: High
+- best_practice: Implement Service Control Policies (SCPs)
+  description: Use SCPs to manage permissions across your AWS accounts, ensuring compliance
+    with organizational policies.
+  severity: High
+- best_practice: Use AWS Organizations for Centralized Billing
+  description: Consolidate billing across multiple AWS accounts to simplify financial
+    management and leverage volume discounts.
+  severity: Medium
+- best_practice: Automate Account Provisioning
+  description: Use AWS Service Catalog or AWS Control Tower to automate the provisioning
+    of new AWS accounts, ensuring consistency and compliance.
+  severity: Medium
+- best_practice: Define Organizational Units (OUs)
+  description: Organize accounts into OUs based on business requirements, such as
+    environment (dev, test, prod) or business units.
+  severity: Medium
+- best_practice: Tag Accounts and Resources
+  description: Implement a tagging strategy to categorize and manage AWS accounts
+    and resources efficiently.
+  severity: Low
+security_best_practices:
+- best_practice: Enable AWS CloudTrail in All Regions
+  description: Ensure AWS CloudTrail is enabled in all regions to capture all API
+    calls and provide a complete audit trail.
+  severity: Critical
+- best_practice: Implement Least Privilege Access
+  description: Apply the principle of least privilege by granting only the permissions
+    necessary for users and roles to perform their tasks.
+  severity: Critical
+- best_practice: Use AWS Identity and Access Management (IAM) Roles
+  description: Use IAM roles instead of long-term access keys to manage permissions
+    securely and reduce the risk of credential exposure.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users, especially those with administrative privileges,
+    to add an extra layer of security.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Rotate IAM access keys regularly to minimize the risk of compromised
+    credentials.
+  severity: High
+- best_practice: Monitor and Audit AWS Accounts
+  description: Continuously monitor and audit AWS accounts using AWS Config, AWS CloudTrail,
+    and Amazon GuardDuty to detect and respond to security incidents.
+  severity: High
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Ensure all sensitive data is encrypted both at rest and in transit
+    using AWS Key Management Service (KMS) and other encryption services.
+  severity: High
+- best_practice: Implement Security Best Practices for Root Account
+  description: Secure the root account by enabling MFA, using strong passwords, and
+    avoiding the use of the root account for day-to-day operations.
+  severity: Critical
+- best_practice: Use AWS Security Hub
+  description: Enable AWS Security Hub to centralize and prioritize security findings
+    across your AWS environment.
+  severity: Medium
+- best_practice: Regularly Review and Update IAM Policies
+  description: Periodically review and update IAM policies to ensure they are aligned
+    with current security requirements and best practices.
+  severity: Medium

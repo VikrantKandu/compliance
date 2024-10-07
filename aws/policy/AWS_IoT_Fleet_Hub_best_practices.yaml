@@ -1,0 +1,69 @@
+architecture_best_practices:
+- best_practice: Use Managed Services
+  description: Leverage AWS managed services such as AWS IoT Core and AWS IoT Greengrass
+    to reduce operational overhead and ensure scalability.
+  severity: Medium
+- best_practice: Design for Scalability
+  description: Architect your IoT solution to handle varying loads by using auto-scaling
+    groups and load balancers.
+  severity: High
+- best_practice: Implement Microservices Architecture
+  description: Break down your application into smaller, independent services to improve
+    maintainability and scalability.
+  severity: Medium
+- best_practice: Use AWS IoT Rules Engine
+  description: Utilize the AWS IoT Rules Engine to route messages to various AWS services,
+    enabling real-time data processing and analytics.
+  severity: Medium
+- best_practice: Optimize Data Storage
+  description: Use appropriate data storage solutions like Amazon S3, DynamoDB, or
+    RDS based on your data access patterns and latency requirements.
+  severity: Medium
+- best_practice: Implement Edge Computing
+  description: Use AWS IoT Greengrass to process data locally on devices to reduce
+    latency and bandwidth usage.
+  severity: Medium
+- best_practice: Use Serverless Architectures
+  description: Employ AWS Lambda for event-driven processing to reduce infrastructure
+    management overhead.
+  severity: Medium
+- best_practice: Ensure High Availability
+  description: Design your IoT architecture to be resilient to failures by using multiple
+    availability zones and regions.
+  severity: High
+security_best_practices:
+- best_practice: Implement Device Authentication
+  description: Use X.509 certificates to authenticate devices connecting to AWS IoT
+    Core.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Implement least privilege access by using IAM roles and policies to
+    control access to AWS IoT resources.
+  severity: High
+- best_practice: Encrypt Data in Transit and at Rest
+  description: Use TLS to encrypt data in transit and AWS KMS to encrypt data at rest.
+  severity: Critical
+- best_practice: Regularly Rotate Certificates
+  description: Implement a process for regular rotation of device certificates to
+    enhance security.
+  severity: High
+- best_practice: Monitor and Log Activity
+  description: Use AWS CloudWatch and AWS IoT Device Defender to monitor and log activity
+    for anomaly detection and troubleshooting.
+  severity: High
+- best_practice: Implement Network Segmentation
+  description: Use VPCs, subnets, and security groups to segment your network and
+    limit the blast radius of potential security incidents.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential risks.
+  severity: Medium
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enable MFA for all users accessing the AWS Management Console to add
+    an extra layer of security.
+  severity: High
+- best_practice: Apply Patches and Updates
+  description: Regularly apply security patches and updates to your devices and AWS
+    services to protect against vulnerabilities.
+  severity: High

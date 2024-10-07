@@ -1,0 +1,59 @@
+architecture_best_practices:
+- best_practice: Use VPC Flow Logs
+  description: Enable VPC Flow Logs to capture information about the IP traffic going
+    to and from network interfaces in your VPC. This helps in monitoring and troubleshooting
+    network connectivity issues.
+  severity: High
+- best_practice: Implement Multi-AZ Deployment
+  description: Deploy Network Insights components across multiple Availability Zones
+    to ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Use Elastic Load Balancing
+  description: Distribute incoming traffic across multiple targets, such as EC2 instances,
+    to ensure no single instance becomes a bottleneck.
+  severity: High
+- best_practice: Enable Auto Scaling
+  description: Configure Auto Scaling to automatically adjust the number of instances
+    based on traffic patterns, ensuring optimal performance and cost-efficiency.
+  severity: Medium
+- best_practice: Utilize AWS CloudFormation for Infrastructure as Code
+  description: Use AWS CloudFormation to manage and provision your Network Insights
+    infrastructure in a consistent and repeatable manner.
+  severity: Medium
+- best_practice: Regularly Review and Optimize Network Architecture
+  description: Periodically review your network architecture to ensure it meets current
+    requirements and optimize for performance and cost.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS Config
+  description: Use AWS Config to continuously monitor and record your AWS resource
+    configurations and help ensure compliance with internal policies and best practices.
+  severity: High
+- best_practice: Implement IAM Policies and Roles
+  description: Use AWS Identity and Access Management (IAM) to define granular permissions
+    and roles, ensuring that users and services have the minimum necessary access.
+  severity: Critical
+- best_practice: Enable Encryption for Data in Transit and at Rest
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data both
+    in transit and at rest to protect against unauthorized access.
+  severity: Critical
+- best_practice: Regularly Rotate IAM Credentials
+  description: Rotate IAM credentials, including access keys and passwords, on a regular
+    basis to minimize the risk of compromised credentials.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Use AWS CloudTrail and Amazon CloudWatch to log and monitor all API
+    calls and network activity for auditing and anomaly detection.
+  severity: High
+- best_practice: Implement Network Segmentation
+  description: Use security groups and network ACLs to segment your network, limiting
+    the blast radius in case of a security breach.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: Medium
+- best_practice: Use AWS Shield and AWS WAF
+  description: Protect your applications from DDoS attacks and other web exploits
+    by using AWS Shield and AWS Web Application Firewall (WAF).
+  severity: High

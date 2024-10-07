@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployment
+  description: Deploy Amazon MSK Connect across multiple Availability Zones to ensure
+    high availability and fault tolerance.
+  severity: Critical
+- best_practice: Optimize Connector Configurations
+  description: Tune connector configurations for optimal performance, including tasks,
+    batch sizes, and retry policies.
+  severity: High
+- best_practice: Monitor and Scale Resources
+  description: Regularly monitor resource usage and scale MSK Connect clusters as
+    needed to handle varying workloads.
+  severity: High
+- best_practice: Use Managed Connectors
+  description: Prefer using managed connectors provided by AWS for better integration
+    and support.
+  severity: Medium
+- best_practice: Implement Data Partitioning
+  description: Use appropriate partitioning strategies to distribute data evenly across
+    the Kafka cluster.
+  severity: Medium
+- best_practice: Regularly Update Connectors
+  description: Keep connectors up to date with the latest versions to benefit from
+    performance improvements and bug fixes.
+  severity: Medium
+- best_practice: Use Schema Registry
+  description: Utilize AWS Glue Schema Registry to manage and enforce schema evolution
+    for Kafka topics.
+  severity: Medium
+- best_practice: Implement Effective Logging
+  description: Enable and configure detailed logging for troubleshooting and performance
+    monitoring.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Encryption in Transit
+  description: Use TLS to encrypt data in transit between producers, consumers, and
+    the Kafka cluster.
+  severity: Critical
+- best_practice: Enable Encryption at Rest
+  description: Enable encryption at rest for Kafka data stored in Amazon MSK to protect
+    sensitive information.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to control access
+    to MSK Connect resources.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Utilize VPC endpoints to securely connect to MSK Connect without exposing
+    data to the public internet.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate credentials and secrets used by connectors to minimize
+    the risk of unauthorized access.
+  severity: High
+- best_practice: Enable Audit Logging
+  description: Enable audit logging to track access and changes to MSK Connect configurations
+    and data.
+  severity: Medium
+- best_practice: Implement Network Segmentation
+  description: Use security groups and network ACLs to segment and restrict network
+    traffic to and from MSK Connect.
+  severity: Medium
+- best_practice: Conduct Regular Security Reviews
+  description: Perform regular security reviews and audits to identify and mitigate
+    potential vulnerabilities.
+  severity: Medium

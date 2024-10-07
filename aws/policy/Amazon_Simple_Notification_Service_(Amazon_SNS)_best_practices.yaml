@@ -1,0 +1,65 @@
+architecture_best_practices:
+- best_practice: Use Topic Naming Conventions
+  description: Implement a consistent naming convention for SNS topics to ensure clarity
+    and ease of management.
+  severity: Medium
+- best_practice: Optimize Message Delivery
+  description: Configure SNS to optimize message delivery by setting appropriate retry
+    policies and delivery protocols.
+  severity: High
+- best_practice: Enable Message Filtering
+  description: Use message filtering to ensure that only relevant messages are delivered
+    to each subscriber, reducing unnecessary network traffic.
+  severity: Medium
+- best_practice: Use Dead-Letter Queues
+  description: Configure dead-letter queues to capture undeliverable messages for
+    further analysis and troubleshooting.
+  severity: High
+- best_practice: Monitor and Log SNS Activity
+  description: Enable monitoring and logging for SNS to track message delivery status
+    and troubleshoot issues.
+  severity: High
+- best_practice: Integrate with Other AWS Services
+  description: Leverage integration with other AWS services like AWS Lambda, Amazon
+    SQS, and Amazon CloudWatch for enhanced functionality and monitoring.
+  severity: Medium
+- best_practice: Design for Scalability
+  description: Architect your SNS topics and subscriptions to handle varying loads
+    and ensure high availability.
+  severity: Critical
+- best_practice: Use Tags for Resource Management
+  description: Apply tags to SNS topics and subscriptions for better resource management
+    and cost allocation.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Server-Side Encryption
+  description: Use server-side encryption to protect the contents of your SNS messages
+    at rest.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to control access
+    to SNS topics and subscriptions.
+  severity: Critical
+- best_practice: Use VPC Endpoints
+  description: Configure VPC endpoints to ensure that SNS traffic remains within the
+    AWS network, reducing exposure to the public internet.
+  severity: High
+- best_practice: Enable Access Logging
+  description: Enable logging to track access to SNS topics and subscriptions for
+    auditing and compliance purposes.
+  severity: High
+- best_practice: Use HTTPS for Message Delivery
+  description: Ensure that HTTPS is used for message delivery to secure data in transit.
+  severity: High
+- best_practice: Implement Least Privilege Principle
+  description: Grant only the necessary permissions required for users and applications
+    to interact with SNS.
+  severity: Critical
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate access keys and other credentials to minimize the
+    risk of unauthorized access.
+  severity: High
+- best_practice: Conduct Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    potential vulnerabilities.
+  severity: Medium

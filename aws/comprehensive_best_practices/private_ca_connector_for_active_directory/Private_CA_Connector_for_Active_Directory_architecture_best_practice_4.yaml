@@ -1,0 +1,26 @@
+- rule:
+  - ID: AWS-IAM-001
+  - Title: Ensure IAM Users Do Not Have Console Access
+  - Profile Applicability: Level 1
+  - Description: IAM users should not have console access to minimize the risk of
+      unauthorized access to the AWS Management Console. This is crucial for maintaining
+      a secure cloud environment by restricting access to only those who need it.
+  - Rationale: Limiting console access reduces the attack surface and potential unauthorized
+      actions within the AWS environment. If IAM users have unnecessary console access,
+      it could lead to security breaches, data leaks, or unauthorized modifications.
+  - Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - Select "Users" from the navigation pane.
+    - For each user, check if "Console Access" is enabled under the "Permissions"
+      tab.
+    - Verify that only users who require console access have it enabled.
+  - Default Value: By default, IAM users can be created with console access if specified.
+  - Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - Select "Users" from the navigation pane.
+    - For users with unnecessary console access, select the user, go to the "Security
+      credentials" tab, and disable console access.
+    - Alternatively, remove the user from any group or policy that provides console
+      access.

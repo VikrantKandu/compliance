@@ -1,0 +1,68 @@
+architecture_best_practices:
+  - best_practice: Use Managed Compute Environments
+    description: Utilize AWS Batch managed compute environments to automatically provision
+      and manage the compute resources required for your jobs, ensuring scalability
+      and reliability.
+    severity: Medium
+  - best_practice: Optimize Job Queues
+    description: Configure multiple job queues with different priorities to manage the
+      execution of jobs efficiently and ensure high-priority jobs are processed first.
+    severity: High
+  - best_practice: Right-Size Compute Resources
+    description: Select appropriate instance types and sizes based on the workload requirements
+      to optimize cost and performance.
+    severity: Medium
+  - best_practice: Enable Job Dependencies
+    description: Use job dependencies to ensure that jobs are executed in the correct
+      order, which helps in managing complex workflows.
+    severity: Medium
+  - best_practice: Implement Retry Strategies
+    description: Configure retry strategies for jobs to handle transient failures and
+      improve job completion rates.
+    severity: Medium
+  - best_practice: Monitor and Log Batch Jobs
+    description: Utilize AWS CloudWatch and AWS Batch logs to monitor job execution
+      and troubleshoot issues effectively.
+    severity: High
+  - best_practice: Use Spot Instances for Cost Savings
+    description: Leverage Spot Instances for non-critical workloads to reduce costs
+      while maintaining performance.
+    severity: Medium
+  - best_practice: Isolate Workloads with Multiple Compute Environments
+    description: Use separate compute environments for different types of workloads
+      to isolate and manage resources effectively.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Implement IAM Roles and Policies
+    description: Use AWS Identity and Access Management (IAM) roles and policies to
+      control access to AWS Batch resources, ensuring that only authorized users and
+      services can perform actions.
+    severity: Critical
+  - best_practice: Enable Encryption for Data at Rest and in Transit
+    description: Use AWS Key Management Service (KMS) to encrypt data at rest and configure
+      SSL/TLS for data in transit to protect sensitive information.
+    severity: High
+  - best_practice: Use VPC and Security Groups
+    description: Deploy AWS Batch within a Virtual Private Cloud (VPC) and configure
+      security groups to control inbound and outbound traffic, enhancing network security.
+    severity: High
+  - best_practice: Regularly Rotate IAM Credentials
+    description: Rotate IAM credentials, including access keys and passwords, regularly
+      to reduce the risk of credential compromise.
+    severity: High
+  - best_practice: Enable CloudTrail for Auditing
+    description: Enable AWS CloudTrail to log all API calls and monitor account activity
+      for auditing and compliance purposes.
+    severity: High
+  - best_practice: Implement Least Privilege Principle
+    description: Grant the minimum necessary permissions to users and roles to perform
+      their tasks, reducing the risk of unauthorized access.
+    severity: Critical
+  - best_practice: Conduct Regular Security Assessments
+    description: Perform regular security assessments and vulnerability scans to identify and remediate potential security issues.
+    severity: High
+  - best_practice: Use AWS Config for Compliance Monitoring
+    description: Use AWS Config to continuously monitor and record AWS Batch resource
+      configurations and ensure compliance with organizational policies.
+    severity: Medium

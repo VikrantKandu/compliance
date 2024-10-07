@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Stages for Different Environments
+  description: Separate your API Gateway configurations into different stages (e.g.,
+    development, staging, production) to isolate changes and ensure stability in production.
+  severity: Medium
+- best_practice: Enable Caching for API Responses
+  description: Utilize API Gateway caching to improve performance and reduce backend
+    load by storing responses for a specified period.
+  severity: High
+- best_practice: Implement Throttling and Rate Limiting
+  description: Set up throttling and rate limiting to control the number of requests
+    your API can handle, protecting backend services from being overwhelmed.
+  severity: High
+- best_practice: Use Custom Domain Names
+  description: Configure custom domain names for your APIs to provide a consistent
+    and professional endpoint for clients.
+  severity: Low
+- best_practice: Optimize Integration with AWS Lambda
+  description: Ensure that your API Gateway is optimally configured to integrate with
+    AWS Lambda, including setting appropriate timeouts and error handling.
+  severity: Medium
+- best_practice: Monitor and Log API Activity
+  description: Enable CloudWatch logging and monitoring to track API usage, performance,
+    and errors for better operational insights.
+  severity: High
+- best_practice: Use API Gateway Models and Mapping Templates
+  description: Define models and use mapping templates to validate and transform request
+    and response payloads, ensuring data integrity.
+  severity: Medium
+- best_practice: Leverage Multi-Region Deployments
+  description: Deploy your API Gateway in multiple regions to enhance availability
+    and reduce latency for global users.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable API Gateway Access Logging
+  description: Configure access logging to capture detailed information about each
+    API request, aiding in security auditing and troubleshooting.
+  severity: High
+- best_practice: Use IAM Roles for Secure Access
+  description: Assign IAM roles to control access to API Gateway, ensuring that only
+    authorized entities can invoke your APIs.
+  severity: Critical
+- best_practice: Implement API Key Validation
+  description: Use API keys to manage and control access to your APIs, allowing you
+    to track and limit usage by different clients.
+  severity: High
+- best_practice: Enable WAF for API Protection
+  description: Integrate AWS Web Application Firewall (WAF) with API Gateway to protect
+    against common web exploits and attacks.
+  severity: Critical
+- best_practice: Use Mutual TLS for API Authentication
+  description: Enforce mutual TLS to authenticate client requests, adding an additional
+    layer of security to your APIs.
+  severity: High
+- best_practice: Encrypt Data in Transit and at Rest
+  description: Ensure that all data transmitted to and from API Gateway is encrypted
+    using HTTPS, and use AWS KMS to encrypt sensitive data at rest.
+  severity: Critical
+- best_practice: Validate Request Payloads
+  description: Use request validation to ensure that incoming requests meet expected
+    formats and constraints, reducing the risk of injection attacks.
+  severity: High
+- best_practice: Set Up Alarms for Security Incidents
+  description: Configure CloudWatch alarms to alert you to potential security incidents,
+    such as spikes in request rates or unauthorized access attempts.
+  severity: High

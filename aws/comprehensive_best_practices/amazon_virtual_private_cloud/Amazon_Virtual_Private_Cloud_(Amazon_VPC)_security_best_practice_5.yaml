@@ -1,0 +1,27 @@
+- rule:
+  - ID: AWS-IAM-001
+    Title: Ensure IAM Policies are Attached to Groups or Roles Instead of Users
+    Profile Applicability: Level 1
+    Description: This check ensures that IAM policies are attached to groups or roles
+      rather than directly to users. This best practice promotes better management
+      and scalability of permissions by using groups or roles to manage access.
+    Rationale: Attaching policies directly to users can lead to complex permission
+      management and potential security risks if user access needs to be revoked or
+      modified. Using groups or roles makes it easier to manage permissions consistently
+      and reduces the risk of human error.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - In the navigation pane, choose Users.
+    - For each user, check the Permissions tab to verify that no policies are directly
+      attached.
+    - Instead, ensure that permissions are granted through group memberships or role
+      assignments.
+    Default Value: IAM policies are often attached directly to users in smaller or
+      less mature environments.
+    Remediation:
+    - Detach any policies directly attached to users.
+    - Create or identify appropriate IAM groups or roles.
+    - Attach the necessary policies to these groups or roles.
+    - Add users to the appropriate groups or assign them the necessary roles to ensure
+      they have the required permissions.

@@ -1,0 +1,20 @@
+- rule:
+  - ID: AWS-EC2-01
+  - Title: Ensure EC2 instances are using the latest generation of instance types
+  - Profile Applicability: Level 1, Level 2
+  - Description: This check ensures that all EC2 instances are using the latest generation
+      of instance types. Using the latest generation can provide better performance,
+      enhanced features, and improved cost efficiency.
+  - Rationale: Using outdated instance types can lead to suboptimal performance and
+      higher costs. The latest generation of instances often includes improvements
+      in processing power, memory, and network capabilities, as well as enhanced security
+      features.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 Dashboard.
+      3. List all running instances. 4. Check the instance type for each instance.
+      5. Compare the instance type against the latest generation instance types available
+      in the AWS region. 6. Identify any instances not using the latest generation.
+  - Default Value: Instances may be of any generation, including older generations.
+  - Remediation: 1. Identify instances not using the latest generation. 2. Plan for
+      downtime or a maintenance window if necessary. 3. Stop the instance. 4. Change
+      the instance type to the latest generation. 5. Start the instance. 6. Verify
+      that the instance is running as expected with the new type.

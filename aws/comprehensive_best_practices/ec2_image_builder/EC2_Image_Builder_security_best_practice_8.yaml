@@ -1,0 +1,25 @@
+- rule:
+  - ID: AWS-BP-001
+    Title: Ensure Multi-Factor Authentication (MFA) is enabled for all IAM users
+    Profile Applicability: Level 1
+    Description: This check ensures that Multi-Factor Authentication (MFA) is enabled
+      for all IAM users in your AWS account. Enabling MFA adds an extra layer of security
+      to your AWS environment by requiring users to provide a second form of authentication
+      in addition to their password.
+    Rationale: Enabling MFA reduces the risk of unauthorized access to your AWS account,
+      even if a user's password is compromised. Without MFA, attackers can gain full
+      access to your AWS resources using only a stolen password.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM dashboard.
+    - Select 'Users' from the navigation pane.
+    - For each user, verify that MFA is enabled by checking the 'MFA enabled' column.
+    Default Value: By default, MFA is not enabled for IAM users.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM dashboard.
+    - Select 'Users' from the navigation pane.
+    - Choose the user for whom you want to enable MFA.
+    - Select the 'Security credentials' tab.
+    - Under 'Assigned MFA device', click 'Manage' and follow the prompts to enable
+      MFA for the user.

@@ -1,0 +1,20 @@
+- rule:
+  - ID: AWS-EC2-001
+  - Title: Ensure EC2 instances are not publicly accessible
+  - Profile Applicability: Level 1
+  - Description: This check ensures that Amazon EC2 instances are not publicly accessible
+      to prevent unauthorized access. Instances should be configured to allow access
+      only from trusted IP addresses or networks.
+  - Rationale: Publicly accessible EC2 instances are vulnerable to unauthorized access
+      and potential attacks. Restricting access reduces the risk of data breaches
+      and unauthorized activities.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 dashboard.
+      3. Select 'Instances' from the left-hand menu. 4. Review the security groups
+      associated with each instance. 5. Verify that no security group allows inbound
+      traffic from 0.0.0.0/0 on sensitive ports such as 22 (SSH) or 3389 (RDP).
+  - Default Value: By default, EC2 instances are not publicly accessible unless configured
+      otherwise.
+  - Remediation: 1. Identify the security group associated with the non-compliant
+      instance. 2. Edit the security group to remove rules that allow inbound traffic
+      from 0.0.0.0/0. 3. Specify allowed IP addresses or CIDR ranges that require
+      access. 4. Save the changes to the security group configuration.

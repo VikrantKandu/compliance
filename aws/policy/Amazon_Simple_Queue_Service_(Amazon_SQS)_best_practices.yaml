@@ -1,0 +1,68 @@
+architecture_best_practices:
+- best_practice: Use Standard Queues for High Throughput
+  description: Standard queues support a nearly unlimited number of transactions per
+    second (TPS) and are ideal for high-throughput applications.
+  severity: Medium
+- best_practice: Use FIFO Queues for Order and Exactly-Once Processing
+  description: FIFO queues ensure that messages are processed exactly once, in the
+    exact order that they are sent, which is crucial for applications where the order
+    of operations is critical.
+  severity: High
+- best_practice: Implement Dead-Letter Queues (DLQs)
+  description: Dead-letter queues are used to capture messages that can't be processed
+    successfully, allowing for debugging and preventing message loss.
+  severity: High
+- best_practice: Use Long Polling
+  description: Long polling reduces the number of empty responses by allowing the
+    queue to wait until a message is available, reducing costs and improving efficiency.
+  severity: Medium
+- best_practice: Enable Server-Side Encryption
+  description: Server-side encryption protects the contents of messages in queues
+    using AWS-managed keys (SSE-SQS), ensuring data privacy and compliance.
+  severity: High
+- best_practice: Monitor and Scale Queue Usage
+  description: Utilize Amazon CloudWatch to monitor queue metrics and automatically
+    scale your application based on demand to ensure optimal performance.
+  severity: Medium
+- best_practice: Use Message Attributes for Metadata
+  description: Message attributes allow you to store structured metadata with messages,
+    enabling more efficient processing and filtering.
+  severity: Low
+- best_practice: Set Appropriate Message Retention Periods
+  description: Configure the message retention period based on your application's
+    needs to ensure that messages are available for the required duration.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement IAM Policies and Roles
+  description: Use AWS Identity and Access Management (IAM) to create policies and
+    roles that grant the minimum permissions necessary for users and applications
+    to interact with SQS.
+  severity: Critical
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to securely connect your VPC to SQS without traversing
+    the public internet, reducing exposure to potential attacks.
+  severity: High
+- best_practice: Use AWS KMS for Key Management
+  description: Utilize AWS Key Management Service (KMS) to manage encryption keys
+    for server-side encryption, ensuring secure key storage and compliance.
+  severity: High
+- best_practice: Enable CloudTrail Logging
+  description: Enable AWS CloudTrail to log all API calls made to SQS, providing an
+    audit trail for monitoring and troubleshooting security incidents.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate IAM access keys to minimize the risk of compromised
+    credentials being used to access SQS.
+  severity: Medium
+- best_practice: Implement Network Security Controls
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to SQS, ensuring that only authorized traffic can access your queues.
+  severity: High
+- best_practice: Use AWS Config Rules
+  description: Utilize AWS Config rules to continuously monitor and evaluate the configuration
+    of SQS against best practices and compliance requirements.
+  severity: Medium
+- best_practice: Apply Least Privilege Principle
+  description: Ensure that IAM policies grant the minimum permissions necessary for
+    users and applications to perform their required tasks, reducing the attack surface.
+  severity: Critical

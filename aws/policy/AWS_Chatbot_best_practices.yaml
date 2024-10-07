@@ -1,0 +1,58 @@
+architecture_best_practices:
+  - best_practice: Use AWS CloudFormation for Infrastructure as Code
+    description: Utilize AWS CloudFormation to define and provision infrastructure resources
+      for AWS Chatbot in a repeatable and consistent manner.
+    severity: Medium
+  - best_practice: Implement Multi-Region Deployment
+    description: Deploy AWS Chatbot across multiple AWS regions to ensure high availability
+      and disaster recovery.
+    severity: High
+  - best_practice: Leverage Amazon SNS for Notifications
+    description: Use Amazon Simple Notification Service (SNS) to manage the distribution
+      of notifications from AWS Chatbot to various endpoints.
+    severity: Medium
+  - best_practice: Integrate with AWS CloudWatch for Monitoring
+    description: Use AWS CloudWatch to monitor the performance and operational health
+      of AWS Chatbot, setting up alarms for critical metrics.
+    severity: High
+  - best_practice: Use Amazon S3 for Log Storage
+    description: Store AWS Chatbot logs in Amazon S3 for long-term storage and analysis.
+    severity: Medium
+  - best_practice: Utilize AWS IAM Roles for Permissions
+    description: Use AWS Identity and Access Management (IAM) roles to manage permissions
+      for AWS Chatbot, ensuring least privilege access.
+    severity: Critical
+  - best_practice: Enable AWS CloudTrail for Auditing
+    description: Enable AWS CloudTrail to log all API calls made by AWS Chatbot, providing
+      an audit trail for security and compliance.
+    severity: High
+
+security_best_practices:
+  - best_practice: Implement Least Privilege Access
+    description: Grant the minimum necessary permissions to AWS Chatbot and associated
+      resources to reduce the attack surface.
+    severity: Critical
+  - best_practice: Use AWS KMS for Encryption
+    description: Use AWS Key Management Service (KMS) to encrypt sensitive data handled
+      by AWS Chatbot, both at rest and in transit.
+    severity: High
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require Multi-Factor Authentication (MFA) for all users accessing AWS
+      Chatbot to enhance security.
+    severity: High
+  - best_practice: Regularly Rotate IAM Credentials
+    description: Regularly rotate IAM credentials and access keys used by AWS Chatbot
+      to minimize the risk of credential compromise.
+    severity: Medium
+  - best_practice: Monitor and Audit IAM Policies
+    description: Regularly review and audit IAM policies associated with AWS Chatbot
+      to ensure they follow security best practices.
+    severity: High
+  - best_practice: Use VPC Endpoints for Private Connectivity
+    description: Use VPC endpoints to establish private connectivity between AWS Chatbot
+      and other AWS services, reducing exposure to the public internet.
+    severity: Medium
+  - best_practice: Configure Security Groups and Network ACLs
+    description: Properly configure security groups and network ACLs to control inbound
+      and outbound traffic to AWS Chatbot.
+    severity: High

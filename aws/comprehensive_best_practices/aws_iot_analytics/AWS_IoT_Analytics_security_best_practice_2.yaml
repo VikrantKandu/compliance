@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-CFN-001
+    Title: Ensure AWS CloudFormation Stack is Encrypted
+    Profile Applicability: Level 1
+    Description: This check ensures that AWS CloudFormation stacks are encrypted to
+      protect sensitive data and maintain confidentiality.
+    Rationale: Encrypting CloudFormation stacks safeguards sensitive information such
+      as passwords, API keys, and other configuration details. Failure to encrypt
+      stacks can lead to unauthorized access and data breaches.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the CloudFormation service.
+    - Select a stack and view its properties.
+    - Check if the stack is using server-side encryption by reviewing the encryption
+      settings.
+    Default Value: By default, CloudFormation stacks are not encrypted.
+    Remediation:
+    - In the AWS Management Console, go to the CloudFormation service.
+    - Select the stack you want to encrypt.
+    - Modify the stack settings to enable server-side encryption.
+    - Save the changes to apply encryption to the stack.

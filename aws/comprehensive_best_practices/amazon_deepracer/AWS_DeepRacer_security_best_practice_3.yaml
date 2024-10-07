@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 Instances Are Using the Latest AMI
+    Profile Applicability: Level 1
+    Description: This check ensures that all EC2 instances are launched using the
+      latest Amazon Machine Image (AMI) to benefit from security patches and updates.
+    Rationale: Regularly updating AMIs helps protect against vulnerabilities and exploits.
+      Using outdated AMIs can expose instances to security risks and potential attacks.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 dashboard.
+    - Select Instances and review the AMI ID used by each instance.
+    - Compare the AMI ID with the latest available AMI for your region.
+    - Verify that instances are using the latest AMI version.
+    Default Value: Instances may not automatically use the latest AMI unless specified
+      during launch.
+    Remediation:
+    - Identify instances using outdated AMIs.
+    - Create a new instance using the latest AMI.
+    - Migrate applications and data to the new instance.
+    - Terminate the old instance to ensure compliance.

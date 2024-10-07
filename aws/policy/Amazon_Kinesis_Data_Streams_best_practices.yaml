@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Proper Shard Allocation
+  description: Ensure that you allocate an appropriate number of shards based on the
+    expected data throughput to avoid bottlenecks and ensure smooth data processing.
+  severity: High
+- best_practice: Use Enhanced Fan-Out
+  description: Utilize Enhanced Fan-Out for high-throughput applications to allow
+    multiple consumers to read from the stream simultaneously without affecting each
+    other.
+  severity: Medium
+- best_practice: Monitor and Scale Dynamically
+  description: Implement monitoring and auto-scaling mechanisms to adjust the number
+    of shards dynamically based on real-time data traffic.
+  severity: High
+- best_practice: Optimize Data Retention Period
+  description: Set an appropriate data retention period based on your use case to
+    balance between cost and data availability.
+  severity: Medium
+- best_practice: Use Partition Keys Effectively
+  description: Design your partition keys to ensure an even distribution of data across
+    shards, preventing hot shards and improving performance.
+  severity: High
+- best_practice: Leverage Kinesis Producer Library (KPL)
+  description: Use the Kinesis Producer Library to efficiently batch and aggregate
+    records before sending them to the stream, reducing costs and improving throughput.
+  severity: Medium
+- best_practice: Implement Error Handling and Retries
+  description: Design your producer and consumer applications to handle errors and
+    implement retry mechanisms to ensure data integrity and availability.
+  severity: High
+security_best_practices:
+- best_practice: Enable Server-Side Encryption
+  description: Use server-side encryption to protect data at rest in your Kinesis
+    Data Streams, ensuring that sensitive data is encrypted.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Implement fine-grained IAM roles and policies to control access to
+    your Kinesis Data Streams, ensuring that only authorized entities can access or
+    modify the data.
+  severity: Critical
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to securely connect your VPC to Kinesis Data Streams,
+    ensuring that data does not traverse the public internet.
+  severity: High
+- best_practice: Monitor with CloudWatch
+  description: Set up CloudWatch alarms and logs to monitor the health and activity
+    of your Kinesis Data Streams, enabling you to detect and respond to security incidents
+    promptly.
+  severity: High
+- best_practice: Enable Data Encryption in Transit
+  description: Ensure that data is encrypted in transit using TLS to protect it from
+    interception and tampering.
+  severity: Critical
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate access keys for users and applications that interact
+    with Kinesis Data Streams to minimize the risk of compromised credentials.
+  severity: High
+- best_practice: Implement Least Privilege Principle
+  description: Grant the minimum permissions necessary for users and applications
+    to interact with Kinesis Data Streams, reducing the potential impact of a security
+    breach.
+  severity: High

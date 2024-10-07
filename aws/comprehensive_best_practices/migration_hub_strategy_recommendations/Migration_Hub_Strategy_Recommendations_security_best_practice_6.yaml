@@ -1,0 +1,20 @@
+- rule:
+  - ID: AWS-EC2-001
+  - Title: Ensure EC2 Instances Are Using IAM Roles
+  - Profile Applicability: Level 1
+  - Description: Ensure that all EC2 instances are assigned an IAM role to manage
+      access securely. This helps in avoiding the use of hardcoded credentials within
+      the instances.
+  - Rationale: Assigning IAM roles to EC2 instances allows for secure and controlled
+      access to AWS services. Without IAM roles, applications running on the instances
+      might require hardcoded credentials, which pose a security risk if exposed.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 Dashboard.
+      3. Select Instances from the sidebar. 4. For each instance, check if an IAM
+      role is associated under the "IAM role" column. 5. Verify that each instance
+      has an appropriate IAM role attached.
+  - Default Value: By default, EC2 instances do not have an IAM role assigned.
+  - Remediation: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 Dashboard.
+      3. Select the instance that requires an IAM role. 4. Choose "Actions", then
+      "Security", and select "Modify IAM role". 5. Assign an appropriate IAM role
+      that grants necessary permissions. 6. Save the changes to apply the IAM role
+      to the instance.

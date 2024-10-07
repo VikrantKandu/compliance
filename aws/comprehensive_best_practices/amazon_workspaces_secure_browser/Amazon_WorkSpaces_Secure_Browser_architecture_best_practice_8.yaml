@@ -1,0 +1,26 @@
+- rule:
+    ID: AWS-BP-001
+    Title: Ensure AWS CloudTrail is enabled in all regions
+    Profile Applicability:
+    - Level 1
+    - Level 2
+    Description: CloudTrail is a service that enables governance, compliance, and
+      operational and risk auditing of your AWS account. By enabling CloudTrail in
+      all regions, you ensure that all activity is logged and monitored, even if resources
+      are accidentally or intentionally created in new regions.
+    Rationale: Enabling CloudTrail in all regions helps detect unauthorized access
+      and actions in your AWS account. Without it, there is a risk of missing critical
+      security events, which could lead to undetected malicious activity or breaches.
+    Audit:
+    - Sign in to the AWS Management Console.
+    - Navigate to the CloudTrail service.
+    - Ensure that a trail is created and enabled for all regions.
+    - Verify that the trail is logging to an S3 bucket and that log file validation
+      is enabled.
+    Default Value: CloudTrail is not enabled by default in all regions.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Go to the CloudTrail service.
+    - Create a new trail or modify an existing trail to include all regions.
+    - Ensure that the trail is configured to deliver logs to an S3 bucket with log
+      file validation enabled.

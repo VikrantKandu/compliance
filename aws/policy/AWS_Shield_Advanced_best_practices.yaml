@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Implement Multi-AZ Deployment
+  description: Distribute your resources across multiple Availability Zones to ensure
+    high availability and fault tolerance.
+  severity: Critical
+- best_practice: Use Elastic Load Balancing
+  description: Employ Elastic Load Balancing to distribute incoming application traffic
+    across multiple targets, such as EC2 instances, to ensure scalability and reliability.
+  severity: High
+- best_practice: Enable Auto Scaling
+  description: Configure Auto Scaling to automatically adjust the number of EC2 instances
+    in response to changing demand, ensuring optimal performance and cost efficiency.
+  severity: High
+- best_practice: Leverage AWS CloudFront
+  description: Use AWS CloudFront as a content delivery network to improve the performance
+    and availability of your applications by caching content at edge locations.
+  severity: Medium
+- best_practice: Utilize Amazon RDS Multi-AZ
+  description: Deploy Amazon RDS instances in a Multi-AZ configuration to enhance
+    database availability and durability.
+  severity: High
+- best_practice: Implement VPC Peering
+  description: Use VPC Peering to enable direct network traffic between VPCs, improving
+    network performance and security.
+  severity: Medium
+- best_practice: Use AWS Lambda for Serverless Architecture
+  description: Leverage AWS Lambda to run code without provisioning or managing servers,
+    reducing operational overhead and improving scalability.
+  severity: Medium
+- best_practice: Apply Infrastructure as Code (IaC)
+  description: Use tools like AWS CloudFormation or Terraform to manage your infrastructure
+    as code, ensuring consistency and enabling version control.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable AWS Shield Advanced
+  description: Activate AWS Shield Advanced to protect your applications from DDoS
+    attacks and benefit from enhanced detection and mitigation capabilities.
+  severity: Critical
+- best_practice: Use AWS WAF
+  description: Implement AWS WAF to protect your web applications from common web
+    exploits and vulnerabilities.
+  severity: High
+- best_practice: Enable AWS Config
+  description: Use AWS Config to continuously monitor and record your AWS resource
+    configurations and ensure compliance with security best practices.
+  severity: High
+- best_practice: Implement IAM Best Practices
+  description: Follow IAM best practices, such as using the principle of least privilege,
+    enabling MFA, and regularly rotating credentials.
+  severity: Critical
+- best_practice: Enable CloudTrail Logging
+  description: Activate AWS CloudTrail to log and monitor account activity related
+    to actions across your AWS infrastructure.
+  severity: High
+- best_practice: Use VPC Security Groups and NACLs
+  description: Configure VPC security groups and network ACLs to control inbound and
+    outbound traffic to your resources, enhancing network security.
+  severity: High
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS KMS to encrypt sensitive data at rest and employ SSL/TLS to
+    encrypt data in transit, ensuring data confidentiality and integrity.
+  severity: Critical
+- best_practice: Regularly Patch and Update
+  description: Keep your AWS resources and applications up to date with the latest
+    security patches and updates to mitigate vulnerabilities.
+  severity: High

@@ -1,0 +1,24 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 instances are only accessible via SSH from known IP addresses
+    Profile Applicability: Level 1
+    Description: This check ensures that EC2 instances are configured to allow SSH
+      access only from known and trusted IP addresses. This reduces the risk of unauthorized
+      access to your instances.
+    Rationale: Allowing SSH access from any IP address increases the risk of unauthorized
+      access and potential exploitation by attackers. Restricting access to known
+      IP addresses minimizes this risk and enhances security.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 dashboard.
+    - Select the Security Groups associated with your EC2 instances.
+    - Check the inbound rules for each Security Group to ensure that SSH (port 22)
+      is restricted to known IP addresses.
+    Default Value: By default, EC2 instances might be configured with open SSH access
+      from any IP address.
+    Remediation:
+    - Access the AWS Management Console and go to the EC2 dashboard.
+    - Locate the Security Groups associated with your EC2 instances.
+    - Edit the inbound rules to restrict SSH access (port 22) to known and trusted
+      IP addresses only.
+    - Save the changes to apply the updated Security Group settings.

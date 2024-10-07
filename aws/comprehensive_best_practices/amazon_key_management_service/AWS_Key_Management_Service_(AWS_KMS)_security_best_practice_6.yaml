@@ -1,0 +1,23 @@
+- rule:
+  - ID: AWS-CF-001
+    Title: Ensure AWS CloudFront Distributions Are Encrypted with TLS 1.2 or Higher
+    Profile Applicability: Level 1
+    Description: This check ensures that all AWS CloudFront distributions enforce
+      the use of TLS 1.2 or higher for encryption. TLS 1.2 provides enhanced security
+      features that protect data in transit.
+    Rationale: Using outdated versions of TLS can expose data to vulnerabilities and
+      attacks such as man-in-the-middle attacks. Ensuring the use of TLS 1.2 or higher
+      enhances data security and compliance with industry standards.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the CloudFront service.
+    - Select each distribution and check the Viewer Protocol Policy.
+    - Ensure that the policy enforces HTTPS and specifies TLS 1.2 or higher.
+    Default Value: By default, CloudFront distributions may allow lower versions of
+      TLS.
+    Remediation:
+    - Log into the AWS Management Console.
+    - Navigate to the CloudFront service.
+    - Select the distribution that is not compliant.
+    - Edit the Viewer Protocol Policy to enforce HTTPS and specify TLS 1.2 or higher.
+    - Save the changes and verify the distribution settings.

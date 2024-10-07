@@ -1,0 +1,42 @@
+architecture_best_practices:
+  - best_practice: Design for Scalability
+    description: Ensure that your AWS WAF Classic (Global) configuration can scale with your application traffic. This involves setting up appropriate rate-based rules and monitoring traffic patterns to adjust rules as needed.
+    severity: High
+  - best_practice: Use Regional WAFs Where Appropriate
+    description: While AWS WAF Classic (Global) is useful for global applications, consider using regional WAFs for applications with localized traffic to reduce latency and improve performance.
+    severity: Medium
+  - best_practice: Implement a Layered Defense Strategy
+    description: Use AWS WAF Classic (Global) in conjunction with other AWS security services like AWS Shield, AWS Firewall Manager, and Amazon CloudFront to provide a multi-layered defense.
+    severity: High
+  - best_practice: Regularly Review and Update Rules
+    description: Periodically review and update your WAF rules to adapt to new threats and changes in application behavior. This includes removing outdated rules and adding new ones as needed.
+    severity: Medium
+  - best_practice: Optimize Rule Order
+    description: Arrange your WAF rules in an order that minimizes latency and maximizes effectiveness. Place the most frequently matched rules at the top.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Logging and Monitoring
+    description: Enable AWS WAF Classic (Global) logging to capture detailed information about web requests. Use AWS CloudWatch and AWS CloudTrail for monitoring and alerting on suspicious activities.
+    severity: Critical
+  - best_practice: Implement Rate-Based Rules
+    description: Use rate-based rules to automatically block IP addresses that exceed a specified request threshold, helping to mitigate DDoS attacks.
+    severity: High
+  - best_practice: Use Managed Rule Groups
+    description: Leverage AWS Managed Rules for AWS WAF Classic (Global) to protect against common threats like SQL injection and cross-site scripting without having to manually create and maintain rules.
+    severity: High
+  - best_practice: Apply IP Whitelisting and Blacklisting
+    description: Use IP whitelisting to allow traffic only from trusted IP addresses and IP blacklisting to block known malicious IP addresses.
+    severity: High
+  - best_practice: Encrypt Sensitive Data
+    description: Ensure that any sensitive data transmitted through your WAF is encrypted using TLS/SSL to prevent interception and tampering.
+    severity: Critical
+  - best_practice: Regular Security Audits
+    description: Conduct regular security audits of your AWS WAF Classic (Global) configuration to identify and rectify vulnerabilities. This includes reviewing rule effectiveness and compliance with security policies.
+    severity: High
+  - best_practice: Least Privilege Principle
+    description: Apply the principle of least privilege to your AWS IAM roles and policies associated with AWS WAF Classic (Global) to minimize the risk of unauthorized access.
+    severity: Critical
+  - best_practice: Geo-Blocking
+    description: Implement geo-blocking to restrict access from countries where you do not expect legitimate traffic, reducing the risk of attacks from those regions.
+    severity: Medium

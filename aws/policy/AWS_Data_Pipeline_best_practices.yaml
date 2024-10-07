@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Ensure your AWS Data Pipeline is configured to use multiple Availability
+    Zones to enhance fault tolerance and availability.
+  severity: High
+- best_practice: Implement Data Encryption
+  description: Use AWS Key Management Service (KMS) to encrypt data at rest and in
+    transit to protect sensitive information.
+  severity: Critical
+- best_practice: Optimize Resource Allocation
+  description: Properly size and allocate resources to avoid over-provisioning or
+    under-provisioning, which can lead to cost inefficiencies or performance issues.
+  severity: Medium
+- best_practice: Use Automated Scaling
+  description: Implement automated scaling to handle varying loads efficiently and
+    maintain performance.
+  severity: Medium
+- best_practice: Monitor and Log Pipeline Activities
+  description: Use AWS CloudWatch and AWS CloudTrail to monitor and log pipeline activities
+    for operational insights and troubleshooting.
+  severity: High
+- best_practice: Implement Retry and Error Handling
+  description: Configure retry mechanisms and error handling to ensure the pipeline
+    can recover from transient errors and continue processing.
+  severity: High
+- best_practice: Use Modular Pipeline Design
+  description: Design your pipeline in a modular fashion to simplify maintenance,
+    updates, and troubleshooting.
+  severity: Medium
+- best_practice: Regularly Review and Update Pipelines
+  description: Periodically review and update your data pipelines to incorporate new
+    features, optimizations, and security patches.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Grant the minimum necessary permissions to users and services to reduce
+    the risk of unauthorized access.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing the AWS Management Console and other critical
+    resources to add an extra layer of security.
+  severity: High
+- best_practice: Use IAM Roles for EC2 Instances
+  description: Use IAM roles instead of hardcoding credentials in your applications
+    running on EC2 instances to improve security.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM user and service account credentials to minimize
+    the risk of compromised credentials.
+  severity: High
+- best_practice: Enable AWS Config and AWS CloudTrail
+  description: Use AWS Config and AWS CloudTrail to track and audit changes to your
+    AWS resources and configurations.
+  severity: High
+- best_practice: Apply Security Patches Promptly
+  description: Regularly apply security patches to your operating systems, applications,
+    and AWS services to protect against vulnerabilities.
+  severity: Critical
+- best_practice: Use Network Security Controls
+  description: Implement security groups, network ACLs, and VPC configurations to
+    control and restrict network traffic to and from your AWS resources.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    potential security risks.
+  severity: Medium

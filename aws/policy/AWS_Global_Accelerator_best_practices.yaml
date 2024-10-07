@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use Multiple Regions
+  description: Deploy AWS Global Accelerator endpoints across multiple AWS regions
+    to ensure high availability and low latency for users.
+  severity: High
+- best_practice: Optimize Traffic Distribution
+  description: Configure traffic dials and endpoint weights to distribute traffic
+    efficiently and meet performance requirements.
+  severity: Medium
+- best_practice: Enable Health Checks
+  description: Set up health checks to monitor the status of endpoints and automatically
+    reroute traffic to healthy endpoints.
+  severity: High
+- best_practice: Use Standard Accelerators for Global Applications
+  description: Leverage standard accelerators for applications with global user bases
+    to improve performance and availability.
+  severity: Medium
+- best_practice: Integrate with AWS Shield
+  description: Use AWS Shield to protect against DDoS attacks and ensure the resilience
+    of your global accelerator endpoints.
+  severity: High
+- best_practice: Regularly Review and Update Configurations
+  description: Periodically review and update your AWS Global Accelerator configurations
+    to adapt to changing traffic patterns and business needs.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to control access
+    to AWS Global Accelerator resources.
+  severity: Critical
+- best_practice: Enable AWS CloudTrail
+  description: Enable AWS CloudTrail to log and monitor all API calls made to AWS
+    Global Accelerator for auditing and compliance purposes.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Utilize VPC endpoints to securely connect to AWS Global Accelerator
+    without exposing traffic to the public internet.
+  severity: High
+- best_practice: Encrypt Data in Transit
+  description: Ensure that data transmitted between clients and AWS Global Accelerator
+    is encrypted using TLS/SSL.
+  severity: Critical
+- best_practice: Monitor with AWS CloudWatch
+  description: Use AWS CloudWatch to monitor the performance and health of AWS Global
+    Accelerator and set up alarms for critical metrics.
+  severity: High
+- best_practice: Apply Security Groups
+  description: Configure security groups to restrict access to AWS Global Accelerator
+    endpoints based on IP addresses and ports.
+  severity: Medium
+- best_practice: Regular Security Audits
+  description: Conduct regular security audits to identify and mitigate potential
+    vulnerabilities in your AWS Global Accelerator setup.
+  severity: Medium

@@ -1,0 +1,27 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 instances have limited access to the internet
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that EC2 instances are not directly exposed to
+      the internet unless absolutely necessary. By limiting access, you reduce the
+      risk of unauthorized access and potential exploitation.
+    Rationale: Direct exposure of EC2 instances to the internet increases the risk
+      of security breaches, unauthorized access, and potential data loss. Limiting
+      access to only necessary instances helps maintain a secure environment.
+    Audit:
+    - Step 1: Log into the AWS Management Console.
+    - Step 2: Navigate to the EC2 Dashboard.
+    - Step 3: Check the security groups associated with each EC2 instance.
+    - Step 4: Verify that security groups do not allow unrestricted inbound access
+        from the internet (e.g., 0.0.0.0/0) on critical ports.
+    - Step 5: Ensure instances that require internet access are behind a load balancer
+        or use NAT gateways.
+    Default Value: EC2 instances may have unrestricted internet access by default
+      if not configured otherwise.
+    Remediation:
+    - Action 1: Review and update security group rules to restrict inbound access
+        to specific IP ranges or use VPNs.
+    - Action 2: Use AWS services like NAT gateways or bastion hosts for instances
+        that need internet access.
+    - Action 3: Regularly audit and update security groups to ensure compliance with
+        least privilege principles.

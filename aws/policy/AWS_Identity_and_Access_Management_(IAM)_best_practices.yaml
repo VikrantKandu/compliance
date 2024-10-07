@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use IAM Groups to Assign Permissions
+  description: Group users with similar roles and assign permissions to the group
+    rather than individual users to simplify management.
+  severity: Medium
+- best_practice: Implement Least Privilege Principle
+  description: Grant only the permissions necessary for users to perform their tasks,
+    reducing the risk of misuse or compromise.
+  severity: Critical
+- best_practice: Use IAM Roles for Applications
+  description: Assign roles to applications running on AWS services to securely access
+    other AWS resources without using long-term credentials.
+  severity: High
+- best_practice: Enable MFA for Privileged Users
+  description: Require Multi-Factor Authentication (MFA) for users with privileged
+    access to add an extra layer of security.
+  severity: High
+- best_practice: Regularly Review and Rotate IAM Credentials
+  description: Periodically review and rotate IAM credentials to minimize the risk
+    of compromised credentials.
+  severity: High
+- best_practice: Use IAM Policies Instead of Inline Policies
+  description: Use managed policies rather than inline policies to ensure better manageability
+    and reuse.
+  severity: Medium
+- best_practice: Monitor and Audit IAM Activities
+  description: Use AWS CloudTrail and AWS Config to monitor and audit IAM activities,
+    ensuring compliance and security.
+  severity: High
+security_best_practices:
+- best_practice: Enable AWS CloudTrail for IAM
+  description: Enable AWS CloudTrail to log all IAM activities, providing a comprehensive
+    audit trail for security analysis and compliance.
+  severity: Critical
+- best_practice: Use Strong Password Policies
+  description: Enforce strong password policies for IAM users to ensure that passwords
+    are difficult to guess or crack.
+  severity: High
+- best_practice: Restrict Root Account Usage
+  description: Limit the use of the root account and use IAM roles and users for day-to-day
+    operations to reduce the risk of compromise.
+  severity: Critical
+- best_practice: Implement Role-Based Access Control (RBAC)
+  description: Use RBAC to assign permissions based on roles rather than individuals,
+    improving security and manageability.
+  severity: High
+- best_practice: Use Service Control Policies (SCPs) with AWS Organizations
+  description: Apply SCPs to manage permissions across multiple AWS accounts in an
+    organization, ensuring consistent security policies.
+  severity: High
+- best_practice: Encrypt Sensitive Data
+  description: Ensure sensitive data accessed by IAM roles or users is encrypted in
+    transit and at rest to protect against unauthorized access.
+  severity: High
+- best_practice: Regularly Review IAM Policies and Permissions
+  description: Periodically review IAM policies and permissions to ensure they are
+    still necessary and do not grant excessive access.
+  severity: Medium
+- best_practice: Use AWS IAM Access Analyzer
+  description: Use IAM Access Analyzer to identify and mitigate unintended access
+    to your resources.
+  severity: High

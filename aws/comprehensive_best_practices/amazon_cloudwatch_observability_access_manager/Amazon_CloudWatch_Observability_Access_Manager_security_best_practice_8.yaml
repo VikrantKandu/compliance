@@ -1,0 +1,22 @@
+- rule:
+  - ID: AWS-EC2-001
+  - Title: Ensure EC2 Instances Are Within a VPC
+  - Profile Applicability: Level 1, Level 2
+  - Description: This check ensures that all EC2 instances are launched within a Virtual
+      Private Cloud (VPC). VPCs provide a secure and isolated network environment
+      for your instances, allowing for better control over inbound and outbound traffic.
+  - Rationale: Launching EC2 instances within a VPC is recommended for enhanced security
+      and control. Instances outside a VPC are exposed to the public internet, increasing
+      the risk of unauthorized access and potential data breaches. VPCs allow you
+      to define security groups and network ACLs, providing additional layers of protection.
+  - Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 Dashboard.
+      3. Select Instances from the left-hand menu. 4. Check the VPC ID column to ensure
+      all instances have a VPC assigned. 5. Use the AWS CLI command aws ec2 describe-instances
+      and verify the presence of a VPC ID in the output for each instance.
+  - Default Value: By default, instances are launched in the default VPC if one is
+      available in the region.
+  - Remediation: 1. Identify any instances not within a VPC. 2. Create a new VPC if
+      necessary, using the VPC Dashboard. 3. Stop the instance and take a snapshot
+      of any volumes. 4. Launch a new instance within the VPC, using the snapshot
+      to restore data. 5. Update any necessary configurations, such as security groups
+      and route tables, to match the original setup.

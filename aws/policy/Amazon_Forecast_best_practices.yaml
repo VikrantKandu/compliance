@@ -1,0 +1,48 @@
+architecture_best_practices:
+  - best_practice: Use Appropriate Data Types
+    description: Ensure that the data types used in Amazon Forecast match the expected formats to avoid errors and improve forecast accuracy.
+    severity: High
+  - best_practice: Optimize Data Preprocessing
+    description: Preprocess data to remove outliers, handle missing values, and normalize data to improve the quality of predictions.
+    severity: High
+  - best_practice: Choose the Right Forecasting Model
+    description: Select the most suitable forecasting model based on the specific use case and data characteristics to achieve optimal results.
+    severity: Medium
+  - best_practice: Monitor and Retrain Models Regularly
+    description: Continuously monitor the performance of forecasting models and retrain them with new data to maintain accuracy over time.
+    severity: Medium
+  - best_practice: Scale Resources Appropriately
+    description: Allocate sufficient computational resources to handle the data volume and complexity of the forecasting tasks to ensure timely results.
+    severity: Medium
+  - best_practice: Use Parallel Processing
+    description: Leverage parallel processing capabilities to speed up data ingestion and model training processes.
+    severity: Low
+  - best_practice: Implement Version Control for Models
+    description: Maintain version control for forecasting models to track changes and revert to previous versions if necessary.
+    severity: Low
+
+security_best_practices:
+  - best_practice: Enable Encryption for Data at Rest and in Transit
+    description: Use AWS Key Management Service (KMS) to encrypt data stored in Amazon Forecast and secure data transmission using SSL/TLS.
+    severity: Critical
+  - best_practice: Implement IAM Policies and Roles
+    description: Define and enforce strict Identity and Access Management (IAM) policies to control access to Amazon Forecast resources.
+    severity: Critical
+  - best_practice: Enable Logging and Monitoring
+    description: Use AWS CloudTrail and Amazon CloudWatch to log and monitor all activities in Amazon Forecast for auditing and anomaly detection.
+    severity: High
+  - best_practice: Regularly Update and Patch Dependencies
+    description: Ensure that all dependencies and underlying systems are regularly updated and patched to protect against vulnerabilities.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits and assessments to identify and mitigate potential security risks in the Amazon Forecast environment.
+    severity: Medium
+  - best_practice: Use VPC Endpoints
+    description: Use Amazon VPC endpoints to securely connect to Amazon Forecast without exposing data to the public internet.
+    severity: Medium
+  - best_practice: Implement Multi-Factor Authentication (MFA)
+    description: Require MFA for all user accounts accessing Amazon Forecast to add an extra layer of security.
+    severity: Medium
+  - best_practice: Limit Data Retention Periods
+    description: Define and enforce data retention policies to minimize the amount of data stored in Amazon Forecast, reducing the risk of data breaches.
+    severity: Low

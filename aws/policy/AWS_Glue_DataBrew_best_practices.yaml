@@ -1,0 +1,51 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Data Formats
+  description: Ensure that you use the most efficient data formats such as Parquet
+    or ORC for your datasets to optimize performance and reduce costs.
+  severity: High
+- best_practice: Optimize Job Configurations
+  description: Configure your Glue DataBrew jobs with the appropriate memory and processing
+    power to handle your data volumes efficiently.
+  severity: High
+- best_practice: Leverage AWS Glue Data Catalog
+  description: Integrate AWS Glue DataBrew with AWS Glue Data Catalog to maintain
+    a centralized metadata repository, improving data discoverability and management.
+  severity: Medium
+- best_practice: Use Partitioning
+  description: Partition your datasets to improve query performance and reduce costs
+    by scanning only the necessary data.
+  severity: Medium
+- best_practice: Monitor Job Metrics
+  description: Regularly monitor job metrics and logs to identify performance bottlenecks
+    and optimize resource usage.
+  severity: Medium
+- best_practice: Implement Data Validation
+  description: Use DataBrew's data validation features to ensure data quality and
+    consistency before processing.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Ensure that both data at rest and data in transit are encrypted to
+    protect sensitive information.
+  severity: Critical
+- best_practice: Implement IAM Best Practices
+  description: Use AWS Identity and Access Management (IAM) to enforce the principle
+    of least privilege, granting only necessary permissions to users and roles.
+  severity: Critical
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch to log and monitor all
+    activities related to AWS Glue DataBrew for auditing and troubleshooting purposes.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect to AWS Glue DataBrew without exposing your data to the public internet.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate access keys and credentials to minimize the risk of unauthorized access.
+  severity: Medium
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Enable MFA for all users with access to AWS Glue DataBrew to add an extra layer of security.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Regularly review and audit security configurations and access controls
+    to ensure compliance with security policies.
+  severity: Medium

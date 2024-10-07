@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use Multi-Region Deployment
+  description: Deploying AWS Access Analyzer in multiple regions ensures high availability
+    and fault tolerance.
+  severity: High
+- best_practice: Implement Infrastructure as Code (IaC)
+  description: Use tools like AWS CloudFormation or Terraform to manage Access Analyzer
+    resources to ensure consistency and reproducibility.
+  severity: Medium
+- best_practice: Leverage AWS Organizations
+  description: Use AWS Organizations to centrally manage and govern Access Analyzer
+    settings across multiple AWS accounts.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Utilize AWS CloudTrail and Amazon CloudWatch to monitor Access Analyzer
+    activities and maintain logs for auditing and troubleshooting.
+  severity: High
+- best_practice: Optimize IAM Role Usage
+  description: Design IAM roles and policies to be as granular as possible, ensuring
+    that Access Analyzer has only the permissions it needs.
+  severity: Medium
+- best_practice: Regularly Review Findings
+  description: Periodically review Access Analyzer findings to ensure that the architecture
+    remains compliant with security and governance policies.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Access Analyzer in All Accounts
+  description: Ensure Access Analyzer is enabled in all AWS accounts to continuously
+    monitor and analyze resource policies.
+  severity: Critical
+- best_practice: Configure Alerts for Findings
+  description: Set up Amazon SNS or AWS Lambda to send alerts for Access Analyzer
+    findings to ensure timely response to potential security issues.
+  severity: High
+- best_practice: Limit Access to Access Analyzer
+  description: Restrict access to Access Analyzer settings and findings to only those
+    individuals who need it.
+  severity: High
+- best_practice: Use AWS Identity and Access Management (IAM) Best Practices
+  description: Follow IAM best practices, such as using strong passwords, enabling
+    MFA, and rotating access keys, to secure Access Analyzer.
+  severity: Critical
+- best_practice: Regularly Update Policies
+  description: Ensure that resource policies are regularly updated and reviewed to
+    align with the latest security standards and organizational policies.
+  severity: Medium
+- best_practice: Implement Principle of Least Privilege
+  description: Ensure that Access Analyzer and its associated IAM roles and policies
+    adhere to the principle of least privilege, granting only the necessary permissions.
+  severity: High
+- best_practice: Enable Encryption for Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data analyzed
+    by Access Analyzer both at rest and in transit.
+  severity: High

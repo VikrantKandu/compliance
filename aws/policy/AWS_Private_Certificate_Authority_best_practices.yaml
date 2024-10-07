@@ -1,0 +1,59 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Deploy AWS Private Certificate Authority across multiple Availability
+    Zones to ensure high availability and fault tolerance.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Utilize AWS CloudTrail and Amazon CloudWatch to monitor and log all
+    activities related to AWS Private Certificate Authority for audit and troubleshooting
+    purposes.
+  severity: High
+- best_practice: Integrate with AWS IAM
+  description: Use AWS Identity and Access Management (IAM) roles and policies to
+    control access to AWS Private Certificate Authority, ensuring that only authorized
+    entities can manage certificates.
+  severity: Critical
+- best_practice: Use VPC Endpoints
+  description: Configure AWS Private Certificate Authority to communicate through
+    VPC endpoints to reduce exposure to the public internet and enhance security.
+  severity: High
+- best_practice: Regularly Rotate Keys
+  description: Implement a key rotation policy to regularly update cryptographic keys
+    used by AWS Private Certificate Authority to enhance security.
+  severity: Medium
+- best_practice: Implement Backup and Recovery
+  description: Establish a backup and recovery plan for the AWS Private Certificate
+    Authority to ensure that certificates and configurations can be restored in the
+    event of a failure.
+  severity: High
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for administrative access to AWS Private Certificate Authority
+    to add an extra layer of security.
+  severity: Critical
+- best_practice: Use Strong Encryption
+  description: Ensure that all certificates issued by AWS Private Certificate Authority
+    use strong encryption algorithms to protect data in transit and at rest.
+  severity: Critical
+- best_practice: Implement Least Privilege Access
+  description: Apply the principle of least privilege by granting users and services
+    only the permissions they need to perform their tasks with AWS Private Certificate
+    Authority.
+  severity: High
+- best_practice: Regularly Audit Permissions
+  description: Conduct regular audits of IAM roles and policies to ensure that permissions
+    related to AWS Private Certificate Authority are appropriate and up-to-date.
+  severity: High
+- best_practice: Enable Certificate Revocation
+  description: Utilize certificate revocation lists (CRLs) or Online Certificate Status
+    Protocol (OCSP) to manage and revoke compromised or expired certificates.
+  severity: High
+- best_practice: Secure Root CA
+  description: Secure the root Certificate Authority (CA) by storing its private key
+    in a highly secure environment, such as AWS CloudHSM, to prevent unauthorized
+    access.
+  severity: Critical
+- best_practice: Regularly Update Software
+  description: Keep the AWS Private Certificate Authority software and related dependencies
+    up-to-date with the latest security patches and updates.
+  severity: Medium

@@ -1,0 +1,27 @@
+- rule:
+  - ID: AWS-S3-001
+    Title: Ensure S3 Buckets are Not Publicly Accessible
+    Profile Applicability: Level 1
+    Description: This check ensures that Amazon S3 buckets do not have public access
+      permissions. Publicly accessible buckets can expose sensitive data to unauthorized
+      users.
+    Rationale: Publicly accessible S3 buckets can lead to data breaches and unauthorized
+      data exposure. Ensuring that buckets are not publicly accessible minimizes security
+      risks and protects sensitive information.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the S3 service.
+    - Review the bucket access permissions and ensure that public access is blocked.
+    - Use the AWS CLI command aws s3api get-bucket-acl --bucket <bucket-name> to verify
+      that no public access is allowed.
+    - Check the bucket policy using aws s3api get-bucket-policy --bucket <bucket-name>
+      and ensure no public access is granted.
+    Default Value: By default, S3 buckets are not publicly accessible unless explicitly
+      configured otherwise.
+    Remediation:
+    - Log into the AWS Management Console.
+    - Navigate to the S3 service.
+    - Select the bucket and click on the "Permissions" tab.
+    - Ensure that "Block all public access" is enabled.
+    - Review and modify the bucket policy and access control list (ACL) to remove
+      any public permissions.

@@ -1,0 +1,33 @@
+- rule:
+    ID: AWS-IAM-001
+    Title: Ensure IAM Password Policy Requires Strong Passwords
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that the IAM password policy requires strong passwords,
+      including a minimum length and complexity requirements. Strong passwords help
+      protect user accounts from unauthorized access.
+    Rationale: Strong passwords are essential to prevent unauthorized access to AWS
+      resources. Weak passwords can be easily guessed or cracked, leading to potential
+      security breaches and data loss.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - In the left navigation pane, click on "Account settings".
+    - Verify that the password policy is set to require at least:
+      - One uppercase letter
+      - One lowercase letter
+      - One number
+      - One non-alphanumeric character
+      - Minimum password length of 8 characters
+    Default Value: By default, IAM does not enforce a strong password policy.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the IAM service.
+    - In the left navigation pane, click on "Account settings".
+    - Click on "Manage password policy".
+    - Set the password policy to require at least:
+      - One uppercase letter
+      - One lowercase letter
+      - One number
+      - One non-alphanumeric character
+      - Minimum password length of 8 characters
+    - Save the changes.

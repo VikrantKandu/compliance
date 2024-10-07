@@ -1,0 +1,45 @@
+architecture_best_practices:
+  - best_practice: Use Multiple Availability Zones
+    description: Deploy Amazon WorkSpaces across multiple Availability Zones to ensure high availability and fault tolerance.
+    severity: High
+  - best_practice: Optimize Instance Types
+    description: Select appropriate instance types based on workload requirements to optimize performance and cost.
+    severity: Medium
+  - best_practice: Implement Auto Scaling
+    description: Use Auto Scaling to automatically adjust the number of running instances based on demand, ensuring optimal resource utilization.
+    severity: Medium
+  - best_practice: Use Elastic Load Balancing
+    description: Distribute incoming traffic across multiple instances using Elastic Load Balancing to enhance application availability and fault tolerance.
+    severity: High
+  - best_practice: Regularly Backup Data
+    description: Implement regular backups of critical data to prevent data loss and ensure quick recovery in case of failures.
+    severity: Critical
+  - best_practice: Monitor and Log Activities
+    description: Utilize AWS CloudWatch and CloudTrail to monitor and log activities for performance tuning and troubleshooting.
+    severity: Medium
+  - best_practice: Use Infrastructure as Code
+    description: Manage and provision AWS resources using Infrastructure as Code (IaC) tools like AWS CloudFormation or Terraform for consistency and repeatability.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Require MFA for all users to add an extra layer of security to user accounts.
+    severity: Critical
+  - best_practice: Implement Least Privilege Principle
+    description: Grant users and applications the minimum permissions necessary to perform their tasks to reduce the risk of unauthorized access.
+    severity: High
+  - best_practice: Encrypt Data at Rest and in Transit
+    description: Use AWS Key Management Service (KMS) to encrypt data at rest and enable SSL/TLS for data in transit to protect sensitive information.
+    severity: Critical
+  - best_practice: Regularly Rotate Access Keys
+    description: Regularly rotate IAM access keys to minimize the risk of compromised credentials.
+    severity: High
+  - best_practice: Enable Security Monitoring
+    description: Use AWS Security Hub, GuardDuty, and other security services to continuously monitor for security threats and vulnerabilities.
+    severity: High
+  - best_practice: Implement Network Segmentation
+    description: Use VPCs, subnets, and security groups to segment the network and control traffic flow to reduce the attack surface.
+    severity: Medium
+  - best_practice: Regular Security Audits
+    description: Conduct regular security audits and vulnerability assessments to identify and mitigate potential security issues.
+    severity: High

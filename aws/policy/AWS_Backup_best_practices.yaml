@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Cross-Region Backups
+  description: Store backups in multiple AWS regions to ensure data availability and
+    durability in case of regional failures.
+  severity: Critical
+- best_practice: Implement Lifecycle Policies
+  description: Use lifecycle policies to automatically transition backups to cold
+    storage and eventually delete them, optimizing costs.
+  severity: Medium
+- best_practice: Regularly Test Backup and Restore Procedures
+  description: Conduct regular tests of backup and restore processes to ensure data
+    integrity and recovery capabilities.
+  severity: High
+- best_practice: Use Tags for Backup Management
+  description: Tag your AWS resources and backups for better management, organization,
+    and cost allocation.
+  severity: Medium
+- best_practice: Automate Backup Scheduling
+  description: Use AWS Backup to automate backup schedules, ensuring regular and consistent
+    backups.
+  severity: High
+- best_practice: Monitor Backup Jobs
+  description: Use AWS CloudWatch and AWS Backup events to monitor backup jobs and
+    receive alerts on failures or issues.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption for Backups
+  description: Use AWS Key Management Service (KMS) to encrypt backups, protecting
+    data at rest.
+  severity: Critical
+- best_practice: Implement IAM Policies and Roles
+  description: Use AWS Identity and Access Management (IAM) policies and roles to
+    control access to backup resources and operations.
+  severity: Critical
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for access to AWS Backup resources, adding an extra layer
+    of security.
+  severity: High
+- best_practice: Use VPC Endpoints for Backup Traffic
+  description: Use VPC endpoints to ensure backup data is transferred securely within
+    the AWS network.
+  severity: Medium
+- best_practice: Regularly Review and Rotate IAM Credentials
+  description: Regularly review and rotate IAM credentials to minimize the risk of
+    unauthorized access.
+  severity: High
+- best_practice: Enable AWS CloudTrail Logging
+  description: Use AWS CloudTrail to log and monitor all API calls related to AWS
+    Backup for auditing and compliance purposes.
+  severity: High
+- best_practice: Implement Backup Retention Policies
+  description: Define and enforce retention policies to ensure that backups are kept
+    for the required duration and old backups are deleted.
+  severity: Medium
+- best_practice: Restrict Backup Access to Least Privilege
+  description: Apply the principle of least privilege to restrict access to backup
+    resources and operations only to necessary users and roles.
+  severity: Critical

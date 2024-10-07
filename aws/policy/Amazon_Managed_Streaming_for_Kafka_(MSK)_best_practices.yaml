@@ -1,0 +1,50 @@
+architecture_best_practices:
+- best_practice: Proper Sizing of Kafka Clusters
+  description: Ensure that Kafka clusters are appropriately sized based on the anticipated
+    load and throughput requirements to avoid performance bottlenecks.
+  severity: High
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy Kafka clusters across multiple Availability Zones (AZs) to ensure
+    high availability and fault tolerance.
+  severity: Critical
+- best_practice: Optimize Topic Partitioning
+  description: Properly partition Kafka topics to balance load across brokers and
+    improve parallelism and throughput.
+  severity: High
+- best_practice: Monitor and Scale Dynamically
+  description: Implement monitoring and auto-scaling to adapt to changing workloads
+    and maintain optimal performance.
+  severity: Medium
+- best_practice: Use Dedicated Subnets
+  description: Deploy Kafka clusters in dedicated subnets to isolate them from other
+    services and reduce network congestion.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption in Transit
+  description: Use TLS to encrypt data in transit between clients and Kafka brokers
+    to prevent interception and unauthorized access.
+  severity: Critical
+- best_practice: Enable Encryption at Rest
+  description: Enable encryption for data stored on Kafka brokers to protect sensitive
+    information from unauthorized access.
+  severity: High
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to control access
+    to Kafka resources and limit permissions to the minimum necessary.
+  severity: High
+- best_practice: Use VPC Peering or PrivateLink
+  description: Use VPC peering or AWS PrivateLink to securely connect Kafka clients
+    to brokers without exposing traffic to the public internet.
+  severity: Medium
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate AWS credentials and Kafka client secrets to minimize
+    the risk of credential compromise.
+  severity: Medium
+- best_practice: Enable Logging and Auditing
+  description: Enable logging and auditing of Kafka operations to detect and respond
+    to security incidents promptly.
+  severity: High
+- best_practice: Implement Network Access Controls
+  description: Use security groups and network ACLs to restrict access to Kafka brokers
+    to only trusted sources.
+  severity: High

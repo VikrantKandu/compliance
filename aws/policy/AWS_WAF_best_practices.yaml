@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use AWS WAF with CloudFront
+  description: Deploy AWS WAF in conjunction with Amazon CloudFront to benefit from
+    edge locations and reduce latency.
+  severity: High
+- best_practice: Implement Rate-Based Rules
+  description: Use rate-based rules to automatically block IP addresses that exceed
+    a specified request threshold, helping to mitigate DDoS attacks.
+  severity: High
+- best_practice: Leverage AWS Managed Rules
+  description: Utilize AWS Managed Rules for common threats to save time and ensure
+    your application is protected against known vulnerabilities.
+  severity: Medium
+- best_practice: Use Custom Rules for Specific Needs
+  description: Create custom rules to address unique security requirements or application-specific
+    threats.
+  severity: Medium
+- best_practice: Deploy WAF Across Multiple Regions
+  description: Implement AWS WAF in multiple regions to ensure high availability and
+    redundancy.
+  severity: High
+- best_practice: Regularly Review and Update Rules
+  description: Periodically review and update WAF rules to adapt to evolving threats
+    and application changes.
+  severity: Medium
+- best_practice: Integrate with AWS Firewall Manager
+  description: Use AWS Firewall Manager to centrally configure and manage AWS WAF
+    rules across multiple accounts and resources.
+  severity: Medium
+- best_practice: Monitor WAF Metrics and Logs
+  description: Continuously monitor AWS WAF metrics and logs for unusual activity
+    or potential threats.
+  severity: High
+security_best_practices:
+- best_practice: Enable Logging
+  description: Enable AWS WAF logging to capture detailed information about web requests,
+    which can be useful for forensic analysis and troubleshooting.
+  severity: High
+- best_practice: Implement IP Blacklisting and Whitelisting
+  description: Use IP blacklisting to block known malicious IP addresses and IP whitelisting
+    to allow trusted IP addresses, reducing the attack surface.
+  severity: High
+- best_practice: Use Geo-Blocking
+  description: Implement geo-blocking to restrict access from countries where you
+    do not expect legitimate traffic, reducing the risk of attacks.
+  severity: Medium
+- best_practice: Apply SQL Injection and XSS Protection
+  description: Use AWS WAF rules to detect and block SQL injection and cross-site
+    scripting (XSS) attacks, which are common web application vulnerabilities.
+  severity: Critical
+- best_practice: Enable AWS Shield for DDoS Protection
+  description: Enable AWS Shield Advanced for enhanced DDoS protection and to receive
+    additional support during large-scale attacks.
+  severity: Critical
+- best_practice: Configure Alerts for Security Events
+  description: Set up alerts to notify your team of security events detected by AWS
+    WAF, ensuring prompt response to potential threats.
+  severity: High
+- best_practice: Use Web ACLs for Layered Security
+  description: Implement Web Access Control Lists (ACLs) to create a layered security
+    approach, applying multiple rules to protect your application.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits of your AWS WAF configuration to identify
+    and address potential vulnerabilities.
+  severity: Medium

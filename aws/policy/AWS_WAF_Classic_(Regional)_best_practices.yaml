@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Deploy AWS WAF Classic (Regional) across multiple Availability Zones
+    to ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Use Auto Scaling to handle varying traffic loads and ensure that AWS
+    WAF Classic (Regional) can scale up or down based on demand.
+  severity: High
+- best_practice: Optimize Rule Groups
+  description: Organize and optimize rule groups to ensure efficient processing and
+    minimize latency.
+  severity: Medium
+- best_practice: Use CloudFormation for Deployment
+  description: Use AWS CloudFormation templates to automate and standardize the deployment
+    of AWS WAF Classic (Regional) configurations.
+  severity: Medium
+- best_practice: Regularly Review and Update Rules
+  description: Periodically review and update WAF rules to adapt to new threats and
+    changes in traffic patterns.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS WAF Classic (Regional) logging and integrate with AWS CloudWatch
+    for real-time monitoring and alerting.
+  severity: Critical
+- best_practice: Implement IP Whitelisting and Blacklisting
+  description: Use IP whitelisting to allow trusted IPs and blacklisting to block
+    known malicious IPs.
+  severity: High
+- best_practice: Use Managed Rule Groups
+  description: Leverage AWS Managed Rules for WAF to protect against common threats
+    without the need to manually create and manage rules.
+  severity: High
+- best_practice: Apply Rate-Based Rules
+  description: Implement rate-based rules to mitigate DDoS attacks by limiting the
+    number of requests from a single IP address.
+  severity: High
+- best_practice: Secure Access to WAF Management
+  description: Use IAM policies to restrict access to AWS WAF Classic (Regional) management
+    to only authorized personnel.
+  severity: Critical
+- best_practice: Encrypt Sensitive Data
+  description: Ensure that any sensitive data handled by AWS WAF Classic (Regional)
+    is encrypted both in transit and at rest.
+  severity: High
+- best_practice: Regular Security Audits
+  description: Conduct regular security audits and assessments to identify and rectify
+    vulnerabilities in AWS WAF Classic (Regional) configurations.
+  severity: Medium
+- best_practice: Use Web ACLs for Granular Control
+  description: Implement Web Access Control Lists (ACLs) to apply granular control
+    over web traffic filtering.
+  severity: Medium

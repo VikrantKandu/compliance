@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use VPC Peering for Network Isolation
+  description: Utilize VPC peering to isolate different environments (e.g., development,
+    staging, production) to prevent cross-environment access.
+  severity: High
+- best_practice: Implement Subnet Segmentation
+  description: Segment your VPC into multiple subnets to separate different tiers
+    of your application (e.g., web, application, database) for better security and
+    management.
+  severity: High
+- best_practice: Enable Flow Logs
+  description: Enable VPC Flow Logs to capture information about the IP traffic going
+    to and from network interfaces in your VPC for monitoring and troubleshooting.
+  severity: Medium
+- best_practice: Use Elastic IPs Judiciously
+  description: Allocate Elastic IPs only when necessary to avoid unnecessary costs
+    and potential IP exhaustion.
+  severity: Low
+- best_practice: Design for High Availability
+  description: Architect your VPC to span multiple Availability Zones to ensure high
+    availability and fault tolerance.
+  severity: Critical
+- best_practice: Optimize Route Tables
+  description: Regularly review and optimize route tables to ensure efficient routing
+    and to minimize latency.
+  severity: Medium
+- best_practice: Use PrivateLink for Secure Connectivity
+  description: Use AWS PrivateLink to securely connect your VPC to supported AWS services
+    and third-party services without exposing your traffic to the public internet.
+  severity: High
+security_best_practices:
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to privately connect your VPC to supported AWS services
+    without using an internet gateway, NAT device, VPN connection, or AWS Direct Connect.
+  severity: High
+- best_practice: Implement Security Groups and NACLs
+  description: Use security groups and network ACLs (NACLs) to control inbound and
+    outbound traffic at the instance and subnet level, respectively.
+  severity: Critical
+- best_practice: Enforce Least Privilege
+  description: Apply the principle of least privilege by granting only the permissions
+    necessary for users and services to perform their tasks.
+  severity: Critical
+- best_practice: Enable AWS Config and CloudTrail
+  description: Enable AWS Config and CloudTrail to track configuration changes and
+    API calls for auditing and compliance purposes.
+  severity: High
+- best_practice: Use IAM Roles for EC2 Instances
+  description: Assign IAM roles to EC2 instances to manage access to AWS services
+    securely without embedding credentials in the instance.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate access keys to reduce the risk of compromised credentials.
+  severity: Medium
+- best_practice: Encrypt Data in Transit and at Rest
+  description: Use encryption to protect data in transit using SSL/TLS and at rest
+    using AWS Key Management Service (KMS).
+  severity: Critical
+- best_practice: Monitor with GuardDuty
+  description: Enable Amazon GuardDuty to continuously monitor for malicious activity
+    and unauthorized behavior to protect your AWS resources.
+  severity: High

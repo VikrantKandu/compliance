@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ for High Availability
+  description: Ensure that your AWS DMS replication instances are deployed in a Multi-AZ
+    configuration to provide high availability and failover support.
+  severity: Critical
+- best_practice: Optimize Source and Target Endpoints
+  description: Properly configure and optimize both source and target database endpoints
+    to ensure efficient data migration and minimal downtime.
+  severity: High
+- best_practice: Use Appropriate Instance Types
+  description: Select the appropriate instance types for your replication tasks based
+    on workload requirements to ensure optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Monitor and Scale Resources
+  description: Continuously monitor replication tasks and scale resources as needed
+    to handle varying loads and ensure consistent performance.
+  severity: Medium
+- best_practice: Leverage Pre-Validation and Post-Validation
+  description: Use pre-validation and post-validation checks to ensure data integrity
+    and consistency before and after migration.
+  severity: Medium
+- best_practice: Use Task Settings for Performance Tuning
+  description: Fine-tune task settings such as memory allocation, parallelism, and
+    logging to optimize the performance of your migration tasks.
+  severity: Medium
+- best_practice: Plan for Downtime and Maintenance
+  description: Schedule migrations during maintenance windows to minimize the impact
+    on production systems and ensure a smooth transition.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Ensure that data at rest is encrypted using AWS Key Management Service
+    (KMS) to protect sensitive information.
+  severity: Critical
+- best_practice: Use Secure Network Connections
+  description: Configure secure network connections (e.g., SSL/TLS) for data in transit
+    between the source, target, and replication instances.
+  severity: Critical
+- best_practice: Implement IAM Policies and Roles
+  description: Use AWS Identity and Access Management (IAM) policies and roles to
+    control access to AWS DMS resources and ensure least privilege access.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch logging and monitoring
+    to track activities and detect any unauthorized access or anomalies.
+  severity: High
+- best_practice: Regularly Update and Patch
+  description: Keep your replication instances and database endpoints updated with
+    the latest patches and updates to mitigate security vulnerabilities.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to privately connect your replication instances to
+    other AWS services without exposing them to the public internet.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and address
+    potential security risks and compliance issues.
+  severity: Medium

@@ -1,0 +1,50 @@
+architecture_best_practices:
+- best_practice: Enable Multi-Region Trails
+  description: Configure AWS CloudTrail to log events in all regions to ensure comprehensive
+    monitoring and auditing across your entire AWS environment.
+  severity: Critical
+- best_practice: Use Separate Trails for Management and Data Events
+  description: Separate trails for management events and data events to streamline
+    analysis and reduce noise in logs.
+  severity: Medium
+- best_practice: Integrate with AWS Organizations
+  description: Enable AWS CloudTrail for all accounts in an AWS Organization to ensure
+    centralized logging and monitoring.
+  severity: High
+- best_practice: Utilize CloudTrail Insights
+  description: Enable CloudTrail Insights to detect unusual activity in your AWS environment,
+    such as spikes in resource provisioning.
+  severity: High
+- best_practice: Optimize Log Storage with S3 Lifecycle Policies
+  description: Configure S3 lifecycle policies to manage the storage and retention
+    of CloudTrail logs, reducing costs and ensuring compliance.
+  severity: Medium
+- best_practice: Use Dedicated S3 Buckets for Logs
+  description: Store CloudTrail logs in dedicated, secure S3 buckets to isolate log
+    data from other data and enhance security.
+  severity: High
+security_best_practices:
+- best_practice: Enable Log File Integrity Validation
+  description: Enable log file validation to ensure the integrity and authenticity
+    of your CloudTrail logs, preventing tampering or unauthorized changes.
+  severity: Critical
+- best_practice: Encrypt CloudTrail Logs
+  description: Use AWS Key Management Service (KMS) to encrypt CloudTrail logs, ensuring
+    that sensitive information is protected at rest.
+  severity: Critical
+- best_practice: Restrict Access to CloudTrail Logs
+  description: Implement strict IAM policies to control access to CloudTrail logs,
+    ensuring that only authorized users and services can view or modify them.
+  severity: High
+- best_practice: Enable CloudWatch Alarms for CloudTrail
+  description: Set up CloudWatch Alarms to monitor CloudTrail logs for specific events
+    or patterns, enabling prompt incident response.
+  severity: High
+- best_practice: Monitor CloudTrail Log Delivery Failures
+  description: Regularly monitor for any delivery failures of CloudTrail logs to ensure
+    that all events are being recorded and stored as expected.
+  severity: High
+- best_practice: Regularly Review CloudTrail Configurations
+  description: Periodically review and update CloudTrail configurations to ensure
+    they meet current security and compliance requirements.
+  severity: Medium

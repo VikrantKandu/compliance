@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Private Hosted Zones for Internal DNS
+  description: Utilize Private Hosted Zones to manage DNS within your VPCs to ensure
+    internal DNS resolution is isolated from public DNS queries.
+  severity: High
+- best_practice: Enable DNS Query Logging
+  description: Enable query logging to monitor and troubleshoot DNS queries, helping
+    to identify and resolve issues quickly.
+  severity: Medium
+- best_practice: Implement Multi-Region Architectures
+  description: Design your DNS architecture to span multiple AWS regions to ensure
+    high availability and fault tolerance.
+  severity: Critical
+- best_practice: Use Conditional Forwarding
+  description: Configure conditional forwarding rules to direct DNS queries to specific
+    DNS resolvers based on the domain name, optimizing query resolution.
+  severity: Medium
+- best_practice: Optimize Resolver Endpoints
+  description: Strategically place Route 53 Resolver endpoints in your VPCs to reduce
+    latency and improve DNS resolution performance.
+  severity: High
+- best_practice: Regularly Review and Update DNS Records
+  description: Periodically audit and update DNS records to ensure they are accurate
+    and up-to-date, avoiding potential resolution issues.
+  severity: Medium
+security_best_practices:
+- best_practice: Restrict Access to Resolver Endpoints
+  description: Use security groups and network ACLs to control access to Route 53
+    Resolver endpoints, ensuring only authorized entities can query DNS.
+  severity: Critical
+- best_practice: Implement VPC Peering and Transit Gateway
+  description: Use VPC peering or Transit Gateway to securely connect multiple VPCs,
+    ensuring secure DNS resolution across your network.
+  severity: High
+- best_practice: Enable DNSSEC for Domain Validation
+  description: Enable DNSSEC to protect against DNS spoofing and ensure the authenticity
+    of DNS responses.
+  severity: Critical
+- best_practice: Use IAM Policies to Control Access
+  description: Implement fine-grained IAM policies to control who can create, modify,
+    and delete DNS records and Resolver endpoints.
+  severity: High
+- best_practice: Monitor and Alert on DNS Activity
+  description: Set up monitoring and alerting for unusual DNS activity to quickly
+    detect and respond to potential security incidents.
+  severity: Medium
+- best_practice: Regularly Update Resolver Rules
+  description: Regularly review and update Resolver rules to ensure they align with
+    current security policies and organizational changes.
+  severity: Medium
+- best_practice: Encrypt DNS Traffic
+  description: Use DNS over HTTPS (DoH) or DNS over TLS (DoT) to encrypt DNS queries,
+    protecting them from interception and tampering.
+  severity: High
+- best_practice: Audit DNS Query Logs
+  description: Regularly audit DNS query logs to identify and investigate any suspicious
+    or unauthorized DNS queries.
+  severity: Medium

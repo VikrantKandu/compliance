@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use Multiple AWS Accounts for Isolation
+  description: Create separate AWS accounts for different environments (e.g., production,
+    development) to isolate resources and limit the blast radius of potential issues.
+  severity: High
+- best_practice: Implement AWS Organizations
+  description: Use AWS Organizations to centrally manage and govern multiple AWS accounts,
+    allowing for consolidated billing and policy-based management.
+  severity: Medium
+- best_practice: Use Resource Tagging
+  description: Consistently tag AWS resources to improve resource management, cost
+    allocation, and security.
+  severity: Medium
+- best_practice: Enable AWS CloudTrail
+  description: Enable AWS CloudTrail in all accounts to log and monitor account activity,
+    providing an audit trail for compliance and security analysis.
+  severity: Critical
+- best_practice: Implement Service Control Policies (SCPs)
+  description: Use SCPs in AWS Organizations to define and enforce permission guardrails
+    for all accounts within the organization.
+  severity: High
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all IAM users and root accounts to add an extra layer
+    of security to account access.
+  severity: Critical
+- best_practice: Use IAM Roles Instead of IAM Users
+  description: Assign permissions to IAM roles and assume roles when needed, reducing
+    the risk of long-term credentials being compromised.
+  severity: High
+- best_practice: Enforce Least Privilege Principle
+  description: Grant the minimum necessary permissions to IAM users, groups, and roles
+    to perform their tasks, reducing the risk of unauthorized access.
+  severity: Critical
+- best_practice: Regularly Rotate Access Keys
+  description: Regularly rotate IAM access keys to minimize the risk of compromised
+    credentials.
+  severity: High
+- best_practice: Monitor and Audit AWS Account Activity
+  description: Use AWS CloudTrail, AWS Config, and Amazon GuardDuty to continuously
+    monitor and audit account activity for suspicious behavior and compliance.
+  severity: Critical
+- best_practice: Enable AWS Config
+  description: Use AWS Config to continuously assess, audit, and evaluate the configurations
+    of your AWS resources to ensure compliance with best practices.
+  severity: High
+- best_practice: Implement VPC Flow Logs
+  description: Enable VPC Flow Logs to capture information about the IP traffic going
+    to and from network interfaces in your VPC for security analysis and troubleshooting.
+  severity: Medium
+- best_practice: Use AWS Shield and AWS WAF
+  description: Implement AWS Shield and AWS WAF to protect your applications from
+    DDoS attacks and web exploits.
+  severity: High
+- best_practice: Regularly Review IAM Policies
+  description: Periodically review and refine IAM policies to ensure they adhere to
+    the principle of least privilege and remove any unnecessary permissions.
+  severity: Medium
+- best_practice: Enable GuardDuty
+  description: Enable Amazon GuardDuty to provide intelligent threat detection and
+    continuous monitoring for malicious activity and unauthorized behavior.
+  severity: Critical

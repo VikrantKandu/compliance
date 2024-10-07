@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use Elastic Load Balancing (ELB) with ACM
+  description: Integrate ACM with ELB to manage SSL/TLS certificates for your load
+    balancers, ensuring secure communication between clients and your application.
+  severity: High
+- best_practice: Automate Certificate Renewal
+  description: Utilize ACM's automatic certificate renewal feature to avoid service
+    disruptions due to expired certificates.
+  severity: High
+- best_practice: Leverage ACM with CloudFront
+  description: Use ACM to manage SSL/TLS certificates for CloudFront distributions
+    to ensure secure content delivery.
+  severity: Medium
+- best_practice: Implement Multi-Region Certificates
+  description: Deploy ACM certificates across multiple AWS regions to enhance redundancy
+    and availability.
+  severity: Medium
+- best_practice: Monitor Certificate Expiration
+  description: Regularly monitor the expiration dates of your certificates and set
+    up alerts to ensure timely renewals.
+  severity: Medium
+- best_practice: Use AWS CloudFormation for Certificate Management
+  description: Automate the provisioning and management of ACM certificates using
+    AWS CloudFormation templates to ensure consistency and repeatability.
+  severity: Low
+security_best_practices:
+- best_practice: Enforce Strong Encryption
+  description: Ensure that ACM certificates use strong encryption algorithms and protocols
+    to protect data in transit.
+  severity: Critical
+- best_practice: Restrict Certificate Access
+  description: Use IAM policies to restrict access to ACM certificates to only authorized
+    users and services.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch to log and monitor ACM
+    activities for security auditing and anomaly detection.
+  severity: High
+- best_practice: Regularly Rotate Certificates
+  description: Periodically rotate certificates to minimize the risk of compromised
+    keys and ensure up-to-date security practices.
+  severity: Medium
+- best_practice: Use Private Certificates for Internal Services
+  description: Use ACM Private Certificate Authority (CA) to issue and manage private
+    certificates for internal services, ensuring secure internal communications.
+  severity: Medium
+- best_practice: Validate Domain Ownership
+  description: Ensure proper validation of domain ownership before issuing certificates
+    to prevent unauthorized certificate issuance.
+  severity: Medium
+- best_practice: Implement Least Privilege Principle
+  description: Apply the principle of least privilege to IAM roles and policies associated
+    with ACM to minimize potential attack vectors.
+  severity: Medium

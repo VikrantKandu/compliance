@@ -1,0 +1,65 @@
+architecture_best_practices:
+- best_practice: Enable Detailed Monitoring
+  description: Enable detailed monitoring to get granular metrics for better insights
+    and more accurate alarms.
+  severity: High
+- best_practice: Use Custom Metrics
+  description: Utilize custom metrics to monitor application-specific parameters that
+    are not covered by default metrics.
+  severity: Medium
+- best_practice: Set Up Alarms
+  description: Configure alarms for critical metrics to receive notifications and
+    take corrective actions promptly.
+  severity: High
+- best_practice: Aggregate Metrics
+  description: Aggregate metrics across multiple dimensions (e.g., instance types,
+    regions) for a comprehensive view of system performance.
+  severity: Medium
+- best_practice: Use Dashboards
+  description: Create CloudWatch dashboards to visualize key metrics and get an at-a-glance
+    view of system health.
+  severity: Medium
+- best_practice: Integrate with AWS Services
+  description: Integrate CloudWatch with other AWS services like AWS Lambda, SNS,
+    and EC2 Auto Scaling for automated responses to metric changes.
+  severity: High
+- best_practice: Optimize Data Retention
+  description: Configure appropriate data retention policies to balance cost and the
+    need for historical data.
+  severity: Medium
+- best_practice: Use Tags
+  description: Tag CloudWatch resources for better organization, cost allocation,
+    and access control.
+  severity: Low
+security_best_practices:
+- best_practice: Enable CloudWatch Logs Encryption
+  description: Enable encryption for CloudWatch Logs to protect sensitive data at
+    rest.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use IAM policies to control access to CloudWatch resources, ensuring
+    only authorized users have access.
+  severity: Critical
+- best_practice: Enable VPC Flow Logs
+  description: Enable VPC Flow Logs to monitor network traffic and detect potential
+    security threats.
+  severity: High
+- best_practice: Use CloudTrail for Auditing
+  description: Enable AWS CloudTrail to log all API calls made to CloudWatch for auditing
+    and compliance purposes.
+  severity: High
+- best_practice: Set Up Log Metric Filters
+  description: Create log metric filters to detect and alert on specific patterns
+    in log data that may indicate security incidents.
+  severity: High
+- best_practice: Regularly Review Permissions
+  description: Regularly review and update IAM roles and policies to ensure least
+    privilege access to CloudWatch resources.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing CloudWatch to add an extra layer of security.
+  severity: Critical
+- best_practice: Monitor for Anomalies
+  description: Use anomaly detection in CloudWatch to identify unusual patterns that
+    could indicate security breaches.
+  severity: High

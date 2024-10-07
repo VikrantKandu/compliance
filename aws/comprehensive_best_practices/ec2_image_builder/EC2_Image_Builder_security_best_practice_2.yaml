@@ -1,0 +1,27 @@
+- rule:
+  - ID: AWS-CLOUDWATCH-LOGS-01
+    Title: Ensure CloudWatch Logs are encrypted
+    Profile Applicability: Level 1
+    Description: CloudWatch Logs should be encrypted at rest to protect sensitive
+      log data. This ensures that log data is not readable by unauthorized parties
+      if accessed.
+    Rationale: Encrypting CloudWatch Logs protects sensitive data from unauthorized
+      access and potential data breaches. Without encryption, log data can be exposed
+      if accessed by malicious actors.
+    Audit:
+    - Step 1: Sign in to the AWS Management Console.
+    - Step 2: Navigate to the CloudWatch service.
+    - Step 3: Select Logs from the left-hand menu.
+    - Step 4: Choose a log group and check the Encryption tab to verify if encryption
+        is enabled.
+    - Step 5: Ensure that a Customer Master Key (CMK) is associated with the log group
+        for encryption.
+    Default Value: By default, CloudWatch Logs are not encrypted.
+    Remediation:
+    - Step 1: Sign in to the AWS Management Console.
+    - Step 2: Navigate to the CloudWatch service.
+    - Step 3: Select Logs from the left-hand menu.
+    - Step 4: Choose the log group you wish to encrypt.
+    - Step 5: Click on the Settings tab and select Encrypt log data.
+    - Step 6: Choose a Customer Master Key (CMK) for encryption.
+    - Step 7: Save the changes to apply encryption to the log group.

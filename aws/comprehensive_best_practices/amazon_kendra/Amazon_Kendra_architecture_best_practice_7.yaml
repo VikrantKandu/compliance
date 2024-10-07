@@ -1,0 +1,25 @@
+- rule:
+  - ID: AWS-EC2-SG-001
+    Title: Ensure Security Groups are configured with least privilege
+    Profile Applicability: Level 1, Level 2
+    Description: Security groups should be configured to allow only the minimum necessary
+      access to resources. This includes restricting inbound and outbound traffic
+      to only what is required for the application to function.
+    Rationale: Overly permissive security group rules can expose resources to unnecessary
+      risk, including unauthorized access and potential data breaches. Configuring
+      security groups with least privilege reduces the attack surface and helps protect
+      against malicious activities.
+    Audit:
+    - Log into the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select "Security Groups" from the navigation pane.
+    - Review each security group for overly permissive rules, such as wide IP ranges
+      or open ports.
+    - Ensure that the rules are specific to the application's needs.
+    Default Value: Security groups are created with no inbound rules and allow all
+      outbound traffic by default.
+    Remediation:
+    - Identify the specific access requirements for your application.
+    - Modify security group rules to allow only the necessary inbound and outbound
+      traffic.
+    - Remove any rules that are not explicitly required for the application to function.

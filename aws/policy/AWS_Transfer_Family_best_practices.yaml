@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Ensure that AWS Transfer Family is deployed across multiple availability
+    zones to enhance fault tolerance and availability.
+  severity: Critical
+- best_practice: Enable Auto Scaling
+  description: Configure auto-scaling to handle variable workloads efficiently and
+    maintain performance during peak times.
+  severity: High
+- best_practice: Optimize Data Transfer
+  description: Use AWS Direct Connect or AWS Global Accelerator to optimize data transfer
+    speeds and reduce latency.
+  severity: Medium
+- best_practice: Implement Logging and Monitoring
+  description: Utilize AWS CloudWatch and AWS CloudTrail to monitor the health and
+    performance of AWS Transfer Family services.
+  severity: High
+- best_practice: Use Managed Services
+  description: Leverage AWS managed services like AWS Transfer Family to reduce operational
+    overhead and improve reliability.
+  severity: Medium
+- best_practice: Design for Scalability
+  description: Architect your solution to scale horizontally by adding more instances
+    rather than vertically by increasing the size of instances.
+  severity: High
+- best_practice: Implement Caching
+  description: Use caching mechanisms such as Amazon ElastiCache to reduce load on
+    AWS Transfer Family and improve response times.
+  severity: Medium
+- best_practice: Use Infrastructure as Code
+  description: Manage your AWS Transfer Family infrastructure using tools like AWS
+    CloudFormation or Terraform to ensure consistency and repeatability.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Ensure that data in transit and at rest is encrypted using AWS Key
+    Management Service (KMS) or other encryption mechanisms.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to restrict access
+    to AWS Transfer Family resources to only those who need it.
+  severity: Critical
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Require multi-factor authentication for accessing AWS Transfer Family
+    to add an extra layer of security.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate credentials and keys used to access AWS Transfer Family
+    to minimize the risk of credential compromise.
+  severity: High
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to securely connect to AWS Transfer Family without
+    exposing data to the public internet.
+  severity: High
+- best_practice: Monitor for Security Events
+  description: Use AWS CloudTrail and AWS Config to monitor and log security events
+    and changes to AWS Transfer Family configurations.
+  severity: High
+- best_practice: Apply Security Patches
+  description: Regularly apply security patches and updates to the underlying infrastructure
+    supporting AWS Transfer Family.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    potential vulnerabilities in AWS Transfer Family.
+  severity: Medium

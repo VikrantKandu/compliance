@@ -1,0 +1,61 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Instance Types
+  description: Select instance types that match your workload requirements to ensure
+    optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Enable Auto Scaling
+  description: Configure auto scaling to handle variable workloads and ensure high
+    availability and performance.
+  severity: High
+- best_practice: Implement Data Retention Policies
+  description: Define and implement data retention policies to manage storage costs
+    and comply with regulatory requirements.
+  severity: Medium
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy across multiple availability zones to enhance fault tolerance
+    and high availability.
+  severity: Critical
+- best_practice: Monitor Resource Utilization
+  description: Regularly monitor resource utilization to optimize performance and
+    cost.
+  severity: Medium
+- best_practice: Optimize Query Performance
+  description: Use query optimization techniques to reduce latency and improve performance.
+  severity: High
+- best_practice: Implement Caching Mechanisms
+  description: Use caching to reduce the load on the database and improve response
+    times.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Ensure that all data stored in Amazon Managed Prometheus is encrypted
+    at rest to protect sensitive information.
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Use TLS to encrypt data in transit between clients and Amazon Managed
+    Prometheus to prevent data interception.
+  severity: Critical
+- best_practice: Implement IAM Policies
+  description: Use AWS Identity and Access Management (IAM) policies to control access
+    to Amazon Managed Prometheus resources.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging and monitoring to detect and respond to security incidents
+    promptly.
+  severity: High
+- best_practice: Regularly Update and Patch
+  description: Ensure that the service and its dependencies are regularly updated
+    and patched to mitigate vulnerabilities.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely connect to Amazon Managed Prometheus
+    without traversing the public internet.
+  severity: Medium
+- best_practice: Implement Network Segmentation
+  description: Use network segmentation to limit access to Amazon Managed Prometheus
+    and reduce the attack surface.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits to identify and address potential vulnerabilities
+    and compliance issues.
+  severity: Medium

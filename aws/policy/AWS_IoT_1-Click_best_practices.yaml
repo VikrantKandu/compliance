@@ -1,0 +1,64 @@
+architecture_best_practices:
+- best_practice: Use Managed Services
+  description: Leverage AWS managed services to reduce operational overhead and improve
+    reliability.
+  severity: Medium
+- best_practice: Design for Scalability
+  description: Architect your AWS IoT 1-Click solutions to handle increased loads
+    by using scalable services and patterns.
+  severity: High
+- best_practice: Implement Fault Tolerance
+  description: Ensure your architecture can withstand failures by using multiple Availability
+    Zones and redundancy.
+  severity: Critical
+- best_practice: Optimize Cost
+  description: Regularly review and optimize your resource usage to control costs
+    effectively.
+  severity: Medium
+- best_practice: Use Event-Driven Architecture
+  description: Utilize event-driven patterns to decouple components and improve responsiveness.
+  severity: High
+- best_practice: Monitor and Log
+  description: Implement comprehensive monitoring and logging to track system performance
+    and troubleshoot issues.
+  severity: High
+- best_practice: Automate Deployments
+  description: Use CI/CD pipelines to automate deployments, ensuring consistency and
+    reducing human error.
+  severity: Medium
+- best_practice: Implement Data Backup and Recovery
+  description: Regularly back up critical data and have a recovery plan in place to
+    prevent data loss.
+  severity: Critical
+security_best_practices:
+- best_practice: Use IAM Roles and Policies
+  description: Implement least privilege access using IAM roles and policies to secure
+    resources.
+  severity: Critical
+- best_practice: Enable Encryption
+  description: Use encryption for data at rest and in transit to protect sensitive
+    information.
+  severity: High
+- best_practice: Implement Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing AWS Management Console and critical resources
+    to enhance security.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials to reduce the risk of compromised
+    access keys.
+  severity: Medium
+- best_practice: Conduct Security Audits
+  description: Perform regular security audits and assessments to identify and mitigate
+    vulnerabilities.
+  severity: High
+- best_practice: Use VPC and Network Security
+  description: Isolate resources within a VPC and use security groups and network
+    ACLs to control traffic.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Enable CloudTrail to log all API calls for auditing and compliance
+    purposes.
+  severity: Medium
+- best_practice: Apply Security Patches
+  description: Regularly update and patch your systems to protect against known vulnerabilities.
+  severity: High

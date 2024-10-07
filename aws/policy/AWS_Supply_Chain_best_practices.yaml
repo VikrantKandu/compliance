@@ -1,0 +1,82 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy your AWS services across multiple Availability Zones to ensure
+    high availability and fault tolerance.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Use Auto Scaling to automatically adjust capacity to maintain steady,
+    predictable performance at the lowest possible cost.
+  severity: High
+- best_practice: Optimize for Cost Efficiency
+  description: Use AWS Cost Explorer and Trusted Advisor to regularly review and optimize
+    your resource usage and costs.
+  severity: Medium
+- best_practice: Use Elastic Load Balancing
+  description: Distribute incoming application traffic across multiple targets, such
+    as Amazon EC2 instances, to ensure no single instance is overwhelmed.
+  severity: High
+- best_practice: Implement Caching
+  description: Use caching mechanisms like Amazon ElastiCache to reduce latency and
+    improve performance.
+  severity: Medium
+- best_practice: Design for Failure
+  description: Assume that failures will happen and design your architecture to be
+    resilient, using services like Amazon S3 for durable storage.
+  severity: Critical
+- best_practice: Use Infrastructure as Code
+  description: Use AWS CloudFormation or Terraform to manage your infrastructure,
+    ensuring consistency and enabling version control.
+  severity: High
+- best_practice: Monitor and Log
+  description: Implement comprehensive monitoring and logging using AWS CloudWatch
+    and AWS CloudTrail to track performance and detect issues.
+  severity: High
+- best_practice: Implement Microservices Architecture
+  description: Break down your application into smaller, manageable services that
+    can be developed, deployed, and scaled independently.
+  severity: Medium
+- best_practice: Use Managed Services
+  description: Leverage AWS managed services like RDS, DynamoDB, and Lambda to reduce
+    operational overhead and improve reliability.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users to add an extra layer of security to your
+    AWS accounts.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Implement the principle of least privilege by using IAM roles and policies
+    to control access to AWS resources.
+  severity: Critical
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data stored
+    in AWS and ensure data in transit is encrypted using TLS.
+  severity: High
+- best_practice: Regularly Rotate Security Credentials
+  description: Regularly rotate IAM access keys, passwords, and other security credentials
+    to minimize the risk of compromise.
+  severity: High
+- best_practice: Enable AWS Config
+  description: Use AWS Config to continuously monitor and record your AWS resource
+    configurations and ensure compliance with your security policies.
+  severity: Medium
+- best_practice: Implement Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your AWS resources.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and remediate potential security issues.
+  severity: High
+- best_practice: Use AWS Shield and WAF
+  description: Protect your applications from DDoS attacks and other web exploits
+    using AWS Shield and AWS Web Application Firewall (WAF).
+  severity: High
+- best_practice: Enable GuardDuty
+  description: Use AWS GuardDuty to continuously monitor for malicious activity and
+    unauthorized behavior to protect your AWS accounts and workloads.
+  severity: Medium
+- best_practice: Implement Logging and Monitoring
+  description: Use AWS CloudTrail, CloudWatch, and other logging services to monitor
+    account activity and detect suspicious actions.
+  severity: High

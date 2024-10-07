@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Modular Templates
+  description: Break down large templates into smaller, reusable components to improve
+    manageability and reusability.
+  severity: Medium
+- best_practice: Leverage Parameter Store
+  description: Use AWS Systems Manager Parameter Store to manage configuration data
+    and secrets, avoiding hardcoding them in templates.
+  severity: High
+- best_practice: Implement Stack Policies
+  description: Use stack policies to protect critical resources from accidental updates
+    during stack updates.
+  severity: High
+- best_practice: Use Outputs for Cross-Stack References
+  description: Use the Outputs section to export values that can be imported into
+    other stacks, facilitating stack interdependencies.
+  severity: Medium
+- best_practice: Enable Termination Protection
+  description: Enable termination protection on stacks to prevent accidental deletions
+    of critical resources.
+  severity: High
+- best_practice: Use Intrinsic Functions
+  description: Utilize intrinsic functions to dynamically assign values to properties,
+    improving flexibility and reducing hardcoding.
+  severity: Medium
+- best_practice: Implement Change Sets
+  description: Use change sets to preview the impact of changes before applying them
+    to your stack, minimizing the risk of unintended consequences.
+  severity: High
+- best_practice: Optimize Resource Configurations
+  description: Ensure resources are appropriately sized and configured to balance
+    cost and performance.
+  severity: Medium
+security_best_practices:
+- best_practice: Use IAM Roles and Policies
+  description: Assign least-privilege IAM roles and policies to CloudFormation stacks
+    to limit the permissions granted to resources.
+  severity: Critical
+- best_practice: Enable Stack Drift Detection
+  description: Regularly check for and address drift between stack resources and their
+    expected configurations to ensure compliance and security.
+  severity: High
+- best_practice: Encrypt Sensitive Data
+  description: Use AWS KMS to encrypt sensitive data, including secrets and configuration
+    parameters, to protect against unauthorized access.
+  severity: Critical
+- best_practice: Implement Resource-Level Permissions
+  description: Apply resource-level permissions to limit access to specific resources
+    within your CloudFormation stacks.
+  severity: High
+- best_practice: Use Secure S3 Buckets for Templates
+  description: Store CloudFormation templates in secure S3 buckets with appropriate
+    access controls to prevent unauthorized access.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch to log and monitor CloudFormation
+    activities for auditing and troubleshooting.
+  severity: High
+- best_practice: Validate Templates
+  description: Use tools like AWS CloudFormation Linter (cfn-lint) to validate templates
+    for syntax and best practices before deployment.
+  severity: Medium
+- best_practice: Regularly Update Stacks
+  description: Keep CloudFormation stacks up-to-date with the latest AWS features
+    and security patches to mitigate vulnerabilities.
+  severity: High

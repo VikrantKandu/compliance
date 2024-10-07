@@ -1,0 +1,19 @@
+- rule:
+  - ID: AWS-001
+    Title: Ensure S3 Buckets Have Logging Enabled
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that logging is enabled on all S3 buckets to track
+      access requests and actions. Enabling logging helps in auditing and monitoring
+      access to the data stored in S3 buckets.
+    Rationale: Enabling logging on S3 buckets provides a way to monitor and audit
+      access to the data, which is crucial for security and compliance. Without logging,
+      unauthorized access or data breaches might go unnoticed, leading to potential
+      data loss or exposure.
+    Audit: 1. Sign in to the AWS Management Console. 2. Navigate to the S3 service.
+      3. Select a bucket and go to the 'Properties' tab. 4. Under 'Server access logging',
+      check if logging is enabled. 5. Repeat for all buckets.
+    Default Value: By default, S3 buckets do not have logging enabled.
+    Remediation: 1. Sign in to the AWS Management Console. 2. Navigate to the S3 service.
+      3. Select the bucket for which you want to enable logging. 4. Go to the 'Properties'
+      tab and find 'Server access logging'. 5. Enable logging and specify a target
+      bucket for the logs. 6. Save the changes.

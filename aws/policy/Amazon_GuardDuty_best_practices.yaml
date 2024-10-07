@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Enable GuardDuty in all AWS Regions
+  description: Ensuring GuardDuty is enabled in all AWS Regions helps in detecting
+    threats across your entire AWS environment, reducing the risk of missing region-specific
+    threats.
+  severity: Critical
+- best_practice: Centralize findings in a single account
+  description: Aggregating GuardDuty findings into a central AWS account simplifies
+    monitoring and response, improving the efficiency of your security operations.
+  severity: High
+- best_practice: Integrate with AWS Security Hub
+  description: Integrating GuardDuty with AWS Security Hub provides a unified view
+    of security alerts and compliance status, enhancing your ability to manage and
+    respond to threats.
+  severity: High
+- best_practice: Use AWS CloudFormation for deployment
+  description: Using AWS CloudFormation to deploy GuardDuty ensures consistent and
+    repeatable configurations, reducing the risk of human error.
+  severity: Medium
+- best_practice: Regularly review and tune detection criteria
+  description: Periodically reviewing and adjusting GuardDuty's detection criteria
+    helps in maintaining its effectiveness and relevance to your evolving security
+    landscape.
+  severity: Medium
+- best_practice: Enable S3 protection
+  description: Enabling S3 protection in GuardDuty helps in detecting suspicious activities
+    related to your S3 buckets, such as unauthorized access or data exfiltration attempts.
+  severity: High
+security_best_practices:
+- best_practice: Enable GuardDuty threat intelligence feeds
+  description: Enabling threat intelligence feeds from AWS and third-party providers
+    enhances GuardDuty's ability to detect known threats and malicious activities.
+  severity: Critical
+- best_practice: Automate response to GuardDuty findings
+  description: Implementing automated responses to GuardDuty findings, such as through
+    AWS Lambda, helps in quickly mitigating detected threats without manual intervention.
+  severity: High
+- best_practice: Regularly review GuardDuty findings
+  description: Consistently reviewing GuardDuty findings ensures timely identification
+    and response to potential security incidents, reducing the risk of prolonged exposure.
+  severity: High
+- best_practice: Enable GuardDuty for all accounts in an organization
+  description: Ensuring GuardDuty is enabled for all accounts within an AWS Organization
+    provides comprehensive threat detection across your entire AWS environment.
+  severity: Critical
+- best_practice: Use IAM roles for GuardDuty access
+  description: Using IAM roles to manage access to GuardDuty reduces the risk of unauthorized
+    access and helps in enforcing the principle of least privilege.
+  severity: High
+- best_practice: Monitor GuardDuty service limits
+  description: Regularly monitoring GuardDuty service limits ensures that you do not
+    exceed quotas, which could impact the service's ability to detect threats.
+  severity: Medium
+- best_practice: Enable CloudTrail logging
+  description: Enabling CloudTrail logging in conjunction with GuardDuty provides
+    a comprehensive audit trail of activities within your AWS environment, aiding
+    in investigations and compliance.
+  severity: High

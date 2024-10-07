@@ -1,0 +1,70 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy Amazon DocumentDB clusters across multiple availability zones
+    to ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Optimize Instance Types
+  description: Choose the appropriate instance types based on workload requirements
+    to optimize performance and cost.
+  severity: High
+- best_practice: Enable Auto Scaling
+  description: Configure auto-scaling to automatically adjust the capacity of your
+    Amazon DocumentDB cluster to meet changing demands.
+  severity: High
+- best_practice: Regularly Monitor Performance
+  description: Use Amazon CloudWatch to monitor key metrics and set up alarms to detect
+    and respond to performance issues promptly.
+  severity: Medium
+- best_practice: Use Read Replicas
+  description: Implement read replicas to offload read traffic from the primary instance
+    and improve read scalability.
+  severity: Medium
+- best_practice: Optimize Query Performance
+  description: Regularly analyze and optimize queries to ensure efficient use of resources
+    and maintain performance.
+  severity: Medium
+- best_practice: Implement Backup and Restore
+  description: Regularly back up your Amazon DocumentDB data and test restore procedures
+    to ensure data integrity and availability.
+  severity: Critical
+- best_practice: Use Indexes Appropriately
+  description: Create and maintain indexes to improve query performance, but avoid
+    over-indexing which can degrade write performance.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption at Rest
+  description: Use AWS Key Management Service (KMS) to encrypt data at rest to protect
+    sensitive information.
+  severity: Critical
+- best_practice: Enable Encryption in Transit
+  description: Use SSL/TLS to encrypt data in transit between clients and Amazon DocumentDB
+    to prevent interception.
+  severity: Critical
+- best_practice: Use IAM Roles for Access Control
+  description: Implement AWS Identity and Access Management (IAM) roles to manage
+    access to Amazon DocumentDB resources securely.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate database credentials and IAM keys to minimize the
+    risk of compromised credentials.
+  severity: High
+- best_practice: Implement Network Isolation
+  description: Use Amazon VPC to isolate your Amazon DocumentDB instances and control
+    inbound and outbound traffic.
+  severity: High
+- best_practice: Enable Audit Logging
+  description: Enable audit logging to track access and modifications to your Amazon
+    DocumentDB instances for compliance and security monitoring.
+  severity: High
+- best_practice: Apply Security Patches Promptly
+  description: Regularly apply security patches and updates to your Amazon DocumentDB
+    instances to protect against vulnerabilities.
+  severity: High
+- best_practice: Use Security Groups Effectively
+  description: Configure security groups to restrict access to your Amazon DocumentDB
+    instances based on IP addresses and port ranges.
+  severity: Medium
+- best_practice: Implement Principle of Least Privilege
+  description: Grant the minimum necessary permissions to users and applications accessing
+    Amazon DocumentDB to reduce security risks.
+  severity: High

@@ -1,0 +1,42 @@
+architecture_best_practices:
+- best_practice: Properly Configure Service Quotas
+  description: Ensure that Service Quotas are configured according to the needs of
+    your application to avoid hitting limits that can cause service disruptions.
+  severity: High
+- best_practice: Monitor Service Quotas Regularly
+  description: Regularly monitor your Service Quotas to identify and address potential
+    issues before they impact your application.
+  severity: Medium
+- best_practice: Plan for Quota Increases
+  description: Anticipate future growth and plan for quota increases in advance to
+    avoid service interruptions.
+  severity: Medium
+- best_practice: Use Automation for Quota Management
+  description: Implement automation tools to manage and monitor Service Quotas, reducing
+    the risk of human error and ensuring timely adjustments.
+  severity: Medium
+- best_practice: Document Quota Requirements
+  description: Maintain thorough documentation of your Service Quotas and their configurations
+    to ensure consistency and ease of management.
+  severity: Low
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Ensure that only authorized personnel have access to modify Service
+    Quotas to prevent unauthorized changes that could impact service availability.
+  severity: Critical
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging and monitoring for changes to Service Quotas to detect
+    and respond to unauthorized or unexpected modifications.
+  severity: High
+- best_practice: Regularly Review Access Policies
+  description: Periodically review and update access policies to ensure that they
+    align with current security requirements and best practices.
+  severity: High
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing and modifying Service Quotas to add an extra
+    layer of security.
+  severity: High
+- best_practice: Conduct Security Audits
+  description: Perform regular security audits to identify and address potential vulnerabilities
+    related to Service Quotas.
+  severity: Medium

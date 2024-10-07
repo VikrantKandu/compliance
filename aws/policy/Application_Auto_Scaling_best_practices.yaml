@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Enable Auto Scaling for High Availability
+  description: Ensure that Auto Scaling is configured to maintain application availability
+    by distributing traffic across multiple instances and Availability Zones.
+  severity: Critical
+- best_practice: Use Predictive Scaling
+  description: Implement predictive scaling to anticipate traffic patterns and scale
+    resources in advance, improving performance and cost-efficiency.
+  severity: High
+- best_practice: Define Appropriate Scaling Policies
+  description: Create scaling policies that align with your application's performance
+    requirements and workload patterns to optimize resource usage.
+  severity: High
+- best_practice: Monitor and Adjust Scaling Policies
+  description: Regularly review and adjust scaling policies based on monitoring data
+    to ensure they remain effective in meeting application demands.
+  severity: Medium
+- best_practice: Use Multiple Metrics for Scaling Decisions
+  description: Utilize multiple metrics (e.g., CPU utilization, memory usage, request
+    count) to make more informed scaling decisions and avoid over/under-provisioning.
+  severity: Medium
+- best_practice: Implement Graceful Scaling
+  description: Ensure that your application can handle scaling events gracefully,
+    such as by using connection draining and health checks.
+  severity: Medium
+- best_practice: Optimize Instance Types
+  description: Select appropriate instance types for your Auto Scaling groups based
+    on workload characteristics to balance cost and performance.
+  severity: Medium
+- best_practice: Automate Scaling with Infrastructure as Code
+  description: Use Infrastructure as Code (IaC) tools like AWS CloudFormation or Terraform
+    to automate the setup and management of Auto Scaling configurations.
+  severity: Low
+security_best_practices:
+- best_practice: Implement Least Privilege for IAM Roles
+  description: Assign the minimum necessary permissions to IAM roles used by Auto
+    Scaling to reduce the risk of unauthorized access or actions.
+  severity: Critical
+- best_practice: Enable Logging and Monitoring
+  description: Enable logging and monitoring for Auto Scaling activities using AWS
+    CloudTrail and Amazon CloudWatch to detect and respond to security incidents.
+  severity: High
+- best_practice: Use Secure Communication Channels
+  description: Ensure that all communication between Auto Scaling components and other
+    AWS services is encrypted using secure protocols like HTTPS.
+  severity: High
+- best_practice: Regularly Update AMIs
+  description: Keep Amazon Machine Images (AMIs) used in Auto Scaling groups up to
+    date with the latest security patches and updates.
+  severity: High
+- best_practice: Enforce Instance Termination Protection
+  description: Enable instance termination protection to prevent accidental or malicious
+    termination of critical instances in Auto Scaling groups.
+  severity: Medium
+- best_practice: Use Security Groups and Network ACLs
+  description: Configure security groups and network ACLs to control and restrict
+    network traffic to and from instances in Auto Scaling groups.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits of your Auto Scaling configurations
+    and policies to identify and address potential vulnerabilities.
+  severity: Medium
+- best_practice: Implement Instance Metadata Protection
+  description: Protect instance metadata from unauthorized access by configuring IAM
+    roles and instance metadata options appropriately.
+  severity: Medium

@@ -1,0 +1,29 @@
+- rule:
+  - ID: AWS-CFN-001
+    Title: Ensure CloudFormation stacks are monitored for drift detection
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that all AWS CloudFormation stacks are regularly
+      monitored for drift detection to identify any changes in stack resources that
+      are not reflected in the stack template. Drift detection helps maintain the
+      integrity and consistency of the infrastructure as defined by the CloudFormation
+      templates.
+    Rationale: Monitoring for drift in CloudFormation stacks is crucial to ensure
+      that the infrastructure remains consistent with the declared configuration.
+      Unmonitored drift can lead to security vulnerabilities, misconfigurations, and
+      operational issues. Regular drift detection helps in maintaining control over
+      the infrastructure and prevents unauthorized changes.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the CloudFormation service.
+    - Select a CloudFormation stack.
+    - Check for drift detection status and ensure that it is regularly performed.
+    - Verify that any detected drift is addressed and resolved in a timely manner.
+    Default Value: By default, CloudFormation stacks do not automatically monitor
+      for drift. Manual drift detection must be initiated.
+    Remediation:
+    - Initiate drift detection for the CloudFormation stack through the AWS Management
+      Console, CLI, or SDK.
+    - Review the drift results and update the stack resources or template as necessary
+      to resolve any drift.
+    - Implement a regular schedule for drift detection to maintain infrastructure
+      consistency.

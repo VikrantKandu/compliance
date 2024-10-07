@@ -1,0 +1,48 @@
+architecture_best_practices:
+  - best_practice: Use Auto Scaling
+    description: Implement Auto Scaling to ensure that your Amazon Kendra deployment can handle varying loads efficiently by automatically adjusting the number of instances.
+    severity: High
+  - best_practice: Optimize Data Sources
+    description: Regularly review and optimize the data sources connected to Amazon Kendra to ensure they are up-to-date and relevant, improving search accuracy and performance.
+    severity: Medium
+  - best_practice: Implement Caching Strategies
+    description: Use caching strategies to reduce the load on Amazon Kendra by storing frequently accessed data closer to the user.
+    severity: Medium
+  - best_practice: Leverage Multi-AZ Deployments
+    description: Deploy Amazon Kendra across multiple availability zones to ensure high availability and fault tolerance.
+    severity: Critical
+  - best_practice: Monitor and Log Usage
+    description: Set up monitoring and logging to track the performance and usage of Amazon Kendra, helping to identify and resolve issues promptly.
+    severity: High
+  - best_practice: Optimize Query Performance
+    description: Regularly analyze and optimize query performance to ensure fast and relevant search results.
+    severity: Medium
+  - best_practice: Use Appropriate Instance Types
+    description: Select the appropriate instance types based on your workload to balance cost and performance effectively.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable Encryption
+    description: Ensure that all data at rest and in transit is encrypted to protect sensitive information.
+    severity: Critical
+  - best_practice: Implement IAM Policies
+    description: Use AWS Identity and Access Management (IAM) policies to control access to Amazon Kendra resources, ensuring that only authorized users can access or modify data.
+    severity: Critical
+  - best_practice: Regularly Rotate Credentials
+    description: Regularly rotate credentials, such as AWS access keys, to minimize the risk of unauthorized access.
+    severity: High
+  - best_practice: Enable AWS CloudTrail
+    description: Enable AWS CloudTrail to log all API calls made to Amazon Kendra, providing an audit trail for security and compliance purposes.
+    severity: High
+  - best_practice: Use VPC Endpoints
+    description: Use VPC endpoints to securely connect to Amazon Kendra without exposing your data to the public internet.
+    severity: High
+  - best_practice: Conduct Regular Security Audits
+    description: Perform regular security audits to identify and mitigate potential vulnerabilities in your Amazon Kendra deployment.
+    severity: High
+  - best_practice: Implement Network Security Controls
+    description: Use security groups and network ACLs to control inbound and outbound traffic to Amazon Kendra, ensuring that only trusted sources can communicate with your deployment.
+    severity: Medium
+  - best_practice: Enable Multi-Factor Authentication (MFA)
+    description: Enable MFA for all users accessing Amazon Kendra to add an extra layer of security.
+    severity: High

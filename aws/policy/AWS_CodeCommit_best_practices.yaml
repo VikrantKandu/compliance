@@ -1,0 +1,54 @@
+architecture_best_practices:
+- best_practice: Use a Centralized Repository
+  description: Ensure that all code is stored in a single, centralized AWS CodeCommit
+    repository to streamline version control and collaboration.
+  severity: Medium
+- best_practice: Implement Branching Strategies
+  description: Use branching strategies like GitFlow to manage feature development,
+    bug fixes, and releases effectively.
+  severity: Medium
+- best_practice: Enable Repository Triggers
+  description: Use repository triggers to automate actions like notifications, builds,
+    and deployments, improving workflow efficiency.
+  severity: High
+- best_practice: Optimize Repository Size
+  description: Regularly clean up and archive old branches and repositories to keep
+    the repository size manageable and improve performance.
+  severity: Medium
+- best_practice: Use Tags and Labels
+  description: Implement tagging and labeling for better organization and easier retrieval
+    of specific versions or states of the repository.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all IAM users accessing AWS CodeCommit to add an extra
+    layer of security.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Assign least-privilege IAM roles and policies to control access to
+    repositories, minimizing the risk of unauthorized access.
+  severity: High
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Ensure that all data stored in AWS CodeCommit is encrypted at rest
+    and in transit to protect sensitive information.
+  severity: Critical
+- best_practice: Enable CloudTrail Logging
+  description: Use AWS CloudTrail to log all API calls made to AWS CodeCommit for
+    auditing and monitoring purposes.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Implement a policy to regularly rotate access keys and credentials
+    to reduce the risk of compromised accounts.
+  severity: High
+- best_practice: Monitor and Alert on Repository Activities
+  description: Use AWS CloudWatch and SNS to set up monitoring and alerts for unusual
+    or suspicious activities in your repositories.
+  severity: High
+- best_practice: Implement Code Reviews
+  description: Enforce mandatory code reviews to ensure that all changes are reviewed
+    by another developer before being merged into the main branch.
+  severity: Medium
+- best_practice: Use Static Code Analysis Tools
+  description: Integrate static code analysis tools to automatically scan for security
+    vulnerabilities and code quality issues.
+  severity: Medium

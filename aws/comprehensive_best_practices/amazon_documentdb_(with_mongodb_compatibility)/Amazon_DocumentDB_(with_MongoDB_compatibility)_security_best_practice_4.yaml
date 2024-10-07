@@ -1,0 +1,28 @@
+- rule:
+  - ID: AWS-1-EC2-IMDSv2
+    Title: Ensure EC2 Instances Use Instance Metadata Service Version 2 (IMDSv2)
+    Profile Applicability:
+    - Level 1
+    - Level 2
+    Description: Ensure that all EC2 instances are configured to use Instance Metadata
+      Service Version 2 (IMDSv2). IMDSv2 provides additional security features that
+      mitigate the risk of unauthorized access to instance metadata.
+    Rationale: Using IMDSv2 enhances security by requiring session-oriented requests,
+      which helps prevent unauthorized access to metadata that could be exploited
+      by attackers. Without IMDSv2, attackers might exploit vulnerabilities to access
+      sensitive data such as IAM roles and credentials.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select Instances and choose each instance to verify.
+    - Check the instance metadata options for each instance.
+    - Confirm that 'HttpTokens' is set to 'required', indicating that IMDSv2 is enabled.
+    Default Value: By default, EC2 instances may allow IMDSv1, which does not require
+      session tokens.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 Dashboard.
+    - Select the instance needing remediation.
+    - Choose 'Actions', then 'Instance Settings', and 'Modify Instance Metadata Options'.
+    - Set 'HttpTokens' to 'required' to enforce the use of IMDSv2.
+    - Save changes to apply the new setting.

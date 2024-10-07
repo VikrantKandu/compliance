@@ -1,0 +1,66 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Ensure that your AWS services are deployed across multiple Availability
+    Zones (AZs) to enhance fault tolerance and availability.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Utilize Auto Scaling to automatically adjust capacity to maintain steady,
+    predictable performance at the lowest possible cost.
+  severity: High
+- best_practice: Optimize Resource Utilization
+  description: Regularly review and optimize the use of AWS resources to avoid over-provisioning
+    and underutilization.
+  severity: Medium
+- best_practice: Use Managed Services
+  description: Leverage AWS managed services to reduce the operational overhead and
+    complexity of managing infrastructure.
+  severity: Medium
+- best_practice: Implement Caching Mechanisms
+  description: Use caching services like Amazon ElastiCache to reduce latency and
+    improve application performance.
+  severity: High
+- best_practice: Design for Scalability
+  description: Architect your applications to scale horizontally to handle increased
+    load by adding more instances rather than increasing the size of existing instances.
+  severity: High
+- best_practice: Use Infrastructure as Code (IaC)
+  description: Employ IaC tools like AWS CloudFormation or Terraform to automate the
+    provisioning and management of your AWS infrastructure.
+  severity: Medium
+- best_practice: Regularly Review Architecture
+  description: Conduct regular architecture reviews to ensure that your design aligns
+    with best practices and evolving requirements.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all user accounts to add an extra layer of security
+    beyond just usernames and passwords.
+  severity: Critical
+- best_practice: Use AWS Identity and Access Management (IAM) Roles
+  description: Assign IAM roles to AWS resources instead of using access keys to enhance
+    security and manage permissions more effectively.
+  severity: High
+- best_practice: Implement Network Segmentation
+  description: Use Virtual Private Cloud (VPC) and subnets to segment your network
+    and control traffic flow to enhance security.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Use AWS CloudTrail, Amazon CloudWatch, and AWS Config to monitor, log,
+    and audit activities in your AWS environment.
+  severity: High
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data both
+    at rest and in transit to protect against unauthorized access.
+  severity: Critical
+- best_practice: Regularly Update and Patch Systems
+  description: Ensure that all systems and applications are regularly updated and
+    patched to protect against known vulnerabilities.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: High
+- best_practice: Implement Least Privilege Principle
+  description: Grant users and applications the minimum level of access necessary
+    to perform their functions to reduce the risk of unauthorized access.
+  severity: Critical

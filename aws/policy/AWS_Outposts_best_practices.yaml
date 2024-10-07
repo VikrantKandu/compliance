@@ -1,0 +1,65 @@
+architecture_best_practices:
+- best_practice: Proper Capacity Planning
+  description: Ensure that you have adequately planned for capacity to meet your workload
+    requirements, taking into account future growth and peak usage scenarios.
+  severity: High
+- best_practice: Network Design Optimization
+  description: Design your network architecture to minimize latency and maximize throughput,
+    ensuring efficient communication between on-premises systems and AWS services.
+  severity: High
+- best_practice: High Availability and Redundancy
+  description: Implement high availability and redundancy mechanisms to ensure that
+    your workloads can tolerate failures and continue to operate without interruption.
+  severity: Critical
+- best_practice: Integration with AWS Services
+  description: Seamlessly integrate your on-premises infrastructure with AWS services
+    to leverage the full capabilities of the AWS ecosystem.
+  severity: Medium
+- best_practice: Monitoring and Logging
+  description: Implement comprehensive monitoring and logging to gain visibility into
+    the performance and health of your workloads.
+  severity: Medium
+- best_practice: Automation and Infrastructure as Code
+  description: Use automation tools and Infrastructure as Code (IaC) to manage and
+    deploy your infrastructure consistently and efficiently.
+  severity: Medium
+- best_practice: Resource Tagging
+  description: Use a consistent tagging strategy for all resources to facilitate management,
+    cost tracking, and automation.
+  severity: Low
+- best_practice: Regular Updates and Patching
+  description: Ensure that all software and firmware are regularly updated and patched
+    to avoid vulnerabilities and performance issues.
+  severity: High
+security_best_practices:
+- best_practice: Data Encryption
+  description: Encrypt data at rest and in transit to protect sensitive information
+    from unauthorized access.
+  severity: Critical
+- best_practice: Access Control and Identity Management
+  description: Implement strict access control policies and use AWS Identity and Access
+    Management (IAM) to manage permissions and roles.
+  severity: Critical
+- best_practice: Network Security
+  description: Use security groups, network ACLs, and other network security measures
+    to control inbound and outbound traffic.
+  severity: High
+- best_practice: Regular Security Audits
+  description: Conduct regular security audits and vulnerability assessments to identify
+    and mitigate potential threats.
+  severity: High
+- best_practice: Incident Response Planning
+  description: Develop and regularly update an incident response plan to quickly and
+    effectively respond to security incidents.
+  severity: High
+- best_practice: Multi-Factor Authentication (MFA)
+  description: Enable MFA for all user accounts to add an extra layer of security.
+  severity: Medium
+- best_practice: Least Privilege Principle
+  description: Grant users and applications the minimum permissions necessary to perform
+    their tasks.
+  severity: High
+- best_practice: Secure Configuration Management
+  description: Regularly review and update configurations to ensure they adhere to
+    security best practices.
+  severity: Medium

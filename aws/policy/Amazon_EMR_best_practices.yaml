@@ -1,0 +1,78 @@
+architecture_best_practices:
+- best_practice: Use Auto Scaling
+  description: Configure auto-scaling to handle varying workloads efficiently and
+    cost-effectively.
+  severity: High
+- best_practice: Optimize Instance Types
+  description: Select appropriate instance types based on workload requirements to
+    balance cost and performance.
+  severity: Medium
+- best_practice: Use Spot Instances
+  description: Utilize Spot Instances for cost savings, especially for non-critical
+    or fault-tolerant workloads.
+  severity: Medium
+- best_practice: Enable Cluster Logging
+  description: Enable logging for debugging and performance monitoring purposes.
+  severity: High
+- best_practice: Use Data Compression
+  description: Apply data compression techniques to reduce storage costs and improve
+    performance.
+  severity: Medium
+- best_practice: Separate Storage and Compute
+  description: Use Amazon S3 for storage to decouple compute and storage, allowing
+    for better scalability.
+  severity: High
+- best_practice: Use Instance Fleets
+  description: Utilize Instance Fleets to diversify instance types and purchasing
+    options within a single cluster.
+  severity: Medium
+- best_practice: Enable Termination Protection
+  description: Enable termination protection to prevent accidental termination of
+    clusters.
+  severity: Low
+- best_practice: Use Multiple Master Nodes
+  description: Configure multiple master nodes for high availability and fault tolerance.
+  severity: Critical
+- best_practice: Optimize Network Configuration
+  description: Use appropriate VPC, subnet, and security group configurations to ensure
+    optimal network performance.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Enable encryption at rest and in transit to protect sensitive data.
+  severity: Critical
+- best_practice: Use IAM Roles
+  description: Use IAM roles to manage permissions securely and avoid using hardcoded
+    credentials.
+  severity: Critical
+- best_practice: Enable Security Groups
+  description: Configure security groups to control inbound and outbound traffic to
+    your EMR cluster.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and keys to minimize the risk of compromised
+    credentials.
+  severity: High
+- best_practice: Enable Audit Logging
+  description: Enable audit logging to monitor and review access and changes to your
+    EMR cluster.
+  severity: High
+- best_practice: Use VPC Endpoints
+  description: Use VPC endpoints to securely access AWS services without traversing
+    the public internet.
+  severity: Medium
+- best_practice: Implement Least Privilege
+  description: Follow the principle of least privilege when assigning IAM roles and
+    permissions.
+  severity: Critical
+- best_practice: Regular Security Assessments
+  description: Conduct regular security assessments and vulnerability scans to identify
+    and mitigate risks.
+  severity: High
+- best_practice: Patch and Update Regularly
+  description: Regularly apply patches and updates to your EMR cluster to protect
+    against known vulnerabilities.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Enable MFA for IAM users to add an extra layer of security.
+  severity: Medium

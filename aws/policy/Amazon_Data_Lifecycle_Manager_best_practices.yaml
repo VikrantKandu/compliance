@@ -1,0 +1,52 @@
+architecture_best_practices:
+- best_practice: Use Multiple AWS Regions
+  description: Distribute resources across multiple AWS regions to ensure high availability
+    and disaster recovery.
+  severity: Critical
+- best_practice: Implement Automated Backups
+  description: Configure automated backups for your Amazon Data Lifecycle Manager
+    to ensure data integrity and quick recovery in case of failures.
+  severity: High
+- best_practice: Optimize Resource Utilization
+  description: Regularly review and optimize the utilization of resources managed
+    by Amazon Data Lifecycle Manager to reduce costs and improve performance.
+  severity: Medium
+- best_practice: Use Tags for Resource Management
+  description: Apply consistent tagging to resources managed by Amazon Data Lifecycle
+    Manager for better organization, cost tracking, and automation.
+  severity: Medium
+- best_practice: Monitor and Log Activities
+  description: Implement monitoring and logging to track the activities and performance
+    of Amazon Data Lifecycle Manager, enabling quick identification and resolution
+    of issues.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Ensure that all data managed by Amazon Data Lifecycle Manager is encrypted
+    both in transit and at rest to protect sensitive information.
+  severity: Critical
+- best_practice: Implement Least Privilege Access
+  description: Restrict access to Amazon Data Lifecycle Manager resources to only
+    those users and roles that absolutely need it, minimizing the risk of unauthorized
+    access.
+  severity: High
+- best_practice: Regularly Rotate IAM Credentials
+  description: Regularly rotate IAM credentials and keys used by Amazon Data Lifecycle
+    Manager to reduce the risk of compromised credentials.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Enable AWS CloudTrail to log all API calls made to Amazon Data Lifecycle
+    Manager, providing an audit trail for security and compliance purposes.
+  severity: High
+- best_practice: Apply Security Patches Promptly
+  description: Regularly apply security patches and updates to the underlying infrastructure
+    and software used by Amazon Data Lifecycle Manager to mitigate vulnerabilities.
+  severity: Critical
+- best_practice: Use Multi-Factor Authentication (MFA)
+  description: Enforce the use of multi-factor authentication for accessing Amazon
+    Data Lifecycle Manager to add an extra layer of security.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits of your Amazon Data Lifecycle Manager
+    configurations and policies to identify and rectify potential security gaps.
+  severity: Medium

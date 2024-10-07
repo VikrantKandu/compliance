@@ -1,0 +1,27 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 Instances Are Launched in a VPC
+    Profile Applicability: Level 1
+    Description: All EC2 instances should be launched within a Virtual Private Cloud
+      (VPC) to ensure network isolation and enhanced security.
+    Rationale: Launching EC2 instances in a VPC provides better control over network
+      configurations, allowing for greater security measures such as security groups
+      and network ACLs. Without a VPC, instances may be exposed to the public internet,
+      increasing the risk of unauthorized access and data breaches.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the EC2 dashboard.
+    - Select Instances from the sidebar.
+    - Check the VPC ID column for each instance to ensure that it is associated with
+      a VPC.
+    - Alternatively, use the AWS CLI command aws ec2 describe-instances and verify
+      that each instance has a VPC ID.
+    Default Value: By default, EC2 instances launched in newer AWS accounts are within
+      a VPC.
+    Remediation:
+    - If an instance is not in a VPC, stop the instance.
+    - Create a new VPC and configure subnets, route tables, and security groups as
+      needed.
+    - Launch a new instance within the VPC using the same configuration as the stopped
+      instance.
+    - Terminate the old instance that was not in a VPC.

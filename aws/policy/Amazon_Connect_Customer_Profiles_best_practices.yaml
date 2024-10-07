@@ -1,0 +1,55 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy Amazon Connect Customer Profiles across multiple Availability
+    Zones (AZs) to ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Implement Auto Scaling
+  description: Configure auto-scaling policies to automatically adjust resources based
+    on demand, ensuring optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Optimize Data Storage
+  description: Use appropriate storage solutions for different types of data (e.g.,
+    S3 for large datasets, DynamoDB for high-speed transactions) to optimize performance
+    and cost.
+  severity: Medium
+- best_practice: Utilize Caching
+  description: Implement caching mechanisms (e.g., Amazon ElastiCache) to reduce latency
+    and improve response times for frequently accessed data.
+  severity: Medium
+- best_practice: Regularly Review and Update Architecture
+  description: Periodically review and update your architecture to incorporate new
+    AWS features and best practices, ensuring your system remains efficient and secure.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Encryption at Rest and in Transit
+  description: Ensure that all data stored in Amazon Connect Customer Profiles is
+    encrypted at rest and in transit to protect against unauthorized access.
+  severity: Critical
+- best_practice: Implement Least Privilege Access
+  description: Follow the principle of least privilege by granting users and systems
+    only the permissions they need to perform their tasks, reducing the risk of unauthorized
+    access.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate access keys, passwords, and other credentials to minimize
+    the risk of compromised credentials being used maliciously.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and Amazon CloudWatch to log and monitor all
+    activities within Amazon Connect Customer Profiles, allowing for the detection
+    and investigation of suspicious activities.
+  severity: Medium
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and address potential security weaknesses in your Amazon Connect Customer Profiles
+    setup.
+  severity: Medium
+- best_practice: Use AWS Identity and Access Management (IAM) Roles
+  description: Use IAM roles instead of long-term access keys to grant permissions
+    to applications and services, ensuring better security and easier management.
+  severity: Medium
+- best_practice: Implement Network Security Controls
+  description: Use security groups, network ACLs, and VPCs to control and restrict
+    network traffic to and from Amazon Connect Customer Profiles, reducing the risk
+    of unauthorized access.
+  severity: Medium

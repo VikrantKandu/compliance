@@ -1,0 +1,65 @@
+architecture_best_practices:
+- best_practice: Use AWS Organizations for Centralized Management
+  description: Utilize AWS Organizations to centrally manage and govern your environment
+    as you grow and scale your AWS resources.
+  severity: High
+- best_practice: Implement Resource Tagging
+  description: Apply consistent tagging to all resources to improve resource management,
+    cost tracking, and operational efficiency.
+  severity: Medium
+- best_practice: Design for Scalability
+  description: Architect your AWS environment to handle growth efficiently by leveraging
+    services like Auto Scaling and Elastic Load Balancing.
+  severity: High
+- best_practice: Leverage Multi-Account Strategy
+  description: Use multiple AWS accounts to isolate workloads and limit the blast
+    radius in case of security incidents.
+  severity: High
+- best_practice: Use Infrastructure as Code (IaC)
+  description: Manage and provision your AWS resources using IaC tools like AWS CloudFormation
+    or Terraform to ensure consistency and repeatability.
+  severity: Medium
+- best_practice: Optimize Cost Management
+  description: Regularly review and optimize your AWS resources and usage patterns
+    to manage costs effectively.
+  severity: Medium
+- best_practice: Enable Logging and Monitoring
+  description: Implement logging and monitoring using AWS CloudTrail, Amazon CloudWatch,
+    and AWS Config to maintain visibility into your AWS environment.
+  severity: High
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Grant the minimum permissions necessary for users and services to perform
+    their tasks to reduce the risk of unauthorized access.
+  severity: Critical
+- best_practice: Use AWS Identity and Access Management (IAM) Roles
+  description: Use IAM roles instead of long-term access keys to manage permissions
+    for AWS services and applications.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all IAM users to add an extra layer of security to
+    your AWS accounts.
+  severity: Critical
+- best_practice: Regularly Rotate Access Keys
+  description: Rotate IAM access keys regularly to minimize the risk of compromised
+    credentials.
+  severity: High
+- best_practice: Monitor and Audit AWS Account Activity
+  description: Use AWS CloudTrail to monitor and log account activity for auditing
+    and compliance purposes.
+  severity: High
+- best_practice: Secure S3 Buckets
+  description: Ensure that S3 buckets are not publicly accessible unless explicitly
+    required, and use bucket policies and IAM policies to control access.
+  severity: Critical
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt data at rest and SSL/TLS
+    to encrypt data in transit to protect sensitive information.
+  severity: Critical
+- best_practice: Regularly Patch and Update Systems
+  description: Apply security patches and updates to your AWS resources and underlying
+    operating systems to protect against vulnerabilities.
+  severity: High
+- best_practice: Conduct Regular Security Assessments
+  description: Perform regular security assessments and penetration testing to identify and mitigate potential vulnerabilities.
+  severity: High

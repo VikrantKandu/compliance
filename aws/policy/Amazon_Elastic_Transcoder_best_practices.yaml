@@ -1,0 +1,70 @@
+architecture_best_practices:
+- best_practice: Use Appropriate Instance Types
+  description: Select the right instance types based on your workload requirements
+    to ensure optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Use auto-scaling to automatically adjust the number of instances in
+    response to demand, ensuring availability and cost management.
+  severity: Medium
+- best_practice: Utilize Elastic Load Balancing
+  description: Distribute incoming application traffic across multiple instances to
+    ensure high availability and fault tolerance.
+  severity: High
+- best_practice: Optimize Storage Solutions
+  description: Choose the appropriate storage solutions (e.g., S3, EBS) based on access
+    patterns and performance needs.
+  severity: Medium
+- best_practice: Use Caching Mechanisms
+  description: Implement caching strategies (e.g., CloudFront, ElastiCache) to reduce
+    latency and improve user experience.
+  severity: Medium
+- best_practice: Monitor and Log Performance
+  description: Use AWS CloudWatch and other monitoring tools to track performance
+    metrics and log events for troubleshooting and optimization.
+  severity: Medium
+- best_practice: Design for Fault Tolerance
+  description: Architect your application to handle failures gracefully by using multiple
+    Availability Zones and redundancy strategies.
+  severity: High
+- best_practice: Implement CI/CD Pipelines
+  description: Use continuous integration and continuous deployment pipelines to automate
+    the deployment process, ensuring consistency and reducing manual errors.
+  severity: Medium
+security_best_practices:
+- best_practice: Enable Encryption
+  description: Use encryption for data at rest and in transit to protect sensitive
+    information from unauthorized access.
+  severity: Critical
+- best_practice: Implement IAM Best Practices
+  description: Follow AWS Identity and Access Management (IAM) best practices, such
+    as least privilege access, to secure your resources.
+  severity: Critical
+- best_practice: Use Security Groups and Network ACLs
+  description: Configure security groups and network access control lists (ACLs) to
+    control inbound and outbound traffic to your instances.
+  severity: High
+- best_practice: Regularly Rotate Access Keys
+  description: Periodically rotate access keys and use IAM roles instead of long-term
+    access keys to enhance security.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require multi-factor authentication for all IAM users to add an additional
+    layer of security.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: High
+- best_practice: Use VPC for Network Isolation
+  description: Deploy your resources within a Virtual Private Cloud (VPC) to isolate
+    them from other networks and enhance security.
+  severity: High
+- best_practice: Enable Logging and Monitoring
+  description: Enable AWS CloudTrail and other logging services to monitor API activity
+    and detect suspicious behavior.
+  severity: Medium
+- best_practice: Apply Security Patches Regularly
+  description: Keep your instances and applications up-to-date with the latest security
+    patches to protect against vulnerabilities.
+  severity: High

@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Multiple Availability Zones
+  description: Deploy Amazon Managed Workflows for Apache Airflow across multiple
+    Availability Zones to ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Enable Auto Scaling
+  description: Configure auto-scaling to automatically adjust the number of worker
+    nodes based on the workload, ensuring optimal resource utilization and performance.
+  severity: High
+- best_practice: Use Amazon S3 for Data Storage
+  description: Store workflow input and output data in Amazon S3 for durability, scalability,
+    and cost-effectiveness.
+  severity: Medium
+- best_practice: Optimize DAG Design
+  description: Design Directed Acyclic Graphs (DAGs) to be modular and reusable, minimizing
+    dependencies and improving maintainability.
+  severity: Medium
+- best_practice: Monitor and Log Workflows
+  description: Implement monitoring and logging for workflows to quickly identify
+    and resolve issues, using Amazon CloudWatch and other tools.
+  severity: High
+- best_practice: Use Managed Services
+  description: Leverage AWS managed services like Amazon RDS for database needs to
+    reduce operational overhead and improve reliability.
+  severity: Medium
+- best_practice: Implement Version Control
+  description: Use version control systems like Git for managing DAG code to track
+    changes and facilitate collaboration.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Encryption at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt data at rest and enforce
+    TLS for data in transit to protect sensitive information.
+  severity: Critical
+- best_practice: Implement IAM Roles and Policies
+  description: Use AWS Identity and Access Management (IAM) roles and policies to
+    control access to resources, following the principle of least privilege.
+  severity: High
+- best_practice: Enable VPC Endpoints
+  description: Use VPC endpoints to securely connect Amazon Managed Workflows for
+    Apache Airflow to other AWS services without traversing the public internet.
+  severity: High
+- best_practice: Regularly Rotate Credentials
+  description: Implement automated processes to regularly rotate IAM credentials,
+    API keys, and other sensitive information to reduce the risk of compromise.
+  severity: Medium
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for accessing the AWS Management Console to add an extra
+    layer of security for user accounts.
+  severity: Critical
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: High
+- best_practice: Use Network ACLs and Security Groups
+  description: Configure network ACLs and security groups to control inbound and outbound
+    traffic to the Amazon Managed Workflows for Apache Airflow environment.
+  severity: Medium

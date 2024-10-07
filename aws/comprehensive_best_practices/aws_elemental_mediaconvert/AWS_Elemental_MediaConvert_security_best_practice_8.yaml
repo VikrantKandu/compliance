@@ -1,0 +1,18 @@
+- rule:
+  - ID: AWS-EC2-001
+    Title: Ensure EC2 Instances Have Termination Protection Enabled
+    Profile Applicability: Level 1
+    Description: This check ensures that termination protection is enabled for EC2
+      instances to prevent accidental termination.
+    Rationale: Enabling termination protection on EC2 instances helps prevent accidental
+      termination, which can lead to data loss and service disruption. This is especially
+      important for critical instances that host important applications or data.
+    Audit: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 dashboard.
+      3. Select 'Instances' from the left-hand menu. 4. For each running instance,
+      check the 'Instance Settings'. 5. Verify that 'Termination Protection' is enabled.
+    Default Value: By default, termination protection is disabled for EC2 instances.
+    Remediation: 1. Log in to the AWS Management Console. 2. Navigate to the EC2 dashboard.
+      3. Select 'Instances' from the left-hand menu. 4. Select the instance for which
+      you want to enable termination protection. 5. Click on 'Actions', then 'Instance
+      Settings', and select 'Change Termination Protection'. 6. Enable termination
+      protection and save changes.

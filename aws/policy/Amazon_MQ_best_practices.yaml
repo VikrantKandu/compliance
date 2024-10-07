@@ -1,0 +1,58 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy Amazon MQ brokers in multiple Availability Zones to ensure high
+    availability and fault tolerance.
+  severity: Critical
+- best_practice: Right-size Your Brokers
+  description: Choose the appropriate broker instance type and storage based on your
+    workload to optimize performance and cost.
+  severity: High
+- best_practice: Enable Auto-Scaling
+  description: Configure auto-scaling to handle variable workloads efficiently and
+    maintain performance.
+  severity: Medium
+- best_practice: Monitor and Optimize Network Latency
+  description: Ensure that your Amazon MQ brokers are in the same region as your applications
+    to minimize network latency.
+  severity: High
+- best_practice: Implement Message Retention Policies
+  description: Define appropriate message retention policies to manage storage efficiently
+    and avoid unnecessary costs.
+  severity: Medium
+- best_practice: Use Dead-Letter Queues
+  description: Implement dead-letter queues to handle message processing failures
+    and ensure message reliability.
+  severity: Medium
+- best_practice: Regularly Update and Patch Brokers
+  description: Keep your Amazon MQ brokers updated with the latest patches and updates
+    to ensure optimal performance and security.
+  severity: High
+security_best_practices:
+- best_practice: Enable Encryption at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt data at rest and enable
+    TLS to encrypt data in transit.
+  severity: Critical
+- best_practice: Implement IAM Policies and Roles
+  description: Use AWS Identity and Access Management (IAM) to control access to Amazon
+    MQ resources and enforce the principle of least privilege.
+  severity: Critical
+- best_practice: Enable VPC Peering or PrivateLink
+  description: Use VPC peering or AWS PrivateLink to restrict network access to your
+    Amazon MQ brokers and ensure secure communication.
+  severity: High
+- best_practice: Configure Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your Amazon MQ brokers.
+  severity: High
+- best_practice: Enable CloudWatch Logging and Monitoring
+  description: Use Amazon CloudWatch to monitor broker metrics and logs for unusual
+    activity or performance issues.
+  severity: Medium
+- best_practice: Regularly Rotate Credentials
+  description: Regularly rotate IAM credentials and keys used to access Amazon MQ
+    to minimize the risk of unauthorized access.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and compliance checks to ensure your
+    Amazon MQ setup adheres to best practices and regulatory requirements.
+  severity: Medium

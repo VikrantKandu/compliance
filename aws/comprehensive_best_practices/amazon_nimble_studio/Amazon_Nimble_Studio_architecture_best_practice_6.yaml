@@ -1,0 +1,22 @@
+- rule:
+  - ID: AWS-001
+    Title: Enable Multi-Factor Authentication (MFA) on Root Account
+    Profile Applicability: Level 1, Level 2
+    Description: Ensure that Multi-Factor Authentication (MFA) is enabled for the
+      AWS root account to enhance security. MFA provides an additional layer of protection
+      by requiring a second form of verification, which helps prevent unauthorized
+      access.
+    Rationale: Enabling MFA on the root account is crucial because the root account
+      has unrestricted access to all resources in the AWS account. Without MFA, the
+      account is vulnerable to unauthorized access, which could lead to data breaches,
+      resource misuse, and financial loss.
+    Audit: 1. Sign in to the AWS Management Console. 2. Navigate to the IAM dashboard.
+      3. In the left navigation pane, select "Users." 4. Choose the root user account.
+      5. Check if the "Multi-Factor Authentication" section indicates that MFA is
+      enabled.
+    Default Value: By default, MFA is not enabled on the AWS root account.
+    Remediation: 1. Sign in to the AWS Management Console with root account credentials.
+      2. Navigate to the IAM dashboard. 3. Select "Security credentials." 4. In the
+      "Multi-Factor Authentication (MFA)" section, click "Activate MFA." 5. Follow
+      the on-screen instructions to set up and enable MFA using a virtual MFA device
+      or hardware MFA device.

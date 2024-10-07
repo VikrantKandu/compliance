@@ -1,0 +1,66 @@
+architecture_best_practices:
+  - best_practice: Proper Instance Sizing
+    description: Ensure that instances are appropriately sized to handle the expected
+      workload to avoid performance bottlenecks.
+    severity: High
+  - best_practice: Use Multi-AZ Deployments
+    description: Deploy DocumentDB clusters across multiple Availability Zones to enhance
+      fault tolerance and availability.
+    severity: Critical
+  - best_practice: Optimize Read and Write Operations
+    description: Distribute read and write operations effectively to avoid overloading
+      any single instance.
+    severity: High
+  - best_practice: Regularly Monitor Performance Metrics
+    description: Use CloudWatch to monitor key performance metrics and set up alarms
+      for anomalies.
+    severity: Medium
+  - best_practice: Implement Automated Backups
+    description: Schedule regular automated backups to ensure data can be restored in
+      case of failure.
+    severity: Critical
+  - best_practice: Use Appropriate Storage Classes
+    description: Choose the right storage class based on access patterns to optimize
+      cost and performance.
+    severity: Medium
+  - best_practice: Enable Auto-Scaling
+    description: Configure auto-scaling to automatically adjust capacity based on workload
+      demands.
+    severity: High
+  - best_practice: Isolate Production and Development Environments
+    description: Use separate clusters for production and development to prevent resource
+      contention and potential data corruption.
+    severity: High
+
+security_best_practices:
+  - best_practice: Enable Encryption at Rest
+    description: Ensure that data stored in DocumentDB is encrypted to protect it from
+      unauthorized access.
+    severity: Critical
+  - best_practice: Use IAM Roles for Access Control
+    description: Implement IAM roles to manage permissions and control access to DocumentDB
+      resources.
+    severity: High
+  - best_practice: Enable Encryption in Transit
+    description: Use SSL/TLS to encrypt data in transit between clients and DocumentDB
+      to prevent interception.
+    severity: Critical
+  - best_practice: Regularly Rotate Credentials
+    description: Rotate database credentials and IAM keys regularly to minimize the risk of compromised credentials.
+    severity: High
+  - best_practice: Implement VPC Security Groups
+    description: Use VPC security groups to control inbound and outbound traffic to
+      DocumentDB clusters.
+    severity: High
+  - best_practice: Enable Audit Logging
+    description: Enable audit logging to track access and modifications to the database
+      for security and compliance purposes.
+    severity: Medium
+  - best_practice: Use Parameter Groups for Configuration Management
+    description: Use parameter groups to manage and enforce database configuration settings
+      consistently.
+    severity: Medium
+  - best_practice: Regular Security Assessments
+    description: Conduct regular security assessments and vulnerability scans to identify
+      and mitigate potential security risks.
+    severity: High

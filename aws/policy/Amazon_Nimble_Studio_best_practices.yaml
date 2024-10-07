@@ -1,0 +1,70 @@
+architecture_best_practices:
+- best_practice: Use Multi-AZ Deployments
+  description: Deploy Amazon Nimble Studio resources across multiple Availability
+    Zones to ensure high availability and fault tolerance.
+  severity: Critical
+- best_practice: Optimize Resource Utilization
+  description: Regularly monitor and adjust resource allocation to ensure efficient
+    use of compute, storage, and networking resources.
+  severity: High
+- best_practice: Implement Auto Scaling
+  description: Use Auto Scaling to automatically adjust the number of resources based
+    on demand, ensuring optimal performance and cost-efficiency.
+  severity: High
+- best_practice: Utilize AWS Direct Connect
+  description: Use AWS Direct Connect for a dedicated network connection to improve
+    performance and reduce latency for data transfers.
+  severity: Medium
+- best_practice: Leverage Caching Mechanisms
+  description: Implement caching strategies to reduce latency and improve performance
+    for frequently accessed data.
+  severity: Medium
+- best_practice: Use Infrastructure as Code (IaC)
+  description: Employ IaC tools like AWS CloudFormation or Terraform to automate and
+    manage infrastructure deployments consistently.
+  severity: Medium
+- best_practice: Regularly Review and Update Architecture
+  description: Periodically assess and update your architecture to incorporate new
+    AWS features and best practices.
+  severity: Low
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users to add an extra layer of security to your
+    AWS accounts.
+  severity: Critical
+- best_practice: Implement Least Privilege Access
+  description: Grant users and roles the minimum permissions necessary to perform
+    their tasks to reduce the risk of unauthorized access.
+  severity: Critical
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Use AWS Key Management Service (KMS) to encrypt sensitive data both
+    at rest and during transmission.
+  severity: High
+- best_practice: Regularly Rotate IAM Credentials
+  description: Periodically rotate IAM access keys and passwords to minimize the risk
+    of compromised credentials.
+  severity: High
+- best_practice: Enable AWS CloudTrail
+  description: Use AWS CloudTrail to log and monitor all API activity within your
+    AWS environment for auditing and compliance.
+  severity: High
+- best_practice: Set Up VPC Security Groups and Network ACLs
+  description: Use security groups and network ACLs to control inbound and outbound
+    traffic to your resources.
+  severity: Medium
+- best_practice: Regular Security Audits and Penetration Testing
+  description: Conduct regular security audits and penetration tests to identify and
+    remediate vulnerabilities.
+  severity: Medium
+- best_practice: Monitor with AWS Security Hub
+  description: Use AWS Security Hub to continuously monitor your AWS environment for
+    security compliance and threats.
+  severity: Medium
+- best_practice: Implement Logging and Monitoring
+  description: Use AWS CloudWatch and other logging services to monitor the health
+    and security of your environment.
+  severity: Medium
+- best_practice: Educate and Train Staff on Security Best Practices
+  description: Regularly train your team on security best practices and the latest
+    threats to ensure they are prepared to handle security incidents.
+  severity: Low

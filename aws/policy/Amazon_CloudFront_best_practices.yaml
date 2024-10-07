@@ -1,0 +1,67 @@
+architecture_best_practices:
+  - best_practice: Enable Caching
+    description: Configure Amazon CloudFront to cache content to reduce latency and
+      decrease load on your origin servers.
+    severity: High
+  - best_practice: Use Multiple Origins
+    description: Use multiple origins to distribute content and improve fault tolerance
+      and performance.
+    severity: Medium
+  - best_practice: Optimize Cache Behavior
+    description: Customize cache behavior settings like TTL (Time to Live) to balance
+      between up-to-date content and performance.
+    severity: Medium
+  - best_practice: Use Edge Locations
+    description: Leverage CloudFront's global network of edge locations to serve content
+      closer to your users.
+    severity: High
+  - best_practice: Implement Origin Failover
+    description: Configure origin failover to ensure high availability by automatically
+      switching to a backup origin if the primary fails.
+    severity: Critical
+  - best_practice: Enable Compression
+    description: Enable Gzip or Brotli compression to reduce the size of files delivered
+      to users, improving load times.
+    severity: Medium
+  - best_practice: Monitor and Analyze Metrics
+    description: Regularly monitor CloudFront metrics and logs to identify performance
+      bottlenecks and optimize configurations.
+    severity: Medium
+  - best_practice: Use Lambda@Edge
+    description: Utilize Lambda@Edge for custom logic at the edge to improve performance
+      and user experience.
+    severity: Medium
+
+security_best_practices:
+  - best_practice: Enable HTTPS
+    description: Use HTTPS to encrypt data in transit between CloudFront and end-users
+      to protect sensitive information.
+    severity: Critical
+  - best_practice: Use AWS WAF
+    description: Integrate AWS WAF (Web Application Firewall) with CloudFront to protect
+      against common web exploits and vulnerabilities.
+    severity: High
+  - best_practice: Restrict Viewer Access
+    description: Use signed URLs or signed cookies to restrict access to content to
+      authorized users only.
+    severity: High
+  - best_practice: Enable Origin Access Identity (OAI)
+    description: Use OAI to restrict access to your S3 bucket only through CloudFront,
+      preventing direct access to your content.
+    severity: Critical
+  - best_practice: Implement Geo-Restriction
+    description: Use geo-restriction to block access to your content from specific geographic
+      locations.
+    severity: Medium
+  - best_practice: Enable Logging
+    description: Enable CloudFront access logs to track requests and identify potential
+      security issues.
+    severity: Medium
+  - best_practice: Use Security Headers
+    description: Configure CloudFront to add security headers like Content Security
+      Policy (CSP) and X-Content-Type-Options to enhance security.
+    severity: Medium
+  - best_practice: Monitor for DDoS Attacks
+    description: Use AWS Shield and CloudFront's built-in DDoS protection to monitor
+      and mitigate DDoS attacks.
+    severity: High

@@ -1,0 +1,50 @@
+architecture_best_practices:
+- best_practice: Use Multi-Region Keys
+  description: Ensure that keys are available in multiple regions to provide high
+    availability and disaster recovery capabilities.
+  severity: High
+- best_practice: Enable Key Rotation
+  description: Automatically rotate keys to limit the amount of data encrypted with
+    a single key, reducing the risk of data exposure.
+  severity: Medium
+- best_practice: Use Aliases for Key Management
+  description: Use aliases to manage keys more easily and avoid hardcoding key IDs
+    in applications.
+  severity: Medium
+- best_practice: Separate Keys by Application and Environment
+  description: Use different keys for different applications and environments (e.g.,
+    development, testing, production) to minimize the impact of key compromise.
+  severity: High
+- best_practice: Leverage AWS CloudFormation for Key Management
+  description: Use AWS CloudFormation to automate the creation and management of keys,
+    ensuring consistent and repeatable deployments.
+  severity: Medium
+security_best_practices:
+- best_practice: Implement Least Privilege Access
+  description: Grant the minimum level of access necessary for users and applications
+    to perform their tasks, reducing the risk of unauthorized key usage.
+  severity: Critical
+- best_practice: Enable Key Policies and IAM Policies
+  description: Use key policies and IAM policies to control access to keys, ensuring
+    that only authorized entities can use them.
+  severity: Critical
+- best_practice: Monitor Key Usage with AWS CloudTrail
+  description: Enable AWS CloudTrail to log and monitor all key usage activities,
+    helping to detect and respond to unauthorized access.
+  severity: High
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for key management operations to add an extra layer of
+    security against unauthorized access.
+  severity: High
+- best_practice: Regularly Audit Key Permissions
+  description: Periodically review and audit key permissions to ensure that they are
+    still appropriate and follow the principle of least privilege.
+  severity: Medium
+- best_practice: Use Customer Managed Keys (CMKs) for Sensitive Data
+  description: Use CMKs for encrypting sensitive data to have more control over key
+    management and access policies.
+  severity: High
+- best_practice: Enable Key Deletion Protection
+  description: Enable deletion protection for keys to prevent accidental or unauthorized
+    deletion of keys.
+  severity: Medium

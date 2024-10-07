@@ -1,0 +1,21 @@
+- rule:
+  - ID: AWS-CFN-001
+    Title: Ensure AWS CloudFormation stacks are monitored and managed
+    Profile Applicability: Level 1
+    Description: This check ensures that AWS CloudFormation stacks are monitored for
+      changes and managed appropriately to maintain the desired state of the infrastructure.
+    Rationale: Monitoring and managing CloudFormation stacks is essential to ensure
+      that infrastructure changes are tracked and that the environment remains consistent
+      with the defined templates. Failure to do so can lead to configuration drift,
+      security vulnerabilities, and operational inefficiencies.
+    Audit: 1. Log in to the AWS Management Console. 2. Navigate to the CloudFormation
+      service. 3. Review the list of stacks and check for any stacks in the 'UPDATE_ROLLBACK_FAILED'
+      or 'ROLLBACK_COMPLETE' states. 4. Verify that stack changes are being monitored
+      and logged through AWS CloudTrail. 5. Ensure that notifications for stack changes
+      are configured using Amazon SNS.
+    Default Value: CloudFormation stacks are not monitored by default.
+    Remediation: 1. Set up AWS CloudTrail to log all CloudFormation API calls. 2.
+      Configure Amazon SNS to send notifications for stack changes. 3. Regularly review
+      stack statuses and resolve any issues in stacks that are not in the 'CREATE_COMPLETE'
+      or 'UPDATE_COMPLETE' states. 4. Implement automated monitoring tools to detect
+      and alert on configuration drift.

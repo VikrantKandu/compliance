@@ -1,0 +1,62 @@
+architecture_best_practices:
+- best_practice: Use Auto Scaling for High Availability
+  description: Implement Auto Scaling to ensure that your Amazon Chime infrastructure
+    can handle varying loads and maintain high availability.
+  severity: High
+- best_practice: Utilize Multi-AZ Deployments
+  description: Deploy Amazon Chime resources across multiple Availability Zones (AZs)
+    to increase fault tolerance and reduce the risk of downtime.
+  severity: Critical
+- best_practice: Implement Elastic Load Balancing
+  description: Use Elastic Load Balancing to distribute incoming application traffic
+    across multiple Amazon Chime instances, improving performance and reliability.
+  severity: High
+- best_practice: Optimize Network Performance
+  description: Ensure that network configurations are optimized for low latency and
+    high throughput to provide a seamless user experience.
+  severity: Medium
+- best_practice: Use Serverless Architectures Where Possible
+  description: Leverage AWS Lambda and other serverless services to reduce operational
+    overhead and improve scalability.
+  severity: Medium
+- best_practice: Monitor and Log System Performance
+  description: Implement comprehensive monitoring and logging to track system performance
+    and quickly identify and resolve issues.
+  severity: High
+- best_practice: Regularly Update and Patch Systems
+  description: Ensure that all Amazon Chime-related systems are regularly updated
+    and patched to prevent vulnerabilities.
+  severity: High
+security_best_practices:
+- best_practice: Enable Multi-Factor Authentication (MFA)
+  description: Require MFA for all users to add an extra layer of security to the
+    Amazon Chime environment.
+  severity: Critical
+- best_practice: Use IAM Roles and Policies
+  description: Implement fine-grained IAM roles and policies to control access to
+    Amazon Chime resources based on the principle of least privilege.
+  severity: Critical
+- best_practice: Encrypt Data at Rest and in Transit
+  description: Ensure that all data is encrypted both at rest and in transit to protect
+    sensitive information.
+  severity: Critical
+- best_practice: Regularly Rotate Security Credentials
+  description: Regularly rotate API keys, passwords, and other security credentials
+    to minimize the risk of unauthorized access.
+  severity: High
+- best_practice: Conduct Regular Security Audits
+  description: Perform regular security audits and vulnerability assessments to identify
+    and mitigate potential security risks.
+  severity: High
+- best_practice: Implement DDoS Protection
+  description: Use AWS Shield and other DDoS protection services to safeguard Amazon
+    Chime from distributed denial-of-service attacks.
+  severity: High
+- best_practice: Enable Logging and Monitoring for Security Events
+  description: Enable logging and monitoring for security events using AWS CloudTrail
+    and Amazon CloudWatch to detect and respond to security incidents quickly.
+  severity: High
+- best_practice: Apply Network Security Best Practices
+  description: Implement network security best practices, such as using VPCs, security
+    groups, and network ACLs to control and restrict network traffic.
+  severity: High
