@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-BP-001
+    ID: braket
     Title: Ensure Multi-Factor Authentication (MFA) is enabled for all IAM users
     Profile Applicability: Level 1
     Description: Enabling MFA for all IAM users adds an extra layer of security by

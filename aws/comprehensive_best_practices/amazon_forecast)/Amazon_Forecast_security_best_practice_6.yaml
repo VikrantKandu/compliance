@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: forecast
     Title: Ensure EC2 Security Groups are Configured Correctly
     Profile Applicability: Level 1
     Description: Security groups act as a virtual firewall for your EC2 instances

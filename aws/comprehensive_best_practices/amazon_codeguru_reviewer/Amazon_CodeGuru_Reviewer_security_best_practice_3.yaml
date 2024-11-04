@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CFN-001
+  - ID: codeguru-reviewer
   - Title: Ensure AWS CloudFormation stacks are monitored for drift
   - Profile Applicability: Level 1, Level 2
   - Description: Regularly monitor AWS CloudFormation stacks for drift to ensure that

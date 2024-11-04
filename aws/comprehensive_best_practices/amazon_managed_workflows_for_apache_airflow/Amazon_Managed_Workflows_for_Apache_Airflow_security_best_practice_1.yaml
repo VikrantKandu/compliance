@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: airflow
     Title: Ensure Multi-Factor Authentication (MFA) is enabled for all IAM users
     Profile Applicability: Level 1
     Description: Multi-Factor Authentication (MFA) adds an extra layer of protection

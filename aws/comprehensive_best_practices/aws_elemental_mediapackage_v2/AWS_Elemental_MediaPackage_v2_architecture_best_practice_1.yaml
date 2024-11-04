@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: mediapackagev2
     Title: Ensure EC2 instances are not using the default security group
     Profile Applicability: Level 1
     Description: This check ensures that EC2 instances are not associated with the

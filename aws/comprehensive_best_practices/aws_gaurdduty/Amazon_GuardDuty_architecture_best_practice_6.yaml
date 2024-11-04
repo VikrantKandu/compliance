@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: guardduty
     Title: Enable Multi-Factor Authentication (MFA) for IAM Users
     Profile Applicability: Level 1, Level 2
     Description: Ensure that MFA is enabled for all IAM users to add an extra layer

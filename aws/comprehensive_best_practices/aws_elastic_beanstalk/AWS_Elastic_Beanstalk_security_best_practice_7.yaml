@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: elasticbeanstalk
     Title: Ensure EC2 Instances Have Proper Security Group Configurations
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that all EC2 instances are associated with security

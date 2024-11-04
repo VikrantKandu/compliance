@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: iotwireless
     Title: Enable Multi-Factor Authentication (MFA) on Root Account
     Profile Applicability: Level 1, Level 2
     Description: Ensure that MFA is enabled for the AWS root account to provide an

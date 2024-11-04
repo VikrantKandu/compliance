@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-BP-001
+  - ID: ec2fastlaunch
     Title: Enable Multi-Factor Authentication (MFA) for AWS IAM Users
     Profile Applicability: Level 1, Level 2
     Description: Ensure that all AWS IAM users have Multi-Factor Authentication (MFA)

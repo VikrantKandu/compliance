@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-01
+  - ID: firehose
     Title: Ensure EC2 instances are not using the default VPC
     Profile Applicability: Level 1
     Description: This check ensures that EC2 instances are launched in a custom VPC

@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: docdb
     Title: Ensure that S3 buckets are not publicly accessible
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that Amazon S3 buckets do not have public access

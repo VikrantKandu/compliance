@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-1
+  - ID: eks
     Title: Ensure IAM Users Have MFA Enabled
     Profile Applicability: Level 1
     Description: Ensure that all AWS Identity and Access Management (IAM) users have

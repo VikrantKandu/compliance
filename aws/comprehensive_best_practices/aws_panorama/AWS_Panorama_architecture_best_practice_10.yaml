@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-IAM-001
+    ID: panorama
     Title: Ensure IAM Users Have MFA Enabled
     Profile Applicability: Level 1, Level 2
     Description: Ensure that all IAM users have multi-factor authentication (MFA)

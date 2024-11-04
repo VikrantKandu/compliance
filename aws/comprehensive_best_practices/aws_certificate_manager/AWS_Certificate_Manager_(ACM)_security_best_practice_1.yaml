@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-001
+    ID: acm
     Title: Ensure S3 Buckets are not publicly accessible
     Profile Applicability:
     - Level 1

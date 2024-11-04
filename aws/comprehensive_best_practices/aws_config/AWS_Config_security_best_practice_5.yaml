@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-IAM-01
+    ID: config
     Title: Ensure IAM Policies are Attached to Groups or Roles
     Profile Applicability: Level 1
     Description: This check ensures that IAM policies are attached to groups or roles

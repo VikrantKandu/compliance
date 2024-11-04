@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-001
+    ID: elastic-inference
     Title: Ensure S3 Buckets are Not Publicly Accessible
     Profile Applicability: Level 1
     Description: Check that all Amazon S3 buckets do not have public access permissions,

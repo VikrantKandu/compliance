@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-01
+  - ID: compute-optimizer
   - Title: Ensure EC2 instances are launched with IAM roles
   - Profile Applicability: Level 1
   - Description: EC2 instances should be launched with IAM roles to manage access

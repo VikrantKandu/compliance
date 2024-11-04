@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-01
+  - ID: kafkaconnect
   - Title: Ensure S3 Buckets are Securely Configured
   - Profile Applicability: Level 1, Level 2
   - Description: Ensure that all Amazon S3 buckets are securely configured to prevent

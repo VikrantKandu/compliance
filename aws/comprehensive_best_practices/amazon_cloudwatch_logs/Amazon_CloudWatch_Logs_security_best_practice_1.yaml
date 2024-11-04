@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-ENCRYPTED-VOLUMES
+  - ID: logs
     Title: Ensure EC2 EBS volumes are encrypted
     Profile Applicability: Level 1
     Description: This check ensures that all Elastic Block Store (EBS) volumes attached

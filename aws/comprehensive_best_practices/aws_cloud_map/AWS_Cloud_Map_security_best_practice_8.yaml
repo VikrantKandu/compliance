@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-IAM-001
+    ID: AWSCloudMap
     Title: Ensure IAM Password Policy is Enabled
     Profile Applicability: Level 1
     Description: Ensure that an IAM password policy is enabled and configured to enforce

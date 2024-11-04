@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-01
+  - ID: iot1click
     Title: Ensure S3 Buckets are Configured with Bucket Policy
     Profile Applicability: Level 1
     Description: This check ensures that all S3 buckets have a bucket policy configured

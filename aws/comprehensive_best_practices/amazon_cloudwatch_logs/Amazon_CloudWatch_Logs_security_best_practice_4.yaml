@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: logs
     Title: Ensure EC2 Instances Are Within VPC
     Profile Applicability: Level 1
     Description: Verify that all EC2 instances are launched within a Virtual Private

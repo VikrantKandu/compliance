@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: ivschat
     Title: Ensure EC2 Instances are using IAM Roles
     Profile Applicability: Level 1
     Description: Ensure that all EC2 instances are using IAM roles to manage access

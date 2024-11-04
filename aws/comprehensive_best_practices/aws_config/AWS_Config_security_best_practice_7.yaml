@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: config
     Title: Ensure Multi-Factor Authentication (MFA) is enabled for all IAM users
     Profile Applicability: Level 1
     Description: This security check verifies that all AWS Identity and Access Management

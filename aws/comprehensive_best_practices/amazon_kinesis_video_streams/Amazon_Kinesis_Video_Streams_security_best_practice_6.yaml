@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: kinesisvideo
     Title: Ensure IAM User Password Policy Is Enabled
     Profile Applicability: Level 1
     Description: This check ensures that a password policy is enabled for IAM users

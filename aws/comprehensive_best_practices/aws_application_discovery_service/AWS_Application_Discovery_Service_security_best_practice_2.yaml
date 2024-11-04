@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: discovery
     Title: Ensure IAM Password Policy is Enabled
     Profile Applicability: Level 1
     Description: Ensure that a strong password policy is enabled for AWS IAM users

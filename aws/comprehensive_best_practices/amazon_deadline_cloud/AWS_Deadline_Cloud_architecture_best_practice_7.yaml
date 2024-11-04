@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: deadline
     Title: Enable Multi-Factor Authentication (MFA) for all IAM users
     Profile Applicability:
     - Level 1

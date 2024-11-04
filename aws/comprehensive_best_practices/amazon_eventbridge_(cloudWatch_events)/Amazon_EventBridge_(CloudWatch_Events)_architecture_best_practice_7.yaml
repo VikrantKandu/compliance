@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: events
   - Title: Ensure Multi-Factor Authentication (MFA) is Enabled for All IAM Users
   - Profile Applicability: Level 1, Level 2
   - Description: This check ensures that all IAM users have MFA enabled. MFA adds

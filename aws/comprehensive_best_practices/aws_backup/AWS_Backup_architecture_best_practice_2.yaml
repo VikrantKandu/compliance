@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: backup
     Title: Ensure IAM policies are attached to groups or roles instead of directly
       to users
     Profile Applicability: Level 1

@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: iotanalytics
     Title: Ensure IAM Users Have MFA Enabled
     Profile Applicability: Level 1
     Description: Multi-factor authentication (MFA) adds an extra layer of protection

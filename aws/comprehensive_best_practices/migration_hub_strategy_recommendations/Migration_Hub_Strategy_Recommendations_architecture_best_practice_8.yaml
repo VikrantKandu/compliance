@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-Encryption-01
+  - ID: migrationhubstrategy
     Title: Ensure S3 Buckets are Encrypted
     Profile Applicability: Level 1
     Description: Ensure that all S3 buckets have server-side encryption enabled to

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-01
+  - ID: kafka
   - Title: Ensure IAM users have MFA enabled
   - Profile Applicability: Level 1, Level 2
   - Description: Ensure that all IAM users have Multi-Factor Authentication (MFA)

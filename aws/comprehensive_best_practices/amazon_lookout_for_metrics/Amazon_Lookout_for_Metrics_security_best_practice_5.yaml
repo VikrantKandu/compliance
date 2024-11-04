@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-001
+    ID: lookoutmetrics
     Title: Ensure S3 Buckets are Not Publicly Accessible
     Profile Applicability: Level 1
     Description: This check verifies that AWS S3 buckets are not publicly accessible

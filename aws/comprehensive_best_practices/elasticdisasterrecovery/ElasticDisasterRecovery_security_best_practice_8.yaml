@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-01
+    ID: drs
     Title: Ensure S3 Buckets are not Publicly Accessible
     Profile Applicability:
     - Level 1

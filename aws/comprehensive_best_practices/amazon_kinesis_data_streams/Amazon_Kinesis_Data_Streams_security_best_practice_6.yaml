@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-BP-001
+  - ID: kinesis
     Title: Enable Multi-Factor Authentication (MFA) for All IAM Users
     Profile Applicability: Level 1
     Description: Ensure that all IAM users in your AWS account have Multi-Factor Authentication

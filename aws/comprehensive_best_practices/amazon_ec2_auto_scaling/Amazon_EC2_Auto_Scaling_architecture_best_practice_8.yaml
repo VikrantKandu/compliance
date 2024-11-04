@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: autoscaling
     Title: Ensure S3 Buckets are Not Publicly Accessible
     Profile Applicability: Level 1
     Description: This check ensures that all Amazon S3 buckets are not publicly accessible.

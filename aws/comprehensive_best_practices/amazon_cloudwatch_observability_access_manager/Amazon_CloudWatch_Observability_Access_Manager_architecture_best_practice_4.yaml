@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-BP-001
+    ID: oam
     Title: Enable Multi-Factor Authentication (MFA) on AWS Accounts
     Profile Applicability: Level 1, Level 2
     Description: Ensure that Multi-Factor Authentication (MFA) is enabled on all AWS

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: networkmonitor
     Title: Ensure EC2 Security Groups are Configured Correctly
     Profile Applicability: Level 1
     Description: Security Groups in AWS EC2 should be configured to allow only necessary

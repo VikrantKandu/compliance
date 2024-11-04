@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-01
+    ID: elastic-inference
     Title: Ensure S3 Buckets are Private
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that all Amazon S3 buckets are set to private

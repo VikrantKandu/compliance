@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: lakeformation
     Title: Ensure S3 Buckets are Securely Configured
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that Amazon S3 buckets are configured securely

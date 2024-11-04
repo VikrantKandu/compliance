@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-001
+  - ID: payment-cryptography
     Title: Ensure S3 Buckets are Not Publicly Accessible
     Profile Applicability: Level 1, Level 2
     Description: S3 buckets should be configured to prevent public access unless explicitly

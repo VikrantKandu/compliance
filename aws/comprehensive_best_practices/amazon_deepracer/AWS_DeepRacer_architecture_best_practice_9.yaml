@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-EC2-001
+    ID: deepracer
     Title: Ensure EC2 instances are not publicly accessible
     Profile Applicability: Level 1
     Description: Check that EC2 instances do not have a public IP address to prevent

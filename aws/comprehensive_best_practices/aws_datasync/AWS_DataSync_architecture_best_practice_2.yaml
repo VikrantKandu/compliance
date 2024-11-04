@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-001
+    ID: datasync
     Title: Ensure S3 Buckets are Private
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that all S3 buckets are private by default, restricting

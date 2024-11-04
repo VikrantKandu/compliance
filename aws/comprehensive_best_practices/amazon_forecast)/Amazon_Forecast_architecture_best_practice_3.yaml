@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-IAM-001
+    ID: forecast
     Title: Ensure IAM Password Policy is Configured
     Profile Applicability: Level 1, Level 2
     Description: Ensure that a strong IAM password policy is configured to enhance

@@ -1,0 +1,38 @@
+- rule:
+    ID: AWS-EC2-001
+    Title: Ensure EC2 Instances Are Using Approved AMIs
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that all EC2 instances are launched using approved
+      Amazon Machine Images (AMIs). Approved AMIs are those that have been vetted
+      for security and compliance by your organization.
+    Rationale: Using unapproved AMIs can expose your instances to vulnerabilities,
+      outdated software, or misconfigurations that could lead to security breaches.
+      Ensuring that instances use approved AMIs helps maintain a secure and compliant
+      environment.
+    Audit: '1. Log in to the AWS Management Console.
+
+      2. Navigate to the EC2 Dashboard.
+
+      3. Select "Instances" from the left-hand menu.
+
+      4. For each instance, check the AMI ID.
+
+      5. Verify that the AMI ID matches one of the approved AMI IDs listed by your
+      organization.
+
+      6. Alternatively, use the AWS CLI command `aws ec2 describe-instances --query
+      ''Reservations[*].Instances[*].ImageId''` to list all AMI IDs in use and cross-reference
+      them with the approved list.
+
+      '
+    Default Value: By default, there is no restriction on the AMIs that can be used
+      to launch EC2 instances.
+    Remediation: '1. Identify instances not using approved AMIs.
+
+      2. Create a new instance using an approved AMI.
+
+      3. Migrate the necessary data and configurations to the new instance.
+
+      4. Terminate the non-compliant instance.
+
+      5. Update policies and IAM roles to restrict the use of unapproved AMIs.'

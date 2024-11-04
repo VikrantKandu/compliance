@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-RDS-001
+  - ID: elasticbeanstalk
   - Title: Enable RDS Encryption
   - Profile Applicability: Level 1
   - Description: Ensure that Amazon RDS instances have encryption at rest enabled

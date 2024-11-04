@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: inspector
     Title: Ensure S3 Buckets are Publicly Accessible Only When Necessary
     Profile Applicability: Level 1
     Description: This check ensures that S3 buckets are not publicly accessible unless

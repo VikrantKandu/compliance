@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-01
+  - ID: iot
     Title: Ensure S3 Buckets are not publicly accessible
     Profile Applicability: Level 1
     Description: Check that Amazon S3 buckets do not allow public access to prevent

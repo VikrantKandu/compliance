@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: lakeformation
   - Title: Ensure EC2 Instances Are Using Latest AMIs
   - Profile Applicability: Level 1
   - Description: This check ensures that all EC2 instances are launched using the

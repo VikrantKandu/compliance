@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: iotdeviceadvisor
     Title: Ensure IAM Users Have Multi-Factor Authentication (MFA) Enabled
     Profile Applicability: Level 1
     Description: Ensure that all IAM users with console access have multi-factor authentication

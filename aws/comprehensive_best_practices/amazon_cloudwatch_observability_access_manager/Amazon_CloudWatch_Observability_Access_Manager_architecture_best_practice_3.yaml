@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-001
+  - ID: oam
     Title: Ensure S3 Buckets are Not Publicly Accessible
     Profile Applicability: Level 1, Level 2
     Description: Check that all Amazon S3 buckets are not publicly accessible to ensure

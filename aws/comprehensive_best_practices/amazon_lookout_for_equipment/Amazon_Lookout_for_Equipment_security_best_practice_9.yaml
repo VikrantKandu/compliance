@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-BP-001
+    ID: lookoutequipment
     Title: Ensure Multi-Factor Authentication (MFA) is enabled for all IAM users with
       console access
     Profile Applicability: Level 1

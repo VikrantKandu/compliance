@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: fms
     Title: Enable AWS CloudTrail in all regions
     Profile Applicability: Level 1, Level 2
     Description: AWS CloudTrail should be enabled in all regions to ensure that all

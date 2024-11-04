@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: mediatailor
     Title: Ensure EC2 instances are not using default security groups
     Profile Applicability:
     - Level 1

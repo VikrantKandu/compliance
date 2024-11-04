@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-BP-001
+  - ID: iottwinmaker
   - Title: Ensure S3 Buckets have Versioning Enabled
   - Profile Applicability: Level 1
   - Description: Enabling versioning on S3 buckets helps to preserve, retrieve, and

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: outposts
     Title: Ensure EC2 instances are using the latest AMI
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that all EC2 instances are launched using the

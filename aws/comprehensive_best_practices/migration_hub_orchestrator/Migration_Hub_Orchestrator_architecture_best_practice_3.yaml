@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-01
+    ID: migrationhuborchestrator
     Title: Ensure S3 Buckets are Not Publicly Accessible
     Profile Applicability: Level 1
     Description: S3 buckets should not be publicly accessible to prevent unauthorized

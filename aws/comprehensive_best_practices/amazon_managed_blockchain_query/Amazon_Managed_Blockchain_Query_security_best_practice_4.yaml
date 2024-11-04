@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-BP-001
+  - ID: managedblockchain-query
     Title: Ensure S3 Buckets Have Server-Side Encryption Enabled
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that all Amazon S3 buckets have server-side encryption

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-001
+  - ID: cloudformation
   - Title: Ensure S3 Buckets are Private
   - Profile Applicability: Level 1
   - Description: Ensure that all S3 buckets are configured to be private to prevent

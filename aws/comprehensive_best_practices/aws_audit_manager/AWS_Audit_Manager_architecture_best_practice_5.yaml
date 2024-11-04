@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: auditmanager
   - Title: Ensure IAM Users Have Password Policy
   - Profile Applicability: Level 1
   - Description: IAM users should adhere to a strong password policy to enhance security.

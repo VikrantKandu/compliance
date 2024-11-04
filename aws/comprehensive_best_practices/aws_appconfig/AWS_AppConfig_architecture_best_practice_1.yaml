@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-01
+  - ID: appconfig
     Title: Ensure S3 Buckets Have Server-Side Encryption Enabled
     Profile Applicability: Level 1
     Description: This check ensures that server-side encryption is enabled for all

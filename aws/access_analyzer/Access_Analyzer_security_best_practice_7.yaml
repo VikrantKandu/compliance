@@ -1,0 +1,34 @@
+- rule:
+    ID: AWS-S3-01
+    Title: Ensure S3 Buckets are not publicly accessible
+    Profile Applicability: Level 1, Level 2
+    Description: This check ensures that Amazon S3 buckets do not have public access
+      permissions. Public access to S3 buckets can lead to unauthorized access to
+      sensitive data.
+    Rationale: Publicly accessible S3 buckets can expose sensitive data to the internet,
+      leading to potential data breaches and compliance violations. Ensuring that
+      S3 buckets are not publicly accessible helps protect data integrity and confidentiality.
+    Audit:
+    - Log in to the AWS Management Console.
+    - Navigate to the S3 service.
+    - For each bucket, check the "Permissions" tab.
+    - Verify that the bucket does not have any "Public Access" settings enabled.
+    - Alternatively, use the AWS CLI:
+      - Run `aws s3api get-bucket-acl --bucket <bucket-name>` and ensure no grants
+        have "URI" set to "http://acs.amazonaws.com/groups/global/AllUsers" or "http://acs.amazonaws.com/groups/global/AuthenticatedUsers".
+    - Run `aws s3api get-bucket-policy --bucket <bucket-name>` and ensure the policy
+      does not allow public access.
+    Default Value: By default, S3 buckets are private and do not allow public access.
+    Remediation:
+    - Log in to the AWS Management Console.
+    - Navigate to the S3 service.
+    - Select the bucket that is publicly accessible.
+    - Go to the "Permissions" tab.
+    - Remove any public access permissions under "Block public access (bucket settings)".
+    - Modify the bucket policy to restrict public access:
+      - Remove any statements that allow public access.
+      - Ensure the policy includes a statement to deny public access.
+    - Alternatively, use the AWS CLI to update the bucket policy and ACL:
+      - Run `aws s3api put-bucket-acl --bucket <bucket-name> --acl private`.
+      - Update the bucket policy using `aws s3api put-bucket-policy --bucket <bucket-name>
+        --policy file://policy.json` where `policy.json` denies public access.

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: acm-pca
     Title: Ensure EC2 instances are not using the default security group
     Profile Applicability: Level 1
     Description: EC2 instances should not be associated with the default security

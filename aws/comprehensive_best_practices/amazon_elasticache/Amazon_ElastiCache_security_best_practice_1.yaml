@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-IAM-001
+    ID: elasticache
     Title: Ensure IAM Password Policy Requires Strong Passwords
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that the IAM password policy requires strong passwords

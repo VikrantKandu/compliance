@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: outposts
     Title: Ensure S3 Buckets are Not Publicly Accessible
     Profile Applicability: Level 1, Level 2
     Description: This check verifies that Amazon S3 buckets are not publicly accessible

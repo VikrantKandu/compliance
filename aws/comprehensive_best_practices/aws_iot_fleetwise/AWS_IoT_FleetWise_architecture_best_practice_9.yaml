@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: iotfleetwise
     Title: Ensure S3 Buckets are Private
     Profile Applicability:
     - Level 1

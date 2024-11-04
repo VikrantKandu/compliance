@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: lambda
     Title: Ensure Multi-Factor Authentication (MFA) is enabled for all IAM users
     Profile Applicability: Level 1, Level 2
     Description: Ensure that all AWS Identity and Access Management (IAM) users have

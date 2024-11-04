@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: omics
     Title: Ensure IAM Policies are Attached Only to Groups or Roles
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that IAM policies are not directly attached to

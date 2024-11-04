@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-BP-EC2-001
+  - ID: ec2-ipam
   - Title: Ensure EC2 instances are not using default security groups
   - Profile Applicability: Level 1
   - Description: This check ensures that EC2 instances are not associated with the

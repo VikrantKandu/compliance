@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CF-001
+  - ID: migrationhubstrategy
     Title: Ensure CloudFormation Stacks Have Termination Protection Enabled
     Profile Applicability: Level 1
     Description: CloudFormation stacks should have termination protection enabled

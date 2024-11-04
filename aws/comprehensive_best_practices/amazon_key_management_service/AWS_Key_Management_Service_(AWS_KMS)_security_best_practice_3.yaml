@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-BP-001
+  - ID: kms
     Title: Enable AWS CloudTrail in all regions
     Profile Applicability:
     - Level 1

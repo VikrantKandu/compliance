@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: glacier
     Title: Ensure S3 Buckets are Encrypted
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that all Amazon S3 buckets are configured with

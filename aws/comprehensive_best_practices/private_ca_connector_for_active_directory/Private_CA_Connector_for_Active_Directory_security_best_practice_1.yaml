@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-001
+  - ID: pca-connector-ad
     Title: Ensure S3 Buckets are Private
     Profile Applicability: Level 1
     Description: Check that all S3 buckets are configured to be private and do not

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CFN-001
+  - ID: iotfleethub
     Title: Ensure AWS CloudFormation Stacks are Encrypted
     Profile Applicability: Level 1, Level 2
     Description: Ensure that AWS CloudFormation stacks use encryption for sensitive

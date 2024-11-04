@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-SG-001
+  - ID: kendra
     Title: Ensure Security Groups are configured with least privilege
     Profile Applicability: Level 1, Level 2
     Description: Security groups should be configured to allow only the minimum necessary

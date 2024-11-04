@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: directconnect
   - Title: Ensure IAM Users Have Multi-Factor Authentication (MFA) Enabled
   - Profile Applicability: Level 1
   - Description: This check ensures that all IAM users have MFA enabled to enhance

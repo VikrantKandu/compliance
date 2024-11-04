@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CFN-001
+  - ID: iotanalytics
     Title: Ensure AWS CloudFormation Stack is Encrypted
     Profile Applicability: Level 1
     Description: This check ensures that AWS CloudFormation stacks are encrypted to

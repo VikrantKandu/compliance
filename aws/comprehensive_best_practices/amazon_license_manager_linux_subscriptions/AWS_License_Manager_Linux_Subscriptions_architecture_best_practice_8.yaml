@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: license-manager-linux-subscriptions
     Title: Enable Multi-Factor Authentication (MFA) for All IAM Users
     Profile Applicability: Level 1
     Description: Ensure that all IAM users have Multi-Factor Authentication (MFA)

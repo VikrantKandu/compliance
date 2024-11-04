@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: grafana
     Title: Ensure Multi-Factor Authentication (MFA) is Enabled for All IAM Users
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that multi-factor authentication (MFA) is enabled

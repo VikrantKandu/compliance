@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: AWSCloudMap
     Title: Ensure that EC2 instances are not using default security groups
     Profile Applicability: Level 1
     Description: This check ensures that EC2 instances are not associated with the

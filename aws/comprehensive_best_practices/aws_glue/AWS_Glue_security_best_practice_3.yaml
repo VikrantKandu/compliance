@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: glue
     Title: Ensure Multi-Factor Authentication (MFA) is Enabled for All IAM Users
     Profile Applicability: Level 1
     Description: This check ensures that Multi-Factor Authentication (MFA) is enabled

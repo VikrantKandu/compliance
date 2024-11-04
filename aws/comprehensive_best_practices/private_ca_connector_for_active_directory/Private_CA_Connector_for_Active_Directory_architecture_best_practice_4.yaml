@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: pca-connector-ad
   - Title: Ensure IAM Users Do Not Have Console Access
   - Profile Applicability: Level 1
   - Description: IAM users should not have console access to minimize the risk of

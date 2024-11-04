@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CLOUDWATCH-LOG-RETENTION
+  - ID: fis
     Title: Ensure CloudWatch Log Group Retention Period is Set
     Profile Applicability: Level 1
     Description: This check ensures that a retention period is set for all CloudWatch

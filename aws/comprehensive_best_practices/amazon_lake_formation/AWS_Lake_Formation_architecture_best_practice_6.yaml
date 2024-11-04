@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: lakeformation
     Title: Ensure EC2 instances have a security group attached
     Profile Applicability: Level 1
     Description: This check ensures that all EC2 instances have at least one security

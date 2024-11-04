@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CF-001
+  - ID: managedblockchain-query
     Title: Ensure AWS CloudFront distributions are using HTTPS
     Profile Applicability: Level 1
     Description: This check ensures that all AWS CloudFront distributions are configured

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-01
+  - ID: cloud9
     Title: Ensure S3 Buckets are not publicly accessible
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that Amazon S3 buckets are not publicly accessible

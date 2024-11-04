@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-001
+  - ID: migrationhubstrategy
     Title: Ensure S3 Bucket Versioning is Enabled
     Profile Applicability: Level 1
     Description: Enabling versioning on S3 buckets ensures that multiple versions

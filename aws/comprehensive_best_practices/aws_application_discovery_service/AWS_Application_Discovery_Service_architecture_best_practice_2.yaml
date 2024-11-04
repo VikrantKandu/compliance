@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-001
+  - ID: discovery
   - Title: Ensure S3 Buckets Have Versioning Enabled
   - Profile Applicability: Level 1
   - Description: This check ensures that versioning is enabled on all Amazon S3 buckets

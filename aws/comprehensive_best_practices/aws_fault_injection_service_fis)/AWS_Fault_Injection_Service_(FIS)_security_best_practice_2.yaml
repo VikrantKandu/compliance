@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: fis
     Title: Ensure S3 Buckets are Private
     Profile Applicability: Level 1
     Description: This check ensures that all Amazon S3 buckets are configured to be

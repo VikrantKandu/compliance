@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-CLOUDTRAIL-001
+    ID: grafana
     Title: Ensure CloudTrail is enabled in all regions
     Profile Applicability: Level 1
     Description: CloudTrail should be enabled in all AWS regions to ensure all account

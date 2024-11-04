@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CF-001
+  - ID: medical-imaging
     Title: Ensure AWS CloudFormation Stacks are Encrypted
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that AWS CloudFormation stacks have encryption

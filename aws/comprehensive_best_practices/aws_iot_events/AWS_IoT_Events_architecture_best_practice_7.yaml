@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: iotevents
     Title: Ensure S3 Buckets are Private and Encrypted
     Profile Applicability: Level 1, Level 2
     Description: Verify that all S3 buckets are configured to be private and that

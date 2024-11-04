@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-01
+  - ID: internetmonitor
     Title: Ensure EC2 instances are not using the default security group
     Profile Applicability: Level 1
     Description: Check that no EC2 instances are associated with the default security

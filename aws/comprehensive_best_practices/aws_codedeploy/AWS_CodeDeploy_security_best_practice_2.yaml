@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: codedeploy
     Title: Ensure S3 Buckets are not Publicly Accessible
     Profile Applicability:
     - Level 1

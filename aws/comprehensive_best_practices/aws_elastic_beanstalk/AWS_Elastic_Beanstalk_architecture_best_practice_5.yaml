@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-IAM-001
+    ID: elasticbeanstalk
     Title: Ensure IAM Policies are Attached Only to Groups or Roles
     Profile Applicability: Level 1
     Description: This check ensures that IAM policies are not directly attached to

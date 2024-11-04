@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: forecast
     Title: Ensure S3 Buckets Have Logging Enabled
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that logging is enabled on all S3 buckets to track

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: cloudtrail
     Title: Ensure IAM Policies Are Attached to Groups or Roles
     Profile Applicability: Level 1, Level 2
     Description: Ensure that IAM policies are attached to groups or roles instead

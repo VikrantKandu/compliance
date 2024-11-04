@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-01
+    ID: backup
     Title: Ensure S3 Buckets have Versioning Enabled
     Profile Applicability: Level 1
     Description: Versioning should be enabled on all S3 buckets to protect against

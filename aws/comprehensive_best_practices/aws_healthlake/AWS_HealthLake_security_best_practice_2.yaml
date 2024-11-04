@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CF-001
+  - ID: healthlake
     Title: Ensure CloudFormation Stacks Have Termination Protection Enabled
     Profile Applicability: Level 1
     Description: This check ensures that AWS CloudFormation stacks have termination

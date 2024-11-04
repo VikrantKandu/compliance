@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-01
+  - ID: machinelearning
     Title: Ensure S3 Buckets Have Server-Side Encryption Enabled
     Profile Applicability: Level 1
     Description: Server-side encryption should be enabled for all S3 buckets to protect

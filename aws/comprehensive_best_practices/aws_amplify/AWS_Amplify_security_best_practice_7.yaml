@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-VPC-001
+  - ID: amplify
     Title: Ensure VPC Flow Logs are enabled for all VPCs
     Profile Applicability: Level 1
     Description: VPC Flow Logs capture information about the IP traffic going to and

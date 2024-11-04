@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: appstream2
     Title: Ensure Multi-Factor Authentication (MFA) is enabled for all IAM users
     Profile Applicability: Level 1, Level 2
     Description: Multi-Factor Authentication (MFA) provides an extra layer of security

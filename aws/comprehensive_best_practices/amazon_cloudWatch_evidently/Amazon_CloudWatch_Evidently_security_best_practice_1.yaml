@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: evidently
     Title: Ensure IAM Users Have Multi-Factor Authentication Enabled
     Profile Applicability: Level 1
     Description: This check ensures that all IAM users in the AWS account have Multi-Factor

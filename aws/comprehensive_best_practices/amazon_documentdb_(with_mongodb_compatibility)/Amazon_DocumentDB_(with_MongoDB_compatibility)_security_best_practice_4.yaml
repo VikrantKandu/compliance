@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-1-EC2-IMDSv2
+  - ID: docdb
     Title: Ensure EC2 Instances Use Instance Metadata Service Version 2 (IMDSv2)
     Profile Applicability:
     - Level 1

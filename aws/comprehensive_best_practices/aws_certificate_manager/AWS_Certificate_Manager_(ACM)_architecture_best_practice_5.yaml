@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-EC2-001
+    ID: acm
     Title: Ensure that EC2 instances are launched within a VPC
     Profile Applicability: Level 1, Level 2
     Description: All EC2 instances should be launched within a Virtual Private Cloud

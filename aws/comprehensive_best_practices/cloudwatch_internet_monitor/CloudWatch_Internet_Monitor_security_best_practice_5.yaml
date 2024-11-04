@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CFN-001
+  - ID: internetmonitor
     Title: Ensure AWS CloudFormation Stacks are encrypted at rest
     Profile Applicability: Level 1
     Description: This best practice ensures that all AWS CloudFormation stacks utilize

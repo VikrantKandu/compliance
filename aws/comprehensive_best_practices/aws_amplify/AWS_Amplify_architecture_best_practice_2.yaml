@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: amplify
     Title: Ensure EC2 instances are using approved AMIs
     Profile Applicability: Level 1
     Description: This check ensures that all EC2 instances are launched using AMIs

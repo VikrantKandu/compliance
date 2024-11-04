@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-BP-001
+  - ID: globalaccelerator
     Title: Enable Multi-Factor Authentication (MFA) for IAM Users
     Profile Applicability: Level 1, Level 2
     Description: Ensure that Multi-Factor Authentication (MFA) is enabled for all

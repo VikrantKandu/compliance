@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-001
+    ID: codeguru-profiler
     Title: Ensure S3 Buckets are not publicly accessible
     Profile Applicability: Level 1
     Description: This check ensures that Amazon S3 buckets are not publicly accessible,

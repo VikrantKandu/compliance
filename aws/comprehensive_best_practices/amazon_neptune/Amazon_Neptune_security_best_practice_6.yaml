@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: neptune
     Title: Ensure S3 Buckets are not publicly accessible
     Profile Applicability:
     - Level 1

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-EC2-001
+  - ID: application-cost-profiler
   - Title: Ensure EC2 Instances Are Not Using Default Security Groups
   - Profile Applicability: Level 1
   - Description: EC2 instances should not be associated with the default security

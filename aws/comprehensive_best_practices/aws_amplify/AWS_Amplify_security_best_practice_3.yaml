@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-EC2-001
+    ID: amplify
     Title: Ensure EC2 Instances Are Configured with IAM Roles
     Profile Applicability: Level 1
     Description: Ensure that all EC2 instances are configured with IAM roles to manage

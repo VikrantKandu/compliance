@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-01
+  - ID: iot
     Title: Ensure S3 Buckets have Versioning Enabled
     Profile Applicability: Level 1
     Description: Enabling versioning on S3 buckets protects against accidental or

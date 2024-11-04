@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: appmesh
     Title: Enable AWS CloudTrail in all Regions
     Profile Applicability: Level 1, Level 2
     Description: Ensure that AWS CloudTrail is enabled in all AWS regions to provide

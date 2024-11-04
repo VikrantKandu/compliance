@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-S3-01
+  - ID: kinesisvideo
     Title: Enable Server-Side Encryption for S3 Buckets
     Profile Applicability: Level 1
     Description: Ensure that all Amazon S3 buckets have server-side encryption enabled

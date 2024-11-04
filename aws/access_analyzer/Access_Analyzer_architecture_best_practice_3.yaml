@@ -1,0 +1,26 @@
+- rule:
+    ID: AWS-S3-01
+    Title: Enable Server-Side Encryption (SSE) for S3 Buckets
+    Profile Applicability: Level 1, Level 2
+    Description: Ensure that all S3 buckets have Server-Side Encryption (SSE) enabled
+      to protect data at rest. SSE encrypts data before storing it and decrypts it
+      when retrieved, providing an additional layer of security.
+    Rationale: Enabling SSE helps protect sensitive data from unauthorized access
+      and ensures compliance with data protection regulations. Without SSE, data stored
+      in S3 buckets is vulnerable to unauthorized access and breaches.
+    Audit:
+    - Step 1: Log in to the AWS Management Console.
+    - Step 2: Navigate to the S3 service.
+    - Step 3: For each S3 bucket, go to the 'Properties' tab.
+    - Step 4: Check the 'Default encryption' section to verify if SSE is enabled.
+    - Step 5: Alternatively, use the AWS CLI command `aws s3api get-bucket-encryption
+        --bucket <bucket-name>` to check the SSE status.
+    Default Value: Disabled
+    Remediation:
+    - Step 1: Log in to the AWS Management Console.
+    - Step 2: Navigate to the S3 service.
+    - Step 3: Select the S3 bucket that does not have SSE enabled.
+    - Step 4: Go to the 'Properties' tab.
+    - Step 5: In the 'Default encryption' section, click 'Edit'.
+    - Step 6: Choose the desired encryption method (e.g., SSE-S3, SSE-KMS, or SSE-C).
+    - Step 7: Click 'Save' to apply the changes.

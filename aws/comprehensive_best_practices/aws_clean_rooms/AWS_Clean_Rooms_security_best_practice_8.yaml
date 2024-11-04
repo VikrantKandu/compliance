@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-01
+    ID: cleanrooms
     Title: Ensure S3 buckets have server-side encryption enabled
     Profile Applicability: Level 1
     Description: Enabling server-side encryption for S3 buckets ensures that data

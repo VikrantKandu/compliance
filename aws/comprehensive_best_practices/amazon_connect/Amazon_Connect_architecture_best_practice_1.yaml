@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: connect
     Title: Ensure IAM Policies are Attached to Groups or Roles
     Profile Applicability: Level 1
     Description: This check ensures that IAM policies are not directly attached to

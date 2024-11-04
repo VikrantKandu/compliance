@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-CW-001
+  - ID: glacier
     Title: Ensure CloudWatch Logs are Encrypted at Rest
     Profile Applicability: Level 1, Level 2
     Description: This check ensures that Amazon CloudWatch Logs are encrypted at rest

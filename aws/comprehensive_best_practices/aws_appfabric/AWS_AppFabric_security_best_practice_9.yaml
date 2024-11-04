@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-IAM-001
+    ID: appfabric
     Title: Ensure IAM Password Policy is Enabled
     Profile Applicability: Level 1
     Description: This check ensures that a strong password policy is enforced for

@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-IAM-001
+  - ID: cloudformation
   - Title: Ensure IAM Password Policy is Enabled
   - Profile Applicability: Level 1
   - Description: The IAM password policy should be enabled to enforce strong password

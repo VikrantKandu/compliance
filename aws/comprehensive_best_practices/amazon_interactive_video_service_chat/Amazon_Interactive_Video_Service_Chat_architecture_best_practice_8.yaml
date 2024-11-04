@@ -1,5 +1,5 @@
 - rule:
-    ID: AWS-S3-001
+    ID: ivschat
     Title: Ensure S3 Buckets are Private
     Profile Applicability: Level 1
     Description: This check ensures that all Amazon S3 buckets are private and not

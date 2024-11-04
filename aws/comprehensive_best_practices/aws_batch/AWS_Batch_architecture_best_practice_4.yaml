@@ -1,5 +1,5 @@
 - rule:
-  - ID: AWS-001
+  - ID: batch
   - Title: Enable Multi-Factor Authentication (MFA) for All IAM Users
   - Profile Applicability: Level 1
   - Description: Ensure that all AWS Identity and Access Management (IAM) users have
